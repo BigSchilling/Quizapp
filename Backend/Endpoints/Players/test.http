@@ -1,0 +1,15 @@
+####
+
+GET http://localhost:8080/api/authenticate
+Authorization: Basic admin:123
+@adminToken = {{loginAdminCorrect.response.headers.Authorization}}
+####
+POST http://localhost:8080/api/players
+Authorization: {{adminToken}}
+
+Content-Type: application/json
+
+{
+    "userID": "wer",,
+    "password": "123",
+}
