@@ -1,0 +1,408 @@
+{
+    "fragen": [
+        {
+            "kategorie": "Schätzfrage",
+            "frage": "Wie lange braucht Pluto einmal um die Sonne?",
+            "antworten": [
+                "248 Jahre"
+            ]
+        },
+        {
+            "kategorie": "Schätzfrage",
+            "frage": "Wann wurde das erste Auto erfunden?",
+            "antworten": [
+                "1886"
+            ]
+        },
+        {
+            "kategorie": "Buzzer",
+            "frage": "Wer hat das erste Auto erfunden?",
+            "antworten": [
+                "Carl Benz"
+            ]
+        },
+        
+        {
+            "kategorie": "Buzzer",
+            "frage": "Wie heißt die Hauptstadt von Ghana?",
+            "antworten": [
+                "Accra"
+            ]
+        },
+        {
+            "kategorie": "Schätzfrage",
+            "frage": "Wann entdeckte Christoph Kolumbus Amerika?",
+            "antworten": [
+                "12. Oktober 1492"
+            ]
+        },
+        {
+            "kategorie": "Schätzfrage",
+            "frage": "Wie viele Knochen hat ein Mensch?",
+            "antworten": [
+                "206"
+            ]
+        },
+        {
+            "kategorie": "Multiple Buzzer",
+            "frage": "Nennt die 12 griechischen Götter aus der Mythologie und was sie repräsentieren.",
+            "antworten": [
+                "Zeus - Gott des Himmels und des Wetters, Göttervater, Herrscher über den Olymp, Blitzschleuderer",
+                "Hera - Göttin der Ehe und Familie.",
+                "Poseidon - Gott des Meeres und der Erdbeben.",
+                "Demeter - Göttin der Fruchtbarkeit und Landwirtschaft.",
+                "Athena - Göttin der Weisheit und Strategie.",
+                "Apollo - Gott des Lichts, der Heilung und der Weissagung.",
+                "Artemis - Göttin der Jagd, des Mondes und der Geburt.",
+                "Ares - Gott des Krieges und der Gewalt.",
+                "Aphrodite - Göttin der Liebe, Schönheit und der sinnlichen Begierde.",
+                "Hephaistos - Gott des Feuers, der Schmiedekunst und der Schmiede.",
+                "Hermes - Gott der Reisenden, der Handelsleute und der Diebe.",
+                "Hestia - Göttin des Herdes, des häuslichen Feuers und der Familie."
+            ]
+        },
+        {
+            "kategorie": "Buzzer",
+            "frage": "1945 wurden die Vereinten Nationen (UNO) gegründet. Wie hieß ihr Vorgänger?",
+            "antworten": [
+                "Völkerbund"
+            ]
+        },
+        {
+            "kategorie": "Buzzer",
+            "frage": "1961: Wer äußerte diese wohl größte Lüge in der Geschichte Deutschlands? \n “Niemand hat die Absicht eine Mauer zu errichten”",
+            "antworten": [
+                "Walter Ulbricht"
+            ]
+        },
+        {
+            "kategorie": "Buzzer",
+            "frage": "1971: Die USA landeten das „Lunar Roving Vehicle“ auf dem Mond. Was geschah erstaunlicher Weise erst in einem solchen Jahr des Fortschritts?",
+            "antworten": [
+                "Frauen bekommen Stimmrecht in der Schweiz"
+            ]
+        },
+        {
+            "kategorie": "Schätzfrage",
+            "frage": "Wie viele Elemente sind im Periodensystem vorzufinden?",
+            "antworten": [
+                "118"
+            ]
+        },
+        {
+            "kategorie": "Buzzer",
+            "frage": "Was ist die Masse von einem Photon?",
+            "antworten": [
+                "Fangfrage - Ein Photon hat keine Masse."
+            ]
+        },
+        {
+            "kategorie": "Buzzer",
+            "frage": "Nennt mir einen von den zwei Fotorezeptoren im Auge.",
+            "antworten": [
+                "Entweder Zapfen (für Farben) oder Stäbchen (für Lichtintensität)"
+            ]
+        },
+        {
+            "kategorie": "Buzzer",
+            "frage": "Nenne 2 Starterpokemon aus Pokemon Diamant/Perl?",
+            "antworten": [
+                "Chelast",
+                "Panflam",
+                "Plinfa"
+            ]
+        },
+        {
+            "kategorie": "Schätzfrage",
+            "frage": "Wie viele pokemon hat der pokedex?",
+            "antworten": [
+                "1025 mit Entwicklungen und Erweiterungen"
+            ]
+        },
+        {
+            "kategorie": "Buzzer",
+            "frage": "Was ist das erste Pokémon, das Ash in der gleichnamigen Serie fängt?",
+            "antworten": [
+                "Raupy"
+            ]
+        },
+        {
+            "kategorie": "Buzzer",
+            "frage": "Wie heißt das Haus in dem Pippi Langstrumpf lebt?",
+            "antworten": [
+                "Villa Kunterbunt"
+            ]
+        },
+        {
+            "kategorie": "Buzzer",
+            "frage": "Cosmo und Wanda sind die helfenden Elfen von Timmy Turner. Was für Haarfarben haben sie?",
+            "antworten": [
+                "Pink/Rosa und Grün"
+            ]
+        },
+        {
+            "kategorie": "Buzzer",
+            "frage": "Mit welcher Rolle wurde Sängerin Miley Cyrus bekannt?",
+            "antworten": [
+                "Hannah Montana"
+            ]
+        },
+        {
+            "kategorie": "Multiple Buzzer",
+            "frage": "In den ersten beiden Staffeln von 'Digimon' existieren mysteriöse Wappen, welche alle eine bestimmte Eigenschaft repräsentieren. Nenne 1 dieser Eigenschaften.",
+            "antworten": [
+                "Mut",
+                "Freundschaft",
+                "Wissen",
+                "Liebe",
+                "Zuverlässigkeit",
+                "Aufrichtigkeit",
+                "Hoffnung",
+                "Licht",
+                "Freundlichkeit"
+            ]
+        },
+        {
+            "kategorie": "Schätzfrage",
+            "frage": "Wie viele Items gibt es in Minecraft?",
+            "antworten": [
+                "726"
+            ]
+        },
+        {
+            "kategorie": "Multiple Buzzer",
+            "frage": "Nennt mir die Begriffe von den Grundrechenarten?",
+            "antworten": [
+                "Addieren: Summand + Summand = Summe",
+                "Subtrahieren: Minuend – Subtrahend = Differenz",
+                "Multiplizieren: 1. Faktor • 2. Faktor = Produkt",
+                "Dividieren: Dividend : Divisor = Quotient"
+            ]
+        },
+        {
+            "kategorie": "Buzzer",
+            "frage": "Welches Unternehmen wurde ursprünglich „Cadabra“ genannt?",
+            "antworten": [
+                "Amazon"
+            ]
+        },
+        {
+            "kategorie": "Buzzer",
+            "frage": "Was ist die offizielle Hauptstadt der Schweiz?",
+            "antworten": [
+                "Keine (Bern ist nur Bundessitz)"
+            ]
+        },
+        {
+            "kategorie": "Buzzer",
+            "frage": "Welches ist das seltenste Blutgruppenmerkmal bei Menschen?",
+            "antworten": [
+                "AB negativ"
+            ]
+        },
+        {
+            "kategorie": "Buzzer",
+            "frage": "Wie hieß die amerikanische Pilotin welche als erste Frau den Atlantik überflog ?",
+            "antworten": [
+                "Emilia Earhart"
+            ]
+        },
+        {
+            "kategorie": "Buzzer",
+            "frage": "Was war der sog. Roswell Zwischenfall ?",
+            "antworten": [
+                "Absturz eines angeblich außerirdischen unbekannten Flugobjekts"
+            ]
+        },
+        {
+            "kategorie": "Buzzer",
+            "frage": "Im welchen Land wurde das erste Schriftsystem entwickelt ?",
+            "antworten": [
+                "Mesopotamien (dem heutigen Irak)"
+            ]
+        },
+        {
+            "kategorie": "Buzzer",
+            "frage": "Wie hieß der Anführer der Oktoberevolution 1917 in Russland ?",
+            "antworten": [
+                "Wladimir Iljitsch Lenin"
+            ]
+        },
+        {
+            "kategorie": "Buzzer",
+            "frage": "Wie hieß der erste Satellit im Weltall ?",
+            "antworten": [
+                "Sputnik"
+            ]
+        },
+        {
+            "kategorie": "Buzzer",
+            "frage": "Welche Taktik nutzten die Griechen um die Stadt Troja einzunehmen ?",
+            "antworten": [
+                "List - trojanisches Pferd"
+            ]
+        },
+        {
+            "kategorie": "Buzzer",
+            "frage": "Wofür steht die Abkürzung ICE?",
+            "antworten": [
+                "InterCity-Express"
+            ]
+        },
+        {
+            "kategorie": "Schätzfrage",
+            "frage": "Was ist die zugelassene Höchstgeschwindigkeit für einen ICE in Deutschland?",
+            "antworten": [
+                "320 kmh"
+            ]
+        },
+        {
+            "kategorie": "Buzzer",
+            "frage": "Welches Nahrungmittel kann man im DB-Shop kaufen?",
+            "antworten": [
+                "Honig (Gleishonig)"
+            ]
+        },
+        {
+            "kategorie": "Buzzer",
+            "frage": "Nenne ein Tochterunternehmen der DB, das im Güterverkehr aktiv ist?",
+            "antworten": [
+                "DB Cargo",
+                "DB Schenker"
+            ]
+        },
+        {
+            "kategorie": "Buzzer",
+            "frage": "Welche zwei Personen gelten als Erfinder des Flugzeugs und aus welchem Land kommen sie?",
+            "antworten": [
+                "Die Brüder Wright (Orville & Wilbur Wright)",
+                "USA"
+            ]
+        },
+        {
+            "kategorie": "Buzzer",
+            "frage": "Was muss geschehen, damit im Flugzeug die Sauerstoffmasken fallen?",
+            "antworten": [
+                "Druckabfall in der Kabine"
+            ]
+        },
+        {
+            "kategorie": "Buzzer",
+            "frage": "In welchem Land liegt der nördlichste internationale Flughafen der Welt?",
+            "antworten": [
+                "Norwegen (Der Flughafen Longyearbyen befindet sich auf der Insel Spitzbergen im Arktischen Ozean)"
+            ]
+        },
+        {
+            "kategorie": "Schätzfrage",
+            "frage": "Was ist die durchschnittliche Reiseflughöhe von Verkehrsflugzeugen?",
+            "antworten": [
+                "35.000ft oder 10.668m (Durchschnitt da generell zwischen 30.000 Fuß / 9.140m und 40.000 Fuß / 12.190m geflogen wird)"
+            ]
+        },
+        {
+            "kategorie": "Multiple Buzzer",
+            "frage": "In welchen Ländern befinden sich Montagewerke von Airbus?",
+            "antworten": [
+                "Frankreich",
+                "Deutschland",
+                "Spanien",
+                "Großbritannien",
+                "China",
+                "USA",
+                "Kanada"
+            ]
+        },
+        {
+            "kategorie": "Buzzer",
+            "frage": "Von welcher Pflanze wird Vanille gewonnen?",
+            "antworten": [
+                "Orchideen"
+            ]
+        },
+        {
+            "kategorie": "Buzzer",
+            "frage": "Was ist der Unterschied zwischen Marmelade und Konfitüre?",
+            "antworten": [
+                "Marmelade muss aus Zitrusfrüchten gemacht werden"
+            ]
+        },
+        {
+            "kategorie": "Buzzer",
+            "frage": "In welcher Galaxie befinden wir uns?",
+            "antworten": [
+                "Milchstraße"
+            ]
+        },
+        {
+            "kategorie": "Buzzer",
+            "frage": "Mit welcher anderen Galaxie wird die Milchstraße in ca. 3 Milliarden Jahren verschmelzen?",
+            "antworten": [
+                "Andromedagalaxie"
+            ]
+        },
+        {
+            "kategorie": "Eintippen",
+            "frage": "Knossi ist nicht nur ein deutscher Entertainer, er besteht auch noch aus 5 Elementen! Nennt mir diese! (also: K, N, O, S, Si/I; für euch 5 Smarties)",
+            "antworten": [
+                "Kalium",
+                "Stickstoff",
+                "Sauerstoff",
+                "Schwefel",
+                "Silicium/Iod"
+            ]
+        },
+        {
+            "kategorie": "Schätzfrage",
+            "frage": "Welche Temperatur wird als absoluter Nullpunkt angesehen? (in °C)",
+            "antworten": [
+                "-273,15°C ist die tiefstmögliche Temperatur"
+            ]
+        },
+        {
+            "kategorie": "Buzzer",
+            "frage": "Wie viel Bit hat ein Byte?",
+            "antworten": [
+                "8"
+            ]
+        },
+        {
+            "kategorie": "Schätzfrage",
+            "frage": "Wie viele durchschnittliche Atemzüge macht ein Mensch am Tag",
+            "antworten": [
+                "23.000"
+            ]
+        },
+        {
+            "kategorie": "Multiple Buzzer",
+            "frage": "Nennt die 10 best bewertesten Serien nach Userwertung von filmstarts.de.",
+            "antworten": [
+                "Game of Thrones",
+                "Breaking Bad",
+                "Sherlock",
+                "Chernobyl",
+                "Mandalorian",
+                "Stranger things",
+                "True detectives",
+                "Band of Brother",
+                "The walking dead",
+                "Dexter"
+            ]
+        },
+        {
+            "kategorie": "Eintippen",
+            "frage": "Es ist schade um die Dachse, und was der Fuchs schuf, ist wie affiger für wen?",
+            "antworten": [
+                "Giraffe (Buchstaben werden anders angeordnet)"
+            ]
+        },
+        {
+            "kategorie": "Multiple Buzzer",
+            "frage": "Top 10 Bestseller von Astrid Lindgren",
+            "antworten": [
+                "Pippi Langstrumpf", "Ronja Räubertochter", "Karlsson vom Dach", "Michel aus Lönneberga", "Wir Kinder aus Bullerbü", "Mio, mein Mio", 
+                "Kalle Blomquist Meisterdetektiv", "Ferien auf Saltkrokan", "Madita", "Die Kinder aus der Krachmacherstraße"
+            ]
+        }
+    ]
+}

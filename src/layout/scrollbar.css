@@ -1,0 +1,11 @@
+/* Versteckt die Scrollleiste */
+html {
+    overflow-y: scroll; /* Erlaubt das Scrollen, aber die Scrollleiste ist unsichtbar */
+    scrollbar-width: none; /* Für Firefox */
+   }
+   
+   /* Für Chrome, Safari und Edge */
+   html::-webkit-scrollbar {
+    display: none;
+   }
+   

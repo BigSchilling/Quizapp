@@ -1,0 +1,51 @@
+IMMER IP ADRESSE IN ENV SETZEN !!!!!!!
+
+TODO--------------
+ anzeigen wer redet (geht aber ein Fehler kommt immer wieder)
+ cam in card setzen (obs lösung) (react webcam?)
+ timer für buzzer nach drücken (bei multiple buzzer rausnehmen)
+ sortieren, antworten radnomized anzeigen und bewegen 
+ eintippen(a,b,c,d) antworten anzeigen
+ audio regler sollte funktionieren
+ number input (punkte bei tausend)
+ emote stockbilder
+ buzzer sehen wer gedrückt hat (Bild)
+ ready checkbox nicht im feld anwählbar
+ (rasberry pi mit server )
+
+
+Ideen für kategorie
+ Bilder erraten
+ 4 Bilder 1 Wort
+ Entfernung mit Karte
+ Erkennst du den Song
+ 
+ 
+
+---------------------------------
+Was schon getan wurde
+ Login - Fehler durch lastpass observer kacke oder so
+ Tokens - backend check
+ buzzer senden/ empfangen / freigeben
+ schätzfrage anzeigen und senden,
+ Spieler hinzufügen
+ richtigen spieler mitsenden
+ Spieler punkte sehen
+ buzzer richtig / falsch
+ sehen wer spielt / angemeldet ist
+ current rights wrongs und reset session
+ spieler punkte editieren
+ quizfragen einlesen und anzeigen
+ startpage - kategorie hinzufügen
+ sound (buzzern, richtig, falsch)
+ page für stream/ yt
+ leertaste zum Buzzern
+ schätzfrage ready button
+ manuelle punkte sind jetzt richtige antwort punkte
+ scroll leiste mit overflow hidden verstecken
+
+--------------------------------
+Zukunft
+ audio visualizer
+ map mit entfernungs nadeln zum klicken
+ zwei begriffe verknüpfen mit linien durch drücken auf das erste und dann auf das zweite (zuordnen)

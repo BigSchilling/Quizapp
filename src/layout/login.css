@@ -1,0 +1,46 @@
+.modal-container {
+    position: relative;
+    z-index: 1;
+    /* Stellen Sie sicher, dass die Container-Elemente über dem normalen Seiteninhalt liegen */
+}
+
+/* Fügen Sie dem Close-Button im Modal-Header benutzerdefinierte Stile hinzu */
+.btn-close {
+    font-size: 24px;
+    font-weight: bold;
+    color: red;
+    text-align: right;
+    /* Fügen Sie hier weitere benutzerdefinierte Stile hinzu */
+}
+
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    /* Stellen Sie sicher, dass das Modal eine höhere Z-Index hat als der Container */
+    width: 400px;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    display: none;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    /* Stellen Sie sicher, dass das Overlay eine Z-Index hat, der gleich oder niedriger als der Container ist */
+    display: none;
+}
+
+.modal.active,
+.overlay.active {
+    display: block;
+}

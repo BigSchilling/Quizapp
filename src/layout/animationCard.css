@@ -1,0 +1,15 @@
+.question-card {
+    transition: all 0.3s ease-in-out; /* Übergang für eine sanfte Animation */
+}
+
+.buzzer-button {
+    font-size: 50px;
+    padding: 10px 20px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+.question-card.expanded {
+    transform: scale(1.1); /* Skalieren Sie die Karte um 10% */
+    height: auto !important; /* Automatische Höhe, um den Inhalt anzupassen */
+}
