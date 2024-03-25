@@ -1,17 +1,13 @@
 IMMER IP ADRESSE IN ENV SETZEN !!!!!!!
 
 TODO--------------
- anzeigen wer redet (geht aber ein Fehler kommt immer wieder)
- cam in card setzen (obs lösung) (react webcam?)
+ ready checkbox nicht im feld anwählbar
  timer für buzzer nach drücken (bei multiple buzzer rausnehmen)
  sortieren, antworten radnomized anzeigen und bewegen 
  eintippen(a,b,c,d) antworten anzeigen
  audio regler sollte funktionieren
- number input (punkte bei tausend)
- emote stockbilder
  buzzer sehen wer gedrückt hat (Bild)
- ready checkbox nicht im feld anwählbar
- (rasberry pi mit server )
+ (rasberry pi mit server)
 
 
 Ideen für kategorie
@@ -43,6 +39,9 @@ Was schon getan wurde
  schätzfrage ready button
  manuelle punkte sind jetzt richtige antwort punkte
  scroll leiste mit overflow hidden verstecken
+ anzeigen wer redet (namen anpassen in mongodb)
+ cam in card setzen (obs lösung) (react webcam?)
+ emote stockbilder
 
 --------------------------------
 Zukunft

@@ -12,7 +12,8 @@ const PlayerSchema = new mongoose.Schema({
     password: { type: String, required: true },
     isHost: { type: Boolean, default: false },
     loggedIn: {type: Boolean, default: false},
-    isReady: {type: Boolean, default: false}
+    isReady: {type: Boolean, default: false}, 
+    tsName: {type: String, default: ""}
 },
     { timestamps: true }
 );

@@ -13,6 +13,7 @@ function PlayerCreate() { // bei onCancel das neuladen der benutzer hinzufügen
         CreateUserComponentEditUserID: "",
         CreateUserComponentEditPassword: "",
         CreateUserComponentEditIsHost: false,
+        tsName: ""
     });
     const token = useSelector(state => state.loginPlayer.token);
 
@@ -33,12 +34,13 @@ function PlayerCreate() { // bei onCancel das neuladen der benutzer hinzufügen
         setLoading(true)
         const { CreateUserComponentEditUserID,
             CreateUserComponentEditPassword,
-            CreateUserComponentEditIsHost } = userData;
+            CreateUserComponentEditIsHost, tsName } = userData;
 
         const requestBody = JSON.stringify({
             "userID": CreateUserComponentEditUserID,
             "password": CreateUserComponentEditPassword,
             "isHost": CreateUserComponentEditIsHost,
+            "tsName": tsName
         });
         fetch("http://" + server + ':8080/api/players', {
             method: 'Post',
@@ -96,6 +98,16 @@ function PlayerCreate() { // bei onCancel das neuladen der benutzer hinzufügen
                         type="password"
                         placeholder="Password eingeben"
                         value={userData.CreateUserComponentEditPassword}
+                        onChange={handleChange}
+                    />
+                </Form.Group>
+                <Form.Group className="mb-3">
+                    <Form.Label>Teamspeak Name</Form.Label>
+                    <Form.Control
+                        id="tsName"
+                        type="text"
+                        placeholder="TeamspeakUser"
+                        value={userData.tsName}
                         onChange={handleChange}
                     />
                 </Form.Group>

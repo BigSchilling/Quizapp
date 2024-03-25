@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { Dropdown, Button, Card, ListGroup, Container, Row, Col, Form } from "react-bootstrap";
 import { createPlayerTrue, createPlayerFalse, setRightPoints, setManuellPoints } from '../slices/ShowMasterSlice';
 import io from 'socket.io-client';
-import FragenData from '../questionsCatalog/folge2.json'; // datei mit fragen
+import FragenData from '../questionsCatalog/folge3.json'; // datei mit fragen
 import useSound from 'use-sound';
 import "../layout/scrollbar.css"
 const server = process.env.REACT_APP_API_SERVER;

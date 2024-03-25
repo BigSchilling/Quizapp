@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import {
   Dropdown,
@@ -9,6 +9,8 @@ import {
   Row,
   Col,
   Form,
+  CardBody,
+  Image,
 } from "react-bootstrap";
 import {
   createPlayerTrue,
@@ -20,9 +22,15 @@ import io from "socket.io-client";
 import useSound from "use-sound";
 import Navigation from "./Navigation";
 import "../layout/scrollbar.css";
-import useTSRemoteApp from "../TS5-RemoteAPI/index.ts"
-
+import useTSRemoteApp from "../TS5-RemoteAPI/index.ts";
+import "../layout/animatedBorder.css";
+import CameraComponent from "./CameraComponent.js";
+import Webcam from "react-webcam";
+import tom1 from "../images/tom1.jpg";
+import jan1 from "../images/jan3.jpg";
+import tim1 from "../images/tim1.jpg";
 const server = process.env.REACT_APP_API_SERVER;
+// sehen wer spricht - Teamspeak 5 plugin
 
 const StreamingPage = () => {
   const dispatch = useDispatch();
@@ -49,8 +57,17 @@ const StreamingPage = () => {
   const [playSound, { error }] = useSound("/pfad/zur/sounddatei.mp3", {
     volume: 1,
   });
+  //  teamspeak shit
+  const talkers = useRef({ names: [] });
+  const talkingNames = useRef([]);
+  const talkingMap = useRef(new Map());
+  const [talkingMap2, setTalkingmap] = useState([]);
 
-  // sehen wer spricht - Teamspeak 5 plugin
+  // let talkers = { names: [] };
+  //let talkingNames = [];
+  //let talkingMap1 = new Map();
+
+  const [talkMap, setTalkmap] = useState([]);
   const { clientsInChannel } = useTSRemoteApp({
     remoteAppPort: 5899,
     logging: false,
@@ -61,12 +78,82 @@ const StreamingPage = () => {
       description: "hond",
     },
   });
+  useEffect(() => {
+    // console.log(clientsInChannel);
+    let newTalkingNames = [...talkingNames.current];
 
+    const talkers = [];
+    clientsInChannel.forEach((client) => {
+      if (!talkingNames.current.includes(client.properties.nickname))
+        talkingNames.current.push(client.properties.nickname);
+
+      if (client.talkStatus === 1) {
+        talkers.push(client.properties.nickname);
+      }
+    });
+    setTalkingmap(talkers);
+
+    for (const client of clientsInChannel) {
+      let nickname = client?.properties?.nickname;
+      // fügt namen in array hinzu
+      if (!newTalkingNames.includes(nickname)) {
+        newTalkingNames.push(nickname);
+      }
+      /*
+      if (client.talkStatus === 1) {
+        // console.log(nickname, "is talking", client.talkStatus === 1);
+        // talkingMap.current.set(nickname, true);
+      } else {
+        // console.log(nickname, "no talking", client.talkStatus);
+        // talkingMap.current.set(nickname, false);
+
+      }*/
+    }
+    talkingNames.current = newTalkingNames;
+    // console.log(talkingNames, " talking names");
+    // console.log(talkingMap.get(talkingNames[0]));
+  }, [clientsInChannel]);
+  // console.log(talkingMap);
   useEffect(() => {
     if (error) {
       console.error("Fehler beim Abspielen des Sounds:", error);
     }
   }, [error]);
+  // webcam---------------
+  const [deviceId, setDeviceId] = useState(null);
+  const [deviceId2, setDeviceId2] = useState(null);
+  const [videoDevices, setVideoDevices] = useState([]);
+
+  const handleDevices = async () => {
+    const devices = await navigator.mediaDevices.enumerateDevices();
+    const videoDevices = devices.filter(
+      (device) => device.kind === "videoinput"
+    );
+    setVideoDevices(videoDevices);
+    // setDeviceId to default video device ID
+    setDeviceId(videoDevices[0]?.deviceId);
+  };
+  console.log(videoDevices);
+  // Funktion zum Festlegen der virtuellen Kamera von OBS
+  useEffect(() => {
+    const obsVirtualCamera = videoDevices.find((device) =>
+      device.label.toLowerCase().includes("obs")
+    );
+    const streamlabsObsVirtualCamera = videoDevices.find((device) =>
+      device.label.toLowerCase().includes("obs")
+    );
+    if (obsVirtualCamera) {
+      console.log("Virtuelle Kamera von OBS gefunden:", obsVirtualCamera);
+      setDeviceId(obsVirtualCamera.deviceId);
+    } else {
+      console.log("Virtuelle Kamera von OBS nicht gefunden.");
+    }
+  }, [videoDevices]);
+
+  // Fetch video devices when component mounts
+  useEffect(() => {
+    handleDevices();
+  }, []);
 
   const playStoredSound = (soundFile) => {
     const base64Sound = localStorage.getItem(soundFile);
@@ -88,21 +175,6 @@ const StreamingPage = () => {
       audio.play();
     }
   };
-
-  useEffect(() => {
-    // console.log(clientsInChannel);
-    for (const client of clientsInChannel) {
-      if (client.talkStatus === 1) {
-          console.log(
-            client?.properties?.nickname,
-            "is talking",
-            client.talkStatus === 1
-          );
-      }
-      // console.log(client?.properties?.nickname, "is talking");
-      //console.log(client?.properties?.nickname, client.talkStatus);
-    }
-  }, [clientsInChannel]);
 
   useEffect(() => {
     const newSocket = io(`ws://${server}:8080`, {});
@@ -215,6 +287,17 @@ const StreamingPage = () => {
     //console.log("clientsInChannel:", clientsInChannel);
   }
 
+  //console.log(talkingNames.current[0],   talkingMap.current.get(talkingNames.current[0]));
+  // console.log(
+  //   // talkingMap.current,
+  //   // talkingMap.current.get(talkingNames.current[0]),
+  //   // talkingNames.current
+  //   talkingMap2,
+  //   " map2"
+  // );
+  const camWidth = "20%";
+  const camHeight = "10%";
+  console.log(talkingMap2, talkingNames.current);
   return (
     <div>
       <div className="text-center">
@@ -224,7 +307,7 @@ const StreamingPage = () => {
         >
           <Card
             bg="dark"
-            border="secondary"
+            border={ talkingMap2.includes("dana")?"info":"secondary"}
             style={{
               fontSize: "25px",
               padding: "10px 10px",
@@ -238,7 +321,7 @@ const StreamingPage = () => {
                 <h3>
                   Frage {fragenIndex + 1} ({kategorie}):
                 </h3>
-                <p>{JSON.stringify(frage)}</p>
+                <p>{frage}</p>
               </Card.Title>
             </Card.Body>
           </Card>
@@ -255,26 +338,22 @@ const StreamingPage = () => {
                 </Button>
             </div> */}
       <div>
-        <Container>
-          <Row
-            xs={1}
-            md={3}
-            lg={5}
-            xl={10}
-            className="justify-content-between align-items-center "
-          >
+        <Container fluid>
+          <Row className="justify-content-center align-items-center " md={10}>
             {/* war vorher sortedPoints */}
             {allPoints.map((player) => (
               <Col
                 key={player.userID}
-                md={6}
+                md={2}
                 className="mb-3"
-               style={{ width: "auto" }}
+                style={{ minWidth: "50%" }}
               >
                 <Card
                   bg="dark"
                   border={
-                    buzzerPressedBy == player.userID
+                    talkingMap2.includes(player.tsName)
+                      ? "info"
+                      : buzzerPressedBy === player.userID
                       ? "warning"
                       : !player.isReady
                       ? "success"
@@ -282,10 +361,10 @@ const StreamingPage = () => {
                   }
                   style={{
                     borderRadius: "20px",
-                    maxHeight: "1000px",
-                    overflowY: "auto",
-                    marginTop: "7vw",
-                    minWidth: "16vw"
+                    maxHeight: "38vh",
+                    overflowY: "hidden",
+                    marginTop: "0.75vw",
+                    minWidth: camWidth,
                   }}
                 >
                   <Card.Body
@@ -299,16 +378,62 @@ const StreamingPage = () => {
                       <div>{player.userID}:</div>
                       <div>{player.currentPoints} p</div>
                     </Card.Title>
-                    <div
-                      id="transparentPlace"
-                      className="d-flex flex-column flex-grow-1 align-items-start"
+                    {/* <div
                       style={{
-                        overflowY: "auto",
-                        minHeight: "150px",
-                        backgroundColor: "rgba(0,0,0,0.2)",
-                        zIndex: "9999",
+                        minWidth: "320px",
+                        minHeight: "180px",
+                        backgroundColor: "rgba(0,0,0,0.95)",
                       }}
-                    ></div>
+                    ></div> */}
+                    {player.userID == "Chris" ? (
+                      <>
+                        <Webcam
+                          style={{ width: "auto", maxHeight: "240px" }}
+                          audio={false}
+                          videoConstraints={{
+                            deviceId: deviceId
+                              ? { exact: deviceId }
+                              : undefined,
+                            // width: "100%",
+                            // height: "100%",
+                          }}
+                        />
+                      </>
+                    ) : 
+                    // player.userID !== "Tim" ? (
+                    //   <>
+                    //     <Webcam
+                    //       style={{ width: "auto", maxHeight: "240px" }}
+                    //       audio={false}
+                    //       videoConstraints={{
+                    //         deviceId: deviceId2
+                    //           ? { exact: deviceId2 }
+                    //           : undefined,
+                    //         // width: "100%",
+                    //         // height: "100%",
+                    //       }}
+                    //     />
+                    //   </>
+                    // ) :
+                     (
+                      <>
+                        <Image
+                          src={
+                            player.userID == "Tom"
+                              ? tom1
+                              : player.userID == "Tim"
+                              ? tim1
+                              : jan1
+                          }
+                          style={{
+                            width: "auto",
+                            maxHeight: "240px",
+                            objectFit: "scale-down",
+                            objectPosition: "center",
+                          }}
+                        />
+                      </>
+                    )}
                     <div
                       className="d-flex flex-column flex-grow-1 align-items-start"
                       style={{ overflowY: "auto" }}
@@ -319,7 +444,7 @@ const StreamingPage = () => {
                           resize: "vertical",
                           boxSizing: "border-box",
                           fontSize: "20px",
-                          minHeight: "100px",
+                          minHeight: "20px",
                           backgroundColor: "rgba(255,255,255,0.95)",
                         }}
                         value={playerMessages[player.userID]}

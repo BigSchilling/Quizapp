@@ -37,7 +37,7 @@ function App() {
           ) : (
             <>
               <Route path="/" element={<LandingPage />} />
-              <Route path="/stream" element={<LandingPage />} />
+              <Route path="/stream" element={<StreamingPage />} />
 
             </>
           )}

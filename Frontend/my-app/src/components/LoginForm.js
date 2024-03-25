@@ -26,13 +26,13 @@ const LoginForm = () => {
         if (!response.ok) {
           throw new Error('Network response was not ok or password or userID was wrong');
         }
-        console.log(response.headers.get('Authorization'))
+        // console.log(response.headers.get('Authorization'))
         // Hier kannst du auf den Authorization-Header zugreifen
         const token = response.headers.get('Authorization');
-        console.log("token: " + token)
+        // console.log("token: " + token)
         const decodedToken = jwtDecode(token);
         const isHost = decodedToken.isHost;
-        console.log("isHost? " + isHost)
+        // console.log("isHost? " + isHost)
         //setzt im redux store die states
         dispatch(setPlayer({
           token: token,
@@ -44,7 +44,7 @@ const LoginForm = () => {
       })
       .then(data => {
         // Handle die erfolgreiche Antwort hier
-        console.log("data:", JSON.stringify(data));
+        // console.log("data:", JSON.stringify(data));
       })
       .catch(error => {
         // Handle den Fehler hier

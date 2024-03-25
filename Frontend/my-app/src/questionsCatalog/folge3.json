@@ -1,0 +1,392 @@
+{
+  "fragen": [
+    {
+      "kategorie": "Buzzer",
+      "frage": "Winnetou ist Häuptling welchen Indianerstammes?",
+      "antworten": [
+        "der Apachen"
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Wie nennt sich das längste Radrennen?",
+      "antworten": [
+        "Tour de France"
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Buchstabiere Alphabet rückwärts. \n",
+      "antworten": [
+        "t e b a h p l A"
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Mit wie vielen Karten wird Poker gespielt? \n",
+      "antworten": [
+        "52"
+      ]
+    },
+    {
+      "kategorie": "Schätzfrage",
+      "frage": "Wie schnell ist Lichtgeschwindigkeit im Vakuum? (m/s)",
+      "antworten": [
+        "299 792 458 m/s, 1 079 252 848,8 km/h "
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Welches EU-Land trägt als internationales Kennzeichen BIH? \n",
+      "antworten": [
+        "Bosnien Herzogwina "
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Welches ist die größte spanischsprechende Stadt der Welt? \n",
+      "antworten": [
+        "Mexiko City "
+      ]
+    },
+    {
+      "kategorie": "Schätzfrage",
+      "frage": "Wie hoch ist der Fernsehturm?",
+      "antworten": [
+        "368m "
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "In welcher asiatischen Hauptstadt kann man eine “Verbotene Stadt” besichtigen? \n",
+      "antworten": [
+        "Peking/Beijing"
+      ]
+    },
+    {
+      "kategorie": "Eintippen",
+      "frage": " In welchen Ozean mündet der Amazonas?",
+      "antworten": [
+        "In den Antlantischen Ozean "
+      ]
+    },
+    {
+      "kategorie": "Eintippen",
+      "frage": "Welche der folgenden Bezeichnungen ist NICHT richtig für ein 11-Seitigen-Polygon: undecagon, dodecagon oder hendecagon? \n",
+      "antworten": [
+        "Dodecagon – Hat 12 Seiten"
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Wie heißt die Schreibmarke, die auf dem Bildschirm eines Computers verschiebbar ist? \n",
+      "antworten": [
+        "Cursor "
+      ]
+    },
+    {
+      "kategorie": "Multiple Buzzer",
+      "frage": "Ab 2010: Welche Marken produzieren Hypercars?  \n",
+      "antworten": [
+        "Bugatti ",
+        "Ferrari ",
+        "Ford",
+        "Koenigsegg ",
+        "Lamborghini",
+        "McLaren",
+        "Mercedes",
+        "Nissan ",
+        "Porsche ",
+        "Aston Martin",
+        "9ff ",
+        "AT. S. GT ",
+        "GTA ",
+        "Lexus ",
+        "Hennessey ",
+        "Mazzanti ",
+        "Zenvo ",
+        "W Motors ",
+        "VLF ",
+        "Sin Cars ",
+        "SSC ",
+        "Ruf ",
+        "Rimac ",
+        "Puriatalia ",
+        "Noble ",
+        "Nio ",
+        "Pagani ",
+        "SSC ",
+        "Hispano Suiza",
+        "KTM",
+        "Pininfarina "
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Für was steht die Abkürzung LAN? \n",
+      "antworten": [
+        " Local Area Network "
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Welcher Autohersteller hat den 3-Punkt-Sicherheitsgurt erfunden/verbaut? \n",
+      "antworten": [
+        "Volvo"
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Wann begann das 21. Jahrhundert? \n",
+      "antworten": [
+        "01.01.2001 "
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Wer überquerte mit Elefanten und einer Armee die Alpen?",
+      "antworten": [
+        "Hannibal "
+      ]
+    },
+    {
+      "kategorie": "Schätzfrage",
+      "frage": "Wann ereignete sich die Nuklearkatastrophe Tschernobyl und wie viele Personen starben an akuter Strahlenkrankheit? MM/YYYY \n",
+      "antworten": [
+        "04/1986 u. 50 Personen"
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Wie heißt der Urkontinent, der alle vorhandenen Landmassen der Erde umfasste? \n",
+      "antworten": [
+        "Pangäa"
+      ]
+    },
+    {
+      "kategorie": "Schätzfrage",
+      "frage": "Ab wann herrschte Kleopatra VII.? \n",
+      "antworten": [
+        "51v. Chr. bis 30 v. Chr., die Pyramiden wurden zwischen etwa 2620 bis 2500 v. Chr. erbaut, somit liegt die Zeit ihrer Herrschaft näher an der Mondlandung als am Bau der Pyramiden "
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Das chemische Symbol für Wasser ist H2O: Was ist das chemische Symbol für Speisesalz? \n",
+      "antworten": [
+        "NaCl"
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Welche Farbe hat die Sonne? \n",
+      "antworten": [
+        "Tatsächlich weiß, die sonst gewohnte gelbe/orangene Farbe wird durch die Erdatmosphäre erklärt. Kurzwelliges (blaues) Licht wird an den Luftmolekülen (Stickstoff, Sauerstoff, Edelgase und Kohlenstoffdioxid) wesentlich stärker gestreut als langwelligeres (rotes) Licht. \n"
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Welches ist das größte Organ des menschlichen Körpers? \n",
+      "antworten": [
+        "Die Haut"
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Welches ist das einzige Element, welches bei Normaldruck am absoluten Temperaturtiefpunkt von -273°C nicht in einen festen Aggregatzustand übergeht? \n",
+      "antworten": [
+        "Helium \n"
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Wie heißen die Kraftwerke der Zelle? \n",
+      "antworten": [
+        "Mitochondrien "
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Welche Währung nutzt die Türkei? \n",
+      "antworten": [
+        "Lira"
+      ]
+    },
+    {
+      "kategorie": "Schätzfrage",
+      "frage": "Wie hoch ist der Anteil des Warenhandels, den die EU innerhalb der eigenen Grenzen abwickelt? Stand 2017 \n",
+      "antworten": [
+        "Zwei Drittel, ~66% "
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Nenne ein anderer Begriff für Wirtschaft.",
+      "antworten": [
+        "Ökonomie"
+      ]
+    },
+    {
+      "kategorie": "Schätzfrage",
+      "frage": "Wie viel ist ein Bitcoin wert? (Stand jetzt) \n",
+      "antworten": [
+        "google ich"
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Nenne 4 Unternehmensformen.",
+      "antworten": [
+        "GbR – Gesellschaft Bürgerlichen Rechts, OHG – Offene Handelsgesellschaft, KG – Kommanditgesellschaft, GmbH – Gesellschaft mit beschränkter Haftung, UG – Unternehmergesellschaft, AG – Aktiengesellschaft, Limited. "
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Warum hört der Protagonist und Fluchtautofahrer „Baby“ aus dem Film Baby Driver durchgehend Musik? \n",
+      "antworten": [
+        "Seit einem Autounfall leidet der Protagonist an Tinnitus und überdeckt diesen durch Musik. "
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "In welchem Fast and the Furious Film tritt der verstorbene Schauspieler Paul Walker zum Letzen Mal auf?",
+      "antworten": [
+        "Teil 7 "
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Wie heißt der Roboter, in den sich Wall-E verliebt? \n",
+      "antworten": [
+        "Eve "
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Welches Mitglied der Simpsons heißt wie ein alter griechischer Dichter und Denker? \n",
+      "antworten": [
+        "Homer"
+      ]
+    },
+    {
+      "kategorie": "Schätzfrage",
+      "frage": "Wie viele Oscars haben alle Herr der Ringe (ohne Hobbit) gewonnen? \n",
+      "antworten": [
+        "17 (1. 3, 2. 3, 3. 11) "
+      ]
+    },
+    {
+      "kategorie": "Multiple Buzzer",
+      "frage": "Wie nennt man die höchsten Stimmen im Chor?",
+      "antworten": [
+        "Sopran (Frauen)",
+        "Tenor (Männer)"
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Zähle die C-Dur-Tonleiter auf. \n",
+      "antworten": [
+        "c d e f g a h c’ "
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Wie nennt man den Textabschnitt eines Songtextes, welches meist unverändert wiederkehrt und das Gegengewicht der Strophen bildet? \n",
+      "antworten": [
+        "Refrain"
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Wie heißt Richard Wagners berühmte Oper über einen holländischen Seefahrer? \n",
+      "antworten": [
+        "Der fliegende Holländer "
+      ]
+    },
+    {
+      "kategorie": "Schätzfrage",
+      "frage": "Wie viele Mitglieder hatte die Band “The Kelly Family” im Laufe der Zeit insgesamt? Nur Familienmitglieder, Gastmusiker nicht mitgezählt \n",
+      "antworten": [
+        "15 (Dan, Barbara-Ann, Danny, Caroline, Kathy, Patricia, Paul, John Michael, Maria Patricia, Jimmy, Joey, Barby, Paddy, Maite, Angelo) "
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Videospiel des Jahres 2023? \n",
+      "antworten": [
+        "Baldurs Gate 3 "
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Buchstabiere das Spiel Phasmophobia \n",
+      "antworten": [
+        "P H A S M O P H O B I A "
+      ]
+    },
+    {
+      "kategorie": "Sortieren",
+      "frage": "Ordne die Spiele nach ihrem Erscheinungsjahr: CS:GO, Pokemon Rot, Uncharted 2: Among Thieves, The Witcher 3: Wild Hunt, Star Wars: The Force Unleashed, Anno 1800, Legend of Zelda: Breath of the Wild, Age of Empires",
+      "antworten": [
+        "Pokemon Rot (1996), Age of Empires (1997), Star Wars: The Force Unleashed (2008), Uncharted 2 (2009), CS:GO (2012), The Witcher (2015), Legend of Zelda: Breath of the Wild (2017), Anno 1800 (2019), \n"
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "MW2: Welches Perk macht die eigenen Schritte lautlos?",
+      "antworten": [
+        "Ninja (Pro) "
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Wie lautet der Name des Protagonisten aus Metro? \n",
+      "antworten": [
+        "Artjom "
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Welches Land konsumiert pro Kopf am meisten Pizza? \n",
+      "antworten": [
+        "USA mit 13kg, Italien mit 7,6kg ist Platz 2 "
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Aus welchem Fleisch besteht ein traditionelles Wiener Schnitzel? \n",
+      "antworten": [
+        "Kalbsfleisch "
+      ]
+    },
+    {
+      "kategorie": "Eintippen",
+      "frage": "Nenne die 8 Zutaten einer originalen Sachertorte. \n",
+      "antworten": [
+        "Schokolade, Vanille, Butter, Zucker, Eier, Mehl, Aprikosenmarmelade, Sahne "
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": " Wie hoch ist der Steuersatz für Speißen vor Ort und wie hoch für to go Essen?",
+      "antworten": [
+        "to go 7%, vor Ort 19% "
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Wein: Nennt eine Rebsorte. \n",
+      "antworten": [
+        "ieine https://www.deutscheweine.de/unser-wein/rebsorten/ "
+      ]
+    },
+    {
+      "kategorie": "Schätzfrage",
+      "frage": "Wie viele alkoholische Cocktails bietet die Cocktailbar \"Oase Deluxe\" am Alexanderplatz an?",
+      "antworten": [
+        "133"
+      ]
+    }
+  ]
+}

@@ -233,22 +233,14 @@ const StartPage = () => {
 
     return (
         <div>
-            <Navigation/>
-            <input
-                type="range"
-                min="0"
-                max="1"
-                step="0.1"
-                value={volume}
-                onChange={(e) => setVolume(parseFloat(e.target.value))}
-            />
+           
             <div className="text-center" onClick={handleClickOutside}>
                 <div className="d-flex justify-content-center align-items-center">
                     <Card bg="dark" border="secondary" style={{ fontSize: '30px', padding: '10px 10px', marginBottom: '40px', marginTop: '40px' }} >
                         <Card.Body>
                             <Card.Title className="text-center" style={{ fontSize: '35px' }}>
                                 <h3>Frage {fragenIndex + 1} ({kategorie}):</h3>
-                                <p>{JSON.stringify(frage)}</p>
+                                <p>{frage}</p>
                             </Card.Title>
                         </Card.Body>
                     </Card>
@@ -303,6 +295,15 @@ const StartPage = () => {
                     </div>
                 ))}
             </div>
+            <Navigation/>
+            <input
+                type="range"
+                min="0"
+                max="1"
+                step="0.1"
+                value={volume}
+                onChange={(e) => setVolume(parseFloat(e.target.value))}
+            />
         </div>
     );
 };
