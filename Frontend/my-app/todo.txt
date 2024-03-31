@@ -1,12 +1,11 @@
 IMMER IP ADRESSE IN ENV SETZEN !!!!!!!
 
 TODO--------------
- ready checkbox nicht im feld anwählbar
- timer für buzzer nach drücken (bei multiple buzzer rausnehmen)
- sortieren, antworten radnomized anzeigen und bewegen 
- eintippen(a,b,c,d) antworten anzeigen
+font und schrift kontur
+ showmasterpage antworten wrappen
+ tims facecam hinzufügen (geht nicht)
+ sortieren, antworten radnomized anzeigen und bewegen bei anklicken sieht host was gedrückt wird
  audio regler sollte funktionieren
- buzzer sehen wer gedrückt hat (Bild)
  (rasberry pi mit server)
 
 
@@ -42,6 +41,9 @@ Was schon getan wurde
  anzeigen wer redet (namen anpassen in mongodb)
  cam in card setzen (obs lösung) (react webcam?)
  emote stockbilder
+ streamPage layout anpassen und webcma als hintergrund setzen
+ ready checkbox nicht im feld anwählbar
+ timer für buzzer nach drücken (bei multiple buzzer rausnehmen)
 
 --------------------------------
 Zukunft

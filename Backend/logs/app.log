@@ -51,3 +51,37 @@
 {"level":"error","message":"(Endpoints\\authentication\\AuthenticationService.js:66) Password or userID is invalid"}
 {"level":"error","message":"(Endpoints\\authentication\\AuthenticationService.js:66) Password or userID is invalid"}
 {"level":"error","message":"(Endpoints\\authentication\\AuthenticationService.js:66) Password or userID is invalid"}
+{"level":"error","message":"(Endpoints\\authentication\\AuthenticationService.js:66) Password or userID is invalid"}
+{"level":"error","message":"(Endpoints\\authentication\\AuthenticationService.js:66) Password or userID is invalid"}
+{"level":"error","message":"(Endpoints\\authentication\\AuthenticationService.js:66) Password or userID is invalid"}
+{"level":"error","message":"(Endpoints\\authentication\\AuthenticationService.js:66) Password or userID is invalid"}
+{"level":"error","message":"(Endpoints\\authentication\\AuthenticationService.js:66) Password or userID is invalid"}
+{"level":"error","message":"(Endpoints\\authentication\\AuthenticationService.js:66) Password or userID is invalid"}
+{"level":"error","message":"(Endpoints\\authentication\\AuthenticationService.js:66) Password or userID is invalid"}
+{"date":"Wed Mar 27 2024 16:48:19 GMT+0100 (Mitteleuropäische Normalzeit)","error":{},"exception":true,"level":"error","message":"uncaughtException: Cannot access 'sendUpdatePlayers' before initialization\nReferenceError: Cannot access 'sendUpdatePlayers' before initialization\n    at Namespace.<anonymous> (F:\\Quiz app\\Backend\\httpServer.js:67:5)\n    at Namespace.emit (node:events:519:28)\n    at Namespace.emitReserved (F:\\Quiz app\\Backend\\node_modules\\socket.io\\dist\\typed-events.js:56:22)\n    at Namespace._doConnect (F:\\Quiz app\\Backend\\node_modules\\socket.io\\dist\\namespace.js:269:14)\n    at F:\\Quiz app\\Backend\\node_modules\\socket.io\\dist\\namespace.js:231:22\n    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)","os":{"loadavg":[0,0,0],"uptime":751075.921},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","F:\\Quiz app\\Backend\\httpServer.js"],"cwd":"F:\\Quiz app\\Backend","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18429925,"external":20830384,"heapTotal":38383616,"heapUsed":26142792,"rss":74199040},"pid":16432,"uid":null,"version":"v21.6.1"},"stack":"ReferenceError: Cannot access 'sendUpdatePlayers' before initialization\n    at Namespace.<anonymous> (F:\\Quiz app\\Backend\\httpServer.js:67:5)\n    at Namespace.emit (node:events:519:28)\n    at Namespace.emitReserved (F:\\Quiz app\\Backend\\node_modules\\socket.io\\dist\\typed-events.js:56:22)\n    at Namespace._doConnect (F:\\Quiz app\\Backend\\node_modules\\socket.io\\dist\\namespace.js:269:14)\n    at F:\\Quiz app\\Backend\\node_modules\\socket.io\\dist\\namespace.js:231:22\n    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)","trace":[{"column":5,"file":"F:\\Quiz app\\Backend\\httpServer.js","function":null,"line":67,"method":null,"native":false},{"column":28,"file":"node:events","function":"Namespace.emit","line":519,"method":"emit","native":false},{"column":22,"file":"F:\\Quiz app\\Backend\\node_modules\\socket.io\\dist\\typed-events.js","function":"Namespace.emitReserved","line":56,"method":"emitReserved","native":false},{"column":14,"file":"F:\\Quiz app\\Backend\\node_modules\\socket.io\\dist\\namespace.js","function":"Namespace._doConnect","line":269,"method":"_doConnect","native":false},{"column":22,"file":"F:\\Quiz app\\Backend\\node_modules\\socket.io\\dist\\namespace.js","function":null,"line":231,"method":null,"native":false},{"column":11,"file":"node:internal/process/task_queues","function":"process.processTicksAndRejections","line":77,"method":"processTicksAndRejections","native":false}]}
+{"level":"error","message":"(Endpoints\\authentication\\AuthenticationService.js:66) Password or userID is invalid"}
+{"level":"error","message":"(Endpoints\\authentication\\AuthenticationService.js:66) Password or userID is invalid"}
+{"level":"error","message":"(Endpoints\\authentication\\AuthenticationService.js:73) Session Service: Did not find player for player ID: ^TIM"}
+{"level":"error","message":"(Endpoints\\authentication\\AuthenticationService.js:73) Session Service: Did not find player for player ID: ^TIM"}
+{"level":"error","message":"(Endpoints\\authentication\\AuthenticationService.js:73) Session Service: Did not find player for player ID: ^TIM"}
+{"level":"error","message":"(Endpoints\\authentication\\AuthenticationService.js:73) Session Service: Did not find player for player ID: dana"}
+{"level":"error","message":"(Endpoints\\authentication\\AuthenticationService.js:73) Session Service: Did not find player for player ID: TIM"}
+{"level":"error","message":"(Endpoints\\authentication\\AuthenticationService.js:73) Session Service: Did not find player for player ID: TIM"}
+{"level":"error","message":"(Endpoints\\authentication\\AuthenticationService.js:73) Session Service: Did not find player for player ID: TIM"}
+{"level":"error","message":"(Endpoints\\authentication\\AuthenticationService.js:73) Session Service: Did not find player for player ID: dana"}
+{"level":"error","message":"(Endpoints\\authentication\\AuthenticationService.js:73) Session Service: Did not find player for player ID: dana"}
+{"level":"error","message":"(Endpoints\\authentication\\AuthenticationService.js:73) Session Service: Did not find player for player ID: dana"}
+{"level":"error","message":"(Endpoints\\authentication\\AuthenticationService.js:66) Password or userID is invalid"}
+{"level":"error","message":"(Endpoints\\authentication\\AuthenticationService.js:66) Password or userID is invalid"}
+{"level":"error","message":"(Endpoints\\authentication\\AuthenticationService.js:73) Session Service: Did not find player for player ID: tim"}
+{"level":"error","message":"(Endpoints\\authentication\\AuthenticationService.js:73) Session Service: Did not find player for player ID: tim"}
+{"level":"error","message":"(Endpoints\\authentication\\AuthenticationService.js:73) Session Service: Did not find player for player ID: tim"}
+{"level":"error","message":"(Endpoints\\authentication\\AuthenticationService.js:73) Session Service: Did not find player for player ID: tim"}
+{"level":"error","message":"(Endpoints\\authentication\\AuthenticationService.js:73) Session Service: Did not find player for player ID: tim"}
+{"level":"error","message":"(Endpoints\\authentication\\AuthenticationService.js:73) Session Service: Did not find player for player ID: tim"}
+{"level":"error","message":"(Endpoints\\authentication\\AuthenticationService.js:73) Session Service: Did not find player for player ID: tim"}
+{"level":"error","message":"(Endpoints\\authentication\\AuthenticationService.js:73) Session Service: Did not find player for player ID: tim"}
+{"level":"error","message":"(Endpoints\\authentication\\AuthenticationService.js:73) Session Service: Did not find player for player ID: tim"}
+{"level":"error","message":"(Endpoints\\authentication\\AuthenticationService.js:73) Session Service: Did not find player for player ID: tim"}
+{"level":"error","message":"(Endpoints\\authentication\\AuthenticationService.js:73) Session Service: Did not find player for player ID: tim"}
+{"level":"error","message":"(Endpoints\\authentication\\AuthenticationService.js:66) Password or userID is invalid"}

@@ -22,13 +22,19 @@ import io from "socket.io-client";
 import useSound from "use-sound";
 import Navigation from "./Navigation";
 import "../layout/scrollbar.css";
+import "../layout/streamingPage.css";
 import useTSRemoteApp from "../TS5-RemoteAPI/index.ts";
 import "../layout/animatedBorder.css";
+import "../layout/background.css";
 import CameraComponent from "./CameraComponent.js";
 import Webcam from "react-webcam";
 import tom1 from "../images/tom1.jpg";
 import jan1 from "../images/jan3.jpg";
 import tim1 from "../images/tim1.jpg";
+import dana1 from "../images/dana1.jpg";
+import noPic1 from "../images/noPic1.jpg";
+import { ReactComponent as BackgroundSVG } from "../images/background1.svg";
+
 const server = process.env.REACT_APP_API_SERVER;
 // sehen wer spricht - Teamspeak 5 plugin
 
@@ -40,7 +46,7 @@ const StreamingPage = () => {
   const [buzzerPressed, setBuzzerPressed] = useState(false);
   const [buzzerPressedBy, setBuzzerPressedBy] = useState("");
   const [allPoints, setAllPoints] = useState([]); // punkte von allen spieler
-  const [sortedPoints, setSortedPoints] = useState([]); // punkte sortiert
+  const [sortedPoints, setSortedPoints] = useState([]); // punkte ohne chris
   const rightPointsValue = useSelector((state) => state.showMaster.rightPoints); // wert von plus punkten für richtige antwort
   const wrongPointsValue = useSelector((state) => state.showMaster.wrongPoints);
   const [playerMessages, setPlayerMessages] = useState({}); // Nachrichten für jeden Spieler
@@ -62,6 +68,7 @@ const StreamingPage = () => {
   const talkingNames = useRef([]);
   const talkingMap = useRef(new Map());
   const [talkingMap2, setTalkingmap] = useState([]);
+  var playerChris = useRef({});
 
   // let talkers = { names: [] };
   //let talkingNames = [];
@@ -265,10 +272,13 @@ const StreamingPage = () => {
   };
 
   useEffect(() => {
-    const sortedPoints = [...allPoints].sort(
-      (a, b) => b.currentPoints - a.currentPoints
+    const sortedPoints = allPoints.filter(
+      (player) => player.userID !== "Chris"
     );
     setSortedPoints(sortedPoints);
+
+    playerChris.current = allPoints.find((item) => item.userID === "Chris");
+    console.log(playerChris.current, "playerChris.current");
   }, [allPoints]);
   // Funktion zum Aktivieren/Deaktivieren des Bearbeitungsmodus für eine Card
   const toggleEditMode = () => {
@@ -297,27 +307,43 @@ const StreamingPage = () => {
   // );
   const camWidth = "20%";
   const camHeight = "10%";
+
   console.log(talkingMap2, talkingNames.current);
   return (
-    <div>
-      <div className="text-center">
-        <div
-          className="d-flex justify-content-center align-items-center"
-          style={{ marginLeft: "2vw", marginRight: "2vw" }}
-        >
+    <div
+    // className=""
+    // style={{
+    //   backgroundImage: "url(" + background + ")",
+    //   backgroundSize: "cover",
+    //   backgroundPosition: "center center",
+    //   // marginTop: "-10px"
+    // }}
+    >
+      <div className="backgroundContainer">
+        <BackgroundSVG className="backgroundClass" />
+        <BackgroundSVG className="backgroundClass" style={{left: "-100%"}}/>
+        {/* <BackgroundSVG className="backgroundClass" style={{right: "100%"}}/> */}
+        {/* Weitere Kopien des SVG-Elements, je nach Bedarf */}
+      </div>
+      <div className="grid-container2">
+        <div></div>
+        <div>
           <Card
             bg="dark"
-            border={ talkingMap2.includes("dana")?"info":"secondary"}
+            border={talkingMap2.includes("") ? "info" : "secondary"}
             style={{
-              fontSize: "25px",
-              padding: "10px 10px",
-              marginBottom: "40px",
-              marginTop: "40px",
+              fontSize: "22px",
+              // padding: "10px 10px",
+              // marginBottom: "40px",
+              marginTop: "3vh",
               borderRadius: "20px",
             }}
           >
             <Card.Body>
-              <Card.Title className="text-center" style={{ fontSize: "30px" }}>
+              <Card.Title
+                className="grid-item2 text-center"
+                style={{ fontSize: "32px" }}
+              >
                 <h3>
                   Frage {fragenIndex + 1} ({kategorie}):
                 </h3>
@@ -326,138 +352,181 @@ const StreamingPage = () => {
             </Card.Body>
           </Card>
         </div>
+        <div></div>
       </div>
-      {/* <div className="d-flex flex-column align-items-center">
-                <Button
-                    variant={!buzzerPressed ? "primary" : "info"}
-                    style={{ fontSize: '80px', padding: '10px 20px', marginBottom: '20px', marginTop: '40px', borderRadius: "30px" }}
-                    onClick={null}
-                // disabled={buzzerPressed}
-                >
-                    {buzzerPressedBy || "BUZZER!"}
-                </Button>
-            </div> */}
-      <div>
-        <Container fluid>
-          <Row className="justify-content-center align-items-center " md={10}>
-            {/* war vorher sortedPoints */}
-            {allPoints.map((player) => (
-              <Col
-                key={player.userID}
-                md={2}
-                className="mb-3"
-                style={{ minWidth: "50%" }}
+      <div className="flex-container" id="grid-container">
+        {sortedPoints.map((player, index) => (
+          <div className={"flex-item" + index} key={index}>
+            <Card
+              bg="dark"
+              key={index}
+              border={
+                talkingMap2.includes(player.tsName)
+                  ? "info"
+                  : buzzerPressedBy === player.userID
+                  ? "warning"
+                  : player.isReady
+                  ? "success"
+                  : "secondary"
+              }
+              style={{
+                borderRadius: "20px",
+                overflowY: "hidden",
+                backgroundImage: `url(${
+                  player.userID === "Tom"
+                    ? noPic1
+                    : player.userID === "Tim"
+                    ? tim1
+                    : player.userID === "Jan"
+                    ? jan1
+                    : player.userID === "Dana"
+                    ? dana1
+                    : noPic1
+                })`,
+                backgroundSize: "cover",
+                backgroundPosition: "center center",
+                width: "100%",
+                height: "100%",
+              }}
+            >
+              <Card.Body
+                style={{
+                  height: "100%",
+                  paddingBottom: "10px",
+                  display: "flex",
+                  flexDirection: "column",
+                  justifyContent: "space-between",
+                }}
               >
-                <Card
-                  bg="dark"
-                  border={
-                    talkingMap2.includes(player.tsName)
-                      ? "info"
-                      : buzzerPressedBy === player.userID
-                      ? "warning"
-                      : !player.isReady
-                      ? "success"
-                      : "secondary"
-                  }
+                <Card.Title
+                  style={{ fontSize: "30px" }}
+                  className="d-flex justify-content-between align-items-center flex-wrap"
+                >
+                  <div>{player.userID}:</div>
+                  <div>{player.currentPoints} p</div>
+                </Card.Title>
+                {player.userID === "Chris" ? (
+                  <>
+                    <Webcam
+                      style={{ width: "auto", maxHeight: "240px" }}
+                      audio={false}
+                      videoConstraints={{
+                        deviceId: deviceId ? { exact: deviceId } : undefined,
+                      }}
+                    />
+                  </>
+                ) : null}
+                {!player.isHost ? (
+                  <textarea
+                    style={{
+                      width: "100%",
+                      resize: "none",
+                      overflow: "hidden",
+                      boxSizing: "border-box",
+                      fontSize: "20px",
+                      maxHeight: "30px",
+                      backgroundColor: "rgba(255,255,255,0.95)",
+                    }}
+                    value={playerMessages[player.userID]}
+                    readOnly
+                  />
+                ) : null}
+              </Card.Body>
+            </Card>
+          </div>
+        ))}
+        <div
+          className={"flex-chris"}
+          key={5}
+          style={{ display: "flex", flexDirection: "column" }}
+        >
+          <div
+            className="webcam-container"
+            style={{
+              borderRadius: "20px",
+              overflow: "hidden",
+              width: "auto",
+              height: "60%",
+              // marginTop: "20%"
+            }}
+          >
+            <Webcam
+              style={{ width: "100%", height: "100%", objectFit: "scale-down" }}
+              audio={false}
+              videoConstraints={{
+                deviceId: deviceId ? { exact: deviceId } : undefined,
+              }}
+            />
+          </div>
+
+          {playerChris.current ? (
+            <div
+              className="overlay-card"
+              style={{ backgroundColor: "rgba(0, 0, 0, 1)" }}
+            >
+              <Card
+                key={5}
+                border={
+                  talkingMap2.includes(playerChris.current.tsName)
+                    ? "info"
+                    : buzzerPressedBy === playerChris.current.userID
+                    ? "warning"
+                    : playerChris.current.isReady
+                    ? "success"
+                    : "secondary"
+                }
+                style={{
+                  borderRadius: "20px",
+                  overflowY: "hidden",
+                  height: "60%", // Anpassen der Höhe nach Bedarf
+                  width: "100%",
+                  position: "absolute",
+                  top: "0%",
+                  backgroundColor: "rgba(0,0,0,0.0)",
+                }}
+              >
+                <Card.Body
                   style={{
-                    borderRadius: "20px",
-                    maxHeight: "38vh",
-                    overflowY: "hidden",
-                    marginTop: "0.75vw",
-                    minWidth: camWidth,
+                    height: "100%",
+                    paddingBottom: "10px",
+                    display: "flex",
+                    flexDirection: "column",
+                    justifyContent: "space-between",
                   }}
                 >
-                  <Card.Body
-                    className="d-flex flex-column"
-                    style={{ minHeight: "100%", paddingBottom: "10px" }}
+                  <Card.Title
+                    style={{ fontSize: "30px" }}
+                    className="d-flex justify-content-between align-items-center flex-wrap"
                   >
-                    <Card.Title
-                      style={{ fontSize: "30px" }}
-                      className="d-flex justify-content-between align-items-center flex-wrap"
-                    >
-                      <div>{player.userID}:</div>
-                      <div>{player.currentPoints} p</div>
-                    </Card.Title>
-                    {/* <div
-                      style={{
-                        minWidth: "320px",
-                        minHeight: "180px",
-                        backgroundColor: "rgba(0,0,0,0.95)",
-                      }}
-                    ></div> */}
-                    {player.userID == "Chris" ? (
-                      <>
-                        <Webcam
-                          style={{ width: "auto", maxHeight: "240px" }}
-                          audio={false}
-                          videoConstraints={{
-                            deviceId: deviceId
-                              ? { exact: deviceId }
-                              : undefined,
-                            // width: "100%",
-                            // height: "100%",
-                          }}
-                        />
-                      </>
-                    ) : 
-                    // player.userID !== "Tim" ? (
-                    //   <>
-                    //     <Webcam
-                    //       style={{ width: "auto", maxHeight: "240px" }}
-                    //       audio={false}
-                    //       videoConstraints={{
-                    //         deviceId: deviceId2
-                    //           ? { exact: deviceId2 }
-                    //           : undefined,
-                    //         // width: "100%",
-                    //         // height: "100%",
-                    //       }}
-                    //     />
-                    //   </>
-                    // ) :
-                     (
-                      <>
-                        <Image
-                          src={
-                            player.userID == "Tom"
-                              ? tom1
-                              : player.userID == "Tim"
-                              ? tim1
-                              : jan1
-                          }
-                          style={{
-                            width: "auto",
-                            maxHeight: "240px",
-                            objectFit: "scale-down",
-                            objectPosition: "center",
-                          }}
-                        />
-                      </>
-                    )}
-                    <div
-                      className="d-flex flex-column flex-grow-1 align-items-start"
-                      style={{ overflowY: "auto" }}
-                    >
-                      <textarea
-                        style={{
-                          width: "100%",
-                          resize: "vertical",
-                          boxSizing: "border-box",
-                          fontSize: "20px",
-                          minHeight: "20px",
-                          backgroundColor: "rgba(255,255,255,0.95)",
-                        }}
-                        value={playerMessages[player.userID]}
-                        readOnly
-                      />
+                    <div className="text-with-outline">
+                      {playerChris.current.userID}:
                     </div>
-                  </Card.Body>
-                </Card>
-              </Col>
-            ))}
-          </Row>
-        </Container>
+                    {/* <div>{playerChris.current.currentPoints} p</div> */}
+                  </Card.Title>
+                  {playerChris.current.isHost ? (
+                    <textarea
+                      style={{
+                        width: "100%",
+                        overflow: "hidden",
+                        resize: "none",
+                        boxSizing: "border-box",
+                        fontSize: "20px",
+                        maxHeight: "30px",
+                        backgroundColor: "rgba(255,255,255,0.95)",
+                      }}
+                      value={playerMessages[playerChris.current.userID]}
+                      readOnly
+                    />
+                  ) : null}
+                </Card.Body>
+              </Card>
+            </div>
+          ) : null}
+        </div>
+
+        {/* {(index) % 1 === 0  ? <div></div> : null} */}
       </div>
+
       <Navigation />
     </div>
   );

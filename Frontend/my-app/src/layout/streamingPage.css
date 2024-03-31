@@ -1,20 +1,93 @@
-.grid-container {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: 2fr 2fr 2fr;
-    background-color: #2196F3;
-    padding: 10px;
-  }
-  .grid-container2 {
-    display: grid;
-    grid-template-columns: 1fr 7fr 1fr;
-    background-color: #2196F3;
-    padding: 10px;
-  }
-  .grid-item {
-    background-color: rgba(255, 255, 255, 0.8);
-    border: 1px solid rgba(0, 0, 0, 0.8);
-    padding: 20px;
-    font-size: 30px;
-    text-align: center;
-  }
+:root {
+  --space-side: 2vw;
+  --card-padding-top: 1vh;
+  --line-height: 1;
+  --flex-width: 28%
+}
+.flex-container {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-start;
+  align-content: space-between; 
+  height: calc(100vh - 25vh);
+  margin-top: 3vh;
+}
+.flex-chrisMeins{
+  position: fixed;
+  /* top: 40%; */
+  align-self: center;
+  min-Height: 50%;
+  width: auto;
+  margin-top: 20vh;
+  /* margin-left: var(--space-side);
+  padding-bottom: var(--card-padding-top); */
+}
+.flex-chris {
+  position: relative; /* Ändern Sie dies von fixed zu relative */
+  align-self: center;
+  width: auto;
+  min-height: 50vh; /* Anpassen der Höhe nach Bedarf */
+  margin-top: 20vh;
+  display: flex; /* Neue */
+  flex-direction: column; /* Neue */
+  justify-content: space-between; /* Neue */
+}
+
+.flex-item1 {
+  align-self: flex-start; 
+  min-Height: 50%;
+  width: var(--flex-width);
+  margin-left: var(--space-side);
+  padding-bottom: var(--card-padding-top);
+}
+.flex-item3 {
+  align-self: flex-start;
+  order: 1; 
+  min-Height: 50%;
+  width: var(--flex-width);
+  margin-right: var(--space-side);
+  padding-bottom: var(--card-padding-top);
+}
+.flex-item2 {
+  align-self: flex-end; 
+  min-Height: 50%;
+  width: var(--flex-width);
+  margin-left: var(--space-side);
+  padding-top: var(--card-padding-top);
+
+}
+
+.flex-item0 {
+  align-self: flex-end; 
+  order: 2; 
+  min-Height: 50%;
+  width: var(--flex-width);
+  margin-right: var(--space-side);
+  padding-top: var(--card-padding-top);
+}
+
+.grid-container2 {
+  display: grid;
+  grid-template-columns: var(--space-side) 10fr var(--space-side);
+  margin-bottom: 2vh;
+  margin-top: 0vh;
+  
+}
+.grid-item2{
+  min-height: calc(var(--line-height) * 2);
+
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;
+  max-width: 500px; /* Maximale Breite der Karte */
+  margin: 10px; /* Abstand zwischen den Karten */
+}
+body {
+  /* font-family: 'Lato Black', Impact, sans-serif; */
+  /* -webkit-text-stroke: 0.5px black; */
+ }

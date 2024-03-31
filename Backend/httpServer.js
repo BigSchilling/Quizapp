@@ -63,8 +63,26 @@ const server = http.createServer(app); // Änderung hier von https auf http
 const io = socketIo(server, { cors: { origin: "*" } });
 var buzzerPressed = false;
 io.on('connection', (socket) => {
+    // funktion immer aufrufen wenn punkte irgendwie geändert wie in sendRightPoints
+    // sendet die eingeloggten spieler und erneuert die punkte anzeige
+    const sendUpdatePlayers = async (answer) => { // boolean für ton mitschicken
+        try {
+            var players = await playerService.getPlayers();
+            players = players.filter(r => r.loggedIn === true);
+            var playerPoints = players.reduce((acc, player) => {
+                if (player.loggedIn) {
+                    console.log(player.userID + ": " + player.currentPoints + " p");
+                    acc[player.userID] = parseInt(player.currentPoints);
+                    return acc;
+                }
+            }, {});
+            io.emit("UpdatePlayers", playerPoints, players, answer);
+        } catch (error) {
+            console.error('Error on sendUpdatePlayers, couldnt update all :', error);
+        }
+    };
     console.log('Neue Verbindung:', socket.id);
-
+    sendUpdatePlayers(null)
     // sounds senden
     io.emit("sounds", {
         buzzerSound: buzzerSound,
@@ -87,22 +105,6 @@ io.on('connection', (socket) => {
     // wer hat den buzzer gedrückt? 
     socket.on("sendBuzzerPressed", (playerID) => {
         buzzerPressed = true;
-        // const now = new Date()
-        // const year = now.getFullYear();
-        // const month = now.getMonth() + 1; // Monate sind 0-basiert
-        // const day = now.getDate();
-        // const hours = now.getHours();
-        // const minutes = now.getMinutes();
-        // const seconds = now.getSeconds();
-        // const milliseconds = now.getMilliseconds();
-        // console.log(playerID + " hat den buzzer um: ")
-        // console.log("Jahr: " + year);
-        // console.log("Monat: " + month);
-        // console.log("Tag: " + day);
-        // console.log("Stunde: " + hours);
-        // console.log("Minute: " + minutes);
-        // console.log("Sekunde: " + seconds);
-        // console.log("Millisekunde: " + milliseconds);
         if (buzzerPressed) {
             console.log("buzzerPressed by " + playerID)
             io.emit("buzzerPressed", playerID)
@@ -111,6 +113,11 @@ io.on('connection', (socket) => {
     // showmaster seite button hinzufügen
     socket.on("sendBuzzerReleased", () => {
         buzzerPressed = false
+        io.emit("buzzerReleased")
+    })
+    socket.on("sendBuzzerReleasedWithTimer", (body) => {
+        buzzerPressed = false
+        io.emit("buzzerReleasedWithTimer", body)
         io.emit("buzzerReleased")
     })
     socket.on("sendBuzzerReleasedFree", () => {
@@ -127,7 +134,17 @@ io.on('connection', (socket) => {
             console.error('Error on sendLogOutAll, couldnt update all :', error);
         }
     });
-    // 
+    // einen spieler ausloggen
+    socket.on('sendLogOutPlayer', async (body) => {
+        try {
+            const player = await playerService.getPlayer(body.userID)
+            const result = await playerService.updatePlayer(player, {loggedIn: false})
+            io.emit("logOutPlayer", body)
+            sendUpdatePlayers(null)
+        } catch (error) {
+            console.error('Error on sendLogOutAll, couldnt update all :', error);
+        }
+    });
     socket.on('sendLogIn', async (body) => {
         console.log("body aus sendLogin: " + body)
         try {
@@ -211,24 +228,7 @@ io.on('connection', (socket) => {
             console.error('Error on sendWrongPoints, couldnt update all :', error);
         }
     });
-    // funktion immer aufrufen wenn punkte irgendwie geändert wie in sendRightPoints
-    // sendet die eingeloggten spieler und erneuert die punkte anzeige
-    const sendUpdatePlayers = async (answer) => { // boolean für ton mitschicken
-        try {
-            var players = await playerService.getPlayers();
-            players = players.filter(r => r.loggedIn === true);
-            var playerPoints = players.reduce((acc, player) => {
-                if (player.loggedIn) {
-                    console.log(player.userID + ": " + player.currentPoints + " p");
-                    acc[player.userID] = parseInt(player.currentPoints);
-                    return acc;
-                }
-            }, {});
-            io.emit("UpdatePlayers", playerPoints, players, answer);
-        } catch (error) {
-            console.error('Error on sendUpdatePlayers, couldnt update all :', error);
-        }
-    };
+    
     // New Session - reset points, current right wrongs to 0 
     socket.on('sendNewSession', async () => {
         try {
@@ -278,6 +278,8 @@ io.on('connection', (socket) => {
     );
     socket.on('sendHideQuestion', async (body) => {
         try {
+            // const result = await playerService.updateAllPlayers({isReady: false})
+            // sendUpdatePlayers(null)
             io.emit("hideQuestion", body)
         } catch (error) {
             console.error('Error on sendHideQuestion, couldnt update all :', error);
@@ -293,7 +295,7 @@ io.on('connection', (socket) => {
             // io.emit("logOutAll")
             sendUpdatePlayers(null)
         } catch (error) {
-            console.error('Error on sendLogOutAll, couldnt update all :', error);
+            console.error('Error on sendReadyChange, couldnt update all :', error);
         }
     });
     socket.on('getBuzzerEvents', async () => {

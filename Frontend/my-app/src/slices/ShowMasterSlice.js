@@ -4,7 +4,8 @@ const initialState = {
   createPlayerClicked: false,
   rightPoints: 5,
   wrongPoints: 1,
-  manuellPoints: 3
+  manuellPoints: 5,
+  timer: 2000
 };
 
 // Erstelle ein Slice mit einem Reducer und Aktionen
@@ -27,10 +28,13 @@ const showMasterSlice = createSlice({
     setManuellPoints: (state, action) => {
       state.manuellPoints = action.payload.manuellPoints;
     },
+    setTimer: (state, action) => {
+      state.timer = action.payload.timer;
+    },
   },
 });
 
 // Exportiere Reducer und Aktionen
-export const { createPlayerTrue, createPlayerFalse, setRightPoints,setManuellPoints } = showMasterSlice.actions;
+export const { createPlayerTrue, createPlayerFalse, setRightPoints,setManuellPoints, setTimer } = showMasterSlice.actions;
 export default showMasterSlice.reducer;
 

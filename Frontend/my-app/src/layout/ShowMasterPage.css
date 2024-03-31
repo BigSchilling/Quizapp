@@ -1,0 +1,17 @@
+:root {
+    --space-side: 10vw;
+    --card-padding-top: 1vh;
+    --line-height: 1;
+    --flex-width: 28%
+  }
+.grid-container2 {
+    display: grid;
+    grid-template-columns: var(--space-side) 12vw var(--space-side);
+    margin-bottom: 5vh;
+    margin-top: 0vh;
+    text-align: center;
+  }
+  body {
+    /* font-family: 'Lato Black', Impact, sans-serif; */
+    /* -webkit-text-stroke: 0.5px black; */
+   }

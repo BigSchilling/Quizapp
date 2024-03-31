@@ -1,0 +1,25 @@
+.backgroundClass {
+    z-index: -5;
+    position: fixed;
+    background-repeat: repeat;
+    
+}
+
+#OBJECTS {
+    animation: move 30s linear infinite;
+    }
+
+@keyframes move {
+    0% {
+        opacity: 1;
+        transform: translateY(0) translateX(0);
+    }
+   50% {
+        opacity: 1;
+        transform: translateY(0) translateX(30%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0) translateX(0%);
+    }
+}
