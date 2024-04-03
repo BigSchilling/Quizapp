@@ -1,7 +1,8 @@
 IMMER IP ADRESSE IN ENV SETZEN !!!!!!!
 
 TODO--------------
-font und schrift kontur
+ bild einblenden (json reiter hinzufügen mit "typ" und dann frage, bild, distance etc.)
+ font und schrift kontur
  showmasterpage antworten wrappen
  tims facecam hinzufügen (geht nicht)
  sortieren, antworten radnomized anzeigen und bewegen bei anklicken sieht host was gedrückt wird

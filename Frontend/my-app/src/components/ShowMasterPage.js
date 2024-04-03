@@ -1,3 +1,5 @@
+import "../layout/ShowMasterPage.css";
+import "../layout/scrollbar.css";
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import {
@@ -15,13 +17,12 @@ import {
   createPlayerTrue,
   createPlayerFalse,
   setRightPoints,
-  setManuellPoints, setTimer
+  setManuellPoints,
+  setTimer,
 } from "../slices/ShowMasterSlice";
 import io from "socket.io-client";
 import FragenData from "../questionsCatalog/folge4.json"; // datei mit fragen
 import useSound from "use-sound";
-import "../layout/scrollbar.css";
-import "../layout/ShowMasterPage.css";
 import tom1 from "../images/tom1.jpg";
 import jan1 from "../images/jan3.jpg";
 import tim1 from "../images/tim1.jpg";
@@ -329,7 +330,7 @@ const ShowMasterPage = () => {
   };
   var maxHeightVar = "8rem";
   return (
-    <div>
+    <div className="grid-container3">
       <input
         type="range"
         min="0"
@@ -339,18 +340,20 @@ const ShowMasterPage = () => {
         onChange={(e) => setVolume(parseFloat(e.target.value))}
       />
       <div className="grid-container2">
-        <div style={{ width: "100%" }}>
+        <div style={{ minWidth: "100%" }}>
           <Button
             variant="primary"
-            style={{ width: "fit-content", minHeight: "100px" }}
+            className="text-center"
+            style={{ width: "100%", height: "100%" }}
             onClick={() => changeFragenIndex(-1)}
           >
             {"vorherige Frage"}
           </Button>
         </div>
-        <div className="text-center">
+        <div style={{ width: "100%" }}>
           <Card
             bg="dark"
+            // className="text-center"
             border="secondary"
             style={{
               fontSize: "30px",
@@ -372,7 +375,7 @@ const ShowMasterPage = () => {
         <div>
           <Button
             variant="primary"
-            style={{ width: "fit-content", minHeight: "100px" }}
+            style={{ width: "100%", height: "100%" }}
             onClick={() => changeFragenIndex(1)}
           >
             {"nächste Frage"}

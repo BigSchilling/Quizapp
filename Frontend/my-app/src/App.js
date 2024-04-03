@@ -8,6 +8,7 @@ import PlayerCreate from './components/Player/PlayerCreate';
 import StreamingPage from './components/StreamingPage';
 import Navigation from './components/Navigation';
 import TwitchCam from './components/TwitchCam';
+import ImageToMap from './components/ImageToMap';
 import "./layout/vapor.css";
 
 function App() {
@@ -40,6 +41,7 @@ function App() {
               <Route path="/" element={<LandingPage />} />
               <Route path="/stream" element={<StreamingPage />} />
               <Route path="/test" element={<TwitchCam />} />
+              <Route path="/map" element={<ImageToMap />} />
             </>
           )}
 
