@@ -6,6 +6,7 @@ import {
   Form,
   Card,
   Container,
+  Image,
 } from "react-bootstrap";
 import { useDispatch, useSelector } from "react-redux";
 import io from "socket.io-client";
@@ -37,6 +38,7 @@ const StartPage = () => {
   const [frage, setFrage] = useState();
   const [fragenIndex, setFragenIndex] = useState(1);
   const [kategorie, setKategorie] = useState();
+  const [assets, setAssets] = useState();
   const buttonRef = useRef(null);
   const inputRef = useRef(null); // Ref für das Eingabefeld
   const [isReady, setIsReady] = useState(false);
@@ -136,9 +138,10 @@ const StartPage = () => {
 
     // frage anzeigen
     newSocket.on("showQuestion", (body) => {
-      console.log("showQuestion");
+      console.log("assets start", JSON.stringify(body.assets));
       setFrage(body.frage);
       setFragenIndex(parseInt(body.fragenIndex));
+      setAssets(body.assets);
     });
     newSocket.on("hideQuestion", (body) => {
       setFrage();
@@ -280,8 +283,8 @@ const StartPage = () => {
             style={{
               fontSize: "30px",
               padding: "10px 10px",
-              marginBottom: "40px",
-              marginTop: "40px",
+              marginBottom: "20px",
+              marginTop: "20px",
             }}
           >
             <Card.Body>
@@ -295,6 +298,9 @@ const StartPage = () => {
           </Card>
         </div>
       </div>
+      <div className="d-flex justify-content-center align-items-center">
+        <Image src={assets} style={{ width: "25%" }} />
+      </div>
       <div
         className="d-flex justify-content-center align-items-center"
         onClick={handleClickOutside}
@@ -305,7 +311,7 @@ const StartPage = () => {
           style={{
             fontSize: "120px",
             padding: "10px 20px",
-            marginBottom: "40px",
+            marginBottom: "20px",
             marginTop: "40px",
             borderRadius: "30px",
             minHeight: "15vh",
@@ -374,7 +380,7 @@ const StartPage = () => {
       </div>
       <div
         className="d-flex flex-wrap justify-content-center align-items-center"
-        style={{ gap: "20px" }}
+        style={{ gap: "10px" }}
         onClick={handleClickOutside}
       >
         {allPoints.map((player) => (
@@ -406,7 +412,7 @@ const StartPage = () => {
                 })`,
                 backgroundSize: "cover",
                 backgroundPosition: "center center",
-                marginTop: "5vh",
+                marginTop: "2vh",
                 width: "18vw",
                 minHeight: "25vh",
               }}

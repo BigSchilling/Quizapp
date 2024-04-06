@@ -1,0 +1,21 @@
+{
+    "fragen": [
+      {
+        "kategorie": "Buzzer",
+        "frage": "Was ist die Hauptstadt von Frankreich?",
+        "antworten": ["Paris"],
+        "assets": ["https://infocafe.org/wp-content/uploads/2021/02/Summoners-Rift-1-1536x1093.jpg", ""]
+      },
+      {
+        "kategorie": "Multiple Buzzer",
+        "frage": "Welche Farben hat die deutsche Flagge?",
+        "antworten": ["Schwarz", "Rot", "Gold"]
+      },
+      {
+        "kategorie": "Schätzfrage",
+        "frage": "Wie viele Bäume gibt es.",
+        "antworten": ["12"]
+      }
+    ]
+  }
+  

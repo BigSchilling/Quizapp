@@ -21,11 +21,12 @@ import {
 import io from "socket.io-client";
 import useSound from "use-sound";
 import Navigation from "./Navigation";
-import "../layout/scrollbar.css";
 import "../layout/streamingPage.css";
+import "../layout/scrollbar.css";
 import useTSRemoteApp from "../TS5-RemoteAPI/index.ts";
 import "../layout/animatedBorder.css";
 import "../layout/background.css";
+import "../layout/background2.css";
 import CameraComponent from "./CameraComponent.js";
 import Webcam from "react-webcam";
 import tom1 from "../images/tom1.jpg";
@@ -34,7 +35,7 @@ import tim1 from "../images/tim1.jpg";
 import dana1 from "../images/dana1.jpg";
 import noPic1 from "../images/noPic1.jpg";
 import { ReactComponent as BackgroundSVG } from "../images/background1.svg";
-
+import { ReactComponent as BackgroundSVG2 } from "../images/background2.svg";
 const server = process.env.REACT_APP_API_SERVER;
 // sehen wer spricht - Teamspeak 5 plugin
 
@@ -58,6 +59,7 @@ const StreamingPage = () => {
   const [frage, setFrage] = useState();
   const [fragenIndex, setFragenIndex] = useState(0);
   const [kategorie, setKategorie] = useState();
+  const [assets, setAssets] = useState();
   // Sound
   const [volume, setVolume] = useState(0.3);
   const [playSound, { error }] = useSound("/pfad/zur/sounddatei.mp3", {
@@ -243,12 +245,14 @@ const StreamingPage = () => {
       setFrage(body.frage);
       setKategorie(body.kategorie);
       setFragenIndex(parseInt(body.fragenIndex));
+      setAssets(body.assets);
     });
     newSocket.on("streamingQuestion", (body) => {
       console.log("streamingQuestion");
       setFrage(body.frage);
       setKategorie(body.kategorie);
       setFragenIndex(parseInt(body.fragenIndex));
+      setAssets(body.assets);
     });
     // newSocket.on('hideQuestion', (body) => {
     //     setFrage()
@@ -320,9 +324,9 @@ const StreamingPage = () => {
     // }}
     >
       <div className="backgroundContainer">
+      {/* <BackgroundSVG2 className="backgroundClass2" /> */}
         <BackgroundSVG className="backgroundClass" />
-        <BackgroundSVG className="backgroundClass" style={{left: "-100%"}}/>
-        {/* <BackgroundSVG className="backgroundClass" style={{right: "100%"}}/> */}
+        <BackgroundSVG className="backgroundClass" style={{ left: "-100%" }} />
         {/* Weitere Kopien des SVG-Elements, je nach Bedarf */}
       </div>
       <div className="grid-container2">
@@ -436,17 +440,32 @@ const StreamingPage = () => {
           </div>
         ))}
         <div
-          className={"flex-chris"}
+          className={"flex-chrisBild"}
           key={5}
           style={{ display: "flex", flexDirection: "column" }}
         >
+         {assets? <div id="bild-placeholder" className="image-placeholder">
+            <Card
+              border="warning"
+              style={{borderWidth: "3px" ,borderRadius: "10px", overflowY: "hidden" }}
+            >
+              <div className="image-container">
+                <Image
+                  src={assets}
+                  className="image"
+                  alt="Bild"
+                />
+              </div>
+            </Card>
+          </div> : null}
+
           <div
-            className="webcam-container"
+            className="webcam-container "
             style={{
               borderRadius: "20px",
               overflow: "hidden",
               width: "auto",
-              height: "60%",
+              height: "65%",
               // marginTop: "20%"
             }}
           >
@@ -478,10 +497,10 @@ const StreamingPage = () => {
                 style={{
                   borderRadius: "20px",
                   overflowY: "hidden",
-                  height: "60%", // Anpassen der Höhe nach Bedarf
+                  height: "65%", // Anpassen der Höhe nach Bedarf
                   width: "100%",
                   position: "absolute",
-                  top: "0%",
+                  top: "35%",
                   backgroundColor: "rgba(0,0,0,0.0)",
                 }}
               >

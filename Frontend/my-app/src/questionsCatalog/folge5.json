@@ -1,0 +1,514 @@
+{
+  "fragen": [
+    {
+      "kategorie": "Eintippen",
+      "frage": "Was ist der größte Ozean der Welt?",
+      "antworten": [
+        "Der Pazifische Ozean"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Was ist der größte fliegende Vogel der Welt?",
+      "antworten": [
+        "Der Wanderalbatros"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Was war 1980 der beliebteste Name in Deutschland?",
+      "antworten": [
+        "Christian"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Die Rosinenbomber brachten Lebenswichtiges nach Berlin. Welches Tier wurde eingeflogen?",
+      "antworten": [
+        "Ein Kamel namens Clarence"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Was trugen freie Bürger typischerweise im römischen Reich?",
+      "antworten": [
+        "Eine Toga"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Welcher Berufsgruppe kann der Gruß \"Glück auf\" zugeordnet werden?",
+      "antworten": [
+        "Bergmann"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Mit welcher Tiergruppe sind die Dinosaurier am engsten verwandt?",
+      "antworten": [
+        "Vögel"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Eintippen",
+      "frage": "Welche Gürtelfarbe kann im Kampfsport Karate nicht verdient werden? a) schwarz, b) grün, c) rot, d) weiß",
+      "antworten": [
+        "c) rot"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "In welchem Jahr wurde Angela Merkel Bundeskanzlerin?",
+      "antworten": [
+        "2005"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Was ist eine Primzahl?",
+      "antworten": [
+        "Eine Zahl, die nur durch 1 und sich selbst teilbar ist"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Für welche Erfindung ist Alfred Nobel bekannt?",
+      "antworten": [
+        "Dynamit"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Schätzfrage",
+      "frage": "Vor 54 Jahren landete Apollo 11 auf dem Mond. Wie groß war der Arbeitsspeicher der Rakete?",
+      "antworten": [
+        "4 kB"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Was war das Ziel des Manhattan Project welches 1942 vom US-Militär erschaffen wurde?",
+      "antworten": [
+        "der Bau der Atombombe"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Erkennst du das Bild?",
+      "frage": "Wie heißt das hier gezeigte Zeichen und wie schreibt man es mit einer deutschen Tastatur?",
+      "antworten": [
+        "Backslash, [Alt Gr] + [ß]"
+      ],
+      "assets": [
+        "https://i.ibb.co/DrFnDQy/symbol.png"
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Wie heißt der Motor, der vom gleichnamigen Erfinder entwickelt wurde und auf einem Rotationskolben anstelle eines gängigen Hubkolbens beruht?",
+      "antworten": [
+        "Wankelmotor"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Welche Farbe hat das Fruchtfleisch einer Kulturheidelbeere?",
+      "antworten": [
+        "Weiß/grünlich"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Was sind die vier Hauptzutaten einer japanischen Sojasoße?",
+      "antworten": [
+        "Sojabohnen, Getreide, Salz und Wasser"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "In welchem Bundesland gibt es Dibbelabbes",
+      "antworten": [
+        "Saarland"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Schätzfrage",
+      "frage": "Wie viel Gemüse konsumiert der durchschnittliche Deutsche im Jahr?",
+      "antworten": [
+        "102,6 kg"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Erkennst du das Bild?",
+      "frage": "Welches Gericht ist hier zu sehen?",
+      "antworten": [
+        "Miso Suppe"
+      ],
+      "assets": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Miso_Soup_001.jpg/1280px-Miso_Soup_001.jpg"
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Welche Krankheit war im 14. Jahrhundert für schätzungsweise 25 Millionen Tote verantwortlich?",
+      "antworten": [
+        "Der Schwarze Tod aka. die Pest"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Wie nennt man Deutschland von 1918 bis 1933?",
+      "antworten": [
+        "Weimarer Republik"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "1945 wurden die Vereinten Nationen (UNO) gegründet. Wie hieß ihr Vorgänger?",
+      "antworten": [
+        "Völkerbund"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Welches historische Ereignis begann 1789?",
+      "antworten": [
+        "Die Französische Revolution"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Wodurch wurde der trojanische Krieg ausgelöst?",
+      "antworten": [
+        "Durch die Entführung von Helena"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Welches Land hat die Währung Baht ฿?",
+      "antworten": [
+        "Thailand"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Welcher Berg war vor dem Januar 2015 der größte Berg Berlins?",
+      "antworten": [
+        "Teufelsberg"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Was ist das spanische Nationaltier?",
+      "antworten": [
+        "Der Stier"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Wo befindet sich der größte Vulkan der Erde?\n",
+      "antworten": [
+        "der Mauna Loa befindet sich in Hawaii"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Gegen welche andere Stadt setzte sich Bonn 1949 bei der Wahl zur Bundeshauptstadt mit 33 zu 29 Stimmen durch?",
+      "antworten": [
+        "Frankfurt am Main"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Wie lange dauert es bis die Bombe in CS2 nach dem planten explodiert?",
+      "antworten": [
+        "40 Sekunden"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Erkennst du das Bild?",
+      "frage": "Welches Videospiel ist hier zu sehen?",
+      "antworten": [
+        "Lego Star Wars: Die komplette Saga"
+      ],
+      "assets": [
+        "https://i.ibb.co/G5s7rQh/lego.png"
+      ]
+    },
+    {
+      "kategorie": "Schätzfrage",
+      "frage": "Wie oft wurde Wii Sports verkauft und welchen Platz nimmt es damit bei den meistverkauften Videospielen ein? (Schätzfrage)",
+      "antworten": [
+        "ca. 82,9 Millionen Mal, 4. Platz"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Mit welchem außergewöhnlichem Eingabegerät wird Donkey Kong Jungle Beat aus dem Jahr 2005 gespielt?",
+      "antworten": [
+        "DK Bongos"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Schätzfrage",
+      "frage": "Wie viel Prozent der Steam Elden Ring Spieler haben alle Achievements freigeschaltet?",
+      "antworten": [
+        "9,2%"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Welches Instrument kommt im Sinfonieorchester am meisten vor?",
+      "antworten": [
+        "Violine"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Welche Band hatte mit „Barbie Girl“ einen Nummer-1-Hit?",
+      "antworten": [
+        "Aqua"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Erkennst du das Bild?",
+      "frage": "Was ist das für ein Instrument?",
+      "antworten": [
+        "Fagott"
+      ],
+      "assets": [
+        "https://www.musikschule-kriens.ch/public/upload/assets/1391/rendition/thumb_3col.jpg?fp=1449006022000"
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Wer gewann 2010 den Eurovision Song Contest?",
+      "antworten": [
+        "Lena Meyer-Landrut"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Schätzfrage",
+      "frage": "Wann wurde die Software Auto-Tune von Antares vorgestellt?",
+      "antworten": [
+        "1996"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Schätzfrage",
+      "frage": "Wann wurde das menschliche Genom vollständig entschlüsselt? (YYYY)",
+      "antworten": [
+        "Mai 2021"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Aus was entsteht Östrogen?",
+      "antworten": [
+        "Aus der Umwandlung von Testosteron"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Aus was besteht ein Proton?",
+      "antworten": [
+        "2 Up-Quarks, 1 Down-Quark"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Welche Gemeinsamkeit haben die Vitamine E, D, K und A?",
+      "antworten": [
+        "Sie sind alle fettlöslich"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Eintippen",
+      "frage": "Was ist ein Kilometer in Nanometer?",
+      "antworten": [
+        "Eine Billion oder 1.000.000.000.000 oder 10^12 Nanometer"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Zu Beginn des 17. Jahrhundert wurde eine Gedichtform bestehend aus 14 Versen beliebt. Wie heißt diese?",
+      "antworten": [
+        "Sonett"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Welcher Stil wurde Picasso zugeordnet?",
+      "antworten": [
+        "Surrealismus"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Wie nennt man die Darstellung des nackten menschlichen Körpers in der Kunst?",
+      "antworten": [
+        "Akt"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Wie nennt man ein Bild, das mit Wasserfarben auf Papier gemalt ist?",
+      "antworten": [
+        "Aquarell"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Fotografen schwärmen gern von der \"blauen Stunde\". Was ist das überhaupt?",
+      "antworten": [
+        "Die Zeit kurz vor Sonnenaufgang und kurz nach Sonnenuntergang"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Schätzfrage",
+      "frage": "Wie oft gab es in dieser Folge eine falsche Antwort?",
+      "antworten": [
+        "test"
+      ],
+      "assets": [
+        ""
+      ]
+    }
+  ]
+}

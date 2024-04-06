@@ -1,7 +1,7 @@
 IMMER IP ADRESSE IN ENV SETZEN !!!!!!!
 
 TODO--------------
- bild einblenden (json reiter hinzufügen mit "typ" und dann frage, bild, distance etc.)
+ bild einblenden nur noch streamingpage (json reiter hinzufügen mit "typ" und dann frage, bild, distance etc.)
  font und schrift kontur
  showmasterpage antworten wrappen
  tims facecam hinzufügen (geht nicht)

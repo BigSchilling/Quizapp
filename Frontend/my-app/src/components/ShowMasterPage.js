@@ -11,7 +11,7 @@ import {
   Row,
   Col,
   Form,
-  FormGroup,
+  FormGroup, Image
 } from "react-bootstrap";
 import {
   createPlayerTrue,
@@ -21,7 +21,7 @@ import {
   setTimer,
 } from "../slices/ShowMasterSlice";
 import io from "socket.io-client";
-import FragenData from "../questionsCatalog/folge4.json"; // datei mit fragen
+import FragenData from "../questionsCatalog/test.json"; // datei mit fragen
 import useSound from "use-sound";
 import tom1 from "../images/tom1.jpg";
 import jan1 from "../images/jan3.jpg";
@@ -282,12 +282,17 @@ const ShowMasterPage = () => {
       resetShowQuestion(newValue);
       resetAnswerToggles();
       setFragenIndex(newValue);
+      setTimerChange(2000)
+      dispatch(setManuellPoints({ manuellPoints: 5 }))
       const frage = fragen[newValue].frage;
       const kategorie = fragen[newValue].kategorie;
+      const assets = fragen[newValue].assets;
+      
       socket.emit("sendStreamingQuestion", {
         frage: frage,
         fragenIndex: newValue,
         kategorie: kategorie,
+        assets: assets
       });
     }
   };
@@ -303,10 +308,13 @@ const ShowMasterPage = () => {
       const frage = fragen[fragenIndex].frage;
       const value = fragenIndex;
       const kategorie = fragen[value].kategorie;
+      const assets = fragen[value].assets;
+      console.log("asses showmaster", assets)
       socket.emit("sendShowQuestion", {
         frage: frage,
         fragenIndex: value,
         kategorie: kategorie,
+        assets: assets
       });
     }
   };
@@ -371,6 +379,7 @@ const ShowMasterPage = () => {
               </Card.Title>
             </Card.Body>
           </Card>
+          
         </div>
         <div>
           <Button
@@ -382,8 +391,10 @@ const ShowMasterPage = () => {
           </Button>
         </div>
       </div>
+        
       <Container>
         <div className="text-center">
+        
           <Button
             variant={showQuestion ? "dark" : "secondary"}
             style={{ marginBottom: "20px" }}
@@ -402,18 +413,20 @@ const ShowMasterPage = () => {
           >
             {fragen[fragenIndex].antworten.map((antwort, antwortIndex) => (
               <Button
-                key={antwortIndex}
-                variant={answerToggles[antwortIndex] ? "success" : "dark"}
-                style={{ fontSize: "20px" }}
-                onClick={() => setAnswerToggleButton(antwortIndex)}
+              key={antwortIndex}
+              variant={answerToggles[antwortIndex] ? "success" : "dark"}
+              style={{ fontSize: "20px" }}
+              onClick={() => setAnswerToggleButton(antwortIndex)}
               >
                 {antwort}
               </Button>
             ))}
+            
           </div>
         </div>
       </Container>
       <div className="d-flex flex-column align-items-start">
+      <Image src={fragen[fragenIndex].assets} style={{width: "25%"}}/>
         <FormGroup style={{ marginTop: "2vh" }}>
           <Form.Label>Richtige Punkte</Form.Label>
           <Form.Control
