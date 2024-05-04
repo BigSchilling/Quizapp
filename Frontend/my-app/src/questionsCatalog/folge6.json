@@ -1,0 +1,664 @@
+{
+  "fragen": [
+    {
+      "kategorie": "Bild mit Buzzer",
+      "frage": "Welcher Film ist das?",
+      "antworten": [
+        "Wonka"
+      ],
+      "assets": [
+        "https://framed.wtf/images/767/001.jpeg?w=2048&q=75\n",
+        "https://framed.wtf/images/767/002.jpeg?w=2048&q=75",
+        "https://framed.wtf/images/767/003.jpeg?w=2048&q=75",
+        "https://framed.wtf/images/767/004.jpeg?w=2048&q=75",
+        "https://framed.wtf/images/767/005.jpeg?w=2048&q=75",
+        "https://framed.wtf/images/767/006.jpeg?w=2048&q=75"
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Wer spielt die Hauptrolle in dem Film (Wonka)?",
+      "antworten": [
+        "Timothée Chalamet"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Welchen Beruf hat „Willy Wonkas“ Vater?",
+      "antworten": [
+        "Zahnarzt"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Bild mit Buzzer",
+      "frage": "Wie heißt der Film?",
+      "antworten": [
+        "Barbie"
+      ],
+      "assets": [
+        "https://framed.wtf/images/615/001.jpeg?w=2048&q=75",
+        "https://framed.wtf/images/615/002.jpeg?w=2048&q=75",
+        "https://framed.wtf/images/615/003.jpeg?w=2048&q=75",
+        "https://framed.wtf/images/615/004.jpeg?w=2048&q=75",
+        "https://framed.wtf/images/615/005.jpeg?w=2048&q=75",
+        "https://framed.wtf/images/615/006.jpeg?w=2048&q=75"
+      ]
+    },
+    {
+      "kategorie": "Eintippen",
+      "frage": "Wie heißt die Erfinderin der Barbie? A. Andrea Mattel B. Barbara Wedler C. Karen Weise D. Ruth Handler ",
+      "antworten": [
+        "D. Ruth Handler"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Schätzfrage",
+      "frage": "Seit wann gibt es Barbie Puppen?",
+      "antworten": [
+        "1959"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Bild mit Buzzer",
+      "frage": "Wie heißt dieser Film?",
+      "antworten": [
+        "The incredible Hulk"
+      ],
+      "assets": [
+        "https://framed.wtf/images/721/001.jpeg?w=2048&q=75",
+        "https://framed.wtf/images/721/002.jpeg?w=2048&q=75",
+        "https://framed.wtf/images/721/003.jpeg?w=2048&q=75",
+        "https://framed.wtf/images/721/004.jpeg?w=2048&q=75",
+        "https://framed.wtf/images/721/005.jpeg?w=2048&q=75",
+        "https://framed.wtf/images/721/006.jpeg?w=2048&q=75"
+      ]
+    },
+    {
+      "kategorie": "Multiple Buzzer",
+      "frage": "Wie heißen die Hulk Schauspieler?",
+      "antworten": [
+        "Lou Ferrigno",
+        "Eric Bana",
+        "Edward Norton",
+        "Mark Ruffalo"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Schätzfrage",
+      "frage": "In welchem Jahr wurde der erste “Incredible Hulk” Comic veröffentlicht?",
+      "antworten": [
+        "1962"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Bild mit Buzzer",
+      "frage": "Wie heißt dieser Film? (genauer Teil)",
+      "antworten": [
+        "Toy Story 4 "
+      ],
+      "assets": [
+        "https://framed.wtf/images/762/001.jpeg?w=2048&q=75",
+        "https://framed.wtf/images/762/002.jpeg?w=2048&q=75",
+        "https://framed.wtf/images/762/003.jpeg?w=2048&q=75",
+        "https://framed.wtf/images/762/004.jpeg?w=2048&q=75",
+        "https://framed.wtf/images/762/005.jpeg?w=2048&q=75",
+        "https://framed.wtf/images/762/006.jpeg?w=2048&q=75"
+      ]
+    },
+    {
+      "kategorie": "Schätzfrage",
+      "frage": "Für wie viel Moneten hat Disney Pixar übernommen? ",
+      "antworten": [
+        "7,4 Milliarden"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Was ist Buzz Lightyears Catchphrase?",
+      "antworten": [
+        "Bis zur Unendlichkeit und noch viel weiter",
+        "To infinity and beyond auf englisch"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Bild mit Buzzer",
+      "frage": "Wie heißt dieser Film?",
+      "antworten": [
+        "Pacific Rim"
+      ],
+      "assets": [
+        "https://framed.wtf/images/624/001.jpeg?w=2048&q=75",
+        "https://framed.wtf/images/624/002.jpeg?w=2048&q=75",
+        "https://framed.wtf/images/624/003.jpeg?w=2048&q=75",
+        "https://framed.wtf/images/624/004.jpeg?w=2048&q=75",
+        "https://framed.wtf/images/624/005.jpeg?w=2048&q=75",
+        "https://framed.wtf/images/624/006.jpeg?w=2048&q=75"
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Woher kommen die Monster aus Pacific Rim?",
+      "antworten": [
+        "Ozean"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Eintippen",
+      "frage": "Wie heißen die gigantischen Kreaturen bei del Toro? A. YOKAI B. KAPPA C. ONI D. KAIJU E. TENGU",
+      "antworten": [
+        "Kaiju"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Bild mit Buzzer",
+      "frage": "Wie heißt dieser Film?",
+      "antworten": [
+        "Knives Out"
+      ],
+      "assets": [
+        "https://framed.wtf/images/128/001.jpeg?w=2048&q=75",
+        "https://framed.wtf/images/128/002.jpeg?w=2048&q=75",
+        "https://framed.wtf/images/128/003.jpeg?w=2048&q=75",
+        "https://framed.wtf/images/128/004.jpeg?w=2048&q=75",
+        "https://framed.wtf/images/128/005.jpeg?w=2048&q=75",
+        "https://framed.wtf/images/128/006.jpeg?w=2048&q=75"
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Wer spielte Hugh Ransom Drysdale in Knives Out?",
+      "antworten": [
+        "Chris Evans"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Wie heißt der zweite Teil?",
+      "antworten": [
+        "Glass Onion: A Knives Out Mystery"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Bild mit Buzzer",
+      "frage": "Wie heißt dieser Film?",
+      "antworten": [
+        "Monty Python und der Heilige Gral"
+      ],
+      "assets": [
+        "https://framed.wtf/images/104/001.jpeg?w=2048&q=75",
+        "https://framed.wtf/images/104/002.jpeg?w=2048&q=75",
+        "https://framed.wtf/images/104/003.jpeg?w=2048&q=75",
+        "https://framed.wtf/images/104/004.jpeg?w=2048&q=75",
+        "https://framed.wtf/images/104/005.jpeg?w=2048&q=75",
+        "https://framed.wtf/images/104/006.jpeg?w=2048&q=75"
+      ]
+    },
+    {
+      "kategorie": "Eintippen",
+      "frage": "Warum benutzt König Artus Kokosnüsse, anstatt Pferde? A. Sie sind gestorben B. Die Mohren liefern kein Öl mehr C. Er findet es lustig, sich zum Affen zu machen D. Sie sind langsamer",
+      "antworten": [
+        "Die Mohren liefern kein Öl mehr"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Eintippen",
+      "frage": "Von wem wird König Artus verspottet? A. Von Franzosen B. Von Türken C. Von Deutschen D. Von Griechen E. Von Amerikanern",
+      "antworten": [
+        "A. Von Franzosen"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Bild mit Buzzer",
+      "frage": "Wie heißt dieser Film?",
+      "antworten": [
+        "König der Löwen"
+      ],
+      "assets": [
+        "https://framed.wtf/images/475/001.jpeg?w=2048&q=75",
+        "https://framed.wtf/images/475/002.jpeg?w=2048&q=75",
+        "https://framed.wtf/images/475/003.jpeg?w=2048&q=75",
+        "https://framed.wtf/images/475/004.jpeg?w=2048&q=75",
+        "https://framed.wtf/images/475/005.jpeg?w=2048&q=75",
+        "https://framed.wtf/images/475/006.jpeg?w=2048&q=75"
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Wer schrieb den Oscar-prämierten Filmsong „Can You Feel the Love Tonight“/„Kann es wirklich Liebe sein“?",
+      "antworten": [
+        "Elton John"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Multiple Buzzer",
+      "frage": "Wie heißen diese drei Hyänen? ",
+      "antworten": [
+        "Bonzai",
+        "Kiara ",
+        "Ed"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Bild mit Buzzer",
+      "frage": "Wie heißt dieser Film?",
+      "antworten": [
+        "The imitation Game"
+      ],
+      "assets": [
+        "https://framed.wtf/images/56/001.jpeg?w=2048&q=75",
+        "https://framed.wtf/images/56/002.jpeg?w=2048&q=75",
+        "https://framed.wtf/images/56/003.jpeg?w=2048&q=75",
+        "https://framed.wtf/images/56/004.jpeg?w=2048&q=75",
+        "https://framed.wtf/images/56/005.jpeg?w=2048&q=75",
+        "https://framed.wtf/images/56/006.jpeg?w=2048&q=75"
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Wie heißt der Hauptcharakter in dem Film?",
+      "antworten": [
+        "Alan Turing"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Welches Gerät müssen sie entschlüsseln?",
+      "antworten": [
+        "Enigma"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Bild mit Buzzer",
+      "frage": "Wie heißt dieser Film?",
+      "antworten": [
+        "Top Gun"
+      ],
+      "assets": [
+        "https://framed.wtf/images/301/001.jpeg?w=2048&q=75",
+        "https://framed.wtf/images/301/002.jpeg?w=2048&q=75",
+        "https://framed.wtf/images/301/003.jpeg?w=2048&q=75",
+        "https://framed.wtf/images/301/004.jpeg?w=2048&q=75",
+        "https://framed.wtf/images/301/005.jpeg?w=2048&q=75",
+        "https://framed.wtf/images/301/006.jpeg?w=2048&q=75"
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Wer stirbt im zweiten Teil? A. Hangman B. Penny Benjamin C. Chester Cain D. Iceman",
+      "antworten": [
+        "D. Iceman"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Welchen militärischen Rang hat Maverick?",
+      "antworten": [
+        "Lieutenant"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Bild mit Buzzer",
+      "frage": "Wie heißt dieser Film?",
+      "antworten": [
+        "Doctor Strange"
+      ],
+      "assets": [
+        "https://framed.wtf/images/579/001.jpeg?w=2048&q=75",
+        "https://framed.wtf/images/579/002.jpeg?w=2048&q=75",
+        "https://framed.wtf/images/579/003.jpeg?w=2048&q=75",
+        "https://framed.wtf/images/579/004.jpeg?w=2048&q=75",
+        "https://framed.wtf/images/579/005.jpeg?w=2048&q=75",
+        "https://framed.wtf/images/579/006.jpeg?w=2048&q=75"
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Wie hat Doctor Strange den Endgegner Dormammu besiegt? ",
+      "antworten": [
+        "time loop gefangen und ihn so zu seinem gefangen gemacht"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Schätzfrage",
+      "frage": "Wie viele verschiedene Zukunfts-Varianten hat Dr. Strange in Infinity War gesehen? ",
+      "antworten": [
+        "14,000,605"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Bild mit Buzzer",
+      "frage": "Wie heißt dieser Film",
+      "antworten": [
+        "The Nightmare Before Christmas"
+      ],
+      "assets": [
+        "https://framed.wtf/images/281/001.jpeg?w=2048&q=75",
+        "https://framed.wtf/images/281/002.jpeg?w=2048&q=75",
+        "https://framed.wtf/images/281/003.jpeg?w=2048&q=75",
+        "https://framed.wtf/images/281/004.jpeg?w=2048&q=75",
+        "https://framed.wtf/images/281/005.jpeg?w=2048&q=75",
+        "https://framed.wtf/images/281/006.jpeg?w=2048&q=75"
+      ]
+    },
+    {
+      "kategorie": "Bild mit Buzzer",
+      "frage": "Wie heißt dieser Film?",
+      "antworten": [
+        "Fight club"
+      ],
+      "assets": [
+        "https://framed.wtf/images/3/001.jpg?w=2048&q=75",
+        "https://framed.wtf/images/3/002.jpg?w=2048&q=75",
+        "https://framed.wtf/images/3/003.jpg?w=2048&q=75",
+        "https://framed.wtf/images/3/004.jpg?w=2048&q=75",
+        "https://framed.wtf/images/3/005.jpg?w=2048&q=75",
+        "https://framed.wtf/images/3/006.jpg?w=2048&q=75"
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Was ist die erste Regel des Fight Clubs?",
+      "antworten": [
+        "Ihr verliert kein Wort über den Fight Club! ",
+        " you do not talk about Fight Club engl."
+      ],
+      "assets": [
+        "",
+        ""
+      ]
+    },
+    {
+      "kategorie": "Bild mit Buzzer",
+      "frage": "Wie heißt dieser Film?",
+      "antworten": [
+        "Ford v Ferrari",
+        "Le Mans 66 – Gegen jede Chance deutsch"
+      ],
+      "assets": [
+        "https://framed.wtf/images/17/001.jpg?w=2048&q=75",
+        "https://framed.wtf/images/17/002.jpg?w=2048&q=75",
+        "https://framed.wtf/images/17/003.jpg?w=2048&q=75",
+        "https://framed.wtf/images/17/004.jpg?w=2048&q=75",
+        "https://framed.wtf/images/17/005.jpg?w=2048&q=75",
+        "https://framed.wtf/images/17/006.jpg?w=2048&q=75"
+      ]
+    },
+    {
+      "kategorie": "Multiple Buzzer",
+      "frage": "Nennt mir jeweils ein Aktuelles Ford Modell.",
+      "antworten": [
+        "Ford EcoSport",
+        "Ford Edge",
+        "Ford Explorer",
+        "Ford Fiesta",
+        "Ford Focus",
+        "Ford Galaxy",
+        "Ford GT",
+        "Ford Ka+",
+        "Ford Kuga ",
+        "Ford Mondeo",
+        "Ford Mustang",
+        "Ford Mustang Mach-E",
+        "Ford Puma",
+        "Ford Ranger",
+        "Ford S-MAX",
+        "Ford Tourneo",
+        "Ford Transit"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Buchstabiere Ferrari Rückwärts, aber ohne Vokale.",
+      "antworten": [
+        "rrrf "
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Schätzfrage",
+      "frage": "Wann wurde Ferrari gegründet?",
+      "antworten": [
+        "1947"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "In welcher Farbe werden standardmäßig Ferraris verkauft?",
+      "antworten": [
+        "Rot"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Bild mit Buzzer",
+      "frage": "Wie heißt dieser Film?",
+      "antworten": [
+        "Back to the Future 2"
+      ],
+      "assets": [
+        "https://framed.wtf/images/30/001.jpg?w=2048&q=75",
+        "https://framed.wtf/images/30/002.jpg?w=2048&q=75",
+        "https://framed.wtf/images/30/003.jpg?w=2048&q=75",
+        "https://framed.wtf/images/30/004.jpg?w=2048&q=75",
+        "https://framed.wtf/images/30/005.jpg?w=2048&q=75",
+        "https://framed.wtf/images/30/006.jpg?w=2048&q=75"
+      ]
+    },
+    {
+      "kategorie": "Bild mit Buzzer",
+      "frage": "Wie heißt dieser Film?",
+      "antworten": [
+        "Schindlers List"
+      ],
+      "assets": [
+        "https://framed.wtf/images/34/001.jpeg?w=2048&q=75",
+        "https://framed.wtf/images/34/002.jpeg?w=2048&q=75",
+        "https://framed.wtf/images/34/003.jpeg?w=2048&q=75",
+        "https://framed.wtf/images/34/004.jpeg?w=2048&q=75",
+        "https://framed.wtf/images/34/005.jpeg?w=2048&q=75",
+        "https://framed.wtf/images/34/006.jpeg?w=2048&q=75"
+      ]
+    },
+    {
+      "kategorie": "Bild mit Buzzer",
+      "frage": "Wie heißt dieser Film?",
+      "antworten": [
+        "Rocketman"
+      ],
+      "assets": [
+        "https://framed.wtf/images/39/001.jpeg?w=2048&q=75",
+        "https://framed.wtf/images/39/002.jpeg?w=2048&q=75",
+        "https://framed.wtf/images/39/003.jpeg?w=2048&q=75",
+        "https://framed.wtf/images/39/004.jpeg?w=2048&q=75",
+        "https://framed.wtf/images/39/005.jpeg?w=2048&q=75",
+        "https://framed.wtf/images/39/006.jpeg?w=2048&q=75"
+      ]
+    },
+    {
+      "kategorie": "Bild mit Buzzer",
+      "frage": "Wie heißt dieser Film?",
+      "antworten": [
+        "Wall-E"
+      ],
+      "assets": [
+        "https://framed.wtf/images/43/001.jpeg?w=2048&q=75",
+        "https://framed.wtf/images/43/002.jpeg?w=2048&q=75",
+        "https://framed.wtf/images/43/003.jpeg?w=2048&q=75",
+        "https://framed.wtf/images/43/004.jpeg?w=2048&q=75",
+        "https://framed.wtf/images/43/005.jpeg?w=2048&q=75",
+        "https://framed.wtf/images/43/006.jpeg?w=2048&q=75"
+      ]
+    },
+    {
+      "kategorie": "Bild mit Buzzer",
+      "frage": "Wie heißt dieser Film?",
+      "antworten": [
+        "300"
+      ],
+      "assets": [
+        "https://framed.wtf/images/48/001.jpeg?w=2048&q=75",
+        "https://framed.wtf/images/48/002.jpeg?w=2048&q=75",
+        "https://framed.wtf/images/48/003.jpeg?w=2048&q=75",
+        "https://framed.wtf/images/48/004.jpeg?w=2048&q=75",
+        "https://framed.wtf/images/48/005.jpeg?w=2048&q=75",
+        "https://framed.wtf/images/48/006.jpeg?w=2048&q=75"
+      ]
+    },
+    {
+      "kategorie": "Bild mit Buzzer",
+      "frage": "Wie heißt dieser Film?",
+      "antworten": [
+        "Inception"
+      ],
+      "assets": [
+        "https://framed.wtf/images/49/001.jpeg?w=2048&q=75",
+        "https://framed.wtf/images/49/002.jpeg?w=2048&q=75",
+        "https://framed.wtf/images/49/003.jpeg?w=2048&q=75",
+        "https://framed.wtf/images/49/004.jpeg?w=2048&q=75",
+        "https://framed.wtf/images/49/005.jpeg?w=2048&q=75",
+        "https://framed.wtf/images/49/006.jpeg?w=2048&q=75"
+      ]
+    },
+    {
+      "kategorie": "Bild mit Buzzer",
+      "frage": "Wie heißt dieser Film?",
+      "antworten": [
+        "Joker"
+      ],
+      "assets": [
+        "https://framed.wtf/images/70/001.jpeg?w=2048&q=75",
+        "https://framed.wtf/images/70/002.jpeg?w=2048&q=75",
+        "https://framed.wtf/images/70/003.jpeg?w=2048&q=75",
+        "https://framed.wtf/images/70/004.jpeg?w=2048&q=75",
+        "https://framed.wtf/images/70/005.jpeg?w=2048&q=75",
+        "https://framed.wtf/images/70/006.jpeg?w=2048&q=75"
+      ]
+    },
+    {
+      "kategorie": "Bild mit Buzzer",
+      "frage": "Wie heißt dieser Film?",
+      "antworten": [
+        "The Proposal/ Selbst ist die Braut"
+      ],
+      "assets": [
+        "https://framed.wtf/images/134/001.jpeg?w=2048&q=75",
+        "https://framed.wtf/images/134/002.jpeg?w=2048&q=75",
+        "https://framed.wtf/images/134/003.jpeg?w=2048&q=75",
+        "https://framed.wtf/images/134/004.jpeg?w=2048&q=75",
+        "https://framed.wtf/images/134/005.jpeg?w=2048&q=75",
+        "https://framed.wtf/images/134/006.jpeg?w=2048&q=75"
+      ]
+    },
+    {
+      "kategorie": "Bild mit Buzzer",
+      "frage": "Wie heißt dieser Film?",
+      "antworten": [
+        "Baymax - Riesiges Robowabohu/ Big Hero 6"
+      ],
+      "assets": [
+        "https://framed.wtf/images/135/001.jpeg?w=2048&q=75",
+        "https://framed.wtf/images/135/002.jpeg?w=2048&q=75",
+        "https://framed.wtf/images/135/003.jpeg?w=2048&q=75",
+        "https://framed.wtf/images/135/004.jpeg?w=2048&q=75",
+        "https://framed.wtf/images/135/005.jpeg?w=2048&q=75",
+        "https://framed.wtf/images/135/006.jpeg?w=2048&q=75"
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Wie schreibt man denn Robowabohu? ",
+      "antworten": [
+        "Robowabohu"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Was ist der Top-Speed eines Formel 1 Autos?",
+      "antworten": [
+        " 372,5 km/h (inoffiziell 372,3)"
+      ],
+      "assets": [
+        ""
+      ]
+    }
+  ]
+}

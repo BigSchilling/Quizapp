@@ -3,17 +3,20 @@
       {
         "kategorie": "Buzzer",
         "frage": "Was ist die Hauptstadt von Frankreich?",
-        "antworten": ["Paris"]
+        "antworten": ["Paris"],
+        "assets": ["https://i.imgur.com/IzNt8kq.png"]
       },
       {
         "kategorie": "Multiple Buzzer",
         "frage": "Welche Farben hat die deutsche Flagge?",
-        "antworten": ["Schwarz", "Rot", "Gold"]
+        "antworten": ["Schwarz", "Rot", "Gold"],
+        "assets": ["https://prnt.sc/o00nkNoZQzWY"]
       },
       {
         "kategorie": "Schätzfrage",
         "frage": "Wie viele Bäume gibt es.",
-        "antworten": ["12"]
+        "antworten": ["12"],
+        "assets": ["https://prnt.sc/o00nkNoZQzWY"]
       }
     ]
   }

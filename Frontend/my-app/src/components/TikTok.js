@@ -21,7 +21,7 @@ import {
 import io from "socket.io-client";
 import useSound from "use-sound";
 import Navigation from "./Navigation";
-import "../layout/streamingPage.css";
+import "../layout/tiktokPage.css";
 import "../layout/scrollbar.css";
 import useTSRemoteApp from "../TS5-RemoteAPI/index.ts";
 import "../layout/animatedBorder.css";
@@ -36,10 +36,11 @@ import dana1 from "../images/dana1.jpg";
 import noPic1 from "../images/noPic1.jpg";
 import { ReactComponent as BackgroundSVG } from "../images/background1.svg";
 import { ReactComponent as BackgroundSVG2 } from "../images/background2.svg";
+import { aktuellerMod } from "./StreamingPage.js";
 const server = process.env.REACT_APP_API_SERVER;
 // sehen wer spricht - Teamspeak 5 plugin
-export const aktuellerMod = "Jan"; // mod ändern
-const StreamingPage = () => {
+
+const TikTok = () => {
   const dispatch = useDispatch();
   const [inputMessage, setInputMessage] = useState("");
   const [socket, setSocket] = useState("");
@@ -165,6 +166,24 @@ const StreamingPage = () => {
   }, []);
 
   const playStoredSound = (soundFile) => {
+    const base64Sound = localStorage.getItem(soundFile);
+    if (base64Sound) {
+      // Base64-String in einen ArrayBuffer umwandeln
+      const arrayBuffer = Uint8Array.from(atob(base64Sound), (c) =>
+        c.charCodeAt(0)
+      ).buffer;
+
+      // Neue Audioquelle erstellen
+      const audio = new Audio();
+
+      // Audioquelle aus dem ArrayBuffer laden
+      audio.src = URL.createObjectURL(
+        new Blob([arrayBuffer], { type: "audio/mp3" })
+      );
+      audio.volume = volume;
+      // Audio abspielen
+      audio.play();
+    }
   };
 
   useEffect(() => {
@@ -175,6 +194,14 @@ const StreamingPage = () => {
       newSocket.emit("sendLogIn", { isHost: isHost });
     });
     // sound setzen
+    newSocket.on("sounds", (soundFile) => {
+      console.log("sounds bekommen");
+      localStorage.setItem("buzzerSound", soundFile.buzzerSound);
+      localStorage.setItem("rightSound", soundFile.rightSound);
+      localStorage.setItem("falseSound", soundFile.falseSound);
+      localStorage.setItem("releaseSound", soundFile.releaseSound);
+    });
+
     // Hier kannst du auf eingehende Nachrichten reagieren
     newSocket.on("message", (message) => {
       const { userID, inputMessage } = message;
@@ -281,18 +308,18 @@ const StreamingPage = () => {
   //   " map2"
   // );
   const camWidth = "20%";
-  const camHeight = "10%";
+  const camHeight = "50%";
 
   console.log(talkingMap2, talkingNames.current);
   return (
     <div
-    // className=""
-    // style={{
-    //   backgroundImage: "url(" + background + ")",
-    //   backgroundSize: "cover",
-    //   backgroundPosition: "center center",
-    //   // marginTop: "-10px"
-    // }}
+      className="mainContent"
+      // style={{
+      //   backgroundImage: "url(" + background + ")",
+      //   backgroundSize: "cover",
+      //   backgroundPosition: "center center",
+      //   // marginTop: "-10px"
+      // }}
     >
       <div className="backgroundContainer">
         {/* <BackgroundSVG2 className="backgroundClass2" /> */}
@@ -342,7 +369,7 @@ const StreamingPage = () => {
                   ? "warning"
                   : player.isReady
                   ? "success"
-                  :  player.userID== aktuellerMod
+                  : player.userID == aktuellerMod
                   ? "dark"
                   : "secondary"
               }
@@ -435,13 +462,6 @@ const StreamingPage = () => {
                     src={assets[assetIndex]}
                     className="image"
                     alt="Bild"
-                    style={{objectFit: "fill", filter: "blur(15px)"} }
-                  />
-                   <Image
-                    src={assets[assetIndex]}
-                    className="image"
-                    alt="Bild"
-                    style={{objectFit: "contain"}}
                   />
                 </div>
               </Card>
@@ -454,12 +474,18 @@ const StreamingPage = () => {
               borderRadius: "20px",
               overflow: "hidden",
               width: "auto",
-              height: "65%",
+              height: camHeight,
+              position: "fixed",
               // marginTop: "20%"
             }}
           >
             <Webcam
-              style={{ width: "100%", height: "100%", objectFit: "scale-down" }}
+              style={{
+                width: "auto",
+                maxHeight: camHeight,
+                objectFit: "scale-down",
+                borderRadius: "20px",
+              }}
               audio={false}
               videoConstraints={{
                 deviceId: deviceId ? { exact: deviceId } : undefined,
@@ -485,14 +511,15 @@ const StreamingPage = () => {
                     ? "dark"
                     : "secondary"
                 }
+                className="overlay-card2"
                 style={{
                   borderWidth: "7px",
                   borderRadius: "20px",
                   overflowY: "hidden",
-                  height: "65%", // Anpassen der Höhe nach Bedarf
-                  width: "100%",
+                  height: camHeight, // Anpassen der Höhe nach Bedarf
+                  minWidth: "25vw",
                   position: "absolute",
-                  top: "35%",
+                  top: "0%",
                   backgroundColor: "rgba(0,0,0,0.0)",
                 }}
               >
@@ -545,4 +572,4 @@ const StreamingPage = () => {
   );
 };
 
-export default StreamingPage;
+export default TikTok;

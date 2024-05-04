@@ -1,6 +1,6 @@
 import "../layout/ShowMasterPage.css";
 import "../layout/scrollbar.css";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import {
   Dropdown,
@@ -11,7 +11,8 @@ import {
   Row,
   Col,
   Form,
-  FormGroup, Image
+  FormGroup,
+  Image,
 } from "react-bootstrap";
 import {
   createPlayerTrue,
@@ -21,7 +22,7 @@ import {
   setTimer,
 } from "../slices/ShowMasterSlice";
 import io from "socket.io-client";
-import FragenData from "../questionsCatalog/test.json"; // datei mit fragen
+import FragenData from "../questionsCatalog/Folge9jan.json"; // datei mit fragen
 import useSound from "use-sound";
 import tom1 from "../images/tom1.jpg";
 import jan1 from "../images/jan3.jpg";
@@ -49,43 +50,31 @@ const ShowMasterPage = () => {
   const [timer, setTimerChange] = useState(2000);
   const fragen = FragenData.fragen;
   const [fragenIndex, setFragenIndex] = useState(1);
+  const [assetIndex, setAssetIndex] = useState(0);
+  // assetIndex.current = 0;
   const [answerToggles, setAnswerToggles] = useState(
     new Array(fragen[fragenIndex].antworten.length).fill(false)
   );
   const [showQuestion, setShowQuestion] = useState(false);
-
+  let assetPointIndex = useRef(0)
   // Sound
-  const [volume, setVolume] = useState(0.3);
-  const [playSound, { error }] = useSound("/pfad/zur/sounddatei.mp3", {
-    volume: 1,
-  });
+  const volumeRef = useRef(0.5); // Verwenden Sie useRef für die volume-Variable
+  const [sliderValue, setSliderValue] = useState(volumeRef.current); // Zustand für den Slider-Wert
 
-  useEffect(() => {
-    if (error) {
-      console.error("Fehler beim Abspielen des Sounds:", error);
-    }
-  }, [error]);
   const playStoredSound = (soundFile) => {
     const base64Sound = localStorage.getItem(soundFile);
     if (base64Sound) {
-      // Base64-String in einen ArrayBuffer umwandeln
-      const arrayBuffer = Uint8Array.from(atob(base64Sound), (c) =>
-        c.charCodeAt(0)
-      ).buffer;
-
-      // Neue Audioquelle erstellen
+      const arrayBuffer = Uint8Array.from(atob(base64Sound), (c) => c.charCodeAt(0)).buffer;
       const audio = new Audio();
-
-      // Audioquelle aus dem ArrayBuffer laden
-      audio.src = URL.createObjectURL(
-        new Blob([arrayBuffer], { type: "audio/mp3" })
-      );
-      audio.volume = volume;
-      // Audio abspielen
+      audio.src = URL.createObjectURL(new Blob([arrayBuffer], { type: "audio/mp3" }));
+      audio.volume = volumeRef.current; // Verwenden Sie die aktuelle volume-Referenz
       audio.play();
     }
   };
-
+  const adjustVolume = (e) => {
+    volumeRef.current = parseFloat(e.target.value); // Aktualisieren Sie die volume-Referenz
+    setSliderValue(volumeRef.current); // Aktualisieren Sie den Zustand des Sliders
+  };
   useEffect(() => {
     const newSocket = io(`ws://${server}:8080`);
 
@@ -282,17 +271,20 @@ const ShowMasterPage = () => {
       resetShowQuestion(newValue);
       resetAnswerToggles();
       setFragenIndex(newValue);
-      setTimerChange(2000)
-      dispatch(setManuellPoints({ manuellPoints: 5 }))
+      setTimerChange(2000);
+      setAssetIndex(0);
+      assetPointIndex.current = 0;
+      dispatch(setManuellPoints({ manuellPoints: 5 }));
       const frage = fragen[newValue].frage;
       const kategorie = fragen[newValue].kategorie;
       const assets = fragen[newValue].assets;
-      
+
       socket.emit("sendStreamingQuestion", {
         frage: frage,
         fragenIndex: newValue,
         kategorie: kategorie,
-        assets: assets
+        assets: assets,
+        assetIndex: assetIndex,
       });
     }
   };
@@ -309,12 +301,13 @@ const ShowMasterPage = () => {
       const value = fragenIndex;
       const kategorie = fragen[value].kategorie;
       const assets = fragen[value].assets;
-      console.log("asses showmaster", assets)
+      console.log("asses showmaster", assets);
       socket.emit("sendShowQuestion", {
         frage: frage,
         fragenIndex: value,
         kategorie: kategorie,
-        assets: assets
+        assets: assets,
+        assetIndex: assetIndex,
       });
     }
   };
@@ -333,9 +326,43 @@ const ShowMasterPage = () => {
       socket.emit("sendHideQuestion", {
         fragenIndex: index,
         kategorie: fragen[index].kategorie,
+        assets: " "
       });
     }
   };
+  const changeAssetIndex = (value) => {
+    const newValue = assetIndex + value;
+    if (newValue < 0 || newValue >= fragen[fragenIndex].assets.length) {
+      console.log("falsch", assetIndex, fragen[fragenIndex].assets.length);
+      return;
+    } else {
+      
+      if ( newValue > assetPointIndex.current) {
+        if (newValue % 2 == 0 && value === 1) {
+          setManuellPointsInput(manuellPoints - 1); // Wert des Eingabefelds speichern
+          dispatch(setManuellPoints({ manuellPoints: manuellPoints - 1 }));
+          // setManuellPoints(manuellPoints - 1);
+          assetPointIndex.current = newValue
+        }
+      }
+      
+      console.log("drin");
+      setAssetIndex(newValue);
+      const frage = fragen[fragenIndex].frage;
+      const kategorie = fragen[fragenIndex].kategorie;
+      const assets = fragen[fragenIndex].assets;
+      console.log("change assets showmaster", assets);
+      console.log(newValue, "newValue");
+      socket.emit("sendShowQuestion", {
+        frage: frage,
+        fragenIndex: fragenIndex,
+        kategorie: kategorie,
+        assets: assets,
+        assetIndex: newValue,
+      });
+    }
+  };
+ 
   var maxHeightVar = "8rem";
   return (
     <div className="grid-container3">
@@ -343,9 +370,9 @@ const ShowMasterPage = () => {
         type="range"
         min="0"
         max="1"
-        step="0.1"
-        value={volume}
-        onChange={(e) => setVolume(parseFloat(e.target.value))}
+        step="0.001"
+        value={sliderValue} // Verwenden Sie den Zustand für den Slider-Wert
+        onChange={(e) => adjustVolume(e)}
       />
       <div className="grid-container2">
         <div style={{ minWidth: "100%" }}>
@@ -379,7 +406,6 @@ const ShowMasterPage = () => {
               </Card.Title>
             </Card.Body>
           </Card>
-          
         </div>
         <div>
           <Button
@@ -391,10 +417,9 @@ const ShowMasterPage = () => {
           </Button>
         </div>
       </div>
-        
+
       <Container>
         <div className="text-center">
-        
           <Button
             variant={showQuestion ? "dark" : "secondary"}
             style={{ marginBottom: "20px" }}
@@ -413,20 +438,38 @@ const ShowMasterPage = () => {
           >
             {fragen[fragenIndex].antworten.map((antwort, antwortIndex) => (
               <Button
-              key={antwortIndex}
-              variant={answerToggles[antwortIndex] ? "success" : "dark"}
-              style={{ fontSize: "20px" }}
-              onClick={() => setAnswerToggleButton(antwortIndex)}
+                key={antwortIndex}
+                variant={answerToggles[antwortIndex] ? "success" : "dark"}
+                style={{ fontSize: "20px" }}
+                onClick={() => setAnswerToggleButton(antwortIndex)}
               >
                 {antwort}
               </Button>
             ))}
-            
           </div>
         </div>
       </Container>
       <div className="d-flex flex-column align-items-start">
-      <Image src={fragen[fragenIndex].assets} style={{width: "25%"}}/>
+        <div className="d-flex flex-row" style={{ gap: "10px" }}>
+          <Button
+            variant="primary"
+            style={{ fontSize: "20px" }}
+            onClick={() => changeAssetIndex(-1)}
+          >
+            vorheriges Asset
+          </Button>
+          <Button
+            variant="primary"
+            style={{ fontSize: "20px" }}
+            onClick={() => changeAssetIndex(1)}
+          >
+            Nächstes Asset
+          </Button>
+          <Image
+            src={fragen[fragenIndex].assets[assetIndex]}
+            style={{ width: "25%" }}
+          />
+        </div>
         <FormGroup style={{ marginTop: "2vh" }}>
           <Form.Label>Richtige Punkte</Form.Label>
           <Form.Control

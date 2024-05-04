@@ -1,0 +1,560 @@
+{
+  "fragen": [
+    {
+      "kategorie": "Buzzer",
+      "frage": "Wie heißen die beiden besten Freunde von Ron?",
+      "antworten": [
+        "Harry und Hermine"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "An welchem Gleis hält der Hogwarts-Express?\n",
+      "antworten": [
+        "neundreiviertel"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Und an welchem Londoner Bahnhof befindet sich das Gleis neundreiviertel?\n",
+      "antworten": [
+        "King’s Cross\n"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Ab wann ist man als Zauberer volljährig?\n",
+      "antworten": [
+        "17"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Wie heißt Harrys Eule?\n",
+      "antworten": [
+        "Hedwig"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Schätzfrage",
+      "frage": "Wie groß ist Hagrid? \n",
+      "antworten": [
+        "3,51 m\n"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Wie heißt der Besen, den Harry geschenkt bekommt?\n",
+      "antworten": [
+        "Nimbus 2000\n"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Welche ist die bekannteste Sportart unter den Zauberern?\n\n",
+      "antworten": [
+        "Quidditch"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Wie heißt dieser Gegenstand? ",
+      "antworten": [
+        "Goldener Schnatz"
+      ],
+      "assets": [
+        "https://s3.amazonaws.com/gs-geo-images/4da7ae17-05f9-4af4-8663-906058add29a_d.jpg"
+      ]
+    },
+    {
+      "kategorie": "Schätzfrage",
+      "frage": "Wie viel Punkte ist der Schnatz wert?",
+      "antworten": [
+        "150 Punkte"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Wie heißt Dumbledore mit Vornamen?\n",
+      "antworten": [
+        "Albus\n"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Wie heißen die Anhänger Voldemorts?\n",
+      "antworten": [
+        "Todesser"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Welche drei Gegenstände bilden die Heiligtümer des Todes?",
+      "antworten": [
+        "Tarnumhang, Stein der Auferstehung und der Elder Stab"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Wie heißt die britische Zauberbank?\n",
+      "antworten": [
+        "Gringotts"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Multiple Buzzer",
+      "frage": "Welche drei Währungen gibt es?",
+      "antworten": [
+        "Galleone\n",
+        "Sickel",
+        "Knuts "
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Aus welchen Materialien bestehen diese?\n",
+      "antworten": [
+        "Gold, Silber, Bronze"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Schätzfrage",
+      "frage": "Wie viel ist eine Galleone in Sickel?",
+      "antworten": [
+        "17\n"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Schätzfrage",
+      "frage": "Wie viel Knuts sind eine Galleone?\n",
+      "antworten": [
+        "493\n"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Multiple Buzzer",
+      "frage": "Was sind die sieben Horkruxe von Voldemort?",
+      "antworten": [
+        "Tagebuch von Tom Riddle",
+        "Gaunts Goldring",
+        "Medaillon der Slytherin",
+        "Trinkpokal",
+        "Diadem Ravenclaws",
+        "Nagini (schlange)",
+        "Harry"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Wie nennt man Menschen in der Zauberwelt?\n",
+      "antworten": [
+        "Muggel"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Was ist Lord Voldemorts echter Name? (Bonuspunkte für Mittelnamen)",
+      "antworten": [
+        "Tom Vorlost (Marvolo in engl.) Riddle"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Multiple Buzzer",
+      "frage": "Unter welchem Namen ist Voldemort noch bekannt? (Synonyme)",
+      "antworten": [
+        "Du-weißt-schon-wer\n",
+        "Der, dessen Name nicht genannt werden darf ",
+        "Der Dunkle Lord",
+        "Voldy (von Peeves in seinem Siegeslied nach der Schlacht von Hogwarts)",
+        "Erbe von Slytherin",
+        "Oberster Todesser (benutzt von Lee Jordan) ",
+        "Euer Lordschaft (benutzt von Wurmschwanz) "
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Multi Schätzfrage",
+      "frage": "Wann wurde Voldemort geboren und wann starb er? (TT/MM/YYYY)",
+      "antworten": [
+        "31. Dezember 1926",
+        "2. Mai 1998\n"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Multiple Buzzer",
+      "frage": "Wer war ein Lehrer von Verteidigung gegen die dunklen Künste?",
+      "antworten": [
+        "Quirinus Quirrell",
+        "Gilderoy Lockhart",
+        "Remus Lupin",
+        "Alastor Moody",
+        "Dolores Umbridge",
+        "Severus Snape",
+        "Amycus Carrow"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Wer ist Argus Filch und welches Haustier hat er?",
+      "antworten": [
+        "Hausmeister und Katze"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Eintippen",
+      "frage": "Wie hieß die Katze von Filch? A) Mrs Morris, B) Mrs Doris, C) Mrs. Norris, D) Sir Noodles E) Bob\n",
+      "antworten": [
+        " C) Mrs Norris"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Multiple Buzzer",
+      "frage": "Wer sind die vier Mitglieder der “Rumtreiber”?",
+      "antworten": [
+        "James Potter: \"Krone\"\n",
+        "Remus Lupin: \"Moony\"",
+        "Sirius Black: \"Tatze\"",
+        "Peter Pettigrew: \"Wurmschwanz\""
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Was ist Remus Lupins Geheimnis?\n\n",
+      "antworten": [
+        "verwandelt sich in einen Werwolf "
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Multiple Buzzer",
+      "frage": "Was sind die drei Aufgaben vom Trimagischen Turnier?",
+      "antworten": [
+        "erste Aufgabe Goldenes Ei vom drachen klauen",
+        "zweite unterwasser Freunde retten ",
+        " dritte Aufgabe im Irrgarten ein Pokal holen"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Wer ist der Halbblutprinz?\n",
+      "antworten": [
+        "Snape weil er ein Halbblut ist und seine Mutter Prince hieß"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Welchen Beruf haben Hermines Eltern?\n\n",
+      "antworten": [
+        "Zahnärzte"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Schätzfrage",
+      "frage": "Wie viele Geschenke bekam Dudley Dursley zu seinem 11. Geburtstag?\n\n",
+      "antworten": [
+        "36 statt 37 wie im letzten Jahr"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Was passiert mit Dudley während Hagrid Harry holen wollte?\n",
+      "antworten": [
+        "er bekam einen Ringelschwanz"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Wie heißen die beiden engsten Freunde von Draco Malfoy?\n\n",
+      "antworten": [
+        "Vincent Crabbe und Gregory Goyle"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Was lebt in der Kammer des Schreckens?\n",
+      "antworten": [
+        "ein Basilisk"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Was ist das einzige Gegenmittel gegen das Gift von einem Basilisk?\n\n",
+      "antworten": [
+        "Tränen eines Phoenix"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Was passiert, wenn man dem Basilisken durch eine Spiegelung in die Augen guckt?\n",
+      "antworten": [
+        "man wird versteinert"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Multiple Buzzer",
+      "frage": "Welcher Charakterzug wird mit welchem Haus assoziiert? \n\n",
+      "antworten": [
+        "Gryffindor - Mut",
+        "Slytherin - Listig/ Stolz auf Zauberer Abstammung",
+        " Ravenclaw - klever",
+        "Hufflepuff - Fleißig und Loyal"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Eintippen",
+      "frage": "Welche vier Tiere bilden das Wappen von Hogwarts? \n",
+      "antworten": [
+        "Löwe (gryffindor)",
+        "Adler (Ravenclaw)",
+        "Dachs (hufflepuff)",
+        "Schlange (slytherin)"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Was ist der Orden des Phönix?",
+      "antworten": [
+        "Vereinigung gegen Voldemort"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Wie kommt man an Fluffy vorbei? ",
+      "antworten": [
+        "Man spielt Musik damit er einschläft\n"
+      ],
+      "assets": [
+        "https://static.wikia.nocookie.net/pietsmiet-pedia/images/f/f7/Fluffy.png/revision/latest?cb=20201202222603&path-prefix=de"
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Wie heißt der Gegenstand der die Schüler in die Häuser einteilt?\n",
+      "antworten": [
+        "der Sprechende Hut\n"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Was wird mehrfach aus diesem Hut gezogen?\n",
+      "antworten": [
+        "Gryffindors Schwert\n"
+      ],
+      "assets": [
+        "",
+        ""
+      ]
+    },
+    {
+      "kategorie": "Multiple Buzzer",
+      "frage": "Nennt mir jeweils ein Mitglied der Weasley Familie? (außer Ron)\n",
+      "antworten": [
+        "Arthur\n",
+        "Molly",
+        "William",
+        "Charles",
+        "Percy",
+        "Fred",
+        "George",
+        "Ginevra (Ginny) "
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Wie heißt die beliebte Einkaufsstraße, in der sich auch Gringotts befindet?",
+      "antworten": [
+        "Winkelgasse\n"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Bild mit Buzzer",
+      "frage": "Wer ist das? ",
+      "antworten": [
+        "Luna Lovegood"
+      ],
+      "assets": [
+        "https://i.imgur.com/F0L717d.png"
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Was ist das Besondere an Thestralen? \n\n",
+      "antworten": [
+        "Sie können nur von Menschen gesehen werden die den Tod gesehen haben"
+      ],
+      "assets": [
+        "https://static0.gamerantimages.com/wordpress/wp-content/uploads/2023/05/thesteral-2.jpg"
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Was ist das Flohnetzwerk?",
+      "antworten": [
+        "Teleportation durch Kamine"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Wofür steht DA?",
+      "antworten": [
+        "Dumbledores Armee"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Multiple Buzzer",
+      "frage": "Nennt mir jeweils einen bekannten Hogwarts-Geist.",
+      "antworten": [
+        "Blutiger Baron – Hausgeist des Hauses Slytherin",
+        "Cuthbert Binns – Lehrer für Geschichte der Zauberei",
+        "Fast Kopfloser Nick – Hausgeist des Hauses Gryffindor",
+        "Fetter Mönch – Hausgeist des Hauses Hufflepuff",
+        "Graue Dame – Hausgeist des Hauses Ravenclaw",
+        "Maulende Myrte – ehemalige Hogwarts-Schülerin",
+        "Peeves ist als Poltergeist"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Wie viel Knuts sind ein Sickel?\n",
+      "antworten": [
+        "29"
+      ],
+      "assets": [
+        ""
+      ]
+    }
+  ]
+}

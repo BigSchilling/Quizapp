@@ -9,6 +9,8 @@ import StreamingPage from './components/StreamingPage';
 import Navigation from './components/Navigation';
 import TwitchCam from './components/TwitchCam';
 import ImageToMap from './components/ImageToMap';
+import TikTok from './components/TikTok';
+import TestPage from './components/test';
 import "./layout/vapor.css";
 
 function App() {
@@ -34,14 +36,16 @@ function App() {
               <>
                 <Route path="/" element={<StartPage />} />
                 <Route path="/stream" element={<StreamingPage />} />
+                <Route path="/tiktok" element={<TikTok />} />
 
               </>)
           ) : (
             <>
               <Route path="/" element={<LandingPage />} />
               <Route path="/stream" element={<StreamingPage />} />
-              <Route path="/test" element={<TwitchCam />} />
+              <Route path="/test" element={<TestPage />} />
               <Route path="/map" element={<ImageToMap />} />
+              {/* <Route path="/tiktok" element={<TikTok />} /> */}
             </>
           )}
 

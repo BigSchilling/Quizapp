@@ -1,0 +1,568 @@
+{
+  "fragen": [
+    {
+      "kategorie": "Buzzer",
+      "frage": "Wofür steht das \"D\" in \"EDM\"?",
+      "antworten": [
+        "Dance"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Schätzfrage",
+      "frage": "Wie viele Studioalben hat Eminem bisher veröffentlicht?",
+      "antworten": [
+        "11 Studioalben"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Multiple Buzzer",
+      "frage": "Welche 2 Sängerinnen hatten in die meisten Nummer 1 Hits in den 2010ern (in den US)?",
+      "antworten": [
+        "Rihanna",
+        "Katy Perry"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Wie heißt die Kopfhörer Firma, Co-gegründet von Dr.Dre, welche von Apple aufgekauft wurde?",
+      "antworten": [
+        "Beats (by Dre)"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Wann wurde Beats offiziell aufgekauft?",
+      "antworten": [
+        "Mai 2014"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Welchem Rapper sind Anfang des Jahres plötzlich Bilder seiner Anakonda im Internet begegnet?",
+      "antworten": [
+        "Drake"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Wer erhielt insgesamt die meisten Grammys?",
+      "antworten": [
+        "Beyoncé Giselle Knowles-Carter"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Wer erhielt die meisten Grammys bei einer Verleihung?",
+      "antworten": [
+        "Michael Jackson (8)",
+        "Santana (8)"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Eintippen",
+      "frage": "Nenne die 4 weitern Mitglieder der Jackson 5",
+      "antworten": [
+        "Jackie Jackson",
+        "Tito Jackson",
+        "Marlon Jackson",
+        "Jermaine Jackson"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Vervollständige den Titel “ Last Friday … “ und nenne den Interpret/-in\n",
+      "antworten": [
+        "\"Last Friday Night\"",
+        "Katy Perry"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Bild mit Buzzer",
+      "frage": "Welches Album/Interpret ist hier zu sehen?",
+      "antworten": [
+        "Hellboy - Lil Peep"
+      ],
+      "assets": [
+        "https://i.imgur.com/YHdC8k7.png\n",
+        "https://i.imgur.com/NIlLM67.png"
+      ]
+    },
+    {
+      "kategorie": "Bild mit Buzzer",
+      "frage": "Welches Album/Interpret ist hier zu sehen?",
+      "antworten": [
+        "Nevermind - Nirvana"
+      ],
+      "assets": [
+        "https://i.imgur.com/CLv8lJZ.png\n",
+        "https://i.imgur.com/X5XTIzN.png"
+      ]
+    },
+    {
+      "kategorie": "Bild mit Buzzer",
+      "frage": "Welches Album/Interpret ist hier zu sehen?",
+      "antworten": [
+        "Santiano - Bis ans Ende der Welt"
+      ],
+      "assets": [
+        "https://i.imgur.com/sw8NejY.png\n",
+        "https://i.imgur.com/jBrLWQR.png"
+      ]
+    },
+    {
+      "kategorie": "Bild mit Buzzer",
+      "frage": "Welches Album/Interpret ist hier zu sehen?",
+      "antworten": [
+        "Falco 3 - Falco"
+      ],
+      "assets": [
+        "https://i.imgur.com/ul0LViT.png",
+        "https://i.imgur.com/hQqTjnI.png"
+      ]
+    },
+    {
+      "kategorie": "Bild mit Buzzer",
+      "frage": "Welches Album/Interpret ist hier zu sehen?",
+      "antworten": [
+        "Triebwerke - Alligatoah"
+      ],
+      "assets": [
+        "https://i.imgur.com/p6N0h29.png",
+        "https://i.imgur.com/1ur2tXM.png"
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Welcher Komponist schrieb die \"Vier Jahreszeiten\"",
+      "antworten": [
+        "Antonio Vivaldi"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Multiple Buzzer",
+      "frage": "Was ist die Besetzung eines klassischen Sinfonieorchesters?",
+      "antworten": [
+        "Flöten",
+        "Oboen",
+        "Klarinetten",
+        "Fagotte",
+        "Hörner",
+        "Trompeten",
+        "Posaunen",
+        "Tuba",
+        "Pauken",
+        "Schlagwerk",
+        "Klavier",
+        "Harfe",
+        "Violine (1/2)",
+        "Bratschen",
+        "Celli",
+        "Kontrabässe"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Multiple Buzzer",
+      "frage": "Wo wurde Mozart geboren (Stadt) und wo ist er gestorben?",
+      "antworten": [
+        "geb. in Salzburg",
+        "gest. in Wien"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Wie lauten seine beiden Vornamen?",
+      "antworten": [
+        "Wolfang Amadeus"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Welcher Pianist und Komponist schrieb das berühmte Klavierstück \"Für Elise\"?",
+      "antworten": [
+        "Ludwig van Beethoven"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Welche Rockband wurde 1973 gegründet und ist für Hits wie \"Bohemian Rhapsody\" und \"We Will Rock You\" bekannt?",
+      "antworten": [
+        "Queen"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Wie hieß der Frontmann und Sänger der Band und woran verstarb er?",
+      "antworten": [
+        "Freddie Mercury",
+        "An den Komplikationen einer HIV-Infektion"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Schätzfrage",
+      "frage": "Was war das meist besuchteste Konzert der Welt?",
+      "antworten": [
+        "Rod Stewart 31.12.1994 Copacabana in Rio - 3,5 Mio.",
+        "Monsters of Rock, Moskau (1997) - 1,6 Mio."
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Welche Band spielte als erste jemals, innerhalb eines Jahres auf allen 7 Kontinenten.",
+      "antworten": [
+        "Metallica (2013)"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Schätzfrage",
+      "frage": "Wie laut war die lauteste Band jemals und steht damit im Guinness-Buch der Rekorde",
+      "antworten": [
+        "Manowar - 139dB (Juli 2008)"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Multiple Buzzer",
+      "frage": "Wo wurden überall, im Rahmen von Terroranschlägen, am 11.09.2001 Flugzeuge entführt und absichtlich zum Absturz gebracht?",
+      "antworten": [
+        "WTC Nordturm",
+        "WTC Südturm",
+        "Pentagon in Arlington",
+        "Feld in der Nähe von Shanksville, Pennsylvania"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Wo befindet man sich, wenn man auf die “Gelbe Wand” blickt?",
+      "antworten": [
+        "Im Signal Iduna Park (BVB Stadion)"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "In Australien herrscht Linksverkehr? Richtig oder Falsch?",
+      "antworten": [
+        "Richtig"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Welchen Tag bezeichnen/feiern die US-Amerikaner als “Independence Day”",
+      "antworten": [
+        "04. Juli"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Multiple Buzzer",
+      "frage": "In welchen Städten sollen die nächsten 3 Olympischen Sommerspiele stattfinden?",
+      "antworten": [
+        "Paris 2024",
+        "Los Angeles 2028",
+        "Brisbane 2032"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Eintippen",
+      "frage": "Welche Sportart wird es 2028 erstmals bei den Olympischen Spielen geben? a) Tischtennis b) Quidditch c) Squash d) Pokern",
+      "antworten": [
+        "Squash",
+        ""
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Mars hat 2. Jupiter hat mindestens 92. Merkur hat keine. Worum geht es?",
+      "antworten": [
+        "Monde"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Wo befindet sich die Klagemauer?",
+      "antworten": [
+        "Jerusalem"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Was ist das höchste Bauwerk Deutschlands?",
+      "antworten": [
+        "Berliner Fernsehturm - 368 Meter"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Schätzfrage",
+      "frage": "Wie teuer war der BER und um wie viele Jahre wurde seine Eröffnung verzögert?",
+      "antworten": [
+        "ca. 6 Milliarden Euro",
+        "Um 9 Jahre verzögert. Urspr. 2011, Tatsächlich Oktober 2020"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Multiple Buzzer",
+      "frage": "Nenne alle deutschen öffentlich-rechtlichen Fernsehsender",
+      "antworten": [
+        "ARD",
+        "ZDF",
+        "Bayrischer Rundfunk",
+        "Hessischer Rundfunk",
+        "Westdeutscher Rundfunk",
+        "Norddeutscher Rundfunk",
+        "Rundfunk Berlin Brandenburg",
+        "Mitteldeutscher Rundfunk",
+        "Südwestdeutscher Rundfunk",
+        "ARD aplha",
+        "Kinderkanal",
+        "3SAT",
+        "Phoenix",
+        "arte",
+        "One",
+        "ZDF Neo",
+        "ZDF Info",
+        "Tagesschau24"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Was ist mit dem \"Kniefall von Warschau\" gemeint und wer hat ihn vollzogen?",
+      "antworten": [
+        "Willy Brandt, kniet bei besuch in Warschau nieder um reue für Verbrechen der deutschen während des 2. Weltkriegs zu zeigen"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Welches ist das häufigste Element im Weltall?",
+      "antworten": [
+        "Wasserstoff"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Wie hieß der erste Hund im All?",
+      "antworten": [
+        "Laika"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Wie heißt der schwärzeste Schwarzton, den es gibt?",
+      "antworten": [
+        "Vantaschwarz"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Wie hieß das Überschallflugzeug, das bis 2003 im Einsatz war, wäre eine zu leichte Frage. Welche beiden Unternehmen betrieben die Concorde?",
+      "antworten": [
+        "British Airways",
+        "Air France"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Eintippen",
+      "frage": "Was heißt nicht \"Ich liebe dich\" in einer anderen Sprache a) Rakastan sinua b) Je t'aime c) Jag älskar dig d) Nienawidzę cię",
+      "antworten": [
+        "d) Nienawidzę cię (Polnisch)"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Schätzfrage",
+      "frage": "Wie viel Prozent der gesamten Erde sind heißer als 1000 Grad (Celsius)?",
+      "antworten": [
+        "99 Prozent. "
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Wonach ist Bluetooth benannt?",
+      "antworten": [
+        "Nach dem Wikinger Harald Blauzahn"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Welcher Gegenstand hilft Leonardo DiCaprio in \" Inception\" dabei, Wirklichkeit und Traum zu unterscheiden?",
+      "antworten": [
+        "Kreisel"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Wen soll man \"nicht nerven\" da er mit 23 in den Krieg geschickt wurde?",
+      "antworten": [
+        "Julius Negatron"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "1883 wurde die gesetzliche Krankenversicherung eingeführt. Wem ist das zu verdanken?",
+      "antworten": [
+        "Otto von Bismarck"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Deutschlands größter Kinosaal hat 1.250 Plätze. In welcher Stadt befindet er sich? ",
+      "antworten": [
+        "Die Lichtburg in Essen"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Welcher Test ist ein Klassiker, wenn es darum geht die Ausdauer zu testen?",
+      "antworten": [
+        "Cooper-Test"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Schätzfrage",
+      "frage": "Aus wie vielen Buchstaben besteht der längste offizielle Ortsname Europas?",
+      "antworten": [
+        "58 Buchstaben - \"Llanfair­pwllgwyn­gyllgo­gery­chwyrn­drobwll­llan­tysilio­gogo­goch\" in Wales"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Multiple Buzzer",
+      "frage": "Zähle π/Pi auf",
+      "antworten": [
+        "Pi = 3.14159265358979323846264338327950288419716939937510"
+      ],
+      "assets": [
+        ""
+      ]
+    }
+  ]
+}

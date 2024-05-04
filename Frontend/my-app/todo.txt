@@ -1,8 +1,8 @@
 IMMER IP ADRESSE IN ENV SETZEN !!!!!!!
 
 TODO--------------
- bild einblenden nur noch streamingpage (json reiter hinzufügen mit "typ" und dann frage, bild, distance etc.)
- font und schrift kontur
+ Ton/ video anzeigen lassen 
+ tiktok page (harte arbeit)
  showmasterpage antworten wrappen
  tims facecam hinzufügen (geht nicht)
  sortieren, antworten radnomized anzeigen und bewegen bei anklicken sieht host was gedrückt wird
@@ -10,13 +10,18 @@ TODO--------------
  (rasberry pi mit server)
 
 
+
 Ideen für kategorie
  Bilder erraten
  4 Bilder 1 Wort
  Entfernung mit Karte
  Erkennst du den Song
- 
- 
+
+Quiztermine
+4.5 zur Not 5.5 Samstag/ Sonntag Jans Fragen
+danach dana
+Tom maybe
+
 
 ---------------------------------
 Was schon getan wurde
@@ -45,6 +50,8 @@ Was schon getan wurde
  streamPage layout anpassen und webcma als hintergrund setzen
  ready checkbox nicht im feld anwählbar
  timer für buzzer nach drücken (bei multiple buzzer rausnehmen)
+ font und schrift kontur
+ AUDIO GEFIXED POGCHAMP
 
 --------------------------------
 Zukunft

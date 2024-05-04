@@ -8,6 +8,7 @@ import {
   Container,
   Image,
 } from "react-bootstrap";
+import "../layout/StartPage.css";
 import { useDispatch, useSelector } from "react-redux";
 import io from "socket.io-client";
 import { setPlayer } from "../slices/LoginPlayerSlice";
@@ -15,7 +16,7 @@ import Navigation from "./Navigation";
 import useSound from "use-sound";
 import { NumberFormatter } from "@mantine/core";
 import "../layout/scrollbar.css";
-import tom1 from "../images/tom1.jpg";
+import tom1 from "../images/tom3.jpg";
 import jan1 from "../images/jan3.jpg";
 import tim1 from "../images/tim1.jpg";
 import dana1 from "../images/dana1.jpg";
@@ -43,31 +44,30 @@ const StartPage = () => {
   const inputRef = useRef(null); // Ref für das Eingabefeld
   const [isReady, setIsReady] = useState(false);
   const [timerRunning, setTimerRunning] = useState(false);
+  const [assetIndex, setAssetIndex] = useState(0);
   let timer = useRef(0);
 
   // Sound
-  var [volume, setVolume] = useState(0.3);
-  // const [playSound, { error }] = useSound('/pfad/zur/sounddatei.mp3', { volume: 1 });
+  const volumeRef = useRef(0.5); // Verwenden Sie useRef für die volume-Variable
+  const [sliderValue, setSliderValue] = useState(volumeRef.current); // Zustand für den Slider-Wert
 
   const playStoredSound = (soundFile) => {
     const base64Sound = localStorage.getItem(soundFile);
     if (base64Sound) {
-      // Base64-String in einen ArrayBuffer umwandeln
       const arrayBuffer = Uint8Array.from(atob(base64Sound), (c) =>
         c.charCodeAt(0)
       ).buffer;
-
-      // Neue Audioquelle erstellen
       const audio = new Audio();
-
-      // Audioquelle aus dem ArrayBuffer laden
       audio.src = URL.createObjectURL(
         new Blob([arrayBuffer], { type: "audio/mp3" })
       );
-      audio.volume = volume;
-      // Audio abspielen
+      audio.volume = volumeRef.current; // Verwenden Sie die aktuelle volume-Referenz
       audio.play();
     }
+  };
+  const adjustVolume = (e) => {
+    volumeRef.current = parseFloat(e.target.value); // Aktualisieren Sie die volume-Referenz
+    setSliderValue(volumeRef.current); // Aktualisieren Sie den Zustand des Sliders
   };
 
   const handleSelectPlayer = (eventKey) => {
@@ -142,11 +142,13 @@ const StartPage = () => {
       setFrage(body.frage);
       setFragenIndex(parseInt(body.fragenIndex));
       setAssets(body.assets);
+      setAssetIndex(body.assetIndex);
     });
     newSocket.on("hideQuestion", (body) => {
       setFrage();
       setKategorie(body.kategorie);
       setFragenIndex(parseInt(body.fragenIndex));
+      setAssets(body.assets);
       handleCheckBoxUnready();
     });
 
@@ -275,6 +277,14 @@ const StartPage = () => {
 
   return (
     <div>
+      <input
+        type="range"
+        min="0"
+        max="1"
+        step="0.001"
+        value={sliderValue} // Verwenden Sie den Zustand für den Slider-Wert
+        onChange={(e) => adjustVolume(e)}
+      /> ES FUNKTIONIERT JETZT!
       <div className="text-center" onClick={handleClickOutside}>
         <div className="d-flex justify-content-center align-items-center">
           <Card
@@ -298,9 +308,7 @@ const StartPage = () => {
           </Card>
         </div>
       </div>
-      <div className="d-flex justify-content-center align-items-center">
-        <Image src={assets} style={{ width: "25%" }} />
-      </div>
+
       <div
         className="d-flex justify-content-center align-items-center"
         onClick={handleClickOutside}
@@ -317,7 +325,7 @@ const StartPage = () => {
             minHeight: "15vh",
             backgroundImage: `url(${
               buzzerPressedBy === "Tom"
-                ? noPic1
+                ? tom1
                 : buzzerPressedBy === "Tim"
                 ? tim1
                 : buzzerPressedBy === "Jan"
@@ -336,6 +344,12 @@ const StartPage = () => {
         >
           {buzzerPressedBy || "BUZZER!"}
         </Button>
+      </div>
+      <div className="d-flex justify-content-center align-items-center">
+        <Image
+          src={assets ? assets[assetIndex] : null}
+          style={{ width: "50%" }}
+        />
       </div>
       <div className="d-flex justify-content-center align-items-center">
         <InputGroup style={{ width: "900px", height: "150px" }}>
@@ -399,7 +413,7 @@ const StartPage = () => {
                 overflowY: "hidden",
                 backgroundImage: `url(${
                   player.userID === "Tom"
-                    ? noPic1
+                    ? tom1
                     : player.userID === "Tim"
                     ? tim1
                     : player.userID === "Jan"
@@ -421,7 +435,7 @@ const StartPage = () => {
               <Card.Body>
                 <Card.Title
                   style={{ fontSize: "30px" }}
-                  className="d-flex justify-content-between align-items-center flex-wrap"
+                  className="d-flex justify-content-between align-items-center flex-wrap pointText"
                 >
                   <div>{player.userID}:</div>
                   <div>{player.currentPoints} p</div>
@@ -432,14 +446,7 @@ const StartPage = () => {
         ))}
       </div>
       <Navigation />
-      <input
-        type="range"
-        min="0"
-        max="1"
-        step="0.1"
-        value={volume}
-        onChange={(e) => setVolume(parseFloat(e.target.value))}
-      />
+      
     </div>
   );
 };

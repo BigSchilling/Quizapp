@@ -1,0 +1,514 @@
+{
+  "fragen": [
+    {
+      "kategorie": "Buzzer",
+      "frage": "Für welche Spielereihe ist FromSoftware berühmt?",
+      "antworten": [
+        "Dark Souls "
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Was war das Besondere an den Spielediscs des Nintendo Gamecube?",
+      "antworten": [
+        "Es sind kleine CDs (Mini-CDs) "
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Wie heißt der (Anti)held aus God of War?",
+      "antworten": [
+        " Kratos "
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Was war der Nachfolger der Nintendo Wii?",
+      "antworten": [
+        "Wii U "
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Welches Spiel gilt bis heute als schlechtestes Spiel aller Zeiten?",
+      "antworten": [
+        "E.T. "
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Schätzfrage",
+      "frage": "Wie viel kostete 2013 die PS4 in Brasilien, und wie viel kostete die XBox One? In € ",
+      "antworten": [
+        "Umgerechnet 1350 Euro und 740€ (Tatsächlich sind es wohl die Importzölle, die den Preis so in die Höhe schießen lassen) "
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "In welchem aus Deutschland stammenden Shooter, bekam man einen Hi-Tech-Anzug um auf einer tropischen Insel gegen Aliens zukämpfen?",
+      "antworten": [
+        " Crysis "
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Solid Snake aus Metal Gear Solid hat ein sehr beliebtes Versteck. Welches ist das?",
+      "antworten": [
+        "Unter einem Karton "
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Welchen Titel trägt der spielbare Charakter in Skyrim?",
+      "antworten": [
+        "Dovahkiin - Drachenblut! "
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Durch welche Maschine betritt man die antiken Welten in der Assassin's Creed Reihe? ",
+      "antworten": [
+        "Animus "
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Schätzfrage",
+      "frage": "Wann erschien das Spiel \"Moorhuhnjagd\"?",
+      "antworten": [
+        "1999 "
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": " Aus welcher Spielereihe stammt der Satz War.. War never changes?",
+      "antworten": [
+        "Fallout "
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Eintippen",
+      "frage": "Zu welchen Pokémon-Spielen ist keine überarbeitete Version erschienen? Silber & Gold / Rubin & Saphir / Schwarz & Weiß / Rot & Blau ",
+      "antworten": [
+        "Silber & Gold"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Wie heißt der wichtigste Teil der Basis von League of Legends, welcher zerstört werden muss, um das Match zu gewinnen?",
+      "antworten": [
+        "Nexus "
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Wer ist das?",
+      "antworten": [
+        "Vaas Montenegro"
+      ],
+      "assets": [
+        "https://puu.sh/K4EX0/4eefc4a39b.png "
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Wie heißt die Protagonistin aus den The Last of Us Teilen? ",
+      "antworten": [
+        "Ellie "
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Wie heißt die Organisation, die regelmäßig Spielepakete anbietet und dem Käufer möglich macht, den Betrag gemeinnützigen Organisationen zu spenden?",
+      "antworten": [
+        "Humble Bundle "
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Eintippen",
+      "frage": "Welche große, reale Katastrophe wird in S.T.A.L.K.E.R. behandelt? Tsunami in Indonesien / Der Terroranschlag auf das World Trade Center / Atomarer Vorfall in Tschernobyl / Der erste Weltkrieg ",
+      "antworten": [
+        "Atomarer Vorfall in Tschernobyl "
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "In welcher Stadt spielt Metro 2033?",
+      "antworten": [
+        "Moskau "
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Womit will Mario das Zentrum des Universums in Super Mario Galaxy erreichen?",
+      "antworten": [
+        "Rosalinas Sternwarte "
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Was für ein Tier ist Crash Bandicoot?",
+      "antworten": [
+        "Nasenbeutelratte/Beuteldachs"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Was verschießt Isaac als Projektile, um die Monster zu besiegen (The Binding of Isaac)?",
+      "antworten": [
+        "Tränen "
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Wie heißt die Raketentestbasis in Half-Life?",
+      "antworten": [
+        "Black Mesa "
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Eintippen",
+      "frage": "Welches The Legend of Zelda-Spiel ist hier zu sehen?  Ocarina of Time / Majora's Mask / Twilight Princess / A Link to the Past ",
+      "antworten": [
+        "Ocarina of Time"
+      ],
+      "assets": [
+        "https://puu.sh/K4EY1/9ad0b329e4.png"
+      ]
+    },
+    {
+      "kategorie": "Schätzfrage",
+      "frage": "Wie viele Jahre vor Star Wars IV: Eine neue Hoffnung spielt Knights of the Old Republic?",
+      "antworten": [
+        "Die Handlung des Spiels beginnt 10 Jahre nach dem Vertrag von Coruscant, also etwas mehr als 300 Jahre nach Knights of the Old Republic und über 3600 Jahre vor Episode IV – Eine neue Hoffnung. "
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Was wird dir während Portal immer wieder versprochen und in was wird GLaDOS in Mitte Portal 2 gesteckt?",
+      "antworten": [
+        "Kuchen + Kartoffel "
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Wer lebt in Stardew Valley im Turm?",
+      "antworten": [
+        "Der Magier "
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Wie viele Pre-Hardmode Bosse gibt es?",
+      "antworten": [
+        "7"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Civ 5: Welcher amerikanische Präsident ist in der Zivilisation Amerika?",
+      "antworten": [
+        "George Washington"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Schätzfrage",
+      "frage": "Wann ist das Spiel Rocket League erschienen? MM/YYYY",
+      "antworten": [
+        "07/2015"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Rainbow Six Siege: Zu welcher Spezialeinheit gehört der Operator \"Ash\"?",
+      "antworten": [
+        "FBI"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Schätzfrage",
+      "frage": "Höchstes Level in Battlefield 4.",
+      "antworten": [
+        " 140"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Multiple Buzzer",
+      "frage": "CS: GO: Was für Symbole sind auf dem „Global-Elite-Logo“ zu erkennen?",
+      "antworten": [
+        "Lorbeerkranz (2x), Flügel (2x), Stern (2x), AK (2x), Erdkugel"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Welchen großen Skandal gab es bei Star Wars: Battlefront 2?",
+      "antworten": [
+        "Mikrotransaktionen/pay2win"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "„Hello Games“ war in eine große Kontroverse über die irreführende Vermarktung welches Titels von 2016 verwickelt?",
+      "antworten": [
+        "No Man's Sky "
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Welcher Shooter von 2007 wurde wegen der umstrittenen „Flughafen“-Mission kritisch verspottet?",
+      "antworten": [
+        "MW2 "
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Wie nennt man das Symbol, welches auf dem Half Life Logo zu sehen ist?",
+      "antworten": [
+        "Lambda (Symbol für Halbwertszeit = Half Life) "
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Wie heißt der Hauptcharakter der Uncharted Reihe?",
+      "antworten": [
+        "Nathan Drake"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "In welchem Jahr wurde das erste Call of Duty veröffentlicht?",
+      "antworten": [
+        "2003 "
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Welche RPG-Spielereihe, die in Deutschland entwickelt wurde, eroberte die Herzen der Spieler in der frühen 2000er?",
+      "antworten": [
+        "Gothic "
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Schätzfrage",
+      "frage": "Wie schnell ist der aktuelle Minecraft Speedrun Weltrekord (Any% Glitchless Random Seed 1.16+) und wie schnell ist der aktuelle Weltrekord für die All Advancements Kategorie?",
+      "antworten": [
+        "7min 1sek (drip120) / (Feinberg) 2h 26min 29s "
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": " Vervollständige den Satz: “It’s dangerous to go alone...”",
+      "antworten": [
+        "Take this. (Aus Legend of Zelda) "
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Eintippen",
+      "frage": "Wie heißt der Autor der Witcher-Bücher?  Andrzej Sapkowski / Janusz Głowacki / Sergei Lukjanenko / Stanisław Dygat ",
+      "antworten": [
+        "Andrzej Sapkowski"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Aus welchem Spiel stammt diese Waffe?",
+      "antworten": [
+        "TF2"
+      ],
+      "assets": [
+        "https://puu.sh/K4Fjd/01b041eeb8.png"
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "In Die Sims 4 kannst du dir eine prächtige Kuhpflanze heranzüchten. Was passiert, wenn du sie vernachlässigst?",
+      "antworten": [
+        "Sie verspeist deine Sims. "
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Wie heißt dieses Pokemón und was ist seine besondere Fähigkeit?",
+      "antworten": [
+        "Ditto + Verwandlung "
+      ],
+      "assets": [
+        "https://puu.sh/K4Fkb/fcf578dd70.png"
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Welcher Entwickler ist für Baldur's Gate 3 verantwortlich?",
+      "antworten": [
+        "Larian Studios "
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Was ist das schnellste Auto in GTA 5?",
+      "antworten": [
+        "Grotti Vigilante "
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Wie heißt der Hauptcharkter der Halo Reihe? ",
+      "antworten": [
+        "Master Chief "
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Multiple Buzzer",
+      "frage": "Zählt Spiele des Battle Royale Genre auf.",
+      "antworten": [
+        "https://en.wikipedia.org/wiki/List_of_battle_royale_games"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Was ist das schnellste Auto in GTA 5?",
+      "antworten": [
+        "Grotti Vigilante "
+      ],
+      "assets": [
+        ""
+      ]
+    }
+  ]
+}
