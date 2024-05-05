@@ -268,6 +268,15 @@ io.on('connection', (socket) => {
         }
     }
     );
+    socket.on('sendReactPlayerControls', async (body) => {
+        try {
+            // console.log("in reactPlayerControls")
+            io.emit("reactPlayerControls", body)
+        } catch (error) {
+            console.error('Error on sendReactPlayerControls ', error);
+        }
+    }
+    );
     socket.on('sendStreamingQuestion', async (body) => {
         try {
             io.emit("streamingQuestion", body)

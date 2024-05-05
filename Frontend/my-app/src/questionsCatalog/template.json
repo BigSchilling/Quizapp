@@ -1,23 +1,40 @@
 {
-    "fragen": [
-      {
-        "kategorie": "Buzzer",
-        "frage": "Was ist die Hauptstadt von Frankreich?",
-        "antworten": ["Paris"],
-        "assets": ["https://i.imgur.com/IzNt8kq.png"]
-      },
-      {
-        "kategorie": "Multiple Buzzer",
-        "frage": "Welche Farben hat die deutsche Flagge?",
-        "antworten": ["Schwarz", "Rot", "Gold"],
-        "assets": ["https://prnt.sc/o00nkNoZQzWY"]
-      },
-      {
-        "kategorie": "Schätzfrage",
-        "frage": "Wie viele Bäume gibt es.",
-        "antworten": ["12"],
-        "assets": ["https://prnt.sc/o00nkNoZQzWY"]
-      }
-    ]
-  }
-  
+  "info": "video als objekt übergeben als 'video' oder 'sound' um eine sound datei abzuspielen",
+  "fragen": [
+    {
+      "kategorie": "Buzzer",
+      "frage": "Was ist die Hauptstadt von Frankreich?",
+      "antworten": [
+        "Paris"
+      ],
+      "assets": [
+        "https://i.imgur.com/IzNt8kq.png"
+      ]
+    },
+    {
+      "kategorie": "Multiple Buzzer",
+      "frage": "Welche Farben hat die deutsche Flagge?",
+      "antworten": [
+        "Schwarz",
+        "Rot",
+        "Gold"
+      ],
+      "assets": [
+        {
+          "sound": "https://youtu.be/OtZ11ui_TB8?t=39"
+        }
+      ]
+    },
+    {
+      "kategorie": "Schätzfrage",
+      "frage": "Wie viele Bäume gibt es.",
+      "antworten": [
+        "12"
+      ],
+      "assets": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Test-Logo.svg/783px-Test-Logo.svg.png"
+      ],
+      "assetType": ""
+    }
+  ]
+}

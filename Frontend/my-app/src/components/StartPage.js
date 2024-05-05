@@ -22,7 +22,8 @@ import tim1 from "../images/tim1.jpg";
 import dana1 from "../images/dana1.jpg";
 import noPic1 from "../images/noPic1.jpg";
 import chris1 from "../images/chris2.jpg";
-
+import ReactPlayer from "react-player";
+import { soundGif } from "./StreamingPage";
 const server = process.env.REACT_APP_API_SERVER;
 
 const StartPage = () => {
@@ -51,6 +52,16 @@ const StartPage = () => {
   const volumeRef = useRef(0.5); // Verwenden Sie useRef für die volume-Variable
   const [sliderValue, setSliderValue] = useState(volumeRef.current); // Zustand für den Slider-Wert
 
+  // reactplayer variables
+  const playerVolumeRef = useRef(0.5);
+  const [isPlaying, setIsPlaying] = useState(false);
+  const [minutes, setMinutes] = useState("");
+  const [seconds, setSeconds] = useState("");
+  const [playerSliderValue, setPlayerSliderValue] = useState(
+    playerVolumeRef.current
+  );
+  const videoPlayerRef = useRef(null);
+  // Sound functions
   const playStoredSound = (soundFile) => {
     const base64Sound = localStorage.getItem(soundFile);
     if (base64Sound) {
@@ -163,6 +174,17 @@ const StartPage = () => {
         playStoredSound("falseSound");
       }
     });
+    newSocket.on("reactPlayerControls", (body) => {
+      if ("isPlaying" in body) {
+        console.log("server play ");
+        handlePlayPause(body.isPlaying);
+      }
+      if (body.seekTime) {
+        console.log("in body seekTime");
+        handleSeekToTime(body.seekTime);
+      }
+    });
+
     setSocket(newSocket);
 
     return () => {
@@ -275,6 +297,21 @@ const StartPage = () => {
     }
   }, [isReady]);
 
+  // reactplayer functions
+  const handlePlayPause = (data) => {
+    console.log("handle play", data);
+    setIsPlaying(data);
+  };
+  const handleSeekToTime = (totalSeconds) => {
+    if (!isNaN(totalSeconds) && videoPlayerRef.current) {
+      console.log("player seek gesetzt");
+      videoPlayerRef.current.seekTo(totalSeconds);
+    }
+  };
+  const adjustPlayerVolume = (e) => {
+    playerVolumeRef.current = parseFloat(e.target.value);
+    setPlayerSliderValue(playerVolumeRef.current);
+  };
   return (
     <div>
       <input
@@ -284,7 +321,8 @@ const StartPage = () => {
         step="0.001"
         value={sliderValue} // Verwenden Sie den Zustand für den Slider-Wert
         onChange={(e) => adjustVolume(e)}
-      /> ES FUNKTIONIERT JETZT!
+      />{" "}
+      ES FUNKTIONIERT JETZT!
       <div className="text-center" onClick={handleClickOutside}>
         <div className="d-flex justify-content-center align-items-center">
           <Card
@@ -308,7 +346,6 @@ const StartPage = () => {
           </Card>
         </div>
       </div>
-
       <div
         className="d-flex justify-content-center align-items-center"
         onClick={handleClickOutside}
@@ -345,12 +382,53 @@ const StartPage = () => {
           {buzzerPressedBy || "BUZZER!"}
         </Button>
       </div>
-      <div className="d-flex justify-content-center align-items-center">
-        <Image
-          src={assets ? assets[assetIndex] : null}
-          style={{ width: "50%" }}
-        />
-      </div>
+      {assets ? (
+        <div className="d-flex justify-content-center align-items-center">
+          {assets[assetIndex].video || assets[assetIndex].sound ? (
+            <div>
+              <div
+                style={{
+                  display: "block",
+                  border: "3px solid white",
+                  width: "auto",
+                  height: "auto",
+                }}
+              >
+                <input
+                  type="range"
+                  min="0"
+                  max="1"
+                  step="0.01"
+                  value={playerSliderValue}
+                  onChange={(e) => adjustPlayerVolume(e)}
+                />
+                <Image
+                  src={soundGif}
+                  style={{ display: "", objectFit: "" }}
+                />
+                <ReactPlayer
+                  url={assets[assetIndex].video || assets[assetIndex].sound}
+                  playing={isPlaying}
+                  controls={false}
+                  loop={true}
+                  width="100%"
+                  height="100%"
+                  volume={playerVolumeRef.current}
+                  ref={(p) => {
+                    videoPlayerRef.current = p;
+                  }}
+                  style={{ display: "none", border: "3px solid white" }}
+                />
+              </div>
+            </div>
+          ) : (
+            <Image
+              src={assets ? assets[assetIndex] : null}
+              style={{ width: "40%" }}
+            />
+          )}
+        </div>
+      ) : null}
       <div className="d-flex justify-content-center align-items-center">
         <InputGroup style={{ width: "900px", height: "150px" }}>
           <div
@@ -446,7 +524,6 @@ const StartPage = () => {
         ))}
       </div>
       <Navigation />
-      
     </div>
   );
 };

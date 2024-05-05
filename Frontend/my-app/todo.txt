@@ -1,7 +1,7 @@
 IMMER IP ADRESSE IN ENV SETZEN !!!!!!!
 
 TODO--------------
- Ton/ video anzeigen lassen 
+ Ton/ video anzeigen lassen (nur ton geht jetzt)
  tiktok page (harte arbeit)
  showmasterpage antworten wrappen
  tims facecam hinzufügen (geht nicht)

@@ -1,3 +1,4 @@
+import "../layout/streamingPage.css";
 import React, { useEffect, useState, useRef } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import {
@@ -21,7 +22,6 @@ import {
 import io from "socket.io-client";
 import useSound from "use-sound";
 import Navigation from "./Navigation";
-import "../layout/streamingPage.css";
 import "../layout/scrollbar.css";
 import useTSRemoteApp from "../TS5-RemoteAPI/index.ts";
 import "../layout/animatedBorder.css";
@@ -36,7 +36,10 @@ import dana1 from "../images/dana1.jpg";
 import noPic1 from "../images/noPic1.jpg";
 import { ReactComponent as BackgroundSVG } from "../images/background1.svg";
 import { ReactComponent as BackgroundSVG2 } from "../images/background2.svg";
+import ReactPlayer from "react-player";
 const server = process.env.REACT_APP_API_SERVER;
+export const soundGif = "https://miro.medium.com/v2/resize:fit:960/1*ll6000BtRBCGWfq5xK2GeA.gif"
+
 // sehen wer spricht - Teamspeak 5 plugin
 export const aktuellerMod = "Jan"; // mod ändern
 const StreamingPage = () => {
@@ -66,6 +69,15 @@ const StreamingPage = () => {
   const [playSound, { error }] = useSound("/pfad/zur/sounddatei.mp3", {
     volume: 1,
   });
+  // reactplayer variables
+  const playerVolumeRef = useRef(0.5);
+  const [isPlaying, setIsPlaying] = useState(false);
+  const [minutes, setMinutes] = useState("");
+  const [seconds, setSeconds] = useState("");
+  const [playerSliderValue, setPlayerSliderValue] = useState(
+    playerVolumeRef.current
+  );
+  const videoPlayerRef = useRef(null);
   //  teamspeak shit
   const talkers = useRef({ names: [] });
   const talkingNames = useRef([]);
@@ -164,8 +176,7 @@ const StreamingPage = () => {
     handleDevices();
   }, []);
 
-  const playStoredSound = (soundFile) => {
-  };
+  const playStoredSound = (soundFile) => {};
 
   useEffect(() => {
     const newSocket = io(`ws://${server}:8080`, {});
@@ -230,6 +241,16 @@ const StreamingPage = () => {
       setAssets(body.assets);
       setAssetIndex(0);
     });
+    newSocket.on("reactPlayerControls", (body) => {
+      if ("isPlaying" in body) {
+        console.log("server play ");
+        handlePlayPause(body.isPlaying);
+      }
+      if (body.seekTime) {
+        console.log("in body seekTime");
+        handleSeekToTime(body.seekTime);
+      }
+    });
 
     setSocket(newSocket);
 
@@ -280,6 +301,17 @@ const StreamingPage = () => {
   //   talkingMap2,
   //   " map2"
   // );
+  // reactplayer functions
+  const handlePlayPause = (data) => {
+    console.log("handle play", data);
+    setIsPlaying(data);
+  };
+  const handleSeekToTime = (totalSeconds) => {
+    if (!isNaN(totalSeconds) && videoPlayerRef.current) {
+      console.log("player seek gesetzt");
+      videoPlayerRef.current.seekTo(totalSeconds);
+    }
+  };
   const camWidth = "20%";
   const camHeight = "10%";
 
@@ -342,7 +374,7 @@ const StreamingPage = () => {
                   ? "warning"
                   : player.isReady
                   ? "success"
-                  :  player.userID== aktuellerMod
+                  : player.userID == aktuellerMod
                   ? "dark"
                   : "secondary"
               }
@@ -430,19 +462,67 @@ const StreamingPage = () => {
                   overflowY: "hidden",
                 }}
               >
-                <div className="image-container">
-                  <Image
-                    src={assets[assetIndex]}
-                    className="image"
-                    alt="Bild"
-                    style={{objectFit: "fill", filter: "blur(15px)"} }
-                  />
-                   <Image
-                    src={assets[assetIndex]}
-                    className="image"
-                    alt="Bild"
-                    style={{objectFit: "contain"}}
-                  />
+                <div className="image-container" style={{ maxHeight: "40px" }}>
+                  {assets[assetIndex].video || assets[assetIndex].sound ? (
+                    <div
+                      style={{
+                        // display: "flex",
+                        // border: "3px solid white",
+                        width: "100%",
+                        minHeight: "100%",
+                      }}
+                    >
+                      {assets[assetIndex].sound ? (
+                        <>
+                          <Image
+                            src={soundGif}
+                            className="image"
+                            alt="Bild"
+                            style={{ objectFit: "fill", filter: "blur(15px)" }}
+                          />
+                          <Image
+                            src={soundGif}
+                            className="image"
+                            alt="Bild"
+                            style={{ objectFit: "contain" }}
+                          />
+                        </>
+                      ) : null}
+                      <ReactPlayer
+                        url={
+                          assets[assetIndex].video || assets[assetIndex].sound
+                        }
+                        playing={isPlaying}
+                        controls={false}
+                        loop={true}
+                        width="auto"
+                        // minHeight="100%"
+                        volume={0}
+                        ref={(p) => {
+                          videoPlayerRef.current = p;
+                        }}
+                        style={{
+                          display: assets[assetIndex].sound ? "none" : "",
+                          objectFit: "contain",
+                        }}
+                      />
+                    </div>
+                  ) : (
+                    <>
+                      <Image
+                        src={assets[assetIndex]}
+                        className="image"
+                        alt="Bild"
+                        style={{ objectFit: "fill", filter: "blur(15px)" }}
+                      />
+                      <Image
+                        src={assets[assetIndex]}
+                        className="image"
+                        alt="Bild"
+                        style={{ objectFit: "contain" }}
+                      />
+                    </>
+                  )}
                 </div>
               </Card>
             </div>

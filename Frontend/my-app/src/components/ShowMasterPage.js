@@ -22,7 +22,7 @@ import {
   setTimer,
 } from "../slices/ShowMasterSlice";
 import io from "socket.io-client";
-import FragenData from "../questionsCatalog/Folge9jan.json"; // datei mit fragen
+import FragenData from "../questionsCatalog/template.json"; // datei mit fragen
 import useSound from "use-sound";
 import tom1 from "../images/tom1.jpg";
 import jan1 from "../images/jan3.jpg";
@@ -30,6 +30,8 @@ import tim1 from "../images/tim1.jpg";
 import dana1 from "../images/dana1.jpg";
 import noPic1 from "../images/noPic1.jpg";
 import chris1 from "../images/chris2.jpg";
+import ShowMasterPlayer from "./test/ShowMasterPlayer";
+import ReactPlayer from "react-player";
 const server = process.env.REACT_APP_API_SERVER;
 
 const ShowMasterPage = () => {
@@ -56,17 +58,31 @@ const ShowMasterPage = () => {
     new Array(fragen[fragenIndex].antworten.length).fill(false)
   );
   const [showQuestion, setShowQuestion] = useState(false);
-  let assetPointIndex = useRef(0)
+  let assetPointIndex = useRef(0);
   // Sound
   const volumeRef = useRef(0.5); // Verwenden Sie useRef für die volume-Variable
   const [sliderValue, setSliderValue] = useState(volumeRef.current); // Zustand für den Slider-Wert
+  // Youtube video/ React Player nur Sound
+  const playerVolumeRef = useRef(0.5);
+  const [isPlaying, setIsPlaying] = useState(false);
+  const [minutes, setMinutes] = useState("");
+  const [seconds, setSeconds] = useState("");
+  const [playerSliderValue, setPlayerSliderValue] = useState(
+    playerVolumeRef.current
+  );
+
+  const videoPlayerRef = useRef(null);
 
   const playStoredSound = (soundFile) => {
     const base64Sound = localStorage.getItem(soundFile);
     if (base64Sound) {
-      const arrayBuffer = Uint8Array.from(atob(base64Sound), (c) => c.charCodeAt(0)).buffer;
+      const arrayBuffer = Uint8Array.from(atob(base64Sound), (c) =>
+        c.charCodeAt(0)
+      ).buffer;
       const audio = new Audio();
-      audio.src = URL.createObjectURL(new Blob([arrayBuffer], { type: "audio/mp3" }));
+      audio.src = URL.createObjectURL(
+        new Blob([arrayBuffer], { type: "audio/mp3" })
+      );
       audio.volume = volumeRef.current; // Verwenden Sie die aktuelle volume-Referenz
       audio.play();
     }
@@ -77,7 +93,6 @@ const ShowMasterPage = () => {
   };
   useEffect(() => {
     const newSocket = io(`ws://${server}:8080`);
-
     newSocket.on("connect", () => {
       console.log("WebSocket-Verbindung hergestellt");
       newSocket.emit("sendLogIn", { isHost: isHost });
@@ -127,6 +142,16 @@ const ShowMasterPage = () => {
     // UpdatePlayers
     newSocket.on("UpdatePlayers", (playerPoints, players) => {
       setAllPoints(players);
+    });
+    newSocket.on("reactPlayerControls", (body) => {
+      if ("isPlaying" in body) {
+        console.log("server play ");
+        handlePlayPause(body.isPlaying);
+      }
+      if (body.seekTime) {
+        console.log("in body seekTime");
+        handleSeekToTime(body.seekTime);
+      }
     });
     setSocket(newSocket);
 
@@ -326,7 +351,7 @@ const ShowMasterPage = () => {
       socket.emit("sendHideQuestion", {
         fragenIndex: index,
         kategorie: fragen[index].kategorie,
-        assets: " "
+        assets: " ",
       });
     }
   };
@@ -336,16 +361,15 @@ const ShowMasterPage = () => {
       console.log("falsch", assetIndex, fragen[fragenIndex].assets.length);
       return;
     } else {
-      
-      if ( newValue > assetPointIndex.current) {
+      if (newValue > assetPointIndex.current) {
         if (newValue % 2 == 0 && value === 1) {
           setManuellPointsInput(manuellPoints - 1); // Wert des Eingabefelds speichern
           dispatch(setManuellPoints({ manuellPoints: manuellPoints - 1 }));
           // setManuellPoints(manuellPoints - 1);
-          assetPointIndex.current = newValue
+          assetPointIndex.current = newValue;
         }
       }
-      
+
       console.log("drin");
       setAssetIndex(newValue);
       const frage = fragen[fragenIndex].frage;
@@ -362,7 +386,42 @@ const ShowMasterPage = () => {
       });
     }
   };
- 
+
+  const sendReactPlayerControls = (data) => {
+    console.log("sendReactPlayerControls page", data);
+    if (socket) socket.emit("sendReactPlayerControls", data);
+  };
+
+  // React player
+  const adjustPlayerVolume = (e) => {
+    playerVolumeRef.current = parseFloat(e.target.value);
+    setPlayerSliderValue(playerVolumeRef.current);
+  };
+
+  const handlePlayPause = (data) => {
+    console.log("handle play", data);
+    setIsPlaying(data);
+  };
+  const sendPlayPause = () => {
+    const data = { isPlaying: !isPlaying };
+    console.log("send playpause", data);
+    socket.emit("sendReactPlayerControls", data);
+  };
+  // wird aufgerufen wenn server die sekunden weiterleitet und video spult an die stelle
+  const handleSeekToTime = (totalSeconds) => {
+    if (!isNaN(totalSeconds) && videoPlayerRef.current) {
+      console.log("player seek gesetzt");
+      videoPlayerRef.current.seekTo(totalSeconds);
+    }
+  };
+  // Moderator kann zur bestimmten stelle springen
+  const sendSeekToTime = () => {
+    const totalSeconds = parseInt(minutes) * 60 + parseInt(seconds);
+    if (!isNaN(totalSeconds)) {
+      const data = { seekTime: totalSeconds };
+      socket.emit("sendReactPlayerControls", data);
+    }
+  };
   var maxHeightVar = "8rem";
   return (
     <div className="grid-container3">
@@ -450,26 +509,92 @@ const ShowMasterPage = () => {
         </div>
       </Container>
       <div className="d-flex flex-column align-items-start">
-        <div className="d-flex flex-row" style={{ gap: "10px" }}>
-          <Button
-            variant="primary"
-            style={{ fontSize: "20px" }}
-            onClick={() => changeAssetIndex(-1)}
+        {fragen[fragenIndex].assets[assetIndex] ? (
+          <div
+            className="d-flex flex-row"
+            style={{ gap: "10px", marginTop: "10px" }}
           >
-            vorheriges Asset
-          </Button>
-          <Button
-            variant="primary"
-            style={{ fontSize: "20px" }}
-            onClick={() => changeAssetIndex(1)}
-          >
-            Nächstes Asset
-          </Button>
-          <Image
-            src={fragen[fragenIndex].assets[assetIndex]}
-            style={{ width: "25%" }}
-          />
-        </div>
+            {/* Reactplayer div*/}
+            {fragen[fragenIndex].assets[assetIndex].video || fragen[fragenIndex].assets[assetIndex].sound ? (
+              <div>
+                <div
+                  style={{
+                    display: "block",
+                    border: "3px solid white",
+                    width: "auto",
+                    height: "auto",
+                  }}
+                >
+                  <Button onClick={sendPlayPause}>
+                    {" "}
+                    {isPlaying ? "Pause Video" : "Play Video"}
+                  </Button>
+                  <input
+                    type="range"
+                    min="0"
+                    max="1"
+                    step="0.01"
+                    value={playerSliderValue}
+                    onChange={(e) => adjustPlayerVolume(e)}
+                  />
+                  {/* <Image
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Test-Logo.svg/783px-Test-Logo.svg.png"
+          style={{ display: "block", objectFit: "" }}
+        /> */}
+                  <ReactPlayer
+                    url={fragen[fragenIndex].assets[assetIndex].video || fragen[fragenIndex].assets[assetIndex].sound}
+                    playing={isPlaying}
+                    controls={true}
+                    loop={true}
+                    width="100%"
+                    height="100%"
+                    volume={playerVolumeRef.current}
+                    ref={(p) => {
+                      videoPlayerRef.current = p;
+                    }}
+                    // style={{ display: "none", border: "3px solid white" }}
+                  />
+                  <Form>
+                    <FormGroup controlId="formSeek">
+                      <Form.Label>Springe zu:</Form.Label>
+                      <Form.Control
+                        type="number"
+                        placeholder="Minutes"
+                        value={minutes}
+                        onChange={(e) => setMinutes(e.target.value)}
+                      />
+                      <Form.Control
+                        type="number"
+                        placeholder="Seconds"
+                        value={seconds}
+                        onChange={(e) => setSeconds(e.target.value)}
+                      />
+                    </FormGroup>
+                    <Button onClick={sendSeekToTime}>Seek</Button>
+                  </Form>
+                </div>
+              </div>
+            ) : null}
+            <Button
+              variant="primary"
+              style={{ fontSize: "20px" }}
+              onClick={() => changeAssetIndex(-1)}
+            >
+              vorheriges Asset
+            </Button>
+            <Button
+              variant="primary"
+              style={{ fontSize: "20px" }}
+              onClick={() => changeAssetIndex(1)}
+            >
+              Nächstes Asset
+            </Button>
+            <Image
+              src={fragen[fragenIndex].assets[assetIndex] || fragen[fragenIndex].assets[assetIndex]}
+              style={{ width: "25%" }}
+            />
+          </div>
+        ) : null}
         <FormGroup style={{ marginTop: "2vh" }}>
           <Form.Label>Richtige Punkte</Form.Label>
           <Form.Control
