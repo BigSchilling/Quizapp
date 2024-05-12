@@ -4,7 +4,24 @@
     background-repeat: repeat;
     
 }
-
+.backgroundImageClass {
+    z-index: -5;
+    position: fixed;
+    min-width: 100%;
+    min-height: 100%;
+    left: 0;
+    object-fit: cover;
+    background-repeat: repeat;
+    background-position: center center;
+}
+/* 
+mögliche hintergründe
+https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExbWw4ZjdycjN5bTc2cHEyNDI0b2Q0dDhqdjQwdGlvMGY5cmoxZzhkcSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3ov9k1173PdfJWRsoE/giphy.gif
+https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExdmptd205MmdmbGxtbHU4ZXdxdng0YjRkdG9rZDJzd2RwNm9xNXpoZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3ohhwNqFMnb7wZgNnq/giphy.gif
+https://upload.wikimedia.org/wikipedia/commons/9/9c/Black_hole_representation.gif
+https://i.gifer.com/origin/a3/a3adb2b81fb6fcdf64a32782c1817e7f.gif
+https://i.makeagif.com/media/4-15-2016/WPVk5S.gif
+*/
 #OBJECTS {
     animation: move 30s linear infinite;
     }

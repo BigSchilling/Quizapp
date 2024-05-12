@@ -1,0 +1,50 @@
+{
+    "info": "video als objekt übergeben als 'video' oder 'sound' um eine sound datei abzuspielen",
+    "fragen": [
+        {
+            "kategorie": "Buzzer",
+            "frage": "Was ist die Hauptstadt von Frankreich hallo und wie hadhaiusd haiuhd asiudha diu ahdias hduaisdh ausid hasuidh asiud haisudh auish d?",
+            "antworten": [
+                "B"
+            ],
+            "choices": [
+                "singen - Kphlendioxid findet in der Schwerelosigkeit keinen weg nach oben und dann gingne sie friedlich zu ihrem großbater nach oben und wurden dann erschlagen von einem hammer",
+                "singen - Kphlendioxid findet in der Schwerelosigkeit keinen weg nach oben und dann gingne sie friedlich zu ihrem großbater nach oben und wurden dann erschlagen von einem hammer",
+                "singen - Kphlendioxid findet in der Schwerelosigkeit keinen weg nach oben und dann gingne sie friedlich zu ihrem großbater nach oben und wurden dann erschlagen von einem hammer"
+            ],
+            "assets": [
+                "https://i.imgur.com/IzNt8kq.png"
+            ]
+        },
+        {
+            "kategorie": "Multiple Buzzer",
+            "frage": "Welche Farben hat die deutsche Flagge?",
+            "antworten": [
+                "Schwarz",
+                "Rot",
+                "Gold"
+            ],
+            "choices": [
+                "2 antwort a",
+                "2 antwort b",
+                "2 antwort c"
+            ],
+            "assets": [
+                {
+                    "sound": "https://youtu.be/OtZ11ui_TB8?t=39"
+                }
+            ]
+        },
+        {
+            "kategorie": "Schätzfrage",
+            "frage": "Wie viele Bäume gibt es.",
+            "antworten": [
+                "12"
+            ],
+            "assets": [
+                "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Test-Logo.svg/783px-Test-Logo.svg.png"
+            ],
+            "assetType": ""
+        }
+    ]
+}

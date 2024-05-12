@@ -307,6 +307,35 @@ io.on('connection', (socket) => {
             console.error('Error on sendReadyChange, couldnt update all :', error);
         }
     });
+    // choices senden
+    socket.on('sendChoice', async (body) => {
+        try {
+            io.emit("choice", body)
+        } catch (error) {
+            console.error('Error on sendReadyChange, couldnt update all :', error);
+        }
+    });
+    socket.on('sendStartTimer', async (body) => {
+        try {
+            io.emit("startTimer", body)
+        } catch (error) {
+            console.error('Error on sendReadyChange, couldnt update all :', error);
+        }
+    });
+    socket.on('sendRestartTimer', async (body) => {
+        try {
+            io.emit("restartTimer", body)
+        } catch (error) {
+            console.error('Error on sendReadyChange, couldnt update all :', error);
+        }
+    });
+    socket.on('sendTeamPunkte', async (body) => {
+        try {
+            io.emit("teamPunkte", body)
+        } catch (error) {
+            console.error('Error on sendReadyChange, couldnt update all :', error);
+        }
+    });
     socket.on('getBuzzerEvents', async () => {
         try {
             // Annahme: Du hast ein Model namens BuzzerEvent definiert

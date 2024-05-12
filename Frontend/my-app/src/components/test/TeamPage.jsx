@@ -1,103 +1,69 @@
-import "../layout/streamingPage.css"; // ein und aus kommentieren falls es rumspackt
+import styles from "./Teams.module.css";
 import React, { useEffect, useState, useRef } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import {
-  Dropdown,
-  Button,
-  Card,
-  ListGroup,
-  Container,
-  Row,
-  Col,
-  Form,
-  CardBody,
-  Image,
-} from "react-bootstrap";
-import {
-  createPlayerTrue,
-  createPlayerFalse,
-  setRightPoints,
-  setManuellPoints,
-} from "../slices/ShowMasterSlice";
+import { Dropdown, Button, Card, Text, Image } from "react-bootstrap";
 import io from "socket.io-client";
-import useSound from "use-sound";
-import Navigation from "./Navigation";
-import "../layout/scrollbar.css";
-import useTSRemoteApp from "../TS5-RemoteAPI/index.ts";
-import "../layout/animatedBorder.css";
-import "../layout/background.css";
-import "../layout/background2.css";
-import CameraComponent from "./CameraComponent.js";
+import Navigation from "../Navigation";
+import "../../layout/scrollbar.css";
+import useTSRemoteApp from "../../TS5-RemoteAPI/index.ts";
+import "../../layout/animatedBorder.css";
+import "../../layout/background.css";
+import "../../layout/background2.css";
 import Webcam from "react-webcam";
-import tom1 from "../images/tom3.jpg";
-import jan1 from "../images/jan3.jpg";
-import tim1 from "../images/tim1.jpg";
-import dana1 from "../images/dana1.jpg";
-import noPic1 from "../images/noPic1.jpg";
-import { ReactComponent as BackgroundSVG } from "../images/background1.svg";
-import { ReactComponent as BackgroundSVG2 } from "../images/background2.svg";
+import tom1 from "../../images/tom3.jpg";
+import jan1 from "../../images/jan3.jpg";
+import tim1 from "../../images/tim1.jpg";
+import dana1 from "../../images/dana1.jpg";
+import noPic1 from "../../images/noPic1.jpg";
+import { ReactComponent as BackgroundSVG } from "../../images/background1.svg";
+import { ReactComponent as BackgroundSVG2 } from "../../images/background2.svg";
 import ReactPlayer from "react-player";
+import { aktuellerMod } from "../StreamingPage.js";
+import { soundGif } from "../StreamingPage.js";
+import { CountdownCircleTimer } from "react-countdown-circle-timer";
 const server = process.env.REACT_APP_API_SERVER;
-export const soundGif = "https://miro.medium.com/v2/resize:fit:960/1*ll6000BtRBCGWfq5xK2GeA.gif"
-
+const backgroundGif =
+  "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExdmptd205MmdmbGxtbHU4ZXdxdng0YjRkdG9rZDJzd2RwNm9xNXpoZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3ohhwNqFMnb7wZgNnq/giphy.gif";
 // sehen wer spricht - Teamspeak 5 plugin
-export const aktuellerMod = "Chris"; // mod ändern!!
-const StreamingPage = () => {
-  const dispatch = useDispatch();
-  const [inputMessage, setInputMessage] = useState("");
+
+const TeamPage = () => {
   const [socket, setSocket] = useState("");
   const isHost = useSelector((state) => state.loginPlayer.isHost);
   const [buzzerPressed, setBuzzerPressed] = useState(false);
   const [buzzerPressedBy, setBuzzerPressedBy] = useState("");
   const [allPoints, setAllPoints] = useState([]); // punkte von allen spieler
   const [sortedPoints, setSortedPoints] = useState([]); // punkte ohne chris
-  const rightPointsValue = useSelector((state) => state.showMaster.rightPoints); // wert von plus punkten für richtige antwort
-  const wrongPointsValue = useSelector((state) => state.showMaster.wrongPoints);
+  const [choices, setChoices] = useState(["", "", ""]); // antwortmöglichkeiten
   const [playerMessages, setPlayerMessages] = useState({}); // Nachrichten für jeden Spieler
   const [editMode, setEditMode] = useState(false); // edit mode für karte
-  const manuellPoints = useSelector((state) => state.showMaster.manuellPoints);
-  const [manuellPointsInput, setManuellPointsInput] = useState("");
-
-  const [showQuestion, setShowQuestion] = useState(false);
   const [frage, setFrage] = useState();
   const [fragenIndex, setFragenIndex] = useState(0);
+  const [punkteA, setPunkteA] = useState(0);
+  const [punkteB, setPunkteB] = useState(0);
   const [kategorie, setKategorie] = useState();
   const [assets, setAssets] = useState();
   const [assetIndex, setAssetIndex] = useState(0);
-  // Sound
-  const [volume, setVolume] = useState(0.3);
-  const [playSound, { error }] = useSound("/pfad/zur/sounddatei.mp3", {
-    volume: 1,
-  });
+  // timer
+  const [timerKey, setTimerKey] = useState(180);
+  const [timerDuration, setTimerDuration] = useState(180);
+  const [timerRunning, setTimerRunning] = useState(false);
   // reactplayer variables
-  const playerVolumeRef = useRef(0.5);
   const [isPlaying, setIsPlaying] = useState(false);
-  const [minutes, setMinutes] = useState("");
-  const [seconds, setSeconds] = useState("");
-  const [playerSliderValue, setPlayerSliderValue] = useState(
-    playerVolumeRef.current
-  );
   const videoPlayerRef = useRef(null);
+  let choiceVar = useRef({});
   //  teamspeak shit
-  const talkers = useRef({ names: [] });
   const talkingNames = useRef([]);
-  const talkingMap = useRef(new Map());
   const [talkingMap2, setTalkingmap] = useState([]);
   var playerChris = useRef({});
 
-  // let talkers = { names: [] };
-  //let talkingNames = [];
-  //let talkingMap1 = new Map();
-
-  const [talkMap, setTalkmap] = useState([]);
   const { clientsInChannel } = useTSRemoteApp({
     remoteAppPort: 5899,
     logging: false,
     auth: {
-      name: "etst",
+      name: "Quizshow",
       version: "1.0.0.0",
       identifier: "kok",
-      description: "hond",
+      description: "nimmm an du hond",
     },
   });
   useEffect(() => {
@@ -121,29 +87,12 @@ const StreamingPage = () => {
       if (!newTalkingNames.includes(nickname)) {
         newTalkingNames.push(nickname);
       }
-      /*
-      if (client.talkStatus === 1) {
-        // console.log(nickname, "is talking", client.talkStatus === 1);
-        // talkingMap.current.set(nickname, true);
-      } else {
-        // console.log(nickname, "no talking", client.talkStatus);
-        // talkingMap.current.set(nickname, false);
-
-      }*/
     }
     talkingNames.current = newTalkingNames;
-    // console.log(talkingNames, " talking names");
-    // console.log(talkingMap.get(talkingNames[0]));
   }, [clientsInChannel]);
-  // console.log(talkingMap);
-  useEffect(() => {
-    if (error) {
-      console.error("Fehler beim Abspielen des Sounds:", error);
-    }
-  }, [error]);
+
   // webcam---------------
   const [deviceId, setDeviceId] = useState(null);
-  const [deviceId2, setDeviceId2] = useState(null);
   const [videoDevices, setVideoDevices] = useState([]);
   const handleDevices = async () => {
     const devices = await navigator.mediaDevices.enumerateDevices();
@@ -154,7 +103,7 @@ const StreamingPage = () => {
     // setDeviceId to default video device ID
     // setDeviceId(videoDevices[0]?.deviceId);
   };
-  console.log(videoDevices);
+  // console.log(videoDevices);
   // Funktion zum Festlegen der virtuellen Kamera von OBS
   useEffect(() => {
     const obsVirtualCamera = videoDevices.find((device) =>
@@ -232,14 +181,14 @@ const StreamingPage = () => {
       setFragenIndex(parseInt(body.fragenIndex));
       setAssets(body.assets);
       setAssetIndex(body.assetIndex);
+      setChoices(body.choices);
     });
-    newSocket.on("streamingQuestion", (body) => {
-      console.log("streamingQuestion");
-      setFrage(body.frage);
+    newSocket.on("hideQuestion", (body) => {
+      setFrage();
       setKategorie(body.kategorie);
       setFragenIndex(parseInt(body.fragenIndex));
       setAssets(body.assets);
-      setAssetIndex(0);
+      setChoices(body.choices);
     });
     newSocket.on("reactPlayerControls", (body) => {
       if ("isPlaying" in body) {
@@ -251,7 +200,24 @@ const StreamingPage = () => {
         handleSeekToTime(body.seekTime);
       }
     });
+    newSocket.on("restartTimer", (body) => {
+      setTimerDuration(body.timerDuration);
+      setTimerKey((prevKey) => prevKey + 1);
+    });
+    newSocket.on("startTimer", (body) => {
+      setTimerRunning(body.timeIsPlaying);
+    });
 
+    newSocket.on("choice", (body) => {
+      setChoices(body.choices);
+    });
+    newSocket.on("teamPunkte", (body) => {
+      if (body.team === "A") {
+        setPunkteA(body.newValue);
+      } else {
+        setPunkteB(body.newValue);
+      }
+    });
     setSocket(newSocket);
 
     return () => {
@@ -274,7 +240,7 @@ const StreamingPage = () => {
     setSortedPoints(sortedPoints);
 
     playerChris.current = allPoints.find((item) => item.userID === "Chris");
-    console.log(playerChris.current, "playerChris.current");
+    // console.log(playerChris.current, "playerChris.current");
   }, [allPoints]);
   // Funktion zum Aktivieren/Deaktivieren des Bearbeitungsmodus für eine Card
   const toggleEditMode = () => {
@@ -289,18 +255,6 @@ const StreamingPage = () => {
     toggleEditMode(); // Bearbeitungsmodus deaktivieren
   };
 
-  function TsTest() {
-    //console.log("clientsInChannel:", clientsInChannel);
-  }
-
-  //console.log(talkingNames.current[0],   talkingMap.current.get(talkingNames.current[0]));
-  // console.log(
-  //   // talkingMap.current,
-  //   // talkingMap.current.get(talkingNames.current[0]),
-  //   // talkingNames.current
-  //   talkingMap2,
-  //   " map2"
-  // );
   // reactplayer functions
   const handlePlayPause = (data) => {
     console.log("handle play", data);
@@ -312,60 +266,102 @@ const StreamingPage = () => {
       videoPlayerRef.current.seekTo(totalSeconds);
     }
   };
+
   const camWidth = "20%";
   const camHeight = "10%";
 
-  console.log(talkingMap2, talkingNames.current);
+  // console.log(talkingMap2, talkingNames.current);
   return (
-    <div
-    // className=""
-    // style={{
-    //   backgroundImage: "url(" + background + ")",
-    //   backgroundSize: "cover",
-    //   backgroundPosition: "center center",
-    //   // marginTop: "-10px"
-    // }}
-    >
-      <div className="backgroundContainer">
-        {/* <BackgroundSVG2 className="backgroundClass2" /> */}
-        <BackgroundSVG className="backgroundClass" />
-        <BackgroundSVG className="backgroundClass" style={{ left: "-100%" }} />
-        {/* Weitere Kopien des SVG-Elements, je nach Bedarf */}
+    <div className={styles.container}>
+      <div className={"backgroundContainer"}>
+        <Image className={"backgroundImageClass"} src={backgroundGif} />
       </div>
-      <div className="grid-container2">
-        <div></div>
-        <div>
-          <Card
-            bg="dark"
-            border={talkingMap2.includes("") ? "info" : "secondary"}
-            style={{
-              fontSize: "22px",
-              // padding: "10px 10px",
-              // marginBottom: "40px",
-              marginTop: "3vh",
-              borderRadius: "20px",
-            }}
-          >
-            <Card.Body>
-              <Card.Title
-                className="grid-item2 text-center"
-                style={{ fontSize: "32px" }}
-              >
-                <h3>
-                  Frage {fragenIndex + 1} ({kategorie}):
-                </h3>
-                <p>{frage}</p>
-              </Card.Title>
-            </Card.Body>
-          </Card>
-        </div>
-        <div></div>
-      </div>
-      <div className="flex-container" id="grid-container">
-        {sortedPoints.map((player, index) => (
-          <div className={"flex-item" + index} key={index}>
+
+      <div className={styles.Antworten}>
+        <Card
+          className={styles.Frage + " fragenText"}
+          bg="secondary"
+          border={"secondary"}
+          style={{
+            fontSize: "30px",
+            borderRadius: "20px",
+          }}
+        >
+          <Card.Body>
+            <Card.Title className="grid-item2 " style={{ fontSize: "32px" }}>
+              <h3>
+                Frage {fragenIndex + 1}: {frage}
+              </h3>
+            </Card.Title>
+          </Card.Body>
+        </Card>
+        {choices &&
+          choices.map((choice, key) => (
             <Card
-              bg="dark"
+              className={`${styles["Antwort" + (key + 1)]}`}
+              bg="secondary"
+              border={"secondary"}
+              style={{
+                fontSize: "22px",
+                marginTop: "3vh",
+                borderRadius: "20px",
+              }}
+            >
+              {" "}
+              <Card.Body>
+                <Card.Title
+                  className="grid-item2 "
+                  style={{ fontSize: "32px" }}
+                >
+                  <h3>{String.fromCharCode(65 + key)}: {choice}</h3>
+                </Card.Title>
+              </Card.Body>
+            </Card>
+          ))}
+      </div>
+      <div className={styles.Timer}>
+        <CountdownCircleTimer
+          // className={styles.timer}
+          style={{ fontSize: "40px" }} // Schriftgröße hier festlegen
+          key={timerKey}
+          size={150}
+          isPlaying={timerRunning}
+          duration={timerDuration}
+          colors={["#004777", "#7200d6", "#A30000", "#F7B801", "#A30000"]}
+          colorsTime={[
+            timerDuration,
+            (timerDuration * 3) / 4,
+            timerDuration / 2,
+            timerDuration / 4,
+            0,
+          ]}
+        >
+          {({ remainingTime }) => {
+            const minutes = Math.floor(remainingTime / 60);
+            const seconds = remainingTime % 60;
+            return (
+              <div style={{ fontSize: "60px" }}>
+                {minutes}:{seconds < 10 ? `0${seconds}` : seconds}
+              </div>
+            );
+          }}
+        </CountdownCircleTimer>
+      </div>
+
+      <div className={styles.Punkte}>
+        <Card className={styles.PunkteA}>
+          <Card.Title style={{ fontSize: "35px" }}>{punkteA} Punkte</Card.Title>
+        </Card>
+
+        <Card className={styles.PunkteB}>
+          <Card.Title style={{ fontSize: "35px" }}>{punkteB} Punkte </Card.Title>
+        </Card>
+      </div>
+      <div className={styles.Teams} id="grid-container">
+        {sortedPoints.map((player, index) => (
+          <div key={index} className={`${styles[player.userID]}`}>
+            <Card
+              bg="secondary"
               key={index}
               border={
                 talkingMap2.includes(player.tsName)
@@ -394,6 +390,7 @@ const StreamingPage = () => {
                     : noPic1
                 })`,
                 backgroundSize: "cover",
+                objectFit: "scale-down",
                 backgroundPosition: "center center",
                 width: "100%",
                 height: "100%",
@@ -408,15 +405,6 @@ const StreamingPage = () => {
                   justifyContent: "space-between",
                 }}
               >
-                <Card.Title
-                  style={{ fontSize: "30px" }}
-                  className="d-flex justify-content-between align-items-center flex-wrap miniText"
-                >
-                  <div>{player.userID}:</div>
-                  {player.userID === aktuellerMod ? null : (
-                    <div>{player.currentPoints} p</div>
-                  )}
-                </Card.Title>
                 {player.userID === "Chris" ? (
                   <>
                     <Webcam
@@ -428,7 +416,13 @@ const StreamingPage = () => {
                     />
                   </>
                 ) : null}
-                {player.userID === aktuellerMod ? null : (
+                <Card.Body
+                  style={{ fontSize: "30px" }}
+                  className="d-flex justify-content-start align-items-end flex-wrap miniText"
+                >
+                  <div>{player.userID}</div>
+                </Card.Body>
+                {/* {player.userID === aktuellerMod ? null : (
                   <textarea
                     style={{
                       width: "100%",
@@ -442,117 +436,33 @@ const StreamingPage = () => {
                     value={playerMessages[player.userID]}
                     readOnly
                   />
-                )}
+                )} */}
               </Card.Body>
             </Card>
           </div>
         ))}
-        <div
-          className={"flex-chrisBild"}
-          key={5}
-          style={{ display: "flex", flexDirection: "column" }}
-        >
-          {assets && assets[assetIndex] ? (
-            <div id="bild-placeholder" className="image-placeholder">
-              <Card
-                border="dark"
-                style={{
-                  borderWidth: "7px",
-                  borderRadius: "10px",
-                  overflowY: "hidden",
-                }}
-              >
-                <div className="image-container" style={{ maxHeight: "40px" }}>
-                  {assets[assetIndex].video || assets[assetIndex].sound ? (
-                    <div
-                      style={{
-                        // display: "flex",
-                        // border: "3px solid white",
-                        width: "100%",
-                        minHeight: "100%",
-                      }}
-                    >
-                      {assets[assetIndex].sound ? (
-                        <>
-                          <Image
-                            src={soundGif}
-                            className="image"
-                            alt="Bild"
-                            style={{ objectFit: "fill", filter: "blur(15px)" }}
-                          />
-                          <Image
-                            src={soundGif}
-                            className="image"
-                            alt="Bild"
-                            style={{ objectFit: "contain" }}
-                          />
-                        </>
-                      ) : null}
-                      <ReactPlayer
-                        url={
-                          assets[assetIndex].video || assets[assetIndex].sound
-                        }
-                        playing={isPlaying}
-                        controls={false}
-                        loop={true}
-                        width="auto"
-                        // minHeight="100%"
-                        volume={0}
-                        ref={(p) => {
-                          videoPlayerRef.current = p;
-                        }}
-                        style={{
-                          display: assets[assetIndex].sound ? "none" : "",
-                          objectFit: "contain",
-                        }}
-                      />
-                    </div>
-                  ) : (
-                    <>
-                      <Image
-                        src={assets[assetIndex]}
-                        className="image"
-                        alt="Bild"
-                        style={{ objectFit: "fill", filter: "blur(15px)" }}
-                      />
-                      <Image
-                        src={assets[assetIndex]}
-                        className="image"
-                        alt="Bild"
-                        style={{ objectFit: "contain" }}
-                      />
-                    </>
-                  )}
-                </div>
-              </Card>
-            </div>
-          ) : null}
-
-          <div
-            className="webcam-container "
-            style={{
-              borderRadius: "20px",
-              overflow: "hidden",
-              width: "auto",
-              height: "65%",
-              // marginTop: "20%"
-            }}
-          >
+        <div className={styles.chrisContainer} key={5}>
+          <div className={styles.webcamContainer}>
             <Webcam
-              style={{ width: "100%", height: "100%", objectFit: "scale-down" }}
+              style={{
+                width: "100%",
+                height: "100%",
+                objectFit: "scale-down",
+                borderRadius: "20px",
+              }}
               audio={false}
               videoConstraints={{
                 deviceId: deviceId ? { exact: deviceId } : undefined,
               }}
             />
           </div>
-
           {playerChris.current ? (
             <div
               className="overlay-card"
               style={{ backgroundColor: "rgba(0, 0, 0, 1)" }}
             >
               <Card
+                className={`${styles.card} ${styles["no-filter"]}`}
                 key={5}
                 border={
                   talkingMap2.includes(playerChris.current.tsName)
@@ -562,18 +472,18 @@ const StreamingPage = () => {
                     : playerChris.current.isReady
                     ? "success"
                     : playerChris.current.userID == aktuellerMod
-                    ? "dark"
+                    ? "primary"
                     : "secondary"
                 }
                 style={{
-                  borderWidth: "7px",
+                  borderWidth: "5px",
                   borderRadius: "20px",
                   overflowY: "hidden",
-                  height: "65%", // Anpassen der Höhe nach Bedarf
-                  width: "100%",
+                  minHeight: "100%", // Anpassen der Höhe nach Bedarf
+                  minWidth: "100%",
                   position: "absolute",
-                  top: "35%",
-                  backgroundColor: "rgba(0,0,0,0.0)",
+                  top: "0%",
+                  backgroundColor: "rgba(0,0,0,0)",
                 }}
               >
                 <Card.Body
@@ -585,18 +495,7 @@ const StreamingPage = () => {
                     justifyContent: "space-between",
                   }}
                 >
-                  <Card.Title
-                    style={{ fontSize: "30px" }}
-                    className="d-flex justify-content-between align-items-center flex-wrap miniText"
-                  >
-                    <div className="text-with-outline miniText">
-                      {playerChris.current.userID}:
-                    </div>
-                    {playerChris.current.userID != aktuellerMod ? (
-                      <div>{playerChris.current.currentPoints} p</div>
-                    ) : null}
-                  </Card.Title>
-                  {playerChris.current.userID != aktuellerMod ? (
+                  {/* {playerChris.current.userID != aktuellerMod ? (
                     <textarea
                       style={{
                         width: "100%",
@@ -610,19 +509,25 @@ const StreamingPage = () => {
                       value={playerMessages[playerChris.current.userID]}
                       readOnly
                     />
-                  ) : null}
+                  ) : null} */}
+                </Card.Body>
+                <Card.Body
+                  style={{ fontSize: "30px", bottom: "0%" }}
+                  className="d-flex justify-content-between align-items-end flex-wrap miniText"
+                >
+                  <div className="text-with-outline miniText">
+                    {playerChris.current.userID}
+                  </div>
                 </Card.Body>
               </Card>
             </div>
           ) : null}
         </div>
-
-        {/* {(index) % 1 === 0  ? <div></div> : null} */}
       </div>
 
-      <Navigation />
+      {/* <Navigation /> */}
     </div>
   );
 };
 
-export default StreamingPage;
+export default TeamPage;

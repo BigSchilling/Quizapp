@@ -5,6 +5,7 @@ const initialState = {
   rightPoints: 5,
   wrongPoints: 1,
   manuellPoints: 5,
+  teamPoints: 1,
   timer: 2000
 };
 
@@ -28,6 +29,9 @@ const showMasterSlice = createSlice({
     setManuellPoints: (state, action) => {
       state.manuellPoints = action.payload.manuellPoints;
     },
+    setTeamPoints: (state, action) => {
+      state.teamPoints = action.payload.teamPoints;
+    },
     setTimer: (state, action) => {
       state.timer = action.payload.timer;
     },
@@ -35,6 +39,6 @@ const showMasterSlice = createSlice({
 });
 
 // Exportiere Reducer und Aktionen
-export const { createPlayerTrue, createPlayerFalse, setRightPoints,setManuellPoints, setTimer } = showMasterSlice.actions;
+export const { createPlayerTrue, createPlayerFalse, setRightPoints,setManuellPoints,setTeamPoints, setTimer } = showMasterSlice.actions;
 export default showMasterSlice.reducer;
 
