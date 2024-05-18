@@ -22,7 +22,7 @@ import {
   setTimer,
 } from "../slices/ShowMasterSlice";
 import io from "socket.io-client";
-import FragenData from "../questionsCatalog/template.json"; // datei mit fragen ändern!
+import FragenData from "../questionsCatalog/folge10Dana.json"; // datei mit fragen ändern!
 import useSound from "use-sound";
 import tom1 from "../images/tom1.jpg";
 import jan1 from "../images/jan3.jpg";
@@ -635,7 +635,7 @@ const ShowMasterPage = () => {
             height: "180px",
             padding: "10px 20px",
             marginBottom: "20px",
-            marginTop: "40px",
+            marginTop: "2%",
             borderRadius: "20px",
             backgroundImage: `url(${
               buzzerPressedBy === "Tom"

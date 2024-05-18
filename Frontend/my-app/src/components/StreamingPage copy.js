@@ -1,4 +1,4 @@
-import styles from "../layout/streamingPage.module.css"; // ein und aus kommentieren falls es rumspackt
+import "../layout/streamingPage.css"; // ein und aus kommentieren falls es rumspackt
 import React, { useEffect, useState, useRef } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import {
@@ -41,7 +41,7 @@ const server = process.env.REACT_APP_API_SERVER;
 export const soundGif = "https://miro.medium.com/v2/resize:fit:960/1*ll6000BtRBCGWfq5xK2GeA.gif"
 
 // sehen wer spricht - Teamspeak 5 plugin
-export const aktuellerMod = "Dana"; // mod ändern!!
+export const aktuellerMod = "Chris"; // mod ändern!!
 const StreamingPage = () => {
   const dispatch = useDispatch();
   const [inputMessage, setInputMessage] = useState("");
@@ -154,7 +154,7 @@ const StreamingPage = () => {
     // setDeviceId to default video device ID
     // setDeviceId(videoDevices[0]?.deviceId);
   };
-  // console.log(videoDevices);
+  console.log(videoDevices);
   // Funktion zum Festlegen der virtuellen Kamera von OBS
   useEffect(() => {
     const obsVirtualCamera = videoDevices.find((device) =>
@@ -315,7 +315,7 @@ const StreamingPage = () => {
   const camWidth = "20%";
   const camHeight = "10%";
 
-  // console.log(talkingMap2, talkingNames.current);
+  console.log(talkingMap2, talkingNames.current);
   return (
     <div
     // className=""
@@ -332,7 +332,7 @@ const StreamingPage = () => {
         <BackgroundSVG className="backgroundClass" style={{ left: "-100%" }} />
         {/* Weitere Kopien des SVG-Elements, je nach Bedarf */}
       </div>
-      <div className={styles.gridcontainer2}>
+      <div className="grid-container2">
         <div></div>
         <div>
           <Card
@@ -348,7 +348,7 @@ const StreamingPage = () => {
           >
             <Card.Body>
               <Card.Title
-                className={styles.griditem2 + " text-center"}
+                className="grid-item2 text-center"
                 style={{ fontSize: "32px" }}
               >
                 <h3>
@@ -361,9 +361,9 @@ const StreamingPage = () => {
         </div>
         <div></div>
       </div>
-      <div className={styles.flexcontainer} id="grid-container">
+      <div className="flex-container" id="grid-container">
         {sortedPoints.map((player, index) => (
-          <div className={`${styles[`flexitem${index }`]}`} key={index}>
+          <div className={"flex-item" + index} key={index}>
             <Card
               bg="dark"
               key={index}
@@ -448,12 +448,12 @@ const StreamingPage = () => {
           </div>
         ))}
         <div
-          className={styles.flexchrisBild}
+          className={"flex-chrisBild"}
           key={5}
           style={{ display: "flex", flexDirection: "column" }}
         >
           {assets && assets[assetIndex] ? (
-            <div id="bild-placeholder" className={styles.imageplaceholder}>
+            <div id="bild-placeholder" className="image-placeholder">
               <Card
                 border="dark"
                 style={{
@@ -462,7 +462,7 @@ const StreamingPage = () => {
                   overflowY: "hidden",
                 }}
               >
-                <div className={styles.imagecontainer} style={{ maxHeight: "40px" }}>
+                <div className="image-container" style={{ maxHeight: "40px" }}>
                   {assets[assetIndex].video || assets[assetIndex].sound ? (
                     <div
                       style={{
@@ -476,13 +476,13 @@ const StreamingPage = () => {
                         <>
                           <Image
                             src={soundGif}
-                            className={styles.image}
+                            className="image"
                             alt="Bild"
                             style={{ objectFit: "fill", filter: "blur(15px)" }}
                           />
                           <Image
                             src={soundGif}
-                            className={styles.image}
+                            className="image"
                             alt="Bild"
                             style={{ objectFit: "contain" }}
                           />
@@ -511,13 +511,13 @@ const StreamingPage = () => {
                     <>
                       <Image
                         src={assets[assetIndex]}
-                        className={styles.image}
+                        className="image"
                         alt="Bild"
                         style={{ objectFit: "fill", filter: "blur(15px)" }}
                       />
                       <Image
                         src={assets[assetIndex]}
-                        className={styles.image}
+                        className="image"
                         alt="Bild"
                         style={{ objectFit: "contain" }}
                       />
@@ -529,7 +529,7 @@ const StreamingPage = () => {
           ) : null}
 
           <div
-            className={styles.webcamcontainer}
+            className="webcam-container "
             style={{
               borderRadius: "20px",
               overflow: "hidden",
@@ -549,7 +549,7 @@ const StreamingPage = () => {
 
           {playerChris.current ? (
             <div
-              className={styles.overlaycard}
+              className="overlay-card"
               style={{ backgroundColor: "rgba(0, 0, 0, 1)" }}
             >
               <Card

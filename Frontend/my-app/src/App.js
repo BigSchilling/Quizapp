@@ -18,7 +18,7 @@ import TikTok from "./components/TikTok";
 import TestPage from "./components/test/test";
 import ShowMasterPlayer from "./components/test/ShowMasterPlayer";
 import TeamPage from "./components/test/TeamPage";
-import "./layout/quartz.css"; // zu vapor ändern wenn normales quiz, quartz für team
+import "./layout/vapor.css"; // zu vapor ändern wenn normales quiz, quartz für team
 import TeamModPage from "./components/test/TeamModPage";
 
 function App() {

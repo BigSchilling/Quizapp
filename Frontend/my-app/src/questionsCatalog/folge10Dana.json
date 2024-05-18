@@ -1,0 +1,532 @@
+{
+  "fragen": [
+    {
+      "kategorie": "Buzzer",
+      "frage": "Wie heißt das wohl bekannteste Bier aus Irland? \n",
+      "antworten": [
+        "Guiness "
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Bonus: Was ist das Besondere an einem Guiness?",
+      "antworten": [
+        "Die Schaumkrone, Das Guinness wird mit einer besonderen irischen Zapftechnik unter Verwendung von Mischgas gezapft. Dadurch entsteht die unwiderstehliche cremige Schaumkrone "
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Eintippen",
+      "frage": "Rästel \nDer es macht, der will es nicht der es trägt, behält es nicht der es kauft, der braucht es nicht der es hat, der weiß es nicht. \n",
+      "antworten": [
+        "Ein Sarg"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Schätzfrage",
+      "frage": "Deutschland sowie Österreich waren die ersten Länder, wo die Zeitumstellung eingeführt wurde. In welchem Jahre ist das zuerst passiert? \n",
+      "antworten": [
+        "1916 – die Sommerzeit sollte die energieintensivsten „Materialschlachten“ des Ersten Weltkriegs unterstützen "
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Welches Element hat das chemische Symbol „Fe“? \n",
+      "antworten": [
+        "Eisen"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Wie viele Herzkammern hat ein gesunder menschlicher Körper? \n",
+      "antworten": [
+        "Vier Herzkammern "
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Wo ist der tiefste natürliche Ort auf dem Planeten Erde? \n",
+      "antworten": [
+        "Der Marianengraben, -11.034m unter dem Meeresspiegel. "
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Welcher König regierte während der Französischen Revolution?",
+      "antworten": [
+        "König Ludwig XVI. 16"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Wie viele Spieler sind in einer Eishockeymannschaft auf dem Eis? \n",
+      "antworten": [
+        "Antwort: Sechs (einschließlich des Torwarts). "
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Wie hieß der erste Spielfilm von Pixar? \n",
+      "antworten": [
+        "Antwort: Toy Story, 1995. "
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Welche Stadt wurde früher Byzanz genannt und hat später den Namen einer Blume erhalten? \n",
+      "antworten": [
+        " Istanbul  "
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Bonus: Wie hieß Instabul noch? \n",
+      "antworten": [
+        "Konstatinopel "
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Die Flagge von welchem Land ist das einzige auf der Welt, das kein Rechteck oder Quadrat ist?  ",
+      "antworten": [
+        "Nepal "
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Der höchste Wasserfall in Europa ist in welchem Land? \n",
+      "antworten": [
+        "Norwegen "
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Welches Tierkreiszeichen läuft vom 24. Juli und 23. August? \n",
+      "antworten": [
+        "Löwe "
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Welches Unternehmen brachte 1966 das Parfüm 'Eau Sauvage' auf den Markt? \n",
+      "antworten": [
+        " Christian Dior "
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Multiple Buzzer",
+      "frage": "Welche Elemente entdeckte Marie Curie, dieselbe Wissenschaftlerin, welche das Wort “radioaktiv” prägte? \n",
+      "antworten": [
+        "Polonium",
+        "Radium ",
+        ""
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Nach was wurde Polonium benannt? \n",
+      "antworten": [
+        "Polen "
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Welche Aufgaben hatten die Radium Girls? \n",
+      "antworten": [
+        "Sie bemalten Zifferblätter von Uhren mit Radium, damit sie leuchten. "
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Woher kommt Biryani? \n",
+      "antworten": [
+        "Indien"
+      ],
+      "assets": [
+        "https://puu.sh/K6vBz/e6942e161b.png",
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "In welcher Stadt finden Sie Michelangelos 'David'?",
+      "antworten": [
+        "Florence   "
+      ],
+      "assets": [
+        "https://puu.sh/K6vxY/afaf12adec.png \n"
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Was ist der einzige Planet im Sonnensystem, der nicht nach einem griechischen Gott oder einer griechischen Göttin benannt ist? \n",
+      "antworten": [
+        "Die Erde "
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Schätzfrage",
+      "frage": "Wie lange dauert es, bis das Licht der Sonne die Erde erreicht?",
+      "antworten": [
+        "8 Мinuten "
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Wie heißt die Grenze um ein Schwarzes Loch, an der das Licht der Anziehungskraft des Lochs nicht entkommen kann?",
+      "antworten": [
+        "Ereignishorizont   "
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Schätzfrage",
+      "frage": "Bonus: Wenn die Erde zu einem Schwarzen Loch gemacht würde, wie groß wäre der Durchmesser ihres Ereignishorizonts?  \n",
+      "antworten": [
+        "20 mm "
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Wo auf der Welt wird Leonardo da Vincis Mona Lisa ausgestellt?",
+      "antworten": [
+        "Der Louvre, Paris, Frankreich "
+      ],
+      "assets": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg/800px-Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg"
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Wer ist das?",
+      "antworten": [
+        "https://puu.sh/K6vug/a867b80acb.png"
+      ],
+      "assets": [
+        "Sophie Scholl "
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Welche Stadt ist das?",
+      "antworten": [
+        "Frankfurt am Main "
+      ],
+      "assets": [
+        "https://puu.sh/K6vuk/7b35aa7939.png"
+      ]
+    },
+    {
+      "kategorie": "Schätzfrage",
+      "frage": "In welchem Jahr bekamen die deutschen Frauen das Wahlrecht?  \n",
+      "antworten": [
+        "1918 "
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Wie viele Pferde stehen auf dem Brandenburger Tor?  \n",
+      "antworten": [
+        "4 "
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Welcher SF-Film basiert auf der Romanvorlage „Do Androids dream of electric sheep“?  \n",
+      "antworten": [
+        "Blade Runner"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Wie nennt man den 1,89 Liter fassenden Glaskrug, in dem in den USA häufig Bier serviert wird? \n",
+      "antworten": [
+        " Pitcher "
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Gesucht ist eine Beere, birnenförmig bis oval, je nach Art ist ihre ledrige Außenschale mittelbis dunkelgrün, im Inneren befindet sich ein Kern, der etwa golfballgroß wird. Das Fruchtfleisch ist grüngelb bis goldgelb. Was ist das? \n",
+      "antworten": [
+        " Avocado "
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Schätzfrage",
+      "frage": "Wie viel Rippenpaare hat der Mensch? ",
+      "antworten": [
+        "12 "
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Wie äußert sich die unwillkürliche Kontraktion des Zwerchfells?  \n",
+      "antworten": [
+        "Schluckauf "
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Abkürzung: Was bedeutet DIN ausgeschrieben? \n",
+      "antworten": [
+        "Deutsches Institut für Normung ",
+        ""
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Im Zoo welcher Stadt wurde Knut der Eisbär geboren? ",
+      "antworten": [
+        "Berlin "
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Was ist der Unterschied zwischen Meteoriten und Meteoriden? ",
+      "antworten": [
+        " T haben es bis auf die Erde geschafft, D schwirren noch durchs All "
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Was ist der wertvollste Buchstabe beim Scrabble (deutsch und englische Version)?",
+      "antworten": [
+        "Q, 10 Punkte "
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Multiple Buzzer",
+      "frage": "Nach welchen Bäumen sind die meisten Straßen in Deutschland benannt?",
+      "antworten": [
+        "Birke",
+        "Ahorn",
+        "Linde",
+        "Buche "
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Für was war Joseph Fraunhofer (1787 - 1826) bekannt?",
+      "antworten": [
+        "Berühmter Optiker, welcher Schleifmaschinen und Glassorten entwickelte, um die Abbildungsqualität von Linsen zu verbessern."
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Eintippen",
+      "frage": "In Zusammenhang mit dem Internet gibt es eine Vielzahl von Begriffen und Abkürzungen, wie etwa www, Backslash oder @. Was bedeutet eigentlich das Kürzel \"http\"?",
+      "antworten": [
+        "Hypertext transfer protocol"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Eintippen",
+      "frage": "Welches Element ist das?",
+      "antworten": [
+        "Kohlenstoff"
+      ],
+      "assets": [
+        "https://puu.sh/K6vDb/0e837aac52.png"
+      ]
+    },
+    {
+      "kategorie": "Schätzfrage",
+      "frage": "Aus wie vielen Kräuter ist Jägermeister gemacht?",
+      "antworten": [
+        "56"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Was ist die Judikative?",
+      "antworten": [
+        "Die rechtsprechende Institution im Staat"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Wann wird der Tag der Deutschen Einheit gefeiert?",
+      "antworten": [
+        "3. Oktober"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Eintippen",
+      "frage": "Was bringt Rotkäppchen ihrer Oma mit? a) Äpfel und Birnen b) Brot und Wurst c) Kuchen und Wein d) Wasser und Brot",
+      "antworten": [
+        "c) Kuchen und Wein"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Welche Blumenzwiebeln wurden früher als Zahlungsmittel genutzt?",
+      "antworten": [
+        "Im 17. Jahrhundert war in Holland eine Tulpenzwiebel ein unglaublich teurer Gegenstand. Teilweise zahlten Kaufleute für eine Tulpenzwiebel umgerechnet 25.000 Euro und mehr. Somit war die Tulpenzwiebel ein sehr angesehenes Zahlungsmittel."
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Wie viele Dreiecke sind zu sehen?",
+      "antworten": [
+        "10"
+      ],
+      "assets": [
+        "https://puu.sh/K6vES/c46201ded4.png"
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Wie nennt man den typischen schwarz-orangen Schmetterling?",
+      "antworten": [
+        "Monarchfalter"
+      ],
+      "assets": [
+        "https://upload.wikimedia.org/wikipedia/commons/3/3e/BBGMonarchButterflyWings.jpg"
+      ]
+    },
+    {
+      "kategorie": "Multiple Buzzer",
+      "frage": "Welche gemeinsame Spiele haben wir alle?",
+      "antworten": [
+        "Among Us",
+        "CS2",
+        "Garrys Mod",
+        "HD Poker",
+        "PAYDAY 2",
+        "Perfect Heist 2",
+        "Puzzle Together",
+        "Team Fortress 2",
+        "UNO",
+        "Overwatch",
+        "Rainbow Siege",
+        "Minecraft"
+      ],
+      "assets": [
+        ""
+      ]
+    }
+  ]
+}
