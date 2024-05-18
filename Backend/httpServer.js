@@ -336,6 +336,13 @@ io.on('connection', (socket) => {
             console.error('Error on sendReadyChange, couldnt update all :', error);
         }
     });
+    socket.on('sendCardColor', async (body) => {
+        try {
+            io.emit("cardColor", body)
+        } catch (error) {
+            console.error('Error on sendReadyChange, couldnt update all :', error);
+        }
+    });
     socket.on('getBuzzerEvents', async () => {
         try {
             // Annahme: Du hast ein Model namens BuzzerEvent definiert

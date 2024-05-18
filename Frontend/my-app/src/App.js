@@ -37,6 +37,7 @@ function App() {
               !createPlayerClicked ? (
                 <>
                   <Route path="/" element={<ShowMasterPage />} />
+                  <Route path="/teamsmod" element={<TeamModPage />} />
                 </>
               ) : (
                 <>
@@ -46,6 +47,7 @@ function App() {
             ) : (
               <>
                 <Route path="/" element={<StartPage />} />
+               
                 <Route path="/stream" element={<StreamingPage />} />
                 <Route path="/tiktok" element={<TikTok />} />
                 <Route path="/teams" element={<TeamPage />} />
@@ -54,11 +56,12 @@ function App() {
           ) : (
             <>
               <Route path="/" element={<LandingPage />} />
+              <Route path="/teamsmod" element={<LandingPage />} />
               <Route path="/stream" element={<StreamingPage />} />
               <Route path="/test" element={<ShowMasterPlayer />} />
               <Route path="/map" element={<ImageToMap />} />
               <Route path="/teams" element={<TeamPage />} />
-              <Route path="/teamsmod" element={<TeamModPage />} />
+              
               {/* <Route path="/tiktok" element={<TikTok />} /> */}
             </>
           )}

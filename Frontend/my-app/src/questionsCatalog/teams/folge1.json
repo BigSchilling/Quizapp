@@ -1,0 +1,254 @@
+{
+  "fragen": [
+    {
+      "kategorie": "Buzzer",
+      "frage": "Astronauten können in der Schwerelosigkeit nicht..",
+      "antworten": [
+        "C"
+      ],
+      "choices": [
+        "singen",
+        "sprechen",
+        "rülpsen"
+      ]
+    },
+    {
+      "kategorie": "Eintippen",
+      "frage": "Auf dem Mond lagern 106 Gegenstände, die Astronauten dort hinterlassen haben - darunter...",
+      "antworten": [
+        "B"
+      ],
+      "choices": [
+        "ein Teddybär und ein Playboy",
+        "vier Behälter mit Urin",
+        "ein Pizzakarton und ein Radio"
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Der Fußballer Andy McLaren bekam in einem einzigen Spiel drei Rote Karten, wegen Foulspiel, einer Tätlichkeit und ...",
+      "antworten": [
+        "C"
+      ],
+      "choices": [
+        "einer Handgreiflichkeit gegen den Schiedsrichter",
+        "Urinieren in der Schiedsrichterkabine",
+        "einer Sachbeschädigung in der Schiedsrichterkabine"
+      ]
+    },
+    {
+      "kategorie": "Eintippen",
+      "frage": "Nach Verletzungen bleiben Fußballer im Durchschnitt ...",
+      "antworten": [
+        "C"
+      ],
+      "choices": [
+        "zwei Minuten länger liegen als Fußballerinnen",
+        "eine Minute länger liegen als Fußballerinnen",
+        "dreißig Sekunden länger liegen als Fußballerinnen"
+      ]
+    },
+    {
+      "kategorie": "Bild mit Buzzer",
+      "frage": "In Lynchburg, Tennessee, wo Jack Daniel's Whiskey hergestellt wird, ...",
+      "antworten": [
+        "A"
+      ],
+      "choices": [
+        "herrscht Alkoholverbot",
+        "liegt der Prozentsatz der Alkoholiker bei 50",
+        "gibt es jährlich 100 Alkoholtote"
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "In den 50er-Jahren ... ",
+      "antworten": [
+        "A"
+      ],
+      "choices": [
+        "rauchten 88 Prozent der deutschen Männer, heute sind es noch 31 Prozent",
+        "hielten 92 Prozent der deutschen Männer die klassische Rollenverteilung für gerecht. Heute sind es 58 Prozent",
+        "kauften sich nur 24 Prozent der deutschen Männer selbst ihre Unterhosen, heute sind es 47 Prozent"
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Beim Jogging hüpft die weibliche Brust auf einen gelaufenen Kilometer insgesamt...",
+      "antworten": [
+        "C"
+      ],
+      "choices": [
+        " 14 Meter in die Höhe - wenn man jede Bewegung zusammenzählt",
+        " 8 Meter in die Höhe - wenn man jede Bewegung zusammenzählt",
+        "84 Meter in die Höhe - wenn man jede Bewegung zusammenzählt"
+      ]
+    },
+    {
+      "kategorie": "Multiple Buzzer",
+      "frage": "Die optimale Länge eines Fuß ballrasen-Grashalms beträgt... ",
+      "antworten": [
+        "B"
+      ],
+      "choices": [
+        "12 Millimeter",
+        "25 Millimeter",
+        "41 Millimeter"
+      ]
+    },
+    {
+      "kategorie": "Multiple Buzzer",
+      "frage": "Nachdem der finnische IT-Experte Jerry Jalava bei einem Motorrad unfall 2008...",
+      "antworten": [
+        "B"
+      ],
+      "choices": [
+        "eine Hand verloren hatte, ließ er sich eine Maus anstelle einer Handprothese einsetzen",
+        "einen Finger verloren hatte, ließ er sich einen USB-Stick anstelle einer Fingerprothese einsetzen",
+        "ein Auge verloren hatte, ließ er sich eine Webcam anstelle eines Glasauges einsetzen"
+      ]
+    },
+    {
+      "kategorie": "Schätzfrage",
+      "frage": "Viagra hilft auch, ...",
+      "antworten": [
+        "C"
+      ],
+      "choices": [
+        "schwer lösliche Kalk flecken zu entfernen",
+        "Sahne schneller steif zu schlagen",
+        "Schnittblumen länger frisch zu halten"
+      ]
+    },
+    {
+      "kategorie": "Multiple Buzzer",
+      "frage": "Bob Fischer hält laut Guinnessbuch den Rekord für ...",
+      "antworten": [
+        "A"
+      ],
+      "choices": [
+        "getroffene Basketball Freiwürfe in einer Stunde: 2371",
+        "getroffene Baseball schläge in einer Stunde: 2371",
+        "korrekt ausgeführte Tennisaufschläge in einer Stunde: 2371"
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Ein Formel-1-Rennwagen könnte wegen des Ansaugdrucks auf die Fahrbahn auch kopfüber an einer Zimmerdecke entlangfahren...",
+      "antworten": [
+        "C"
+      ],
+      "choices": [
+        "bei mindestens 220 km/h",
+        "bei mindestens 180 km/h",
+        "bei mindestens 130 km/h"
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Mit Zahnpasta bestrichene Hochspannungsleitungen ...",
+      "antworten": [
+        "B"
+      ],
+      "choices": [
+        "halten länger",
+        "summen bei Regen nicht",
+        "können mehr Strom leiten als normale"
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Das Gen für ... ",
+      "antworten": [
+        "B"
+      ],
+      "choices": [
+        "Samenflüssigkeit liegt auf dem Chromosom 16 und wird bei Frauen rezessiv unterdrückt",
+        "Ohrenschmalz liegt auf dem Chromosom 16",
+        "Gelenkflüssigkeit liegt auf dem Chromosom 16"
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "In der Highschool war ... ",
+      "antworten": [
+        "C"
+      ],
+      "choices": [
+        "Halle Berry Cheerleader für das Basketballteam von Barack Obama",
+        "Demi Moore Cheerleader für das Baseballteam von Bryan Adams",
+        "Cameron Diaz Cheerleader für das Footballteam von Snoop Dogg"
+      ]
+    },
+    {
+      "kategorie": "Multiple Buzzer",
+      "frage": "Die Wahrscheinlichkeit für ein Tor beim Fußball ist ...",
+      "antworten": [
+        "C"
+      ],
+      "choices": [
+        "unmittelbar vor der Halbzeit am höchsten",
+        " in den ersten zehn Minuten am höchsten",
+        "zwischen der 52. und 57. Minute sowie zwischen der 85. und 90. Minute am höchsten"
+      ]
+    },
+    {
+      "kategorie": "Multiple Buzzer",
+      "frage": "American Airlines sparte einmal 40.000 Dollar im Jahr, indem man ... ",
+      "antworten": [
+        "A"
+      ],
+      "choices": [
+        "eine Olive weniger in den Salaten servierte",
+        "einen Gast weniger bediente",
+        "einen Flughafen weniger anflog"
+      ]
+    },
+    {
+      "kategorie": "Eintippen",
+      "frage": "Welche dieser Vornamen sind in Deutschland annerkannt?",
+      "antworten": [
+        "C"
+      ],
+      "choices": [
+        " MacGyver, Asterix und Fanta Frank",
+        "Darth Vader, Schlumpfine und Cola Heinz",
+        "Winnetou, Pumuckl und Pepsi Carola"
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "In Norwegen gibt es einen Wintersportort namens ... ",
+      "antworten": [
+        "C"
+      ],
+      "choices": [
+        "Supi",
+        "Krassa",
+        "Geilo"
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Die Anhänger der .... ",
+      "antworten": [
+        "B"
+      ],
+      "choices": [
+        " »Iglesia Messias« verehren Lionel Messi als D10S - ein Kunstwort aus »dios« (Gott) und seiner Rückennummer 10",
+        "»Iglesia Maradoniana«< verehren Diego Maradona als D10S - ein Kunstwort aus »dios«< (Gott) und seiner Rückennummer 10",
+        " »Iglesia Pelésias« verehren Pelé als D10S - ein Kunstwort aus »dios« (Gott) und seiner Rückennummer 10"
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Wie viele Zimmer hat das Weiße Haus?",
+      "antworten": [
+        "132"
+      ],
+      "choices": [
+        ""
+      ]
+    }
+  ]
+}

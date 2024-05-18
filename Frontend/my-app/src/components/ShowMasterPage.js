@@ -32,10 +32,12 @@ import noPic1 from "../images/noPic1.jpg";
 import chris1 from "../images/chris2.jpg";
 import ShowMasterPlayer from "./test/ShowMasterPlayer";
 import ReactPlayer from "react-player";
+import { useNavigate } from 'react-router-dom';
 const server = process.env.REACT_APP_API_SERVER;
 
 const ShowMasterPage = () => {
   const dispatch = useDispatch();
+  const navigate = useNavigate();
   const [inputMessage, setInputMessage] = useState("");
   const [socket, setSocket] = useState(null);
   const isHost = useSelector((state) => state.loginPlayer.isHost);
@@ -204,6 +206,9 @@ const ShowMasterPage = () => {
       socket.emit("sendLogOutAll", { loggedIn: false });
     }
   };
+  const navigateToTeams = () => {
+    navigate("/teamsmod")
+  }
   const logoutPlayer = (player) => {
     if (socket) {
       // Sende die Nachricht an den Server
@@ -826,6 +831,13 @@ const ShowMasterPage = () => {
               onClick={setCreatePlayer}
             >
               {"Create Player"}
+            </Button>
+            <Button
+              style={{ marginTop: "20px" }}
+              onClick={navigateToTeams}
+              variant="info"
+            >
+              TeamPage
             </Button>
             <Button
               style={{ marginTop: "20px" }}

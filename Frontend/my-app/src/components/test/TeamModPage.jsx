@@ -22,11 +22,11 @@ import ReactPlayer from "react-player";
 import { aktuellerMod } from "../StreamingPage.js";
 import { soundGif } from "../StreamingPage.js";
 import { CountdownCircleTimer } from "react-countdown-circle-timer";
-import fragenData from "../../questionsCatalog/teams/template.json";
+import fragenData from "../../questionsCatalog/teams/folge1.json";
 const server = process.env.REACT_APP_API_SERVER;
-const backgroundGif =
+export const backgroundGif =
   "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExdmptd205MmdmbGxtbHU4ZXdxdng0YjRkdG9rZDJzd2RwNm9xNXpoZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3ohhwNqFMnb7wZgNnq/giphy.gif";
-// sehen wer spricht - Teamspeak 5 plugin
+
 
 const TeamModPage = () => {
   const dispatch = useDispatch();
@@ -52,6 +52,9 @@ const TeamModPage = () => {
   );
   const [punkteA, setPunkteA] = useState(0);
   const [punkteB, setPunkteB] = useState(0);
+  const [cardColors, setCardColors] = useState(
+    Array(fragen[fragenIndex].choices.length).fill("secondary")
+  );
   const setAnswerToggleButton = (index) => {
     setAnswerToggles((prevToggles) => {
       const newToggles = [...prevToggles];
@@ -70,13 +73,13 @@ const TeamModPage = () => {
       dispatch(setTeamPoints({ teamPoints: 1 }));
       const frage = fragen[newValue].frage;
       const kategorie = fragen[newValue].kategorie;
-      const assets = fragen[newValue].assets;
+      // const assets = fragen[newValue].assets;
 
       socket.emit("sendStreamingQuestion", {
         frage: frage,
         fragenIndex: newValue,
         kategorie: kategorie,
-        assets: assets,
+        // assets: assets,
         assetIndex: assetIndex,
       });
     }
@@ -92,13 +95,13 @@ const TeamModPage = () => {
       const frage = fragen[fragenIndex].frage;
       const value = fragenIndex;
       const kategorie = fragen[value].kategorie;
-      const assets = fragen[value].assets;
+      // const assets = fragen[value].assets;
 
       socket.emit("sendShowQuestion", {
         frage: frage,
         fragenIndex: value,
         kategorie: kategorie,
-        assets: assets,
+        // assets: assets,
         assetIndex: assetIndex,
       });
     }
@@ -119,7 +122,7 @@ const TeamModPage = () => {
       socket.emit("sendHideQuestion", {
         fragenIndex: index,
         kategorie: fragen[index].kategorie,
-        assets: " ",
+        // assets: " ",
       });
     }
   };
@@ -262,13 +265,12 @@ const TeamModPage = () => {
       setTimerRunning(body.timeIsPlaying);
     });
     newSocket.on("teamPunkte", (body) => {
-        if(body.team === "A"){
-            setPunkteA(body.newValue)
-        }
-        else{
-            setPunkteB(body.newValue)
-        }
-      });
+      if (body.team === "A") {
+        setPunkteA(body.newValue);
+      } else {
+        setPunkteB(body.newValue);
+      }
+    });
 
     setSocket(newSocket);
 
@@ -356,11 +358,42 @@ const TeamModPage = () => {
       // Sende die Nachricht an den Server, um den Timer zu starten oder zu stoppen
       socket.emit("sendTeamPunkte", {
         team: team,
-        newValue: newValue
+        newValue: newValue,
       });
     }
   };
-
+  const changeColor = (index, event) => {
+    // Verhindern des Standardverhaltens des Rechtsklicks
+    event.preventDefault();
+    // Wenn es sich um einen Rechtsklick handelt, ändern Sie die Farbe der Karte auf "danger"
+    const newColors = [...cardColors];
+    let color = "secondary"
+    if (event.button === 2) {
+      newColors[index] = "danger";
+      color = "danger"
+    } else {
+      // Andernfalls ändern Sie die Farbe der Karte basierend auf dem aktuellen Zustand
+      if (newColors[index] === "secondary") {
+        newColors[index] = "warning";
+        color="warning"
+      } else if (newColors[index] === "warning") {
+        newColors[index] = "success";
+        color="success"
+      } else {
+        newColors[index] = "secondary";
+        color="secondary"
+      }
+    }
+    setCardColors(newColors);
+    if (socket) {
+      // Sende die Nachricht an den Server, um den Timer zu starten oder zu stoppen
+      socket.emit("sendCardColor", {
+        index: index,
+        event: event.button,
+        color: color
+      });
+    }
+  };
   const camWidth = "20%";
   const camHeight = "10%";
 
@@ -404,12 +437,8 @@ const TeamModPage = () => {
         >
           {!showQuestion ? "Frage anzeigen" : "Frage angezeigt"}
         </Button>
-        <Button
-          variant={"dark"}
-          className={styles.right}
-          
-        >
-        {fragen[fragenIndex].antworten[0]}
+        <Button variant={"dark"} className={styles.right}>
+          {fragen[fragenIndex].antworten[0]}
         </Button>
         <Button
           variant="info"
@@ -432,8 +461,10 @@ const TeamModPage = () => {
             </Button>
             <Card
               className={`${styles["Antwort" + (key + 1)]}`}
-              bg="secondary"
+              bg={cardColors[key]}
               border={"secondary"}
+              onClick={(event) => changeColor(key, event)}
+              onContextMenu={(event) => changeColor(key, event)}
               style={{
                 fontSize: "22px",
                 marginTop: "3vh",
@@ -524,14 +555,24 @@ const TeamModPage = () => {
           add{" "}
         </Button>
 
-        <Button variant="danger" className={styles.subB} onClick={() => setPunkte("B", -1)}>
+        <Button
+          variant="danger"
+          className={styles.subB}
+          onClick={() => setPunkte("B", -1)}
+        >
           {" "}
           sub{" "}
         </Button>
         <Card className={styles.PunkteB}>
-          <Card.Title style={{ fontSize: "35px" }}>{punkteB} Punkte </Card.Title>
+          <Card.Title style={{ fontSize: "35px" }}>
+            {punkteB} Punkte{" "}
+          </Card.Title>
         </Card>
-        <Button variant="info" className={styles.addB} onClick={() => setPunkte("B", 1)}>
+        <Button
+          variant="info"
+          className={styles.addB}
+          onClick={() => setPunkte("B", 1)}
+        >
           {" "}
           add{" "}
         </Button>

@@ -21,9 +21,8 @@ import ReactPlayer from "react-player";
 import { aktuellerMod } from "../StreamingPage.js";
 import { soundGif } from "../StreamingPage.js";
 import { CountdownCircleTimer } from "react-countdown-circle-timer";
+import { backgroundGif } from "./TeamModPage.jsx";
 const server = process.env.REACT_APP_API_SERVER;
-const backgroundGif =
-  "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExdmptd205MmdmbGxtbHU4ZXdxdng0YjRkdG9rZDJzd2RwNm9xNXpoZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3ohhwNqFMnb7wZgNnq/giphy.gif";
 // sehen wer spricht - Teamspeak 5 plugin
 
 const TeamPage = () => {
@@ -47,6 +46,9 @@ const TeamPage = () => {
   const [timerKey, setTimerKey] = useState(180);
   const [timerDuration, setTimerDuration] = useState(180);
   const [timerRunning, setTimerRunning] = useState(false);
+  const [cardColors, setCardColors] = useState(
+    Array(3).fill("secondary")
+  );
   // reactplayer variables
   const [isPlaying, setIsPlaying] = useState(false);
   const videoPlayerRef = useRef(null);
@@ -175,7 +177,7 @@ const TeamPage = () => {
 
     // frage anzeigen
     newSocket.on("showQuestion", (body) => {
-      console.log("showQuestion", body.assetIndex, body.assets);
+      // console.log("showQuestion", body.assetIndex, body.assets);
       setFrage(body.frage);
       setKategorie(body.kategorie);
       setFragenIndex(parseInt(body.fragenIndex));
@@ -218,6 +220,21 @@ const TeamPage = () => {
         setPunkteB(body.newValue);
       }
     });
+    newSocket.on("cardColor", (body) => {
+      let index = body.index;
+      let color = body.color;
+    
+      // Verwenden Sie die Funktion, die den vorherigen Zustand als Argument verwendet
+      setCardColors((prevColors) => {
+        // Erstellen Sie eine Kopie des vorherigen Zustands
+        let newColors = [...prevColors];
+        // Aktualisieren Sie die Farbe der Karte
+        newColors[index] = color;
+        // Rückgabe des aktualisierten Zustands
+        return newColors;
+      });
+    });
+    
     setSocket(newSocket);
 
     return () => {
@@ -299,7 +316,7 @@ const TeamPage = () => {
           choices.map((choice, key) => (
             <Card
               className={`${styles["Antwort" + (key + 1)]}`}
-              bg="secondary"
+              bg={cardColors[key]}
               border={"secondary"}
               style={{
                 fontSize: "22px",
