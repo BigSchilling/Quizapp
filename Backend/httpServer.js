@@ -81,7 +81,7 @@ io.on('connection', (socket) => {
             console.error('Error on sendUpdatePlayers, couldnt update all :', error);
         }
     };
-    console.log('Neue Verbindung:', socket.id);
+    console.log('Neue Verbindung Quiz:', socket.id);
     sendUpdatePlayers(null)
     // sounds senden
     io.emit("sounds", {

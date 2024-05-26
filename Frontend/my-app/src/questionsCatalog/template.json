@@ -22,6 +22,12 @@
       "assets": [
         {
           "sound": "https://youtu.be/OtZ11ui_TB8?t=39"
+        },
+        {
+          "video": "https://youtu.be/LDiA1AUXG2Y"
+        },
+        {
+          "bild": "https://i.imgur.com/IzNt8kq.png"
         }
       ]
     },
@@ -31,9 +37,7 @@
       "antworten": [
         "12"
       ],
-      "assets": [
-      ],
-      "assetType": ""
+      "assets": []
     }
   ]
 }

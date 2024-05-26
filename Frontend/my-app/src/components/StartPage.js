@@ -401,29 +401,29 @@ const StartPage = () => {
                   step="0.01"
                   value={playerSliderValue}
                   onChange={(e) => adjustPlayerVolume(e)}
-                />
+                />{assets[assetIndex].sound ?
                 <Image
                   src={soundGif}
                   style={{ display: "", objectFit: "" }}
-                />
+                /> : null}
                 <ReactPlayer
                   url={assets[assetIndex].video || assets[assetIndex].sound}
                   playing={isPlaying}
                   controls={false}
                   loop={true}
-                  width="100%"
-                  height="100%"
+                  width="900px"
+                  height="400px"
                   volume={playerVolumeRef.current}
                   ref={(p) => {
                     videoPlayerRef.current = p;
                   }}
-                  style={{ display: "none", border: "3px solid white" }}
+                  style={{ display: assets[assetIndex].sound ? "none" : "", border: "3px solid white" }}
                 />
               </div>
             </div>
           ) : (
             <Image
-              src={assets ? assets[assetIndex] : null}
+              src={assets[assetIndex].bild ? assets[assetIndex].bild : null}
               style={{ width: "40%" }}
             />
           )}

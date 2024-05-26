@@ -22,7 +22,7 @@ import {
   setTimer,
 } from "../slices/ShowMasterSlice";
 import io from "socket.io-client";
-import FragenData from "../questionsCatalog/folge10Dana.json"; // datei mit fragen ändern!
+import FragenData from "../questionsCatalog/template.json"; // datei mit fragen ändern!
 import useSound from "use-sound";
 import tom1 from "../images/tom1.jpg";
 import jan1 from "../images/jan3.jpg";
@@ -595,7 +595,7 @@ const ShowMasterPage = () => {
               Nächstes Asset
             </Button>
             <Image
-              src={fragen[fragenIndex].assets[assetIndex] || fragen[fragenIndex].assets[assetIndex]}
+              src={fragen[fragenIndex].assets[assetIndex].bild }
               style={{ width: "25%" }}
             />
           </div>

@@ -38,7 +38,8 @@ import { ReactComponent as BackgroundSVG } from "../images/background1.svg";
 import { ReactComponent as BackgroundSVG2 } from "../images/background2.svg";
 import ReactPlayer from "react-player";
 const server = process.env.REACT_APP_API_SERVER;
-export const soundGif = "https://miro.medium.com/v2/resize:fit:960/1*ll6000BtRBCGWfq5xK2GeA.gif"
+export const soundGif =
+  "https://miro.medium.com/v2/resize:fit:960/1*ll6000BtRBCGWfq5xK2GeA.gif";
 
 // sehen wer spricht - Teamspeak 5 plugin
 export const aktuellerMod = "Dana"; // mod ändern!!
@@ -363,7 +364,7 @@ const StreamingPage = () => {
       </div>
       <div className={styles.flexcontainer} id="grid-container">
         {sortedPoints.map((player, index) => (
-          <div className={`${styles[`flexitem${index }`]}`} key={index}>
+          <div className={`${styles[`flexitem${index}`]}`} key={index}>
             <Card
               bg="dark"
               key={index}
@@ -452,7 +453,7 @@ const StreamingPage = () => {
           key={5}
           style={{ display: "flex", flexDirection: "column" }}
         >
-          {assets && assets[assetIndex] ? (
+          {assets && (assets[assetIndex].bild || assets[assetIndex].sound || assets[assetIndex].video) ? (
             <div id="bild-placeholder" className={styles.imageplaceholder}>
               <Card
                 border="dark"
@@ -462,7 +463,10 @@ const StreamingPage = () => {
                   overflowY: "hidden",
                 }}
               >
-                <div className={styles.imagecontainer} style={{ maxHeight: "40px" }}>
+                <div
+                  className={styles.imagecontainer}
+                  style={{ maxHeight: "40px" }}
+                >
                   {assets[assetIndex].video || assets[assetIndex].sound ? (
                     <div
                       style={{
@@ -495,28 +499,32 @@ const StreamingPage = () => {
                         playing={isPlaying}
                         controls={false}
                         loop={true}
-                        width="auto"
-                        // minHeight="100%"
+                        width="100%"
+                        // height="100%"
                         volume={0}
                         ref={(p) => {
                           videoPlayerRef.current = p;
                         }}
                         style={{
                           display: assets[assetIndex].sound ? "none" : "",
-                          objectFit: "contain",
+                          objectFit: "scale-down",
+                          // minHeight: "100vh"
+                          // minHeight: "100%",
+                          padding:"0%",
+                          marginBottom: "-10%"
                         }}
                       />
                     </div>
                   ) : (
                     <>
                       <Image
-                        src={assets[assetIndex]}
+                        src={assets[assetIndex].bild}
                         className={styles.image}
                         alt="Bild"
                         style={{ objectFit: "fill", filter: "blur(15px)" }}
                       />
                       <Image
-                        src={assets[assetIndex]}
+                        src={assets[assetIndex].bild}
                         className={styles.image}
                         alt="Bild"
                         style={{ objectFit: "contain" }}
