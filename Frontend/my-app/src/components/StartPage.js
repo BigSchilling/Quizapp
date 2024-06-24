@@ -455,7 +455,7 @@ const StartPage = () => {
           </div>
           <Form.Control
             ref={inputRef}
-            as="textarea"
+            as="textfield"
             value={inputMessage}
             onKeyDown={handleKeyDown}
             onChange={handleChange}

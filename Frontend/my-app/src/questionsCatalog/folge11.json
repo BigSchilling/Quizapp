@@ -1,0 +1,610 @@
+{
+  "fragen": [
+    {
+      "kategorie": "Eintippen",
+      "frage": "In welcher Sprache und welches Kinderserien Intro ist gesucht?",
+      "antworten": [
+        "Cosmo und Wanda/ Fairly odd Parents",
+        "Arabisch"
+      ],
+      "assets": [
+        {
+          "sound": "https://youtu.be/tR-d-WEuI48"
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Über welchen Nachbarn beschwert sich Mr. Turner, der Vater von Timmy?\n",
+      "antworten": [
+        "Sheldon Dinkelberg"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Wie tarnen sich Cosmo und Wanda in seinem Zimmer, falls jemand reinkommt?\n",
+      "antworten": [
+        "Fische"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Eintippen",
+      "frage": "Was ist Cosmos einziger Gegenstand namens Phillip? A) Schuh B) Münze C) Löffel D) Stein\n",
+      "antworten": [
+        "B) Münze\n"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Wie heißt der Klassenlehrer von Timmy Turner?\n",
+      "antworten": [
+        "Denzel Crocker\n"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Was ist das Besondere an dem Elfenbaby Poof bzw. welche Regel wurde damit gebrochen?\n",
+      "antworten": [
+        "eigentlich dürfen Elfen keine Kinder bekommen\n"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Wie heißen die Gegenstücke zu den Elfen?\n",
+      "antworten": [
+        "Anti-Elfen\n"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "In welchem Verhältnis steht Cosmo zu Jean-Claude van Ramme? \n",
+      "antworten": [
+        "Cousins"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Was passiert in den Dimmadome-Auen?\n",
+      "antworten": [
+        "Alle werden zu Kühe-melkenden hirnlosen Zombies\n"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Eintippen",
+      "frage": "Wofür steht die Gemeinschaft L.O.S.E.R.S? ",
+      "antworten": [
+        "League of Super Evil Revenge Seekers oder Liga der optisch-super-ekligen Rachsüchtigen\n"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Wie heißt dieser Superheld?",
+      "antworten": [
+        "Kinn Crimson\n"
+      ],
+      "assets": [
+        {"bild": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFSDAAeHF_mAwlrNUWy3zk0D8N9VGHdY32cw&s"}
+      ]
+    },
+    {
+      "kategorie": "Multiple Buzzer",
+      "frage": "Wie heißen die Feinde von Kinn Crimson?",
+      "antworten": [
+        "Negativ Kinn\n",
+        "Bronzene Kniescheibe\n",
+        "H2Olga",
+        "Bull-E\n",
+        "Die Platin Prinzessin\n",
+        "Eiserne Lunge\n"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Eintippen",
+      "frage": "In welcher Sprache und welches Kinderserien Intro ist gesucht?",
+      "antworten": [
+        "American Dragon Arabisch"
+      ],
+      "assets": [
+        {
+          "sound": "https://youtu.be/wQpo9UYSjgM"
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Welche zwei Haarfarben hat Jake?",
+      "antworten": [
+        "Schwarz und Grün\n"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Multiple Buzzer",
+      "frage": "Welche Länder haben einen Beschützer?",
+      "antworten": [
+        "Amerika",
+        "Australien",
+        " China",
+        "Korea",
+        " Ägypten",
+        " Indien",
+        " Japan",
+        " Russland",
+        "Schottland"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Bild mit Buzzer",
+      "frage": "Wer ist das?",
+      "antworten": [
+        "Fu Dog\n"
+      ],
+      "assets": [
+        {"bild": "https://discourse.disneyheroesgame.com/uploads/default/original/3X/a/d/ad4675786576d2560d47972bac20e077be9e5743.jpeg"}
+      ]
+    },
+    {
+      "kategorie": "Schätzfrage",
+      "frage": "Wie alt ist Fu Dog? \n",
+      "antworten": [
+        "600 Jahre"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Multiple Buzzer",
+      "frage": "Nenne jeweils einen Feind von Jake.",
+      "antworten": [
+        "Der große Jäger",
+        "Der Dunkle Drache\n",
+        "Jägerclan\n",
+        "Bananas B\n",
+        "Yan Yan",
+        "Ratsmitglied Chang\n"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Was für ein Tatto haben alle Jäger?\n",
+      "antworten": [
+        "Drachen\n"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Eintippen",
+      "frage": "In welcher Sprache und welches Kinderserien Intro ist gesucht? ",
+      "antworten": [
+        "Kim Possible Polnisch\n"
+      ],
+      "assets": [
+        {
+          "sound": "https://youtu.be/n2KAgYCtx8Q\n"
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Wie heißt das Football Team der Middleton High?\n",
+      "antworten": [
+        "Mad Dogs"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Wie heißt der Typ im Stuhl?\n",
+      "antworten": [
+        "Wade Load\n"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Schätzfrage",
+      "frage": "Wie lange hat Wade insgesamt für die Highschool und das College gebraucht? ",
+      "antworten": [
+        "8 Monate\n"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Multiple Buzzer",
+      "frage": "Nenne jeweils einen Gegner von Kim",
+      "antworten": [
+        "Dr. Drakken ",
+        "Shego",
+        "Professor Dementor\n",
+        "Señor Senior Senior \n",
+        "Señor Senior Junior\n",
+        "Monkey Fist\n",
+        "Duff Killigan\n",
+        "DN-Esther",
+        "Camille Leon\n",
+        "Warmonga"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Wie heißt Kims fiese Cheerleader-Konkurrentin? \n",
+      "antworten": [
+        "Bonnie\n"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Was ist Rons Haustier und wie heißt es?\n",
+      "antworten": [
+        "Rufus nacktmull\n"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Multiple Buzzer",
+      "frage": "Wie heißen die anderen Mitglieder von Team-Go, zu denen Shego ehemals gehörte?",
+      "antworten": [
+        "Hego (Stark)\n",
+        "Mego (Größe verändern)\n",
+        "Wego (vervielfältigen)\n",
+        "Shego (plasma)"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Was ist Kims vollständiger Name? \n",
+      "antworten": [
+        "Kimberly Ann Possible\n"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Multiple Buzzer",
+      "frage": "Wie nennt Kim ihre Brüder?",
+      "antworten": [
+        "Jim",
+        "Tim",
+        "Zwombies"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Eintippen",
+      "frage": "In welcher Sprache und welches Kinderserien Intro ist gesucht? ",
+      "antworten": [
+        "Spongebob Französisch"
+      ],
+      "assets": [
+        {
+          "sound": "https://youtu.be/OGOZbFo3W6g\n"
+        }
+      ]
+    },
+    {
+      "kategorie": "Schätzfrage",
+      "frage": "Wie groß ist Spongebob?",
+      "antworten": [
+        "10,16 cm\n"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Schätzfrage",
+      "frage": "Wie schwer ist Spongebob?",
+      "antworten": [
+        "28,35 gramm"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Multiple Buzzer",
+      "frage": "Wie heißen Spongebobs Freunde mit jeweils vollem Namen?",
+      "antworten": [
+        "Patrick Star\n",
+        "Thaddäus Tentakel\n",
+        "Eugene Herbert Krabs\n",
+        "Sandy Cheeks",
+        "Sheldon J. Plankton",
+        "Larry der Hummer",
+        "Gary",
+        "Kumpelblase\n",
+        "Wendy (Pfannenwender)\n",
+        "Burgina (schöner Krabbenburger) "
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Ist da die Krosse Krabbe?\n",
+      "antworten": [
+        "Nein, hier ist Patrick."
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Wie heißen die beiden bekanntesten Superhelden?\n",
+      "antworten": [
+        "Meerjungfraumann und Blaubarschbube\n"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Was versteckt sich im Busch?\n",
+      "antworten": [
+        "Das Böse\n"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Schätzfrage",
+      "frage": "Wie viele Aufrufe hat das Video Sweet Victory von vor 15 Jahren?",
+      "antworten": [
+        "9.208.382"
+      ],
+      "assets": [
+        {"video": "https://youtu.be/cUZNXgIXM1c?t=46"}
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Ist der Finger oben?\n",
+      "antworten": [
+        "Dann wird man dich loben"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Multiple Buzzer",
+      "frage": "Wofür kann jeweils ein Buchstabe von F.U.N. alles stehen?",
+      "antworten": [
+        "Freunde\n",
+        "Feuer\n",
+        "Freude\n",
+        "Uns",
+        "unfairer Kampf ",
+        "Ukulele",
+        "Endlich (haben wir mal Spaß)\n",
+        "Nukleares Waffenarsenal\n",
+        "Naseweis \n"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Eintippen",
+      "frage": "In welcher Sprache und welches Kinderserien Intro ist gesucht?",
+      "antworten": [
+        "Schwedisch, ICarly\n"
+      ],
+      "assets": [
+        {
+          "sound": "https://youtu.be/MFDRL8WmIBg"
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Wie heißt die Schauspielerin von Carly?",
+      "antworten": [
+        "Miranda Cosgrove"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Welches Spin-off gibt es von iCarly?\n",
+      "antworten": [
+        "Sam und Cat"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Wie heißt der Verkäufer?",
+      "antworten": [
+        "T-Bo"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Eintippen",
+      "frage": "Wie heißt die erste iCarly-Folge? A) Miss Briggs privat B) Sam ist ein Mädchen C) Kunst und Krise D) Miss Briggs sagt \"NO\"! E) Ein schickes Angebot",
+      "antworten": [
+        "D) Miss Briggs sagt no"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Wessen Markenzeichen ist es, \"oben ohne\" rumzulaufen?",
+      "antworten": [
+        "Gibby"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Schätzfrage",
+      "frage": "Wie lange hat Spencer Jura studiert?",
+      "antworten": [
+        "3 Tage"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Eintippen",
+      "frage": "Wie heißt Freddy mit vollem Namen? A) Helmut B) Fredward C) Fred D) Frank E) Frederick",
+      "antworten": [
+        "B) Fredward\n"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Wo ist Carlys Vater stationiert? (Kontinent reicht)\n",
+      "antworten": [
+        "Europa"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Schätzfrage",
+      "frage": "Welchen Spind wollten alle Schüler unbedingt haben?",
+      "antworten": [
+        "Spind 239"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Schätzfrage",
+      "frage": "Wie viele Butterkuchen waren in dem Glas, um den Spind zu verlosen?",
+      "antworten": [
+        "2718"
+      ],
+      "assets": [
+        {"bild":"https://static.wikia.nocookie.net/icarly/images/6/62/FatCakes.jpg/revision/latest?cb=20100428133353&path-prefix=de"}
+      ]
+    },
+    {
+      "kategorie": "Multiple Buzzer",
+      "frage": "Was sind Dr. Doofenshmirtz Abneigungen aus der Serie “Phineas und Ferb”?",
+      "antworten": [
+        "Hündchen",
+        "Bunte Blumen",
+        "Vogelgesang",
+        "Mönche",
+        "Yogalehrer",
+        "Gurken(-wasser)",
+        "Polizisten",
+        "Politessen",
+        "Sportfans",
+        "Roger Doofenschmirtz",
+        "Taxifahrer",
+        "Die Natur",
+        "Pelikane",
+        "Musikinstrumente die mit B beginnen",
+        "Gute-Laune Filme z.B. Der Einhornflüsterer",
+        "Blinkende Verkehrsschilder",
+        "Golf",
+        "Pagen",
+        "Lakritze",
+        "Tiefseeschweisser",
+        "Menschen mit Bärten",
+        "sportversessene Köche",
+        "Ballsport",
+        "Backpulvervulkane",
+        "Valentinstag",
+        "Geburtstage",
+        "Neujahr",
+        "Karnval",
+        "Halloween",
+        "den Einheitstag",
+        "Paraden",
+        "den 1. April",
+        "den Mond",
+        "Perry das Schnabeltier",
+        "Menschen die sich als Lebensmittel verkleiden um für Restaurants zu werben, außer dem Kerl, der sich als Tacco verkleidet (Er mag seinen Hut )",
+        "Seine ehemalige Klassenkameradin Drulinda weil sie ihn immer mit Wasser übergossen hat. Doch als er sie wiedersieht merkt er dass sie viel schöner wurde und er hat sich in sie verliebt",
+        "Seine Ex-Frau Charlene"
+      ],
+      "assets": [
+        ""
+      ]
+    }
+  ]
+}

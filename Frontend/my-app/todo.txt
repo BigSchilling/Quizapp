@@ -1,13 +1,12 @@
 IMMER IP ADRESSE IN ENV SETZEN !!!!!!!
 
 TODO--------------
- Ton/ video anzeigen lassen (nur ton geht jetzt)
- TeamPage fragen und antworten hinzufügen und anzeige welche richtig und falsch 
+ dropdown fragen katalog und wer moderator ist aussuchen
+ quiz seite deployen
  tiktok page (harte arbeit)
  showmasterpage antworten wrappen
  tims facecam hinzufügen (geht nicht)
  sortieren, antworten radnomized anzeigen und bewegen bei anklicken sieht host was gedrückt wird
- audio regler sollte funktionieren
  (rasberry pi mit server)
 
 
@@ -53,6 +52,8 @@ Was schon getan wurde
  timer für buzzer nach drücken (bei multiple buzzer rausnehmen)
  font und schrift kontur
  AUDIO GEFIXED POGCHAMP
+ TeamPage fragen und antworten hinzufügen und anzeige welche richtig und falsch
+ Ton/ video anzeigen lassen (nur ton geht jetzt)
 
 --------------------------------
 Zukunft

@@ -1,0 +1,627 @@
+{
+  "fragen": [
+    {
+      "kategorie": "Schätzfrage",
+      "frage": "Wie viele Echtzeit-Minuten oder -Stunden dauert es, bis Phantome spawnen, wenn man in dieser Zeit nicht schläft?",
+      "antworten": [
+        "72000 ticks/20 ticks pro Sekunde/60 min= 1 Stunde"
+      ],
+      "assets": [
+        {
+          "bild": "https://i.ibb.co/p3zG6fP/phantoms-small.jpg"
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Auf Welcher Konsole erschien das erste Mal Tetris?\n",
+      "antworten": [
+        "Nintendo Entertainment System (NES)"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Frage: In welchem Spiel erkundet man die Stadt Yharnam?",
+      "antworten": [
+        "Bloodborne"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Welches Spiel wird durch die Emojis beschrieben? ",
+      "antworten": [
+        "Subnautica"
+      ],
+      "assets": [
+        {
+          "bild": "https://i.ibb.co/1KDMbW2/Subnautica.png"
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Welches Spiel wird durch die Emojis beschrieben? ",
+      "antworten": [
+        "Cyberpunk 2077"
+      ],
+      "assets": [
+        {
+          "bild": "https://i.ibb.co/nnQ9H8d/cyberpunk-2077.png"
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Welches Spiel wird durch die Emojis beschrieben? ",
+      "antworten": [
+        "Animal Crossing"
+      ],
+      "assets": [
+        {
+          "bild": "https://i.ibb.co/KFbL45r/Animal-Crossing.png"
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Aus Welchem Spiel stammt dieser Sound? Bonuspunkt: Wo genau im Spiel?",
+      "antworten": [
+        "Minecraft, Cave Sound"
+      ],
+      "assets": [
+        {
+          "sound": "https://www.youtube.com/watch?v=IiJZkpEuecc"
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Aus Welchem Spiel stammt dieser Sound? Bonuspunkt: Wo genau im Spiel?",
+      "antworten": [
+        "The Legend of Zelda Breath of The Wild, Sheikah Sensor Ping für Ancient Shrines"
+      ],
+      "assets": [
+        {
+          "sound": "https://www.youtube.com/watch?v=9s9QvDv1N5I "
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Aus Welchem Spiel stammt dieser Sound? Bonuspunkt: Wo genau im Spiel?",
+      "antworten": [
+        "Terraria, Hurt SFX"
+      ],
+      "assets": [
+        {
+          "sound": "https://www.youtube.com/watch?v=fhH9Jfic6rU"
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Aus Welchem Spiel stammt dieser Sound? Bonuspunkt: Wo genau im Spiel?",
+      "antworten": [
+        "Metal Gear Solid, Alert/Entdeckt"
+      ],
+      "assets": [
+        {
+          "sound": "https://www.youtube.com/watch?v=2P5qbcRAXVk"
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Aus Welchem Spiel stammt dieser Sound? Bonuspunkt: Wo genau im Spiel?",
+      "antworten": [
+        "Microsoft 3D Pinball, Wormhole"
+      ],
+      "assets": [
+        {
+          "sound": "https://www.youtube.com/watch?v=aqcKJ9ZaKj0"
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Aus Welchem Spiel stammt dieser Sound? Bonuspunkt: Wo genau im Spiel?",
+      "antworten": [
+        "Lego Games, Minikit in der Nähe"
+      ],
+      "assets": [
+        {
+          "sound": "https://www.youtube.com/watch?v=5wLTCRFJasE"
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Aus Welchem Spiel stammt dieser Sound?",
+      "antworten": [
+        "Mario Kart"
+      ],
+      "assets": [
+        {
+          "sound": "https://www.youtube.com/watch?v=BjI7tuT_lhg"
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Aus Welchem Spiel stammt dieser Sound? Bonuspunkt: Wo genau im Spiel?",
+      "antworten": [
+        "Dark Souls, Leuchtfeuer"
+      ],
+      "assets": [
+        {
+          "sound": "https://www.youtube.com/watch?v=wLAA0BZpbIE"
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Aus Welchem Spiel stammt dieser Sound? Bonuspunkt: Wo genau im Spiel?",
+      "antworten": [
+        "Overwatch, Headshot Kill Sound"
+      ],
+      "assets": [
+        {
+          "sound": "https://www.youtube.com/watch?v=8fWI3nRNrgM"
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Aus Welchem Spiel stammt dieser Sound? Bonuspunkt: Wo genau im Spiel?",
+      "antworten": [
+        "NFS Most Wanted, BMW M3 GTR"
+      ],
+      "assets": [
+        {
+          "sound": "https://www.youtube.com/watch?v=KdQuNv0N3Lo"
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Aus Welchem Spiel stammt dieser Sound?",
+      "antworten": [
+        " Super Smash Bros"
+      ],
+      "assets": [
+        {
+          "sound": "https://www.youtube.com/watch?v=KzqBP0M5hYM"
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Aus Welchem Spiel stammt dieser Sound?",
+      "antworten": [
+        "Mortal Kombat"
+      ],
+      "assets": [
+        {
+          "sound": "https://www.youtube.com/watch?v=Rvw6gMfs0yk"
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Aus Welchem Spiel stammt dieser Sound? Bonuspunkt: Wo genau im Spiel?",
+      "antworten": [
+        "Age of Empires, Priester oder Mönch"
+      ],
+      "assets": [
+        {
+          "sound": "https://www.youtube.com/watch?v=jNTxlafhWYo"
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Aus Welchem Spiel stammt dieser Sound?",
+      "antworten": [
+        "Ace Attorney"
+      ],
+      "assets": [
+        {
+          "sound": "https://www.youtube.com/watch?v=S7Cl1hRMPA8"
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Aus Welchem Spiel stammt dieser Sound? ",
+      "antworten": [
+        "COD Modern Warfare"
+      ],
+      "assets": [
+        {
+          "sound": "https://www.youtube.com/watch?v=1G5DQJBKaGE"
+        }
+      ]
+    },
+    {
+      "kategorie": "Bild mit Buzzer",
+      "frage": "Welches Spiel ist hier zu sehen? Bonuspunkt: Wo genau im Spiel?",
+      "antworten": [
+        "Super Mario 64, LVL 1 Bob-Ombs Bombenberg"
+      ],
+      "assets": [
+        {
+          "bild": "https://i.ibb.co/ggkd6BC/SP64.png"
+        }
+      ]
+    },
+    {
+      "kategorie": "Bild mit Buzzer",
+      "frage": "Welches Spiel ist hier zu sehen? ",
+      "antworten": [
+        "Silent Hill 3"
+      ],
+      "assets": [
+        {
+          "bild": "https://i.ibb.co/mhP1L4R/silent-hill-small.jpg"
+        }
+      ]
+    },
+    {
+      "kategorie": "Bild mit Buzzer",
+      "frage": "Welches Spiel ist hier zu sehen? Bonuspunkt: Wo genau im Spiel?",
+      "antworten": [
+        "CS2 - Overpass, Monster "
+      ],
+      "assets": [
+        {
+          "bild": "https://i.ibb.co/mJjyhyW/cs2-overpass-small.jpg"
+        }
+      ]
+    },
+    {
+      "kategorie": "Bild mit Buzzer",
+      "frage": "Welches Spiel ist hier zu sehen? Bonuspunkt: Wo genau im Spiel?",
+      "antworten": [
+        "Overwatch, Rialto - 2. Attacker Spawn"
+      ],
+      "assets": [
+        {
+          "bild": "https://i.ibb.co/R41vG6J/overwatch-rialto-small1.jpg"
+        }
+      ]
+    },
+    {
+      "kategorie": "Bild mit Buzzer",
+      "frage": "Welches Spiel ist hier zu sehen? Bonuspunkt: Wo genau im Spiel?",
+      "antworten": [
+        "Life is Strange, Raum von Chloe"
+      ],
+      "assets": [
+        {
+          "bild": "https://i.ibb.co/ncmVnYP/cropped-life-is-strange-small.jpg"
+        }
+      ]
+    },
+    {
+      "kategorie": "Bild mit Buzzer",
+      "frage": "Welches Spiel ist hier zu sehen?",
+      "antworten": [
+        "Payday 2"
+      ],
+      "assets": [
+        {
+          "bild": "https://i.ibb.co/JH8T5cN/Payday-2-3-small.jpg"
+        }
+      ]
+    },
+    {
+      "kategorie": "Bild mit Buzzer",
+      "frage": "Welches Spiel ist hier zu sehen?",
+      "antworten": [
+        "Content Warning"
+      ],
+      "assets": [
+        {
+          "bild": "https://i.ibb.co/1ZWWGy9/content-warning.jpg"
+        }
+      ]
+    },
+    {
+      "kategorie": "Bild mit Buzzer",
+      "frage": "Welches Spiel ist hier zu sehen?",
+      "antworten": [
+        "Half Life"
+      ],
+      "assets": [
+        {
+          "bild": "https://i.ibb.co/rpW6TvJ/half-life.jpg"
+        }
+      ]
+    },
+    {
+      "kategorie": "Bild mit Buzzer",
+      "frage": "Welcher Videospielcharakter ist hier zu sehen?",
+      "antworten": [
+        "Ghost – Call of Duty Ghosts"
+      ],
+      "assets": [
+        {
+          "bild": "https://api.triviacreator.com/v1/imgs/quiz/download-81f2b5d7-7355-44b4-aec0-ef51af0d56c8.jpg"
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Aus Welchem Spiel stammt dieser Soundtrack? Bonuspunkt: Name von OST",
+      "antworten": [
+        "Left 4 Dead, Tank"
+      ],
+      "assets": [
+        {
+          "sound": "https://www.youtube.com/watch?v=WhiGnj7QX2A"
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Aus Welchem Spiel stammt dieser Soundtrack? Bonuspunkt: Name von OST",
+      "antworten": [
+        "Minecraft, C418 - Moog City 2"
+      ],
+      "assets": [
+        {
+          "sound": "https://www.youtube.com/watch?v=C8df2pbOX6g"
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Aus Welchem Spiel stammt dieser Soundtrack? Bonuspunkt: Name von OST",
+      "antworten": [
+        "Pokémon Karmesin und Purpur, Cosima/ Penny Battle Music"
+      ],
+      "assets": [
+        {
+          "sound": "https://www.youtube.com/watch?v=yUw36wY8fMw"
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Aus Welchem Spiel stammt dieser Soundtrack? Bonuspunkt: Name von OST",
+      "antworten": [
+        "Donkey Kong Country, Aquatic Ambience"
+      ],
+      "assets": [
+        {
+          "sound": "https://www.youtube.com/watch?v=-5rAjOjTGtc"
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Aus Welchem Spiel stammt dieser Soundtrack? Bonuspunkt: Name von OST",
+      "antworten": [
+        "Assassin's Creed 2, Jesper Kyd - Ezio's Family"
+      ],
+      "assets": [
+        {
+          "sound": "https://www.youtube.com/watch?v=FSVHx23ByhM"
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Aus Welchem Spiel stammt dieser Soundtrack? Bonuspunkt: Name von OST",
+      "antworten": [
+        "CS2, Main Menu"
+      ],
+      "assets": [
+        {
+          "sound": "https://www.youtube.com/watch?v=aFt5_jhANHk"
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Aus Welchem Spiel stammt dieser Soundtrack?",
+      "antworten": [
+        "Kirby's Return to Dream Land, Ability Room"
+      ],
+      "assets": [
+        {
+          "sound": "https://www.youtube.com/watch?v=WQ7yvcixTVc"
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Aus Welchem Spiel stammt dieser Soundtrack?",
+      "antworten": [
+        "Dead by Daylight Theme"
+      ],
+      "assets": [
+        {
+          "sound": "https://www.youtube.com/watch?v=qKIsjbb8c7o"
+        }
+      ]
+    },
+    {
+      "kategorie": "",
+      "frage": "Aus Welchem Spiel stammt dieser Soundtrack?",
+      "antworten": [
+        "Apex Legends, Victory & Lobby Redux"
+      ],
+      "assets": [
+        {
+          "sound": "https://www.youtube.com/watch?v=Ky9K5Jr6rV0"
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Aus Welchem Spiel stammt dieser Soundtrack? ",
+      "antworten": [
+        "Doom, At Doom's Gate"
+      ],
+      "assets": [
+        {
+          "sound": "https://www.youtube.com/watch?v=31dOilKLywY"
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Aus Welchem Spiel stammt dieser Soundtrack?",
+      "antworten": [
+        "The Legend of Zelda: Ocarina of Time, Title Theme"
+      ],
+      "assets": [
+        {
+          "sound": "https://www.youtube.com/watch?v=CKA1zCwcYBE"
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Aus Welchem Spiel stammt dieser Soundtrack?",
+      "antworten": [
+        "Final Fantasy, One-Winged Angel / Sephirot"
+      ],
+      "assets": [
+        {
+          "sound": "https://www.youtube.com/watch?v=yTl8bsgDhtM"
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Aus Welchem Spiel stammt dieser Soundtrack? Bonuspunkt: Name von OST",
+      "antworten": [
+        "Mario Kart DS Music, Waluigi Pinball"
+      ],
+      "assets": [
+        {
+          "sound": "https://www.youtube.com/watch?v=Yu0JeZEZUy8"
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Aus Welchem Spiel stammt dieser Soundtrack? Bonuspunkt: Name von OST",
+      "antworten": [
+        "Portal, Still Alive"
+      ],
+      "assets": [
+        {
+          "sound": "https://www.youtube.com/watch?v=Y6ljFaKRTrI"
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Frage: Aus Welchem Spiel stammt dieser Soundtrack? ",
+      "antworten": [
+        "Team Fortress 2, Main Theme"
+      ],
+      "assets": [
+        {
+          "sound": "https://www.youtube.com/watch?v=PDM2qukzKwg"
+        }
+      ]
+    },
+    {
+      "kategorie": "Bild mit Buzzer",
+      "frage": "Welches Logo ist hier zu sehen?",
+      "antworten": [
+        "Quake"
+      ],
+      "assets": [
+        {
+          "bild": "https://i.ibb.co/WzzL2wt/Quake1.png"
+        }
+      ]
+    },
+    {
+      "kategorie": "Bild mit Buzzer",
+      "frage": "Welches Logo ist hier zu sehen?",
+      "antworten": [
+        "Super Smash Brothers"
+      ],
+      "assets": [
+        {
+          "bild": "https://i.ibb.co/GTCWBBY/SSM-Logo.png"
+        }
+      ]
+    },
+    {
+      "kategorie": "Bild mit Buzzer",
+      "frage": "Welches Logo ist hier zu sehen?",
+      "antworten": [
+        "N64"
+      ],
+      "assets": [
+        {
+          "bild": "https://i.ibb.co/8ztWmqQ/N64.png"
+        }
+      ]
+    },
+    {
+      "kategorie": "Bild mit Buzzer",
+      "frage": "Welches Logo ist hier zu sehen?",
+      "antworten": [
+        "PlatinumGames"
+      ],
+      "assets": [
+        {
+          "bild": "https://i.ibb.co/WKxKsD6/Platinum-Games.png"
+        }
+      ]
+    },
+    {
+      "kategorie": "Bild mit Buzzer",
+      "frage": "Welches Logo ist hier zu sehen?",
+      "antworten": [
+        "Umbrella Corporation - Resident Evil"
+      ],
+      "assets": [
+        {
+          "bild": "https://api.triviacreator.com/v1/imgs/quiz/3ZzS2BTaMRChrrgDEDB9CM-9ba5bf67-e590-48fa-8b2d-5cc3b0d97598.jpg"
+        }
+      ]
+    },
+    {
+      "kategorie": "Multiple Buzzer",
+      "frage": "Welche Videospiel-Logos haben die Farbe Rot im Logo?",
+      "antworten": [
+        "Apex Legends",
+        "Dota 2",
+        "Valorant",
+        "Undertale",
+        "Celeste",
+        "Among Us",
+        "Bloons TD Battles",
+        "Castle Crashers",
+        "The Finals"
+      ],
+      "assets": [
+        {
+          "bild": "Lethal Company"
+        },
+        {
+          "bild": ""
+        }
+      ]
+    }
+  ]
+}

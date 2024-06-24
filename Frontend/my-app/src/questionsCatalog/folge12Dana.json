@@ -1,0 +1,531 @@
+{
+  "fragen": [
+    {
+      "kategorie": "Buzzer",
+      "frage": "Als was bezeichnet man den “Marshall Plan”? \n",
+      "antworten": [
+        "Der nach dem amerikanischen Außenminister benannte Plan stellte ein Wiederaufbauprogramm für das im Zweiten Weltkrieg zerstörte Europa dar und sah Kredite und Hilfslieferungen vor. "
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Der Warschauer Pakt wurde als Gegengewicht gegen welche Organisation gegründet? \n",
+      "antworten": [
+        "NATO "
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Welche Besonderheit hat eine soziale Marktwirtschaft? (2 Punkte) \n",
+      "antworten": [
+        "“soziales Netz” -> (Arbeitslosengeld, Kindergeld, Wohngeld), Wettbewerbskontrolle "
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Nenne ein ehemaliges Kolonie-Land, welches eine friedliche Unabhängigkeit von Großbritannien erlangt hat. \n",
+      "antworten": [
+        "Musterbeispiel: Indien (gewaltloser Widerstand Ghandis),  \nKanada, Australien, Neuseeland, Südafrika gründeten “British Commonwealth of Nations”, waren defacto unabhängig 1926 \nhttps://www.planet-wissen.de/geschichte/neuzeit/kolonialismus/index.html \nHongkong wurde 1980 China einfach geschenkt  "
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Wie wurde der Vorgänger der EU genannt? \n",
+      "antworten": [
+        "EG = Europäische Gemeinschaft, 1957 BRD, I, F, Beneluxstaaten \nEU gegründet 1993 "
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Schätzfrage",
+      "frage": "Wann hat Bismarck den kleindeutschen Bundesstaat gebildet? YYYY \n",
+      "antworten": [
+        "1871 "
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Schätzfrage",
+      "frage": "Wann hat Deutschland die bedingungslose Kapitulation im 2. Weltkrieg ausgesprochen? DD/MM/YYYY \n",
+      "antworten": [
+        "7. Mai 1945"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Was war der Auslöser der Industriellen Revolution (18 Jh.)? \n",
+      "antworten": [
+        "Erfindung der Dampfmaschine"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Wie lautet die einzige gerade PrimzahL? \n",
+      "antworten": [
+        "2 "
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Wer ist der Vater der Mathematik?",
+      "antworten": [
+        "Archimedes "
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Nennt den Satz des Pythagoras. \n",
+      "antworten": [
+        "a2 + b2 = c²"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Wie viel Grad hat die Summe der Innenwinkel eines Dreiecks? \n",
+      "antworten": [
+        "180° "
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Wert von cos 360°?",
+      "antworten": [
+        "1"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Eintippen",
+      "frage": "Richtig oder Falsch: Ein Parallelogramm kann auch eine Raute und ein Rechteck sein. \n",
+      "antworten": [
+        "Richtig "
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Bild mit Eintippen",
+      "frage": "Was fehlt hier? (Rosa Kästchen)",
+      "antworten": [
+        "log"
+      ],
+      "assets": [
+        {
+          "bild": "https://puu.sh/K8gxg/4991027f97.png"
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Auf welchem Kontinent befindet sich Brasilien?",
+      "antworten": [
+        "Südamerika "
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Was bezeichnet man als “Erosion”? \n",
+      "antworten": [
+        "Äußere Kräfte (z.B. Wind, fließendes Wasser, Eis,) zerstören die Oberflächenbeschaffenheit der Erde."
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Wie entstehen “Faltengebirge”? Nenn ein Beispiel. \n",
+      "antworten": [
+        "Gebirge wie z. B. die Alpen, die Anden und der Himalaya. Entstanden sind sie durch den Druck von Erdplatten, wodurch sich die Gesteinsdecken auffalteten und aufwölbten. "
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Was bedeutet die Abkürzung “FCKW” ausgesprochen?",
+      "antworten": [
+        "Fluorchlorkohlenwasserstoffe"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Bild mit Buzzer",
+      "frage": "Erklärt den Unterschied zwischen den beiden Karten.",
+      "antworten": [
+        "Eine physische Karte (rechts) und links eine thematische Karte (stellt ein bestimmtes Thema vor, z.B. das römische Reich) "
+      ],
+      "assets": [
+        {
+          "bild": "https://puu.sh/K80pt/76fdb02819.png"
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Woher kommt die Bezeichnung des Abendlandes? \n",
+      "antworten": [
+        "Eine im Mittelalter entstandene Bezeichnung für den Kontinent Europa, der von den Ländern Asiens aus betrachtet dort liegt, wo am Abend die Sonne steht "
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Bild mit Buzzer",
+      "frage": "Nenne dieses Land.",
+      "antworten": [
+        "Uganda "
+      ],
+      "assets": [
+        {
+          "bild": "https://puu.sh/K80uW/e2e4dc9f3e.png"
+        }
+      ]
+    },
+    {
+      "kategorie": "Bild mit Multiple-Buzzer",
+      "frage": "Nennt alle 4 Bauteile dieser einfachen Schaltung. \n",
+      "antworten": [
+        "https://puu.sh/K80nW/adefb02b6d.png"
+      ],
+      "assets": [
+        {
+          "bild": "https://puu.sh/K80nG/9208f4bf6a.png"
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "(Groß/Kleinschreibung beachten): Welche ist die gängige Einheit für 1 Jahr? \n",
+      "antworten": [
+        "1a "
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Bonus: Was bedeutet dann 1A (großgeschrieben)? \n",
+      "antworten": [
+        "1 Ampere "
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Was bezeichnet der Energieerhaltungssatz? \n",
+      "antworten": [
+        "in einem abgeschlossenen System kann Energie nur umgewandelt werden, die Summe der Energie bleibt immer gleich. Energie geht nicht verloren, und entsteht nicht einfach. "
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Multiple Buzzer",
+      "frage": "Nennt mir mechanische Energieformen.",
+      "antworten": [
+        "Bewegungsenergie",
+        "Potenzielle Energie "
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Bild mit Buzzer",
+      "frage": "Wie viel °C müssten in den gelben Kästchen stehen? Anomalie des Wassers. \n",
+      "antworten": [
+        "4°C"
+      ],
+      "assets": [
+        {
+          "bild": "https://puu.sh/K80n5/a279d3b23d.png"
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Welche Ladung hat ein Körper mit Elektronenmangel? \n",
+      "antworten": [
+        "positiv "
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Erkläre “Personal Passive”. \n",
+      "antworten": [
+        "Das persönliche Passiv stellt das Dativobjekt (Frage: wem?) in den Vordergrund. "
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Forme das Personal Passive: Somebody offered the Millers a trip on his new boat. \n",
+      "antworten": [
+        "The Millers were offered a trip on a new boat. "
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Eintippen",
+      "frage": "Error spotting: Finde die Fehler und korrigiere diese. “He catched the ball bevor it hitted the floor.” \n",
+      "antworten": [
+        "He caught the ball before it hit the floor. "
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Flexion von “i lie” ins Present Perfect? \n",
+      "antworten": [
+        "I have lain "
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Eintippen",
+      "frage": "Richtig oder Falsch: Alkohol braucht Sauerstoff zum Gären. \n",
+      "antworten": [
+        "Falsch, kein Sauerstoff. "
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Was bezeichnet die Autotrophe Ernährung? \n",
+      "antworten": [
+        "Ernährungsweise von grünen Pflanzen und manchen Bakterien. Sie stellen energiereiche organische Verbindungen (z.B. Zucker) zum Aufbau körpereigener Stoffe selbst her "
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Multiple Buzzer",
+      "frage": "Welche Arten der Bestäubung gibt es? \n",
+      "antworten": [
+        "Insektenbestäubung",
+        "Windbestäubung "
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Für was brauchen wir Lebewesen “ATP”? \n",
+      "antworten": [
+        "Energie der Zellen "
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Multiple Buzzer",
+      "frage": "Zählt die Teile des Gehirns auf.",
+      "antworten": [
+        "Großhirn",
+        "Kleinhirn",
+        "Nachhirn",
+        "Zwischenhirn",
+        "Mittelhirn",
+        " Brücke \n"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Nennt ein Isotop des Wasserstoffs. \n",
+      "antworten": [
+        "Protium (1P,0N), Deuterium (1P,1N), Tritium (2P,1N) "
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Welche Arten von UV-Strahlen gibt es und welche dringt am weitesten zu uns durch? \n",
+      "antworten": [
+        "UV-A, UV-B, UV-C, \nUV-A, durchdringt quasi ungehindert die Ozonschicht (UV-B kommen nur 10% an), \n"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Bonus: Welche UV-Strahlung ist die theoretisch gefährlichste für uns? \n",
+      "antworten": [
+        "UV-C, kürzeste Wellenlänge = höchste Energie \n"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Wie viele Elektronen müssen in welcher Schale vorhanden sein, damit das Atom besonders stabil ist? \n",
+      "antworten": [
+        "8 in der äußersten Schale "
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Aus was bestehen Beta-Strahlen? \n",
+      "antworten": [
+        "Elektronen "
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Wie heißt Kafkas berühmtes Werk, in dem sich ein Arbeiter in ein Ungeziefer verwandelt? \n",
+      "antworten": [
+        "Die Verwandlung "
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Diktat",
+      "frage": ":)",
+      "antworten": [
+        "Der Regisseur suchte die Zucchini für sein Ciabatta im Portemonnaie / Portemonee. "
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "\"Ihr hattet euch für Grammatik-Genies gehalten, doch dann...\" - Welche Zeitform hat diese Einleitung? \n",
+      "antworten": [
+        "Plusquamperfekt "
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Welche Artikel hat das Wort \"Kunde\"? \n",
+      "antworten": [
+        "Die, der "
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Welche Literaturepoche schloss sich an die Zeit des Barocks an? \n",
+      "antworten": [
+        "Aufklärung"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Welches Sinnbild erwählten sich die Romantiker als ihr Attribut? \n",
+      "antworten": [
+        "Die blaue Blume "
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "In welche Richtung dreht sich das Zahnrad rechts außen?",
+      "antworten": [
+        "Gegen den Uhrzeigersinn"
+      ],
+      "assets": [
+        ""
+      ]
+    },
+    {
+      "kategorie": "Schätzfrage",
+      "frage": "Wie viele Lehrer gibt es in Deutschland?",
+      "antworten": [
+        "904 500"
+      ],
+      "assets": [
+        ""
+      ]
+    }
+  ]
+}

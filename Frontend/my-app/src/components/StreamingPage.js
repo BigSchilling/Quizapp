@@ -42,7 +42,7 @@ export const soundGif =
   "https://miro.medium.com/v2/resize:fit:960/1*ll6000BtRBCGWfq5xK2GeA.gif";
 
 // sehen wer spricht - Teamspeak 5 plugin
-export const aktuellerMod = "Dana"; // mod ändern!!
+export const aktuellerMod = "Tom"; // mod ändern!!
 const StreamingPage = () => {
   const dispatch = useDispatch();
   const [inputMessage, setInputMessage] = useState("");
@@ -319,7 +319,7 @@ const StreamingPage = () => {
   // console.log(talkingMap2, talkingNames.current);
   return (
     <div
-    // className=""
+    className={styles.container}
     // style={{
     //   backgroundImage: "url(" + background + ")",
     //   backgroundSize: "cover",
@@ -329,8 +329,8 @@ const StreamingPage = () => {
     >
       <div className="backgroundContainer">
         {/* <BackgroundSVG2 className="backgroundClass2" /> */}
-        <BackgroundSVG className="backgroundClass" />
-        <BackgroundSVG className="backgroundClass" style={{ left: "-100%" }} />
+        {/* <BackgroundSVG className="backgroundClass" />
+        <BackgroundSVG className="backgroundClass" style={{ left: "-100%" }} /> */}
         {/* Weitere Kopien des SVG-Elements, je nach Bedarf */}
       </div>
       <div className={styles.gridcontainer2}>

@@ -62,6 +62,7 @@ app.use("/api/authenticate", authenticationRoutes)
 const server = http.createServer(app); // Änderung hier von https auf http
 const io = socketIo(server, { cors: { origin: "*" } });
 var buzzerPressed = false;
+let buzzerCounter = 0
 io.on('connection', (socket) => {
     // funktion immer aufrufen wenn punkte irgendwie geändert wie in sendRightPoints
     // sendet die eingeloggten spieler und erneuert die punkte anzeige
@@ -105,23 +106,28 @@ io.on('connection', (socket) => {
     // wer hat den buzzer gedrückt? 
     socket.on("sendBuzzerPressed", (playerID) => {
         buzzerPressed = true;
-        if (buzzerPressed) {
+        if (buzzerPressed && buzzerCounter === 0) {
+            buzzerCounter++
             console.log("buzzerPressed by " + playerID)
             io.emit("buzzerPressed", playerID)
         }
+        buzzerCounter++
     })
     // showmaster seite button hinzufügen
     socket.on("sendBuzzerReleased", () => {
         buzzerPressed = false
+        buzzerCounter = 0
         io.emit("buzzerReleased")
     })
     socket.on("sendBuzzerReleasedWithTimer", (body) => {
         buzzerPressed = false
+        buzzerCounter = 0
         io.emit("buzzerReleasedWithTimer", body)
-        io.emit("buzzerReleased")
+        // io.emit("buzzerReleased")
     })
     socket.on("sendBuzzerReleasedFree", () => {
         buzzerPressed = false
+        buzzerCounter = 0
         io.emit("buzzerReleasedFree")
     })
     // alle ausloggen    

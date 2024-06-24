@@ -4,6 +4,11 @@
   --line-height: 1;
   --flex-width: 28%
 }
+/* .container{
+  background: url("../images/background.svg");
+  min-width: 100vw;
+  min-height: 100vh;
+} */
 .flexcontainer {
   display: flex;
   flex-flow: column wrap;
