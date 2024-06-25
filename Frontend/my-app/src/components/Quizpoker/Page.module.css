@@ -1,0 +1,83 @@
+.container {
+  min-width: 100vw;
+  min-height: 100vh;
+  max-width: 100vw;
+  max-height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    ". . . . . . . . . . . ."
+    ". . . . Chris Chris Chris Chris . . . ."
+    ". . . . Chris Chris Chris Chris . . . ."
+    ". Dana Dana Dana Info Info Info Info Jan Jan Jan ."
+    ". Dana Dana Dana Info Info Info Info Jan Jan Jan ."
+    ". Dana Dana Dana Info Info Info Info Jan Jan Jan ."
+    ". . . . Info Info Info Info . . . ."
+    ". Tim Tim Tim Info Info Info Info Tom Tom Tom ."
+    ". Tim Tim Tim Info Info Info Info Tom Tom Tom ."
+    ". Tim Tim Tim Info Info Info Info Tom Tom Tom ."
+    ". . . . . . . . . . . ."
+    ". . . . . . . . . . . .";
+}
+
+.Dana {
+  grid-area: Dana;
+}
+
+.Jan {
+  grid-area: Jan;
+}
+
+.Info {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(5, 1fr);
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "Pot"
+    "Frage"
+    "Hinweis1"
+    "Hinweis2"
+    "Antwort";
+  grid-area: Info;
+}
+
+.Pot {
+  grid-area: Pot;
+}
+
+.Frage {
+  grid-area: Frage;
+}
+
+.Hinweis1 {
+  grid-area: Hinweis1;
+}
+
+.Hinweis2 {
+  grid-area: Hinweis2;
+}
+
+.Antwort {
+  grid-area: Antwort;
+}
+
+.Tim {
+  grid-area: Tim;
+}
+
+.Tom {
+  grid-area: Tom;
+}
+
+.Chris {
+  grid-area: Chris;
+  min-width: 100%;
+  min-height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+}

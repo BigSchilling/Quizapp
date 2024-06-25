@@ -20,7 +20,8 @@ import ShowMasterPlayer from "./components/test/ShowMasterPlayer";
 import TeamPage from "./components/test/TeamPage";
 import "./layout/vapor.css"; // zu vapor ändern wenn normales quiz, quartz für team
 import TeamModPage from "./components/test/TeamModPage";
-
+import Playerpage from "./components/Quizpoker/Playerpage";
+import QuizPokerStream from "./components/Quizpoker/QuizPokerStream";
 function App() {
   const loggedIn = useSelector((state) => state.loginPlayer.loggedIn);
   const isHost = useSelector((state) => state.loginPlayer.isHost);
@@ -61,6 +62,9 @@ function App() {
               <Route path="/test" element={<ShowMasterPlayer />} />
               <Route path="/map" element={<ImageToMap />} />
               <Route path="/teams" element={<TeamPage />} />
+              <Route path="/quizpokerplayer" element={<Playerpage />} />
+              <Route path="/quizpokerstream" element={<QuizPokerStream />} />
+              
               
               {/* <Route path="/tiktok" element={<TikTok />} /> */}
             </>
