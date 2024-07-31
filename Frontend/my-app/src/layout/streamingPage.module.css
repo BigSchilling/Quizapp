@@ -1,15 +1,19 @@
 :root {
-  --space-side: 2vw;
+  --space-side: 4.5vw;
   --card-padding-top: 1vh;
   --line-height: 1;
-  --flex-width: 28%
+  --flex-width: 25%;
 }
-/* .container{
-  background: url("../images/background.svg");
-  min-width: 100vw;
+.container{
+  background: url("https://community.gamedev.tv/uploads/db2322/original/3X/5/8/5807a2a9b6e3da5010ba124be1807f57404b2474.jpeg");
+   min-width: 100vw;
   min-height: 100vh;
-} */
+  background-position: inherit;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
 .flexcontainer {
+  
   display: flex;
   flex-flow: column wrap;
   justify-content: flex-start;
@@ -75,9 +79,18 @@
   height: 100%;
   object-fit: fill; /* Anpassung an die Höhe des Containers, ohne das Seitenverhältnis zu ändern */
 }
+/* eigentlich tom 0 */
+.flexitem1 { 
+  align-self: flex-end; 
+  order: 2; 
+  min-Height: 50%;
+  width: var(--flex-width);
+  margin-right: var(--space-side);
+  padding-top: var(--card-padding-top);
+}
 
-
-.flexitem1 {
+/* eigentlich tim 1 */
+.flexitem0 {
   align-self: flex-start; 
   min-Height: 50%;
   width: var(--flex-width);
@@ -101,20 +114,13 @@
 
 }
 
-.flexitem0 {
-  align-self: flex-end; 
-  order: 2; 
-  min-Height: 50%;
-  width: var(--flex-width);
-  margin-right: var(--space-side);
-  padding-top: var(--card-padding-top);
-}
+
 
 .gridcontainer2 {
   display: grid;
   grid-template-columns: var(--space-side) 10fr var(--space-side);
   margin-bottom: 2vh;
-  margin-top: 0vh;
+  padding-top: 1vh;
   
 }
 .griditem2{

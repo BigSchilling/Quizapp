@@ -1,0 +1,619 @@
+{
+  "fragen": [
+    {
+      "kategorie": "Schätzfrage",
+      "frage": "Mit wie vielen Menschen hat jede Person ca. Gleichzeitig Geburtstag?\n",
+      "antworten": [
+        "16,5 Millionen"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Was ist in Norwegen an Wahltagen verboten?\n",
+      "antworten": [
+        "Alkohol kaufen"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Schätzfrage",
+      "frage": "Wie groß ist die größte Spinne der Welt? (Länge)\n",
+      "antworten": [
+        "25-30cm"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Schätzfrage",
+      "frage": "Wie viel Prozent der Menschen sind Linkshänder?",
+      "antworten": [
+        "11%"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Welche Farbe kann Licht nicht haben?",
+      "antworten": [
+        "Pink"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Der Abdruck welchen Körperteils ist so einzigartig, wie der Fingerabdruck?",
+      "antworten": [
+        "Die Zunge"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Multiple Buzzer",
+      "frage": "Welche 2 Körperteile des Menschen wachsen in Leben lang?",
+      "antworten": [
+        "Ohren",
+        "Zunge"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Was heißt der Name der Stadt “Fukushima” übersetzt?",
+      "antworten": [
+        "Glücksinsel"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Welcher Zeit entspricht die Dauer des Films “Titanic”?\n",
+      "antworten": [
+        "Der Zeit, die das Schiff benötigte, um zu sinken.\n"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Schätzfrage",
+      "frage": "Wie viele Trauben benötigt man, um eine Flasche Wein herzustellen?\n",
+      "antworten": [
+        "700"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Was ist das beliebteste Topping auf Pizza in Brasilien?\n",
+      "antworten": [
+        "Erbsen"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Welche Geldscheine werden in Deutschland am häufigsten gefälscht?",
+      "antworten": [
+        "20er"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Schätzfrage",
+      "frage": "Wie lang hat Da Vinci gebraucht, um die Lippen der Mona Lisa zu malen?\n",
+      "antworten": [
+        ""
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Was ist das Nationaltier von Schottland?",
+      "antworten": [
+        "Ein Einhorn"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Woraus bestehen Lottokugeln?",
+      "antworten": [
+        "Gewöhnliche, bemalte Tischtennisbälle"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Welcher Gegenstand wird am häufigsten in Hotelzimmern gestohlen?",
+      "antworten": [
+        "Kleiderbügel\n"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Schätzfrage",
+      "frage": "Wie lang haben Stabheuschrecken am Stück Sex?\n",
+      "antworten": [
+        "Zehn Wochen \n"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Wodurch zeigen Gorillas, dass sie glücklich sind?\n",
+      "antworten": [
+        "Sie rülpsen\n"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Was passiert, wenn man eine Zwiebel an seiner Fußsohle reibt?\n",
+      "antworten": [
+        "Ca. 30 Min. Später hat man einen Zwiebelgeschmack im Mund\n"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Wie viel Zeit verbringt ein Mensch ca. pro Tag mit Blinzeln?",
+      "antworten": [
+        "15 Min"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Welche Menschen können keinen Mundgeruch haben?\n",
+      "antworten": [
+        "Babys\n"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Schätzfrage",
+      "frage": "Wie viele Fragen stellen Kinder durchschnittlich am Tag?\n",
+      "antworten": [
+        "Etwa 400\n"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Worauf reagieren Bewegungsmelder?",
+      "antworten": [
+        "Wärme"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Multiple Buzzer",
+      "frage": "Welche 3 Lebewesen sind die Einzigen mit individuellem Fingerabdruck?",
+      "antworten": [
+        "Menschen",
+        "Affen",
+        "Koalas"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Schätzfrage",
+      "frage": "Wie viel Botox benötigt man, um die gesamte Weltbevölkerung zu vergiften?\n",
+      "antworten": [
+        "2 Teelöffel (ca. 8 Gramm)"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Was ist das kräftigste Lebewesen auf der Welt",
+      "antworten": [
+        "Nashornkäfer (kann das 850-fache seines Gewichts tragen)"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Schätzfrage",
+      "frage": "Wie viel Prozent der in Deutschland geborenen Zwillinge sind eineiig?\n",
+      "antworten": [
+        "25%"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Wo liegt der tiefste Ort der Erde?",
+      "antworten": [
+        "Im Marianengraben im Pazifischen Ozean"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Schätzfrage",
+      "frage": "Wie tief ist dieser Ort?",
+      "antworten": [
+        "11.034 Meter\n"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Schätzfrage",
+      "frage": "Wie lang ist der Nil?",
+      "antworten": [
+        "6.853 km"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Welches Tier kann sich unbegrenzt replizieren und ist somit unsterblich?",
+      "antworten": [
+        "Hummer"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Was ist das Besondere an Akazienbäumen in Afrika?",
+      "antworten": [
+        "Sie kommunizieren miteinander, um andere Bäume zu warnen, damit diese rechtzeitig das Gift Tannin produzieren können, welches sie vor hungrigen Tieren schützt"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Welches Tier ist kugelsicher? ",
+      "antworten": [
+        "Gürteltiere "
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Schätzfrage",
+      "frage": "Wie lang benötigt man, um die gesamte chinesische Mauer entlangzulaufen?\n",
+      "antworten": [
+        "18 Monate"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Welche Flagge hat die meisten Farben?",
+      "antworten": [
+        "Belize (12 Farben)\n"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Schätzfrage",
+      "frage": "Wann wurde der erste Handyanruf getätigt?",
+      "antworten": [
+        "3. April 1973\n"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Was ist Buzz Aldrin (2. Mensch auf dem Mond) beim Betreten der Oberfläche passiert?\n",
+      "antworten": [
+        "Er hat sich bepinkelt"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Was war der kürzeste Krieg aller Zeiten?",
+      "antworten": [
+        "Anglo-Sansibar-Krieg (38 Minuten)"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Schätzfrage",
+      "frage": "Wann wurde die Druckerpresse erfunden?",
+      "antworten": [
+        "1440"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Schätzfrage",
+      "frage": "Wo liegt das Durchschnittsalter der Weltbevölkerung?\n",
+      "antworten": [
+        "30"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Welches Körperteil besitzen Eulen nicht?",
+      "antworten": [
+        "Augäpfel\n"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Schätzfrage",
+      "frage": "Wie viel Kilometer lang kann man mit einem Bleistift zeichnen (durchgehender Strich)?",
+      "antworten": [
+        "56 Km"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Wie heißt die Firma Carglass in England?",
+      "antworten": [
+        "Autoglass\n"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Schätzfrage",
+      "frage": "Wie lang steht man durchschnittlich an einer deutschen Supermarktkasse? \n",
+      "antworten": [
+        "7 Min"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Welche Körperfunktion gibt es bei Pferden nicht?",
+      "antworten": [
+        "Sie können sich nicht übergeben\n"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Welchen gesundheitsschädlichen Stoff enthalten Auberginen?\n",
+      "antworten": [
+        "\nNikotin\n"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Was passiert mit den Eifelturm bei Kälte? ",
+      "antworten": [
+        "Er schrumpft um ca. 15 Zentimeter\n"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Was ist für Pilot und Co-Pilot verboten?",
+      "antworten": [
+        "Dasselbe Flugzeugessen zu essen. (Um eine Lebensmittelvergiftung beider zu vermeiden)"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Was passierte am 28. Januar 2005",
+      "antworten": [
+        "Es fiel Schnee in der Sahara\n"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Schätzfrage",
+      "frage": "Wie groß ist der Durchschnitt eines Bierdeckels?",
+      "antworten": [
+        "107 Millimeter\n"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Schätzfrage",
+      "frage": "Was ist die Maximal-Anzahl an Freundschaften, die das menschliche Gehirn koordinieren kann?",
+      "antworten": [
+        "148"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    }
+  ]
+}

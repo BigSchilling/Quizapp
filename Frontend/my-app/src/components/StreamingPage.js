@@ -42,7 +42,7 @@ export const soundGif =
   "https://miro.medium.com/v2/resize:fit:960/1*ll6000BtRBCGWfq5xK2GeA.gif";
 
 // sehen wer spricht - Teamspeak 5 plugin
-export const aktuellerMod = "Tom"; // mod ändern!!
+export const aktuellerMod = "Tim"; // mod ändern!!
 const StreamingPage = () => {
   const dispatch = useDispatch();
   const [inputMessage, setInputMessage] = useState("");
@@ -208,6 +208,11 @@ const StreamingPage = () => {
       setBuzzerPressed(false);
       setBuzzerPressedBy(null);
     });
+    newSocket.on("buzzerReleasedWithTimer", (body) => {
+      setBuzzerPressed(false);
+      setBuzzerPressedBy(null);
+      // console.log(`Startpage Buzzer got released`);
+    });
     // buzzer ohne punkte freigegeben
     newSocket.on("buzzerReleasedFree", () => {
       setBuzzerPressed(false);
@@ -319,20 +324,21 @@ const StreamingPage = () => {
   // console.log(talkingMap2, talkingNames.current);
   return (
     <div
-    className={styles.container}
-    // style={{
-    //   backgroundImage: "url(" + background + ")",
-    //   backgroundSize: "cover",
-    //   backgroundPosition: "center center",
-    //   // marginTop: "-10px"
-    // }}
+      id="test"
+      className={styles.container}
+      // style={{
+      //   backgroundImage: "url(" + background + ")",
+      //   backgroundSize: "cover",
+      //   backgroundPosition: "center center",
+      //   // marginTop: "-10px"
+      // }}
     >
-      <div className="backgroundContainer">
+      {/* <div className="backgroundContainer">
         {/* <BackgroundSVG2 className="backgroundClass2" /> */}
-        {/* <BackgroundSVG className="backgroundClass" />
+      {/* <BackgroundSVG className="backgroundClass" />
         <BackgroundSVG className="backgroundClass" style={{ left: "-100%" }} /> */}
-        {/* Weitere Kopien des SVG-Elements, je nach Bedarf */}
-      </div>
+      {/* Weitere Kopien des SVG-Elements, je nach Bedarf */}
+      {/* </div> */}
       <div className={styles.gridcontainer2}>
         <div></div>
         <div>
@@ -453,7 +459,10 @@ const StreamingPage = () => {
           key={5}
           style={{ display: "flex", flexDirection: "column" }}
         >
-          {assets && (assets[assetIndex].bild || assets[assetIndex].sound || assets[assetIndex].video) ? (
+          {assets &&
+          (assets[assetIndex].bild ||
+            assets[assetIndex].sound ||
+            assets[assetIndex].video) ? (
             <div id="bild-placeholder" className={styles.imageplaceholder}>
               <Card
                 border="dark"
@@ -510,8 +519,8 @@ const StreamingPage = () => {
                           objectFit: "scale-down",
                           // minHeight: "100vh"
                           // minHeight: "100%",
-                          padding:"0%",
-                          marginBottom: "-10%"
+                          padding: "0%",
+                          marginBottom: "-10%",
                         }}
                       />
                     </div>

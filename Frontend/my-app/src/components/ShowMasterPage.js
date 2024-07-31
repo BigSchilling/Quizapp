@@ -22,7 +22,7 @@ import {
   setTimer,
 } from "../slices/ShowMasterSlice";
 import io from "socket.io-client";
-import FragenData from "../questionsCatalog/folge13Tom.json"; // datei mit fragen ändern!
+import FragenData from "../questionsCatalog/folge14Tim.json"; // datei mit fragen ändern!
 import useSound from "use-sound";
 import tom1 from "../images/tom1.jpg";
 import jan1 from "../images/jan3.jpg";
@@ -140,6 +140,12 @@ const ShowMasterPage = () => {
     newSocket.on("pointsChanged", (points) => {
       setAllPoints(points);
       console.log(`punkte wurden verändert`);
+    });
+
+    newSocket.on("buzzerReleasedWithTimer", (body) => {
+      setBuzzerPressed(false);
+      setBuzzerPressedBy(null);
+      // console.log(`Startpage Buzzer got released`);
     });
     // UpdatePlayers
     newSocket.on("UpdatePlayers", (playerPoints, players) => {
