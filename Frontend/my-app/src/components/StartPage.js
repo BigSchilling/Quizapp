@@ -1,11 +1,9 @@
 import React, { useEffect, useState, useRef } from "react";
 import {
-  Dropdown,
   Button,
   InputGroup,
   Form,
   Card,
-  Container,
   Image,
 } from "react-bootstrap";
 import "../layout/StartPage.css";
@@ -13,15 +11,14 @@ import { useDispatch, useSelector } from "react-redux";
 import io from "socket.io-client";
 import { setPlayer } from "../slices/LoginPlayerSlice";
 import Navigation from "./Navigation";
-import useSound from "use-sound";
-import { NumberFormatter } from "@mantine/core";
 import "../layout/scrollbar.css";
 import tom1 from "../images/tom3.jpg";
 import jan1 from "../images/jan3.jpg";
 import tim1 from "../images/tim1.jpg";
+// import tim1 from "../images/bastitot.png";
 import dana1 from "../images/dana1.jpg";
 import noPic1 from "../images/noPic1.jpg";
-import chris1 from "../images/chris2.jpg";
+import chris1 from "../images/chris2.jpeg"
 import ReactPlayer from "react-player";
 import { soundGif } from "./StreamingPage";
 const server = process.env.REACT_APP_API_SERVER;

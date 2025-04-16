@@ -6,6 +6,7 @@
 }
 .container{
   background: url("https://community.gamedev.tv/uploads/db2322/original/3X/5/8/5807a2a9b6e3da5010ba124be1807f57404b2474.jpeg");
+  /* background: url("https://static.vecteezy.com/system/resources/previews/027/220/348/large_2x/spooky-background-for-halloween-with-twisted-trees-jack-o-lanterns-and-bats-flying-in-the-sky-free-photo.jpg"); */
    min-width: 100vw;
   min-height: 100vh;
   background-position: inherit;

@@ -1,13 +1,11 @@
-import "../layout/ShowMasterPage.css";
+import styles from "../layout/ShowMasterPage.module.css";
 import "../layout/scrollbar.css";
 import React, { useEffect, useRef, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import {
-  Dropdown,
   Button,
   Card,
   ListGroup,
-  Container,
   Row,
   Col,
   Form,
@@ -16,23 +14,20 @@ import {
 } from "react-bootstrap";
 import {
   createPlayerTrue,
-  createPlayerFalse,
   setRightPoints,
   setManuellPoints,
   setTimer,
 } from "../slices/ShowMasterSlice";
 import io from "socket.io-client";
-import FragenData from "../questionsCatalog/folge14Tim.json"; // datei mit fragen ändern!
-import useSound from "use-sound";
-import tom1 from "../images/tom1.jpg";
+import FragenData from "../questionsCatalog/Folge17Eltern.json"; // datei mit fragen ändern!
+import tom1 from "../images/tom3.jpg";
 import jan1 from "../images/jan3.jpg";
 import tim1 from "../images/tim1.jpg";
 import dana1 from "../images/dana1.jpg";
 import noPic1 from "../images/noPic1.jpg";
 import chris1 from "../images/chris2.jpg";
-import ShowMasterPlayer from "./test/ShowMasterPlayer";
 import ReactPlayer from "react-player";
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
 const server = process.env.REACT_APP_API_SERVER;
 
 const ShowMasterPage = () => {
@@ -213,8 +208,8 @@ const ShowMasterPage = () => {
     }
   };
   const navigateToTeams = () => {
-    navigate("/teamsmod")
-  }
+    navigate("/teamsmod");
+  };
   const logoutPlayer = (player) => {
     if (socket) {
       // Sende die Nachricht an den Server
@@ -435,217 +430,210 @@ const ShowMasterPage = () => {
   };
   var maxHeightVar = "8rem";
   return (
-    <div className="grid-container3">
-      <input
-        type="range"
-        min="0"
-        max="1"
-        step="0.001"
-        value={sliderValue} // Verwenden Sie den Zustand für den Slider-Wert
-        onChange={(e) => adjustVolume(e)}
-      />
-      <div className="grid-container2">
-        <div style={{ minWidth: "100%" }}>
+    <div className={styles.gridContainer}>
+      <div className={styles.question}>
+        <input
+          type="range"
+          min="0"
+          max="1"
+          step="0.001"
+          label="Volume"
+          value={sliderValue} // Verwenden Sie den Zustand für den Slider-Wert
+          onChange={(e) => adjustVolume(e)}
+        />
+        <div className={styles.lastQuestion}>
           <Button
             variant="primary"
             className="text-center"
-            style={{ width: "100%", height: "100%" }}
             onClick={() => changeFragenIndex(-1)}
           >
             {"vorherige Frage"}
           </Button>
         </div>
-        <div style={{ width: "100%" }}>
-          <Card
-            bg="dark"
-            // className="text-center"
-            border="secondary"
-            style={{
-              fontSize: "30px",
-              //   padding: "10px 10px",
-              //   marginBottom: "40px",
-              //   marginTop: "40px",
-            }}
-          >
+        <div className={styles.currentQuestion}>
+          <Card bg="dark" border="secondary">
             <Card.Body>
-              <Card.Title className="text-center" style={{ fontSize: "35px" }}>
-                <h3>
+              <Card.Title className="text-center" style={{ fontSize: "30px" }}>
+                <h3 style={{ fontSize: "20px" }}>
                   Frage {fragenIndex + 1} ({fragen[fragenIndex].kategorie}):
                 </h3>
-                <p>{fragen[fragenIndex].frage}</p>
+                <p style={{ textShadow: "2px 2px 4px rgba(0, 0, 0, 0.7)" }}>
+                  {fragen[fragenIndex].frage}
+                </p>
               </Card.Title>
             </Card.Body>
           </Card>
         </div>
-        <div>
+        <div className={styles.nextQuestion}>
           <Button
             variant="primary"
-            style={{ width: "100%", height: "100%" }}
+            // style={{ width: "100%", height: "100%" }}
             onClick={() => changeFragenIndex(1)}
           >
             {"nächste Frage"}
           </Button>
         </div>
+
+        <Button
+          className={styles.showQuestion}
+          variant={showQuestion ? "dark" : "secondary"}
+          onClick={showQuestion ? changeHideQuestion : changeShowQuestion}
+        >
+          {!showQuestion ? "Frage anzeigen" : "Frage angezeigt"}
+        </Button>
+
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center", // Zentriert horizontal
+            alignItems: "center", // Zentriert vertikal
+            gap: "20px", // Abstand zwischen den Buttons
+          }}
+          className={styles.answers}
+        >
+          {fragen[fragenIndex].antworten.map((antwort, antwortIndex) => (
+            <Button
+              key={antwortIndex}
+              variant={answerToggles[antwortIndex] ? "success" : "dark"}
+              style={{ fontSize: "20px" }}
+              onClick={() => setAnswerToggleButton(antwortIndex)}
+            >
+              {antwort}
+            </Button>
+          ))}
+        </div>
       </div>
 
-      <Container>
-        <div className="text-center">
-          <Button
-            variant={showQuestion ? "dark" : "secondary"}
-            style={{ marginBottom: "20px" }}
-            onClick={showQuestion ? changeHideQuestion : changeShowQuestion}
-          >
-            {!showQuestion ? "Frage anzeigen" : "Frage angezeigt"}
-          </Button>
-
-          <div
-            style={{
-              display: "flex",
-              justifyContent: "center", // Zentriert horizontal
-              alignItems: "center", // Zentriert vertikal
-              gap: "20px", // Abstand zwischen den Buttons
-            }}
-          >
-            {fragen[fragenIndex].antworten.map((antwort, antwortIndex) => (
-              <Button
-                key={antwortIndex}
-                variant={answerToggles[antwortIndex] ? "success" : "dark"}
-                style={{ fontSize: "20px" }}
-                onClick={() => setAnswerToggleButton(antwortIndex)}
-              >
-                {antwort}
-              </Button>
-            ))}
-          </div>
-        </div>
-      </Container>
-      <div className="d-flex flex-column align-items-start">
+      <div className={styles.controls}>
+        <Image
+          src={fragen[fragenIndex].assets[assetIndex].bild}
+          style={{ width: "50%" }}
+        />
         {fragen[fragenIndex].assets[assetIndex] ? (
           <div
-            className="d-flex flex-row"
-            style={{ gap: "10px", marginTop: "10px" }}
+            style={{ gap: "10px", marginTop: "10px", maxWidth: "100%", placeContent: "center" }}
           >
             {/* Reactplayer div*/}
-            {fragen[fragenIndex].assets[assetIndex].video || fragen[fragenIndex].assets[assetIndex].sound ? (
-              <div>
-                <div
-                  style={{
-                    display: "block",
-                    border: "3px solid white",
-                    width: "auto",
-                    height: "auto",
-                  }}
-                >
-                  <Button onClick={sendPlayPause}>
-                    {" "}
-                    {isPlaying ? "Pause Video" : "Play Video"}
-                  </Button>
-                  <input
-                    type="range"
-                    min="0"
-                    max="1"
-                    step="0.01"
-                    value={playerSliderValue}
-                    onChange={(e) => adjustPlayerVolume(e)}
-                  />
-                  {/* <Image
+            {fragen[fragenIndex].assets[assetIndex].video ||
+            fragen[fragenIndex].assets[assetIndex].sound ? (
+              <div
+                style={{
+                  display: "block",
+                  border: "3px solid white",
+                  width: "auto",
+                  height: "auto",
+                }}
+              >
+                <Button onClick={sendPlayPause}>
+                  {" "}
+                  {isPlaying ? "Pause Video" : "Play Video"}
+                </Button>
+                <input
+                  type="range"
+                  min="0"
+                  max="1"
+                  step="0.01"
+                  value={playerSliderValue}
+                  onChange={(e) => adjustPlayerVolume(e)}
+                />
+                {/* <Image
           src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Test-Logo.svg/783px-Test-Logo.svg.png"
           style={{ display: "block", objectFit: "" }}
         /> */}
-                  <ReactPlayer
-                    url={fragen[fragenIndex].assets[assetIndex].video || fragen[fragenIndex].assets[assetIndex].sound}
-                    playing={isPlaying}
-                    controls={true}
-                    loop={true}
-                    width="100%"
-                    height="100%"
-                    volume={playerVolumeRef.current}
-                    ref={(p) => {
-                      videoPlayerRef.current = p;
-                    }}
-                    // style={{ display: "none", border: "3px solid white" }}
-                  />
-                  <Form>
-                    <FormGroup controlId="formSeek">
-                      <Form.Label>Springe zu:</Form.Label>
-                      <Form.Control
-                        type="number"
-                        placeholder="Minutes"
-                        value={minutes}
-                        onChange={(e) => setMinutes(e.target.value)}
-                      />
-                      <Form.Control
-                        type="number"
-                        placeholder="Seconds"
-                        value={seconds}
-                        onChange={(e) => setSeconds(e.target.value)}
-                      />
-                    </FormGroup>
-                    <Button onClick={sendSeekToTime}>Seek</Button>
-                  </Form>
-                </div>
+                <ReactPlayer
+                  url={
+                    fragen[fragenIndex].assets[assetIndex].video ||
+                    fragen[fragenIndex].assets[assetIndex].sound
+                  }
+                  playing={isPlaying}
+                  controls={true}
+                  loop={true}
+                  width="100%"
+                  height="100%"
+                  volume={playerVolumeRef.current}
+                  ref={(p) => {
+                    videoPlayerRef.current = p;
+                  }}
+                  // style={{ display: "none", border: "3px solid white" }}
+                />
+                <Form>
+                  <FormGroup controlId="formSeek">
+                    <Form.Label>Springe zu:</Form.Label>
+                    <Form.Control
+                      type="number"
+                      placeholder="Minutes"
+                      value={minutes}
+                      onChange={(e) => setMinutes(e.target.value)}
+                    />
+                    <Form.Control
+                      type="number"
+                      placeholder="Seconds"
+                      value={seconds}
+                      onChange={(e) => setSeconds(e.target.value)}
+                    />
+                  </FormGroup>
+                  <Button onClick={sendSeekToTime}>Seek</Button>
+                </Form>
               </div>
             ) : null}
-            <Button
-              variant="primary"
-              style={{ fontSize: "20px" }}
-              onClick={() => changeAssetIndex(-1)}
-            >
-              vorheriges Asset
-            </Button>
-            <Button
-              variant="primary"
-              style={{ fontSize: "20px" }}
-              onClick={() => changeAssetIndex(1)}
-            >
-              Nächstes Asset
-            </Button>
-            <Image
-              src={fragen[fragenIndex].assets[assetIndex].bild }
-              style={{ width: "25%" }}
-            />
+            <div style={{ marginTop: "2%", placeContent: "center" }}>
+              <Button
+                variant="primary"
+                style={{ fontSize: "15px", marginRight: "10px" }}
+                onClick={() => changeAssetIndex(-1)}
+              >
+                vorheriges Asset
+              </Button>
+              <Button
+                variant="primary"
+                style={{ fontSize: "15px", marginLeft: "10px" }}
+                onClick={() => changeAssetIndex(1)}
+              >
+                Nächstes Asset
+              </Button>
+            </div>
           </div>
         ) : null}
-        <FormGroup style={{ marginTop: "2vh" }}>
-          <Form.Label>Richtige Punkte</Form.Label>
-          <Form.Control
-            id="manuellPointsInput"
-            bsClass="test"
-            type="number"
-            value={manuellPoints}
-            onChange={setManuellPointsOnChange}
-            style={{ width: "10px", maxWidth: "50px", fontSize: "20px" }}
-          />
-        </FormGroup>
-        <FormGroup style={{ marginTop: "2vh" }}>
-          <Form.Label>Timer für Buzzer in ms</Form.Label>
-          <Form.Control
-            id="manuellPointsInput"
-            bsClass="test"
-            type="number"
-            value={timer}
-            onChange={setTimeout}
-            style={{ width: "10px", maxWidth: "50px", fontSize: "20px" }}
-          />
-        </FormGroup>
+        <div
+          id="buzzerControls"
+          style={{ marginTop: "2%",  }}
+        >
+          <FormGroup>
+            <Form.Label>Richtige Punkte</Form.Label>
+            <Form.Control
+              id="manuellPointsInput"
+              bsClass="test"
+              type="number"
+              value={manuellPoints}
+              onChange={setManuellPointsOnChange}
+              style={{ width: "10px", maxWidth: "50px", fontSize: "15px" }}
+            />
+          </FormGroup>
+          <FormGroup>
+            <Form.Label>Timer für Buzzer in ms</Form.Label>
+            <Form.Control
+              id="manuellPointsInput"
+              bsClass="test"
+              type="number"
+              value={timer}
+              onChange={setTimeout}
+              style={{ width: "10px", maxWidth: "50px", fontSize: "15px" }}
+            />
+          </FormGroup>
+        </div>
       </div>
-      <div
-        className="d-flex flex-column align-items-center"
-        style={{ marginTop: "-20vh" }}
-      >
+      <div className={styles.buzzer}>
         <Button
           variant={!buzzerPressed ? "primary" : "info"}
           style={{
-            fontSize: "80px",
-            width: "auto", // Breite des Buttons
-            height: "180px",
+            fontSize: "40px",
+            height: "120px",
             padding: "10px 20px",
             marginBottom: "20px",
-            marginTop: "2%",
             borderRadius: "20px",
             backgroundImage: `url(${
               buzzerPressedBy === "Tom"
-                ? noPic1
+                ? tom1
                 : buzzerPressedBy === "Tim"
                 ? tim1
                 : buzzerPressedBy === "Jan"
@@ -658,6 +646,7 @@ const ShowMasterPage = () => {
             })`,
             backgroundSize: "cover",
             backgroundPosition: "center center",
+            textShadow: "2px 2px 4px rgba(0, 0, 0, 0.7)",
           }}
           onClick={null}
           // disabled={buzzerPressed}
@@ -669,10 +658,11 @@ const ShowMasterPage = () => {
             <Button
               variant="danger"
               style={{
-                fontSize: "50px",
+                fontSize: "40px",
                 padding: "10px 20px",
                 marginBottom: "20px",
                 marginRight: "20px",
+                textShadow: "2px 2px 4px rgba(0, 0, 0, 0.7)",
               }}
               onClick={wrongPoints}
             >
@@ -681,7 +671,7 @@ const ShowMasterPage = () => {
             <Button
               variant="success"
               style={{
-                fontSize: "50px",
+                fontSize: "40px",
                 padding: "10px 20px",
                 marginBottom: "20px",
               }}
@@ -695,10 +685,8 @@ const ShowMasterPage = () => {
         <Button
           variant="warning"
           style={{
-            fontSize: "30px",
+            fontSize: "20px",
             padding: "10px 20px",
-            marginBottom: "40px",
-            marginTop: "40px",
           }}
           onClick={sendBuzzerReleasedFree}
         >
@@ -706,154 +694,151 @@ const ShowMasterPage = () => {
         </Button>
       </div>
 
-      <div>
-        <Container id="UserManagementPageListComponent">
-          <Row
-            xs={1}
-            md={2}
-            lg={4}
-            xl={4}
-            className="justify-content-center align-items-center "
-          >
-            {sortedPoints.map((player) => (
-              <Col key={player.userID} className="mb-3">
-                <Card
-                  bg="dark"
-                  border={player.isReady ? "success" : "secondary"}
-                  style={{
-                    width: "18rem",
-                    maxHeight: "1000px",
-                    overflowY: "auto",
-                  }}
+      <div className={styles.players}>
+        <Row
+          xs={2}
+          md={3}
+          lg={4}
+          xl={5}
+          className="justify-content-center align-items-center "
+        >
+          {sortedPoints.map((player) => (
+            <Col key={player.userID} className="mb-3">
+              <Card
+                bg="dark"
+                border={player.isReady ? "success" : "secondary"}
+                // style={{
+                //   width: "18rem",
+                //   maxHeight: "1000px",
+                //   overflowY: "auto",
+                // }}
+              >
+                <Card.Body
+                  className="d-flex flex-column"
+                  style={{ minHeight: "100%", paddingBottom: "10px" }}
                 >
-                  <Card.Body
-                    className="d-flex flex-column"
-                    style={{ minHeight: "100%", paddingBottom: "10px" }}
+                  <Card.Title
+                    style={{ fontSize: "30px" }}
+                    className="d-flex justify-content-between align-items-center flex-wrap"
                   >
-                    <Card.Title
-                      style={{ fontSize: "30px" }}
-                      className="d-flex justify-content-between align-items-center flex-wrap"
-                    >
-                      <div>{player.userID}:</div>
-                      <div>{player.currentPoints} p</div>
-                    </Card.Title>
-                    <Card.Title
-                      style={{
-                        fontSize: "15px",
-                        fontWeight: "bold",
-                        display: "flex",
-                        justifyContent: "space-between",
-                        alignItems: "center",
-                      }}
-                    >
-                      <Button
-                        variant="danger"
-                        onClick={() => changePoints(player.userID, -1)}
-                        style={{ width: "50%", marginRight: "5px" }} // Breite auf 50% des verfügbaren Platzes setzen
-                      >
-                        minus
-                      </Button>
-
-                      <Button
-                        variant="success"
-                        onClick={() => changePoints(player.userID, 1)}
-                        style={{ width: "50%", marginLeft: "5px" }} // Breite auf 50% des verfügbaren Platzes setzen
-                      >
-                        plus
-                      </Button>
-                    </Card.Title>
-
-                    <div
-                      className="d-flex flex-column flex-grow-1 align-items-start"
-                      style={{ overflowY: "auto" }}
-                    >
-                      <ListGroup style={{ width: "100%" }}>
-                        <ListGroup.Item
-                          bg="secondary"
-                          style={{ minHeight: "100px", overflowY: "auto" }}
-                        >
-                          <textarea
-                            style={{
-                              width: "100%",
-                              minHeight: "100px",
-                              resize: "vertical",
-                              boxSizing: "border-box",
-                            }}
-                            value={playerMessages[player.userID]}
-                            readOnly
-                          />
-                        </ListGroup.Item>
-                        <ListGroup.Item bg="dark">
-                          current Rights: {player.currentRights}
-                        </ListGroup.Item>
-                        <ListGroup.Item bg="dark">
-                          current Wrongs: {player.currentWrongs}
-                        </ListGroup.Item>
-                        <ListGroup.Item bg="dark">
-                          all Time Rights: {player.allTimeRights}
-                        </ListGroup.Item>
-                        <ListGroup.Item bg="dark">
-                          all Time Wrongs: {player.allTimeWrongs}
-                        </ListGroup.Item>
-                        <ListGroup.Item bg="dark">
-                          highest Points: {player.highestPoints}
-                        </ListGroup.Item>
-                      </ListGroup>
-                    </div>
+                    <div>{player.userID}:</div>
+                    <div>{player.currentPoints} p</div>
+                  </Card.Title>
+                  <Card.Title
+                    style={{
+                      fontSize: "15px",
+                      fontWeight: "bold",
+                      display: "flex",
+                      justifyContent: "space-between",
+                      alignItems: "center",
+                    }}
+                  >
                     <Button
-                      onClick={() => logoutPlayer(player.userID)}
                       variant="danger"
+                      onClick={() => changePoints(player.userID, -1)}
+                      style={{ width: "50%", marginRight: "5px" }} // Breite auf 50% des verfügbaren Platzes setzen
                     >
-                      Log Out Player
+                      minus
                     </Button>
-                  </Card.Body>
-                </Card>
-              </Col>
-            ))}
-          </Row>
 
-          <div>
-            <Button
-              variant="info"
-              style={{
-                fontSize: "20px",
-                padding: "10px 20px",
-                marginBottom: "20px",
-                marginTop: "20px",
-              }}
-              onClick={newSession}
-            >
-              {"New Session"}
-            </Button>
+                    <Button
+                      variant="success"
+                      onClick={() => changePoints(player.userID, 1)}
+                      style={{ width: "50%", marginLeft: "5px" }} // Breite auf 50% des verfügbaren Platzes setzen
+                    >
+                      plus
+                    </Button>
+                  </Card.Title>
 
-            <Button
-              variant="success"
-              style={{
-                fontSize: "20px",
-                padding: "10px 20px",
-                marginBottom: "40px",
-                marginTop: "40px",
-              }}
-              onClick={setCreatePlayer}
-            >
-              {"Create Player"}
-            </Button>
-            <Button
-              style={{ marginTop: "20px" }}
-              onClick={navigateToTeams}
-              variant="info"
-            >
-              TeamPage
-            </Button>
-            <Button
-              style={{ marginTop: "20px" }}
-              onClick={logoutAll}
-              variant="danger"
-            >
-              LOGOUT ALL!!!
-            </Button>
-          </div>
-        </Container>
+                  <div
+                    // className="d-flex flex-column flex-grow-1 align-items-start"
+                    style={{ overflowY: "auto" }}
+                  >
+                    <ListGroup style={{ width: "100%" }}>
+                      <ListGroup.Item
+                        bg="secondary"
+                        style={{ minHeight: "100px", overflowY: "auto" }}
+                      >
+                        <textarea
+                          style={{
+                            width: "100%",
+                            minHeight: "100px",
+                            resize: "vertical",
+                            boxSizing: "border-box",
+                          }}
+                          value={playerMessages[player.userID]}
+                          readOnly
+                        />
+                      </ListGroup.Item>
+                      <ListGroup.Item bg="dark">
+                        current Rights: {player.currentRights}
+                      </ListGroup.Item>
+                      <ListGroup.Item bg="dark">
+                        current Wrongs: {player.currentWrongs}
+                      </ListGroup.Item>
+                      <ListGroup.Item bg="dark">
+                        all Time Rights: {player.allTimeRights}
+                      </ListGroup.Item>
+                      <ListGroup.Item bg="dark">
+                        all Time Wrongs: {player.allTimeWrongs}
+                      </ListGroup.Item>
+                      <ListGroup.Item bg="dark">
+                        highest Points: {player.highestPoints}
+                      </ListGroup.Item>
+                    </ListGroup>
+                  </div>
+                  <Button
+                    onClick={() => logoutPlayer(player.userID)}
+                    variant="danger"
+                  >
+                    Log Out Player
+                  </Button>
+                </Card.Body>
+              </Card>
+            </Col>
+          ))}
+        </Row>
+      </div>
+      <div className={styles.stuff}>
+        <Button
+          variant="info"
+          style={{
+            fontSize: "20px",
+            padding: "10px 20px",
+            marginBottom: "20px",
+            marginTop: "20px",
+          }}
+          onClick={newSession}
+        >
+          {"New Session"}
+        </Button>
+
+        <Button
+          variant="success"
+          style={{
+            fontSize: "20px",
+            padding: "10px 20px",
+            marginBottom: "40px",
+            marginTop: "40px",
+          }}
+          onClick={setCreatePlayer}
+        >
+          {"Create Player"}
+        </Button>
+        <Button
+          style={{ marginTop: "20px" }}
+          onClick={navigateToTeams}
+          variant="info"
+        >
+          TeamPage
+        </Button>
+        <Button
+          style={{ marginTop: "20px" }}
+          onClick={logoutAll}
+          variant="danger"
+        >
+          LOGOUT ALL!!!
+        </Button>
       </div>
     </div>
   );

@@ -1,0 +1,509 @@
+{
+  "fragen": [
+    {
+      "kategorie": "Buzzer",
+      "frage": "Welches Land wird oft als das Ursprungsland von Halloween angesehen?\n",
+      "antworten": [
+        "Irland"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Das Wort „Halloween“ ist eine Kontraktion aus welchen Wörtern?",
+      "antworten": [
+        "All Hallows Eve "
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "In welcher Stadt in den USA findet das berühmte Salem Witch Festival statt?",
+      "antworten": [
+        "Salem, Massachusetts"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Was feiert man in Verbindung mit Halloween in Mexiko?",
+      "antworten": [
+        "Día de los Muertos (Tag der Toten)"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Wie nennt man den 31. Oktober auf Deutsch?",
+      "antworten": [
+        "Aller Heiligen Abend"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "An was glaubten die alten Kelten, als sie Halloween feierten?",
+      "antworten": [
+        "Dass die Toten und Lebenden an diesem Tag aufeinanderstoßen."
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Welches Verbot gibt es seit 2008 in Bayern an Halloween?",
+      "antworten": [
+        "tanzen verboten (um die Ruhe am nächsten Tag nicht zu stören)"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Woher kommt die Tradition, sich an Halloween zu verkleiden?",
+      "antworten": [
+        "Um die Geister zu verwirren, verkleidete man sich als Untote oder Geister."
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Eintippen",
+      "frage": "Welches Ereignis spielte eine entscheidende Rolle bei der Etablierung des Festes in Deutschland? A) Ende des Ersten Weltkriegs, B) Kubakrise, C) Wiedervereinigung, D) Irakkrieg\n",
+      "antworten": [
+        "D) Im Zuge des Irakkriegs fiel 1991 der Karneval in Deutschland aus. Die Kostümhersteller wurden hiervon hart getroffen. Daher suchte man nach neuen Anlässen, um Kostüme zu verkaufen. Seit Ende der Neunzigerjahre erfreut sich daher Halloween auch in Deutschland einer großen Beliebtheit."
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Schätzfrage",
+      "frage": "Wie viel Prozent der Deutschen halten Süßigkeiten für klingelnde Kinder bereit? ",
+      "antworten": [
+        "50%"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Wie lautet der gängige englische Ausruf von Kindern, wenn Sie auf Süßigkeitenjagd sind? Und wie lautet der deutsche?",
+      "antworten": [
+        "Trick or Treat, Süßes oder Saures\n"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Multiple Buzzer",
+      "frage": "Was waren 2023 die 5 beliebtesten Kostüme im DACH-Raum?",
+      "antworten": [
+        "1. Wednesday Addams",
+        "2. Harley quinn  ",
+        "3. Harry Potter",
+        "4. Spiderman",
+        "5. Joker"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Welches Kostüm war im Durchschnitt am teuersten? ",
+      "antworten": [
+        "Shrek (Tipp: von Disney)"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Schätzfrage",
+      "frage": "Wie teuer war ein Shrek Kostüm?",
+      "antworten": [
+        "92,03€"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Schätzfrage",
+      "frage": "Wie viel Prozent der jährlich verkauften Süßigkeiten in den USA werden für Halloween gekauft? ",
+      "antworten": [
+        "25%"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Eintippen",
+      "frage": "Wie nennt man die krankhafte Angst vor Halloween? A) Cucurbitaphobie, B) Samhainophobie, C) Animaphobie, D) Saccharumphobie",
+      "antworten": [
+        "B) Samhainophobie"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Eintippen",
+      "frage": "Was feiert die evangelische Kirche am 31. Oktober? A) den Thesenanschlag Luthers, B) die Veröffentlichung der übersetzten Bibel, C) die Ablösung des Alten Testaments, D) die Geburt Luthers\n",
+      "antworten": [
+        "A) den Thesenanschlag Luthers\nAm 31. Oktober 1517 soll Martin Luther seine 95 Thesen an die Schlosskirche in Wittenberg genagelt haben"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Wen oder was nennt man Jack O’Lantern?",
+      "antworten": [
+        "einen ausgehüllten Kürbis"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Was ist ein Kürbis?",
+      "antworten": [
+        "eine Beere (nicht Kürbisgewächs)"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Kürbislaternen an Halloween kennt wohl jeder. Früher wurden an diesem Tag die Laternen allerdings aus etwas anderem geschnitzt. Aus was?",
+      "antworten": [
+        "Aus Rüben. Dies war in Irland der ursprüngliche Brauch. In den USA verwendete man Kürbisse, da es im Vergleich zu Rüben viel mehr davon gab"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Begegnungen mit Spinnen müssen an Halloween kein schlechtes Omen sein. Denn laut einem Aberglauben handelt es sich bei dieser Spinne um eine verstorbene Person. Um welche?",
+      "antworten": [
+        "Um eine verstorbene Liebe"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Ein weiterer Aberglaube besagt, wenn man an Halloween seine Klamotten auf links trägt und rückwärtsläuft, dann wird man um Mitternacht einer gruseligen Gestalt begegnen. Wem?",
+      "antworten": [
+        "Einer Hexe"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Wer hat den Horror-Roman „Es“ geschrieben?",
+      "antworten": [
+        "Stephen King"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Wie heißt der Clown aus „Es“?",
+      "antworten": [
+        "Pennywise"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Wie heißt der bekannte Mörder aus dem Film Halloween und was ist seine ikonische Mordwaffe?",
+      "antworten": [
+        "Michael Myers und Küchenmesser"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Wie viele Saw Filme gibt es insgesamt?",
+      "antworten": [
+        "10 (11. Kommt nächstes Jahr)"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Eintippen",
+      "frage": "Ordne die Saw Handlung in Chronologischer Reihenfolge. (Saw (2004), Saw II (2005), Saw III (2006), Saw IV (2007), Saw V (2008), Saw VI (2009), Saw 3D (2010), Jigsaw (2017), Saw: Spiral (2021), Saw X (2023)",
+      "antworten": [
+        "1.\tJigsaw (2017)",
+        "2.\tSaw (2004)",
+        "3.\tSaw X (2023)",
+        "4.\tSaw II (2005)",
+        "5.\tSaw III (2006)",
+        "6.\tSaw IV (2007)",
+        "7.\tSaw V (2008)",
+        "8.\tSaw VI (2009)",
+        "9.\tSaw 3D – Vollendung (2010)",
+        "10.\t Saw: Spiral (2021)"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Auch im Film E.T gibt es eine Halloween Szene. Als was verkleidet sich E.T?",
+      "antworten": [
+        "als Geist"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Wie heißt das super spaßige Horror-Spiel, welches wir alle besitzen, aber ich mit Abstand am meisten Stunden drin habe?",
+      "antworten": [
+        "Dead By Daylight"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Schätzfrage",
+      "frage": "Wie viele Stunden habe ich in dem Spiel?",
+      "antworten": [
+        "669"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Multiple Buzzer",
+      "frage": "Nennt mir jeweils einen spielbaren Killer aus DBD?",
+      "antworten": [
+        ""
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Schätzfrage",
+      "frage": "Wie viele Perks hat DBD insgesamt? (Survivor und Killer) ",
+      "antworten": [
+        "270"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "In welcher Stadt spielen Resident Evil 2 und 3?",
+      "antworten": [
+        "Raccoon City"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Von welchem Unternehmen wurde das T-Virus, in Resident Evil, hergestellt? ",
+      "antworten": [
+        "Umbrella Corperation"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Leon S. Kennedy ist einer der Protagonisten in der Reihe. Wofür steht das S. in seinem Namen?",
+      "antworten": [
+        "Scott"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Schätzfrage",
+      "frage": " In welchem Jahr wurde der erste Teil von \"Resident Evil\" (für PlayStation) veröffentlicht?",
+      "antworten": [
+        "1996 (1997 pc)"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Was war das größte feature, welches in Minecraft mit dem Halloween Update dazu kam?",
+      "antworten": [
+        "der Nether (Tipp: 2010, Alpha v1.2.0)"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Was passiert in Minecraft, wenn man zwei Schneeblöcke untereinander und dann einen Kürbis obendrauf platziert? ",
+      "antworten": [
+        "Snow Golem spawnt"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Was mach ein Vindicator/ Diener, wenn er den Namen „Johnny“ per nametag/ Namensschild bekommt?",
+      "antworten": [
+        "geht mit der Axt auf alle Lebewesen los"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Was passiert mit Bibi Blocksbergs Bruder in der gleichnamigen Serie? ",
+      "antworten": [
+        "kommt nur in den ersten 7 Folgen vor und verschwindet dann wegen Husten zu den Großeltern an die Nordsee und man sieht nie wieder"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Bild mit Buzzer",
+      "frage": "Wer ist diese mysteriös verkleidete Figur?",
+      "antworten": [
+        "spongebob"
+      ],
+      "assets": [
+        {
+          "bild": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvsaYLkBXvS6M5Zef_7fpXaM8EucWiKh7Jiw&s "
+        }
+      ]
+    }
+  ]
+}

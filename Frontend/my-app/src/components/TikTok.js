@@ -21,7 +21,7 @@ import {
 import io from "socket.io-client";
 import useSound from "use-sound";
 import Navigation from "./Navigation.js";
-import "../layout/tiktokPage.css";
+// import "../layout/tiktokPage.css";
 import "../layout/scrollbar.css";
 import useTSRemoteApp from "../TS5-RemoteAPI/index.ts";
 import "../layout/animatedBorder.css";

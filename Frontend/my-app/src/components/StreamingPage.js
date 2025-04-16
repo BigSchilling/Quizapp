@@ -13,12 +13,6 @@ import {
   CardBody,
   Image,
 } from "react-bootstrap";
-import {
-  createPlayerTrue,
-  createPlayerFalse,
-  setRightPoints,
-  setManuellPoints,
-} from "../slices/ShowMasterSlice";
 import io from "socket.io-client";
 import useSound from "use-sound";
 import Navigation from "./Navigation";
@@ -27,13 +21,14 @@ import useTSRemoteApp from "../TS5-RemoteAPI/index.ts";
 import "../layout/animatedBorder.css";
 import "../layout/background.css";
 import "../layout/background2.css";
-import CameraComponent from "./CameraComponent.js";
 import Webcam from "react-webcam";
 import tom1 from "../images/tom3.jpg";
 import jan1 from "../images/jan3.jpg";
 import tim1 from "../images/tim1.jpg";
+// import tim1 from "../images/bastitot.png";
 import dana1 from "../images/dana1.jpg";
 import noPic1 from "../images/noPic1.jpg";
+import chrisPic from "../images/chris2.jpeg";
 import { ReactComponent as BackgroundSVG } from "../images/background1.svg";
 import { ReactComponent as BackgroundSVG2 } from "../images/background2.svg";
 import ReactPlayer from "react-player";
@@ -42,7 +37,7 @@ export const soundGif =
   "https://miro.medium.com/v2/resize:fit:960/1*ll6000BtRBCGWfq5xK2GeA.gif";
 
 // sehen wer spricht - Teamspeak 5 plugin
-export const aktuellerMod = "Tim"; // mod ändern!!
+export const aktuellerMod = "Chris"; // mod ändern!!
 const StreamingPage = () => {
   const dispatch = useDispatch();
   const [inputMessage, setInputMessage] = useState("");
@@ -174,7 +169,7 @@ const StreamingPage = () => {
 
   // Fetch video devices when component mounts
   useEffect(() => {
-    handleDevices();
+    // handleDevices();
   }, []);
 
   const playStoredSound = (soundFile) => {};
@@ -321,6 +316,40 @@ const StreamingPage = () => {
   const camWidth = "20%";
   const camHeight = "10%";
 
+  function AutoGrowingTextarea({ value }) {
+    const textareaRef = useRef(null);
+    const [height, setHeight] = useState("auto");
+
+    useEffect(() => {
+      const textarea = textareaRef.current;
+      if (textarea) {
+        textarea.style.height = "auto"; // reset height
+        const newHeight = textarea.scrollHeight;
+        textarea.style.height = `${newHeight}px`;
+      }
+    }, [value]);
+
+    return (
+      <textarea
+        ref={textareaRef}
+        style={{
+          width: "100%",
+          resize: "none",
+          overflow: "hidden",
+          boxSizing: "border-box",
+          fontSize: "20px",
+          backgroundColor: "rgba(255,255,255,0.95)",
+          border: "none",
+          borderRadius: "10px",
+          padding: "2px",
+          lineHeight: "1.0",
+        }}
+        value={value}
+        readOnly
+      />
+    );
+  }
+
   // console.log(talkingMap2, talkingNames.current);
   return (
     <div
@@ -351,6 +380,7 @@ const StreamingPage = () => {
               // marginBottom: "40px",
               marginTop: "3vh",
               borderRadius: "20px",
+              textShadow: "2px 2px 4px rgba(0, 0, 0, 0.7)",
             }}
           >
             <Card.Body>
@@ -358,7 +388,7 @@ const StreamingPage = () => {
                 className={styles.griditem2 + " text-center"}
                 style={{ fontSize: "32px" }}
               >
-                <h3>
+                <h3 style={{ textShadow: "2px 2px 4px rgba(0, 0, 0, 0.7)" }}>
                   Frage {fragenIndex + 1} ({kategorie}):
                 </h3>
                 <p>{frage}</p>
@@ -416,13 +446,32 @@ const StreamingPage = () => {
                 }}
               >
                 <Card.Title
-                  style={{ fontSize: "30px" }}
+                  style={{
+                    fontSize: "25px",
+                    textShadow: "2px 2px 4px rgba(0, 0, 0, 1)",
+                  }}
                   className="d-flex justify-content-between align-items-center flex-wrap miniText"
                 >
-                  <div>{player.userID}:</div>
-                  {player.userID === aktuellerMod ? null : (
-                    <div>{player.currentPoints} p</div>
-                  )}
+                  <div
+                    style={{
+                      backgroundColor: "rgba(0,0,0,0.6)",
+                      padding: "2px",
+                      borderRadius: "5px",
+                    }}
+                  >
+                    {player.userID}
+                  </div>
+                  <div
+                    style={{
+                      backgroundColor: "rgba(0,0,0,0.6)",
+                      padding: "2px",
+                      borderRadius: "5px",
+                    }}
+                  >
+                    {player.userID === aktuellerMod
+                      ? "Moderator"
+                      : player.currentPoints + "p"}
+                  </div>
                 </Card.Title>
                 {player.userID === "Chris" ? (
                   <>
@@ -436,19 +485,7 @@ const StreamingPage = () => {
                   </>
                 ) : null}
                 {player.userID === aktuellerMod ? null : (
-                  <textarea
-                    style={{
-                      width: "100%",
-                      resize: "none",
-                      overflow: "hidden",
-                      boxSizing: "border-box",
-                      fontSize: "20px",
-                      maxHeight: "30px",
-                      backgroundColor: "rgba(255,255,255,0.95)",
-                    }}
-                    value={playerMessages[player.userID]}
-                    readOnly
-                  />
+                  <AutoGrowingTextarea value={playerMessages[player.userID]} />
                 )}
               </Card.Body>
             </Card>
@@ -552,8 +589,22 @@ const StreamingPage = () => {
               overflow: "hidden",
               width: "auto",
               height: "65%",
+              backgroundImage: `url(${noPic1})`,
               // marginTop: "20%"
             }}
+            //  style={{
+            //   top: "-20%",
+            //   paddingTop: "20px",
+            //   borderWidth: "4px",
+            //   borderRadius: "20px",
+            //   overflowY: "hidden",
+            //   backgroundImage: `url(${chrisPic
+            //   })`,
+            //   backgroundSize: "75%",
+            //   backgroundPosition: "center center",
+            //   width: "100%",
+            //   height: "65%",
+            // }}
           >
             <Webcam
               style={{ width: "100%", height: "100%", objectFit: "scale-down" }}
@@ -603,29 +654,37 @@ const StreamingPage = () => {
                   }}
                 >
                   <Card.Title
-                    style={{ fontSize: "30px" }}
+                    style={{
+                      fontSize: "25px",
+                      textShadow: "2px 2px 4px rgba(0, 0, 0, 1)",
+                    }}
                     className="d-flex justify-content-between align-items-center flex-wrap miniText"
                   >
-                    <div className="text-with-outline miniText">
-                      {playerChris.current.userID}:
+                    <div
+                      className="text-with-outline miniText"
+                      style={{
+                        backgroundColor: "rgba(0,0,0,0.6)",
+                        padding: "2px",
+                        borderRadius: "5px",
+                      }}
+                    >
+                      {playerChris.current.userID}
                     </div>
-                    {playerChris.current.userID != aktuellerMod ? (
-                      <div>{playerChris.current.currentPoints} p</div>
-                    ) : null}
+                    <div
+                      style={{
+                        backgroundColor: "rgba(0,0,0,0.6)",
+                        padding: "2px",
+                        borderRadius: "5px",
+                      }}
+                    >
+                      {playerChris.current.userID != aktuellerMod
+                        ? playerChris.current.currentPoints + "p"
+                        : "Moderator"}
+                    </div>
                   </Card.Title>
                   {playerChris.current.userID != aktuellerMod ? (
-                    <textarea
-                      style={{
-                        width: "100%",
-                        overflow: "hidden",
-                        resize: "none",
-                        boxSizing: "border-box",
-                        fontSize: "20px",
-                        maxHeight: "30px",
-                        backgroundColor: "rgba(255,255,255,0.95)",
-                      }}
+                    <AutoGrowingTextarea
                       value={playerMessages[playerChris.current.userID]}
-                      readOnly
                     />
                   ) : null}
                 </Card.Body>

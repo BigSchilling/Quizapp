@@ -1,0 +1,635 @@
+{
+  "fragen": [
+    {
+      "kategorie": "Buzzer",
+      "frage": "Wie viele Tasten hat ein Klavier?",
+      "antworten": [
+        "88"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Schätzfrage",
+      "frage": "Wie hoch hängt ein Basketballkorb? ",
+      "antworten": [
+        "3,05 Meter"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Was bedeutet der lateinische Spruch „Carpe Diem“? ",
+      "antworten": [
+        "Nutze den Tag! oder genieße den Augenblick!",
+        "„Pflücke den Tag“ bzw. „Ergreife den Tag“"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Wie viele Dalmatiner hat Cruella de Vil? ",
+      "antworten": [
+        "101"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Welches Bundesland ist flächenmäßig das größte?",
+      "antworten": [
+        "Bayern"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Wie viel Prozent der Erde sind von Wasser bedeckt? ",
+      "antworten": [
+        "ungefähr 70 Prozent"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Wer erfand das Fahrrad?",
+      "antworten": [
+        "Karl Drais"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Schätzfrage",
+      "frage": "Seit wann gibt es die Pizza (so wie du sie heute kennst)?",
+      "antworten": [
+        "11. Juni 1889"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Multiple Buzzer",
+      "frage": "Was sind die 5 Weltsprachen, die am meisten gesprochen werden und am weitesten geografisch verbreitet sind?",
+      "antworten": [
+        "Englisch",
+        " Spanisch",
+        " Französisch",
+        "Arabisch ",
+        "Portugiesisch"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Was hört ohne Ohren, schwatzt ohne Mund und antwortet in allen Sprachen?",
+      "antworten": [
+        "das Echo"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "In welchem Land ist die Lebenserwartung am höchsten? ",
+      "antworten": [
+        "Hongkong"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Wer hat insgesamt die meisten Oscars gewonnen? ",
+      "antworten": [
+        "Walt Disney "
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Wie viele Oscars hat er Walt Disney gewonnen?",
+      "antworten": [
+        "26 (22 als bester Animierter Kurzfilm)"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Welcher Künstler hat die meisten Streams bei Spotify? ",
+      "antworten": [
+        "Drake"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Welche Rolle spielten sowohl Robert Downey Jr., Benedict Cumberbatch als auch Henry Cavill? ",
+      "antworten": [
+        "Sherlock Holmes"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Welches Unternehmen war ursprünglich unter dem Namen „Blue Ribbon Sports“ bekannt? ",
+      "antworten": [
+        "Nike"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "In welchem Land steht der Kilimandscharo?",
+      "antworten": [
+        "In Tansania"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Wie viele Knochen hat ein Ohr?",
+      "antworten": [
+        "3"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Welche Netflix-Sendung hatte 2021 die meisten Streaming-Aufrufe? ",
+      "antworten": [
+        "Squid Game"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Welcher für einen Grammy nominierte New Yorker Rapper starb im April 2021?",
+      "antworten": [
+        "DMX (Dark Man X)"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Welches Software-Unternehmen hat seinen Hauptsitz in Redmond, Washington?",
+      "antworten": [
+        "Microsoft"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Welches Tier ist im Verhältnis zu seinem Körpergewicht am kräftigsten?",
+      "antworten": [
+        " – der Mistkäfer, der Elefant, die Ameise oder die Kuh wenn keiner weiß eintippen machen",
+        "Mistkäfer"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Wie viele Punkte hat ein Würfel insgesamt?",
+      "antworten": [
+        "42"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Wo befindet sich der stärkste Muskel des Menschen?",
+      "antworten": [
+        "Kiefer"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Welcher Kontinent liegt als einziger auf allen vier Erdhalbkugeln?",
+      "antworten": [
+        "Afrika"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Welcher Fluss durchfließt den Grand Canyon?",
+      "antworten": [
+        "Der Colorado River"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Wo befinden sich die Angel Falls, der größte Wasserfall der Welt?",
+      "antworten": [
+        "In Venezuela"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Welches ist das meistverkaufte Stout-Bier der Welt? ",
+      "antworten": [
+        "Guinness"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "In welchem Land wird am meisten Kaffee getrunken?",
+      "antworten": [
+        "Finnland"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Was bedeutet FIFA auf Englisch?",
+      "antworten": [
+        "International Federation of Association Football"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Was ist der Nationalsport Japans?",
+      "antworten": [
+        "Sumo-Ringen"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Schätzfrage",
+      "frage": "Wie lang ist der Panamakanal?",
+      "antworten": [
+        "Etwa 82 Kilometer"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Schätzfrage",
+      "frage": "Wie viele Einkerbungen hat ein Golfball?",
+      "antworten": [
+        "336"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Du hast eine gefüllte Streichholzschachtel und kommst in einen leeren, kalten Raum, in dem sich nur ein Kohleofen, eine Petroleumlampe und ein Kamin steht. Was zündest du zuerst an?",
+      "antworten": [
+        "Das Streichholz "
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Wofür steht die Abkürzung KGaA?",
+      "antworten": [
+        "Kreditgesellschaft auf Aktien, Kommanditgesellschaft auf Aktien, Kardinalgesellschaft auf Aktien, Kompetenzgesellschaft auf Aktien (möglichkeiten)",
+        "Kommanditgesellschaft auf Aktien (richtig)"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Eintippen",
+      "frage": "Welches Land ist kein ständiges Mitglied im Sicherheitsrat der Vereinten Nationen? A) USA, B) Russland, C) Deutschland, D) China",
+      "antworten": [
+        "C) Deutschland"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Erkläre was ein Oxymoron ist und nenne ein Beispiel.",
+      "antworten": [
+        "Oxymoron ist ein Widerspruch (großer Zwerg)"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Eintippen",
+      "frage": "Wo fanden die Olympischen Spiele 1996 statt? A) Atlanta, B) Turin, C) Barcelona, D) Los Angeles",
+      "antworten": [
+        "Atlanta"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Eintippen",
+      "frage": "Was soll Cäsar gesagt haben als er den Rubikon überquerte? A) veni, vidi, vici, B) Divide et empera, C) alea iacta est, D) er tu, brute ",
+      "antworten": [
+        "C) alea iacta est (Die Würfel waren gefallen)"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Wie lautet das chemische Symbol für Blei?",
+      "antworten": [
+        "Pb  (lat. plumbum)"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Wer verbreitete das heliozentrische Weltbild?",
+      "antworten": [
+        "Nikolaus Kopernikus"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Welcher Pilz ist einer der teuersten Speisepilze der Welt?",
+      "antworten": [
+        "Trüffel"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Was ist das Kürzel für die Maßeinheit der elektrischen Leitfähigkeit?",
+      "antworten": [
+        "S (Siemens)"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Wie viele Chromosomen hat ein Mensch normalerweise?",
+      "antworten": [
+        "46"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Welcher römische Kaiser ließ das Kolosseum in Rom erbauen?",
+      "antworten": [
+        "Vespasian"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Multiple Buzzer",
+      "frage": "Welches afrikanische Land hat drei Hauptstädte? Und welche sind ist? ",
+      "antworten": [
+        "Südafrika",
+        "Pretoria",
+        "Kapstadt",
+        " Bloemfontein"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Wie lautet der Vorname von Goethes „Faust“?",
+      "antworten": [
+        "Heinrich"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Welche Sportart wird beim „America’s Cup“ ausgetragen?",
+      "antworten": [
+        "Segeln"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Wie heißt die Hauptstadt von Neuseeland?",
+      "antworten": [
+        "Wellington"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Welcher spanische Künstler ist Mitbegründer des Kubismus?",
+      "antworten": [
+        "Pablo Picasso"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Multiple Buzzer",
+      "frage": "Nenne die ersten 10 Pokémon an die ich gedacht habe.",
+      "antworten": [
+        "Pikachu",
+        "Relaxo",
+        "Nachtara",
+        "Schiggy",
+        "Bisasam",
+        "Mauzi",
+        "Mewto",
+        "Taubsi",
+        "Karpador",
+        "Glurak"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    }
+  ]
+}

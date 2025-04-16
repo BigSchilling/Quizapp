@@ -1,0 +1,632 @@
+{
+  "fragen": [
+    {
+      "kategorie": "Buzzer",
+      "frage": "Mit welcher Spitzhacke kann man Ancient Debris abbauen?",
+      "antworten": [
+        "Diamant"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Was versteht man unter “Skeleton Trap” und wie entsteht diese?",
+      "antworten": [
+        "Es spawnen Skeletonhorsemen und haben eine geringe Chance, während einem Gewitter zu spawnen. "
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Eintippen",
+      "frage": "Welche Durability hat eine Gold Spitzhacke, welche Durability hat eine Netherite Spitzhacke? ",
+      "antworten": [
+        "Gold: 33 \n",
+        "Netherite: 2031"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Wie breedet man Frösche?",
+      "antworten": [
+        "Mit Slime-Balls füttern, die Frösche laichen dann in einem nahen Gewässer"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Unter welchem Surface-Biom ist die Wahrscheinlichkeit hoch, eine Ancient City zu finden?",
+      "antworten": [
+        "Hohe Berge"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Welches Tier spielt gelegentlich tot?",
+      "antworten": [
+        "Axolotl"
+      ],
+      "assets": [
+        {
+          "bild": "",
+          "undefined": "https://puu.sh/KqbiL/f7f9955c61.png"
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "In welcher Version wurden zuletzt die komplette Höhlen- und Biomstrukturen geändert? \n",
+      "antworten": [
+        "1.18 oder Caves & Cliffs Part II"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Eintippen",
+      "frage": "Wie lange dauert 1 Minecraft Tag in Minuten? (Nacht + Tag-Zyklus)",
+      "antworten": [
+        "20 Minuten"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": " Rezepte: Welche Zutaten brauch ich für eine Waterbreathing Potion?",
+      "antworten": [
+        "Netherwarzen, Kugelfisch"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Mit welchen Item kann man die Länge einer Potion verlängern?",
+      "antworten": [
+        "Redstone"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Welcher Mob zelebriert in einer T-Pose?",
+      "antworten": [
+        "Piglin"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Schätzfrage",
+      "frage": "Wie lange gehen die Credits? Version 1.20",
+      "antworten": [
+        "1h 15min 15s"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Eintippen",
+      "frage": "Welche der folgenden Mobs kann nicht in Part eines Jockey spawnen? A. Stray B. Strider C. Polarbear D. Zombified Piglin \n",
+      "antworten": [
+        "Stray: https://static.wikia.nocookie.net/minecraft_gamepedia/images/9/94/Stray_Spider_Jockey.png/revision/latest?cb=20190804191813 \nStrider + Zombified Piglin: https://static.wikia.nocookie.net/minecraft_gamepedia/images/d/d0/Strider_Jockey_JE5.png/revision/latest?cb=20200729195711"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Eintippen",
+      "frage": " Mob Sound: Wer ist das? ",
+      "antworten": [
+        "Magma Cube "
+      ],
+      "assets": [
+        {
+          "sound": "https://youtu.be/a3YNpJ8vJhs?si=Nv3mh2tojwGOxzKe&t=129"
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Wie viele Panda-Variationen gibt es?",
+      "antworten": [
+        "7 \nhttps://static.wikia.nocookie.net/minecraft_gamepedia/images/9/9f/PandaVariants.png/revision/latest/scale-to-width-down/1000?cb=20200514023210 \nfrom left to right: brown, lazy, worried, playful, weak, aggressive and normal."
+      ],
+      "assets": [
+        {
+          "bild": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/9/9f/PandaVariants.png/revision/latest/scale-to-width-down/1000?cb=20200514023210 "
+        }
+      ]
+    },
+    {
+      "kategorie": "Bild mit Eintippen",
+      "frage": "Rezepte: Welches Item wird so gecraftet?",
+      "antworten": [
+        "Piston"
+      ],
+      "assets": [
+        {
+          "bild": "https://puu.sh/Kqb6e/54df14520b.png"
+        }
+      ]
+    },
+    {
+      "kategorie": "Bild mit Eintippen",
+      "frage": "Rezepte: Welches Item wird so gecraftet?",
+      "antworten": [
+        "Uhr"
+      ],
+      "assets": [
+        {
+          "bild": "https://puu.sh/Kqb6l/6ae237eed1.png"
+        }
+      ]
+    },
+    {
+      "kategorie": "Bild mit Eintippen",
+      "frage": " Rezepte: Welches Item wird so gecraftet?",
+      "antworten": [
+        "Crossbow"
+      ],
+      "assets": [
+        {
+          "bild": "https://puu.sh/Kqb6v/3e56d1dfca.png"
+        }
+      ]
+    },
+    {
+      "kategorie": "Multiple Buzzer",
+      "frage": "Welche Munition kann bei einem Crossbow hergenommen werden?",
+      "antworten": [
+        "Pfeile",
+        "Feuerwerkskörper"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Bild mit Eintippen",
+      "frage": "Welcher Block ist das?",
+      "antworten": [
+        "Andesite"
+      ],
+      "assets": [
+        {
+          "bild": "https://puu.sh/KqjyE/162ec8f6bb.png"
+        }
+      ]
+    },
+    {
+      "kategorie": "Bild mit Eintippen",
+      "frage": " Welcher Block ist das?",
+      "antworten": [
+        "Tuff"
+      ],
+      "assets": [
+        {
+          "bild": "https://puu.sh/Kqb6T/634c575609.png"
+        }
+      ]
+    },
+    {
+      "kategorie": "Bild mit Eintippen",
+      "frage": "Welches Mob versucht unbedingt, Schildkröten-Eier zu zertrampeln?",
+      "antworten": [
+        "Zombies"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Für welches Biom ist ein Azalea-Baum auf der Oberfläche ein Indikator?",
+      "antworten": [
+        "Lush Caves"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Schätzfrage",
+      "frage": "Mit welcher Wahrscheinlichkeit dropped ein Heavy Core aus einem ominous valt?",
+      "antworten": [
+        "7,5%"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Schätzfrage",
+      "frage": "Wie kann man ein Respawn Anchor aktivieren?",
+      "antworten": [
+        "Mit 4 Glowstone Blöcken"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Bild mit Eintippen",
+      "frage": "Wie bekommt man folgenden Block?",
+      "antworten": [
+        "Kuchen und drauf eine Kerze platzieren. (Ist tatsächlich ein eigener Block)"
+      ],
+      "assets": [
+        {
+          "bild": "https://puu.sh/Kqb8d/d00e218fee.png"
+        }
+      ]
+    },
+    {
+      "kategorie": "Multiple Buzzer",
+      "frage": " Welche Dörfer-Varianten gibt es?",
+      "antworten": [
+        "Plains",
+        "Desert",
+        "Savanna",
+        "Taiga",
+        " Snowy \n",
+        "Abandoned Village "
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Bild mit Eintippen",
+      "frage": "Ab welcher Tiefe können solche massive Eisen-Venen generieren?",
+      "antworten": [
+        "Y = 0"
+      ],
+      "assets": [
+        {
+          "bild": "https://puu.sh/Kqbao/3319c4fa51.jpg"
+        }
+      ]
+    },
+    {
+      "kategorie": "Bild mit Eintippen",
+      "frage": " Die Generation von Erzen hat sich im 1.18 Update immens geändert. Welche Deepslate-Erz ist das seltenste?",
+      "antworten": [
+        "Deepslate-Emerald"
+      ],
+      "assets": [
+        {
+          "bild": "https://puu.sh/Kqbb3/7ab9e137e8.png"
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Welches Item ist als Letztes hinzugefügt worden?",
+      "antworten": [
+        "Bundles"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Schätzfrage",
+      "frage": "Mit welcher Wahrscheinlichkeit, kann man ein Sniffer Egg aus suspicious sand in einem warmen Ozean brushen?",
+      "antworten": [
+        "6,7%"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": " Welche ist einer der stärksten Explosionen im Spiel?",
+      "antworten": [
+        "Wither beim Spawnen, nach charged creeper und End Crystal"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Welches ist das Härteste, jedoch abbaubare, natürlich spawnende Block in Minecraft?",
+      "antworten": [
+        "Reinforced Deepslate, spawned in Ancient City in einer Art Portal "
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Bild mit Eintippen",
+      "frage": "Welche Items benötigt man für diesen Look? (4)",
+      "antworten": [
+        "Leder, rosa Farbe, Netherite, Silence Trim"
+      ],
+      "assets": [
+        {
+          "bild": "https://puu.sh/Kqbes/1039b3533d.png"
+        }
+      ]
+    },
+    {
+      "kategorie": "Bild mit Eintippen",
+      "frage": "Loot-Table: Aus welcher Struktur kann man folgende Items bekommen?",
+      "antworten": [
+        "Trail Ruins"
+      ],
+      "assets": [
+        {
+          "bild": "https://puu.sh/Kqbfb/212ddf87ee.png"
+        }
+      ]
+    },
+    {
+      "kategorie": "Bild mit Eintippen",
+      "frage": " Loot-Table: Aus welcher Struktur kann man folgende Items bekommen?",
+      "antworten": [
+        "End City"
+      ],
+      "assets": [
+        {
+          "bild": "https://puu.sh/KqbfX/3f63782105.png"
+        }
+      ]
+    },
+    {
+      "kategorie": "Bild mit Eintippen",
+      "frage": "Loot-Table: Aus welcher Struktur kann man folgende Items bekommen?",
+      "antworten": [
+        "Bastion"
+      ],
+      "assets": [
+        {
+          "bild": "https://puu.sh/Kqbgc/e9ce6352d5.png "
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "In welcher Minecraft Version gibt es Uran?",
+      "antworten": [
+        "Minecraft Education Edition"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Bild mit Eintippen",
+      "frage": "In welchem Biom spawned diese Wolf-Variante?",
+      "antworten": [
+        "wooded badlands"
+      ],
+      "assets": [
+        {
+          "bild": "https://puu.sh/KqbgY/5e50a1286f.png"
+        }
+      ]
+    },
+    {
+      "kategorie": "Bild mit Eintippen",
+      "frage": "Wie kann man folgenden Block abbauen, sodass man ihn wieder platzieren kann?",
+      "antworten": [
+        "Mit eine Spitzhacke mit Silk Touch"
+      ],
+      "assets": [
+        {
+          "bild": "https://puu.sh/Kqbh7/bda3f08f33.png"
+        }
+      ]
+    },
+    {
+      "kategorie": "Bild mit Eintippen",
+      "frage": " Aus welchem Film wurde inspiriert, dass Iron Golems in früheren Versionen, Poppys an Baby-Villager vergab?",
+      "antworten": [
+        "Castle in the Sky \nhttps://static.wikia.nocookie.net/minecraft_gamepedia/images/4/43/Castleintheskyrobot.png/revision/latest?cb=20180113153354"
+      ],
+      "assets": [
+        {
+          "bild": "https://puu.sh/KqbhT/30024b7fd0.png"
+        }
+      ]
+    },
+    {
+      "kategorie": "Bild mit Eintippen",
+      "frage": "Welcher Block ist das?",
+      "antworten": [
+        "Conduit"
+      ],
+      "assets": [
+        {
+          "bild": "https://puu.sh/Kqjzc/eb161731e5.png"
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "In welchem Biom spawnen die meisten Blumen-Varianten?",
+      "antworten": [
+        "Flower Forest"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Bild mit Eintippen",
+      "frage": " In welchem Biom spawned folgende Blume?",
+      "antworten": [
+        "Sumpf"
+      ],
+      "assets": [
+        {
+          "bild": "https://puu.sh/KqbiG/a8512a8deb.png"
+        }
+      ]
+    },
+    {
+      "kategorie": "Bild mit Eintippen",
+      "frage": "Wie entsteht folgender Mob?",
+      "antworten": [
+        "Einen Schneemann mit einer Schere rechtsklicken"
+      ],
+      "assets": [
+        {
+          "bild": "https://puu.sh/KqbjE/37e0b8619f.png"
+        }
+      ]
+    },
+    {
+      "kategorie": "Multiple Buzzer",
+      "frage": "Welche Mobs kann man reiten?",
+      "antworten": [
+        "Schwein",
+        " Strider",
+        "Pferd",
+        "Esel",
+        "Maulesel",
+        " Skeleton Horse",
+        " Zombie Horse",
+        "Lama",
+        "Kamel "
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Was muss man tun, für das Advancement “Hot Tourist Destination”? \n",
+      "antworten": [
+        "Alle Nether Biome betreten"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Welches ist das Seltenste, natürlich spawnende Schaf in Minecraft?",
+      "antworten": [
+        "BABY Rosa Schaf"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Was können Schildkröten bei einem Blitzeinschlag besonderes droppen?",
+      "antworten": [
+        "Holzschalen"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Wie viele Herzen bleiben bei Hunger übrig, im Schwierigkeitsgrad Normal?",
+      "antworten": [
+        "0,5 Herzen"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Für wie viele US-Dollar hat Microsoft Minecraft 2014 gekauft?",
+      "antworten": [
+        "2,5 Milliarden"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    }
+  ]
+}

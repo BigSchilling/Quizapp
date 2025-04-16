@@ -126,3 +126,11 @@
 {"level":"error","message":"(Endpoints\\authentication\\AuthenticationService.js:66) Password or userID is invalid"}
 {"level":"error","message":"(Endpoints\\authentication\\AuthenticationService.js:66) Password or userID is invalid"}
 {"level":"error","message":"(Endpoints\\authentication\\AuthenticationService.js:66) Password or userID is invalid"}
+{"level":"error","message":"(Endpoints\\authentication\\AuthenticationService.js:37) Error: have no userID or password"}
+{"level":"error","message":"(Endpoints\\authentication\\AuthenticationService.js:66) Password or userID is invalid"}
+{"level":"error","message":"(Endpoints\\authentication\\AuthenticationService.js:66) Password or userID is invalid"}
+{"level":"error","message":"(Endpoints\\authentication\\AuthenticationService.js:66) Password or userID is invalid"}
+{"level":"error","message":"(Endpoints\\authentication\\AuthenticationService.js:66) Password or userID is invalid"}
+{"level":"error","message":"(Endpoints\\authentication\\AuthenticationService.js:66) Password or userID is invalid"}
+{"level":"error","message":"(Endpoints\\authentication\\AuthenticationService.js:66) Password or userID is invalid"}
+{"level":"error","message":"(Endpoints\\authentication\\AuthenticationService.js:66) Password or userID is invalid"}
