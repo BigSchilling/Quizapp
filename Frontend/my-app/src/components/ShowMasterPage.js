@@ -1,33 +1,32 @@
-import styles from "../layout/ShowMasterPage.module.css";
-import "../layout/scrollbar.css";
 import React, { useEffect, useRef, useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
 import {
   Button,
   Card,
-  ListGroup,
-  Row,
   Col,
   Form,
   FormGroup,
   Image,
+  ListGroup,
+  Row,
 } from "react-bootstrap";
-import {
-  createPlayerTrue,
-  setRightPoints,
-  setManuellPoints,
-  setTimer,
-} from "../slices/ShowMasterSlice";
+import ReactPlayer from "react-player";
+import { useDispatch, useSelector } from "react-redux";
+import { useNavigate } from "react-router-dom";
 import io from "socket.io-client";
-import FragenData from "../questionsCatalog/Folge17Eltern.json"; // datei mit fragen ändern!
-import tom1 from "../images/tom3.jpg";
+import chris1 from "../images/chris2.jpg";
+import dana1 from "../images/dana1.jpg";
 import jan1 from "../images/jan3.jpg";
 import tim1 from "../images/tim1.jpg";
-import dana1 from "../images/dana1.jpg";
-import noPic1 from "../images/noPic1.jpg";
-import chris1 from "../images/chris2.jpg";
-import ReactPlayer from "react-player";
-import { useNavigate } from "react-router-dom";
+import tom1 from "../images/tom3.jpg";
+import styles from "../layout/ShowMasterPage.module.css";
+import "../layout/scrollbar.css";
+import FragenData from "../questionsCatalog/folge18Autos.json"; // datei mit fragen ändern!
+import {
+  createPlayerTrue,
+  setManuellPoints,
+  setRightPoints,
+  setTimer,
+} from "../slices/ShowMasterSlice";
 const server = process.env.REACT_APP_API_SERVER;
 
 const ShowMasterPage = () => {
@@ -690,7 +689,7 @@ const ShowMasterPage = () => {
           }}
           onClick={sendBuzzerReleasedFree}
         >
-          {"freigeben"}
+          {"freigeben"} 
         </Button>
       </div>
 

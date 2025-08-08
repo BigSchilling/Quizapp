@@ -1,43 +1,32 @@
-import styles from "../layout/streamingPage.module.css"; // ein und aus kommentieren falls es rumspackt
-import React, { useEffect, useState, useRef } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import React, { useEffect, useRef, useState } from "react";
 import {
-  Dropdown,
-  Button,
   Card,
-  ListGroup,
-  Container,
-  Row,
-  Col,
-  Form,
-  CardBody,
-  Image,
+  Image
 } from "react-bootstrap";
+import { useDispatch, useSelector } from "react-redux";
+import Webcam from "react-webcam";
 import io from "socket.io-client";
 import useSound from "use-sound";
-import Navigation from "./Navigation";
-import "../layout/scrollbar.css";
 import useTSRemoteApp from "../TS5-RemoteAPI/index.ts";
+import jan1 from "../images/jan3.jpg";
+import tim1 from "../images/timAI2.png";
+import tom1 from "../images/tom3.jpg";
 import "../layout/animatedBorder.css";
 import "../layout/background.css";
 import "../layout/background2.css";
-import Webcam from "react-webcam";
-import tom1 from "../images/tom3.jpg";
-import jan1 from "../images/jan3.jpg";
-import tim1 from "../images/tim1.jpg";
+import "../layout/scrollbar.css";
+import styles from "../layout/streamingPage.module.css"; // ein und aus kommentieren falls es rumspackt
+import Navigation from "./Navigation";
 // import tim1 from "../images/bastitot.png";
+import ReactPlayer from "react-player";
 import dana1 from "../images/dana1.jpg";
 import noPic1 from "../images/noPic1.jpg";
-import chrisPic from "../images/chris2.jpeg";
-import { ReactComponent as BackgroundSVG } from "../images/background1.svg";
-import { ReactComponent as BackgroundSVG2 } from "../images/background2.svg";
-import ReactPlayer from "react-player";
 const server = process.env.REACT_APP_API_SERVER;
 export const soundGif =
   "https://miro.medium.com/v2/resize:fit:960/1*ll6000BtRBCGWfq5xK2GeA.gif";
 
 // sehen wer spricht - Teamspeak 5 plugin
-export const aktuellerMod = "Chris"; // mod ändern!!
+export const aktuellerMod = "Dana"; // mod ändern!!
 const StreamingPage = () => {
   const dispatch = useDispatch();
   const [inputMessage, setInputMessage] = useState("");

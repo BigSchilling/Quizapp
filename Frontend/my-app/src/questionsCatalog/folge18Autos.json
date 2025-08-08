@@ -1,0 +1,618 @@
+{
+  "fragen": [
+    {
+      "kategorie": "Schätzfrage",
+      "frage": "Wie viel PS hatte der Bugatti Chiron (Serie)?",
+      "antworten": [
+        "1500 PS"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Eintippen",
+      "frage": "Welcher dieser Autos hat Heckantrieb?\nA) Audi S3\nB) Mercedes-AMG A45\nC) BMW M2\nD) VW Golf R",
+      "antworten": [
+        "BMW M2"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Bild mit Eintippen",
+      "frage": "Von welchem Autohersteller stammt dieses Modell?",
+      "antworten": [
+        "Bugatti Veyron"
+      ],
+      "assets": [
+        {
+          "bild": "https://media.hswstatic.com/eyJidWNrZXQiOiJjb250ZW50Lmhzd3N0YXRpYy5jb20iLCJrZXkiOiJnaWZcL3BsYXlcLzgyYzVhMGU0LTM2YTMtNDNhMy04NTQ2LWM3MTgzMWRlMGYxNy0xOTIwLTEwODAuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo4Mjh9LCJ0b0Zvcm1hdCI6ImF2aWYifX0="
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Was bedeutet „Twin-Turbo“?",
+      "antworten": [
+        " Zwei Turbolader statt einem"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Bild mit Eintippen",
+      "frage": "Welches Auto ist in der „Fast & Furious“-Reihe besonders berühmt geworden?",
+      "antworten": [
+        "Toyota Supra MK4"
+      ],
+      "assets": [
+        {
+          "bild": "https://i.auto-bild.de/ir_img/2/4/5/9/0/6/1/e85c9b2a66d62710.jpg?impolicy=leadteaser"
+        }
+      ]
+    },
+    {
+      "kategorie": "Bild mit Eintippen",
+      "frage": "Welches Modell soll dieses LEGO-Set darstellen?",
+      "antworten": [
+        "Ferrari 488 GTE"
+      ],
+      "assets": [
+        {
+          "bild": "",
+          "undefined": "https://puu.sh/Kya34/2974beb43f.png"
+        }
+      ]
+    },
+    {
+      "kategorie": "Bild mit Eintippen",
+      "frage": "Von welchem Autohersteller stammt dieses Modell?",
+      "antworten": [
+        "Koenigsegg Agera RS"
+      ],
+      "assets": [
+        {
+          "bild": "https://www.carlogos.org/quiz-images/guess-10-sports-cars-and-supercars-q15.jpg"
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Welche Automarke hat den Dreipunkt-Sicherheitsgurt erfunden?",
+      "antworten": [
+        "Volvo"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Der BMW M4 G82 ist welcher Karosserietyp?",
+      "antworten": [
+        "Coupé"
+      ],
+      "assets": [
+        {
+          "bild": "https://bmwscene-magazin.de/wp-content/uploads/2023/08/DSC_5403-e1692014694939.jpg"
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Was ist ein \"Sleeper\" im Autotuning?",
+      "antworten": [
+        " Ein serienmäßig aussehendes, aber extrem schnelles Auto"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Eintippen",
+      "frage": "Welches dieser Autos hat serienmäßig Flügeltüren?\nA) Lamborghini Huracán\nB) BMW i8\nC) Ford GT\nD) Bugatti Veyron",
+      "antworten": [
+        "B)BMW i8"
+      ],
+      "assets": [
+        {
+          "bild": "https://www.stern.de/auto/news/bmw-i8-roadster-aufreisser-7768526.html",
+          "undefined": "https://image.stern.de/7768528/t/fA/v2/w1440/r0/-/30--artikel21652bild01jpg---b1c01b315ec517ed.jpg"
+        }
+      ]
+    },
+    {
+      "kategorie": "Schätzfrage",
+      "frage": "Wie viel PS hatte der Golf 8 GTI (ohne Facelift)?",
+      "antworten": [
+        "245PS"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Bild mit Eintippen",
+      "frage": "Von welchem Autohersteller stammt dieses Modell?",
+      "antworten": [
+        "McLaren P1"
+      ],
+      "assets": [
+        {
+          "bild": "https://media.hswstatic.com/eyJidWNrZXQiOiJjb250ZW50Lmhzd3N0YXRpYy5jb20iLCJrZXkiOiJnaWZcL3BsYXlcLzUzMTIwZjc1LTI5NjctNDkzYy04ZWVlLWNjYTgyNGZjZTM3MC0xOTIwLTEwODAuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo4Mjh9LCJ0b0Zvcm1hdCI6ImF2aWYifX0="
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Was bedeutet bei BMW die Endung „d“, z. B. 320d?",
+      "antworten": [
+        "Dieselantrieb"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": " Welcher Audi wird im Film „Iron Man“ von Tony Stark gefahren?",
+      "antworten": [
+        "Audi R8"
+      ],
+      "assets": [
+        {
+          "bild": "https://i.pinimg.com/1200x/64/f1/19/64f119991a1245ba32f039eb6b8c53b6.jpg"
+        }
+      ]
+    },
+    {
+      "kategorie": "Bild mit Eintippen",
+      "frage": "Von welchem Autohersteller stammt dieses Modell?",
+      "antworten": [
+        " Nissan GT-R Nismo"
+      ],
+      "assets": [
+        {
+          "bild": "https://puu.sh/Ky99k/a0c8ccb05f.png"
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": " Welches Material wird bei Supersportwagen häufig für die Karosserie verwendet?",
+      "antworten": [
+        "Carbonfaser (Kohlefaser)"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Wie schnell schafft der Porsche 911 Turbo S von 0-100km/h?",
+      "antworten": [
+        "(auf)gerundet: 3 Sekunden"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": " Abkürzung: Was bedeutet “AMG” bei Mercedes?",
+      "antworten": [
+        "Aufrecht Melcher Großaspach"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Eintippen",
+      "frage": "Welches BMW-Modell darf mit offenen Türen gefahren werden? \nA) BMW Z3\nB) BMW Z4\nC) BMW Z1\nD) BMW i8",
+      "antworten": [
+        "C) BMW Z1"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Bild mit Eintippen",
+      "frage": "Von welchem Autohersteller stammt dieses Modell?",
+      "antworten": [
+        "Lamborghini Sián FKP 37"
+      ],
+      "assets": [
+        {
+          "bild": "https://www.carlogos.org/quiz-images/guess-10-sports-cars-and-supercars-q12.jpg"
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Was ist der „Golf R“?",
+      "antworten": [
+        "Eine Rennversion vom Golf"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Eintippen",
+      "frage": "Welche dieser Marken gehört zu VW?\nA) Bugatti\nB) Ferrari\nC) Koenigsegg\nD) Honda",
+      "antworten": [
+        "A) Bugatti"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Wie viele Zylinder hat der Lamborghini Huracán?",
+      "antworten": [
+        "10 Zylinder (V10)"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Bild mit Eintippen",
+      "frage": "Von welchem Autohersteller stammt dieses Modell?",
+      "antworten": [
+        "Ferrari 458 Italia"
+      ],
+      "assets": [
+        {
+          "bild": "https://media.hswstatic.com/eyJidWNrZXQiOiJjb250ZW50Lmhzd3N0YXRpYy5jb20iLCJrZXkiOiJnaWZcL3BsYXlcL2UwNTk0OGY3LWQyOTItNDVjNS04ODkzLWQ5ZDEwZmU3YWUzOS0xOTIwLTEwODAuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo4Mjh9LCJ0b0Zvcm1hdCI6ImF2aWYifX0="
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Was bedeutet die Bezeichnung „Quattro“ bei Audi?",
+      "antworten": [
+        "Allradantrieb"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Bild mit Eintippen",
+      "frage": " Welches MODELL ist dieser Volkswagen?",
+      "antworten": [
+        " VW Polo 6N"
+      ],
+      "assets": [
+        {
+          "bild": "https://www.volkswagen-classic-parts.com/de_at/magazin/25-jahre-polo-6n/_jcr_content/root/responsivegrid/container_68207412/image_copy_copy_copy.coreimg.jpeg/1627388139171/191010-news-polo6n-header-685x521px-rgb-rz.jpeg"
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Wer gilt als Erfinder des ersten praxistauglichen Automobils?",
+      "antworten": [
+        " Carl Benz"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Welcher US-Hersteller produziert die Corvette?",
+      "antworten": [
+        "Chevrolet"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Bild mit Eintippen",
+      "frage": " Wie viel PS und wie schnell schafft der Wagen von 0-100km/h?",
+      "antworten": [
+        "180PS und 7,4s"
+      ],
+      "assets": [
+        {
+          "bild": "https://media.speedheads.de/artikel/der-neue-abarth-595-competizione-bringt-die-im-motorsport-erprobte-technik-intensiv-auf-die-str-0030283-600x400.jpg"
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Abkürzung: Für was steht BMW?",
+      "antworten": [
+        "Bayrische Motorenwerke"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Welches Auto war das meistverkaufte Modell der Welt in den 1970er Jahren?",
+      "antworten": [
+        "Volkswagen Käfer"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Bild mit Eintippen",
+      "frage": "Von welchem Autohersteller stammt dieses Modell?",
+      "antworten": [
+        "Mazda MX-5"
+      ],
+      "assets": [
+        {
+          "bild": "https://www.carlogos.org/quiz-images/guess-10-sports-cars-and-supercars-q3.jpg"
+        }
+      ]
+    },
+    {
+      "kategorie": "Bild mit Eintippen",
+      "frage": "Was ist besonders an diesem Wagen?",
+      "antworten": [
+        "Die Außenhaut ist aus einem speziellen Stoff. BMW GINA"
+      ],
+      "assets": [
+        {
+          "bild": "https://www.supercars.net/blog/wp-content/uploads/2016/03/829092.jpg"
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": " Wie heißt der Supersportwagen von Mercedes-AMG mit Formel-1-Technik?",
+      "antworten": [
+        " Mercedes-AMG One"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Eintippen",
+      "frage": "Welches dieser Autos ist ein SUV?\nA) Audi RS Q3\nB) Mercedes CLA 45\nC) VW Arteon\nD) BMW M2",
+      "antworten": [
+        "A) Audi RS Q3"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Bild mit Eintippen",
+      "frage": "Von welchem Autohersteller stammt dieses Modell?",
+      "antworten": [
+        "BMW M6 E24"
+      ],
+      "assets": [
+        {
+          "bild": "https://media.hswstatic.com/eyJidWNrZXQiOiJjb250ZW50Lmhzd3N0YXRpYy5jb20iLCJrZXkiOiJnaWZcL3BsYXlcLzVmMmYyN2I1LWRlNTktNDg3Yy1iMmYzLWQyYThjYTIyN2ZmYy0xOTIwLTEwODAuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo4Mjh9LCJ0b0Zvcm1hdCI6ImF2aWYifX0="
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Was ist ein typischer Tuning-Mod am Auspuff?\nA) Fahrwerksdämpfer\nB) Katalysator-Tausch\nC) Klappensteuerung\nD) Kühlwasserregelung",
+      "antworten": [
+        " C) Klappensteuerung"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Aus welchem Land stammt der Autohersteller McLaren?",
+      "antworten": [
+        "Großbritannien"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Schätzfrage",
+      "frage": "Welche Höchstgeschwindigkeit kann der Koenigsegg Jesko Absolut erreichen?",
+      "antworten": [
+        " 531km/h"
+      ],
+      "assets": [
+        {
+          "bild": "https://i0.wp.com/asphalt9.info/wp-content/uploads/2024/10/Asphalt-Legends-Unite-Koenigsegg-Jesko-Absolut.jpg?resize=1536%2C860&ssl=1"
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": " Abkürzung: Wofür steht bei Audi die Bezeichnung „RS“?",
+      "antworten": [
+        "Rennsport"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Was ist „Stage 2 Tuning“ typischerweise?",
+      "antworten": [
+        "Leistungssteigerung mit Downpipe und Software"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Bild mit Eintippen",
+      "frage": " Von welchem Autohersteller stammt dieses Modell?",
+      "antworten": [
+        "Pagani Zonda"
+      ],
+      "assets": [
+        {
+          "bild": "https://media.hswstatic.com/eyJidWNrZXQiOiJjb250ZW50Lmhzd3N0YXRpYy5jb20iLCJrZXkiOiJnaWZcL3BsYXlcLzhhM2I3NTM1LTg4Y2YtNDcwYi04M2JkLTdlMjFlYmRkZjg4OS0xOTIwLTEwODAuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo4Mjh9LCJ0b0Zvcm1hdCI6ImF2aWYifX0="
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Wie nennt man das manuelle Schalten per Lenkradpaddles?",
+      "antworten": [
+        "Schaltwippen (Paddle Shift)"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Wer gilt als der berühmteste deutsche Rallyefahrer aller Zeiten?",
+      "antworten": [
+        "Walter Röhrl"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Bild mit Eintippen",
+      "frage": " Aus welchem Videospielklassiker stammt dieses Cover?",
+      "antworten": [
+        "Need for Speed Underground 2"
+      ],
+      "assets": [
+        {
+          "bild": "https://www.pcgameshardware.de/screenshots/1000x562/2025/01/NFS-Underground-2-pcgh_artwork.png"
+        }
+      ]
+    },
+    {
+      "kategorie": "Bild mit Eintippen",
+      "frage": "Von welchem Autohersteller stammt dieses Modell?",
+      "antworten": [
+        "Honda NSX"
+      ],
+      "assets": [
+        {
+          "bild": "https://media.hswstatic.com/eyJidWNrZXQiOiJjb250ZW50Lmhzd3N0YXRpYy5jb20iLCJrZXkiOiJnaWZcL3BsYXlcLzc2ZWMyOWI3LTU0ZWQtNDMwNS05ZmNmLTFhMTk5Nzc1ZTc2OS0xOTIwLTEwODAuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo4Mjh9LCJ0b0Zvcm1hdCI6ImF2aWYifX0="
+        }
+      ]
+    },
+    {
+      "kategorie": "Schätzfrage",
+      "frage": "Wann wurde das erste deutsche Elektroauto gebaut?",
+      "antworten": [
+        "1888"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Eintippen",
+      "frage": " Welches dieser Autos hat über 600 PS?\nA) Audi RS3\nB) BMW M240i\nC) Mercedes-AMG E63 S\nD) VW Golf GTI Clubsport",
+      "antworten": [
+        "C) Mercedes-AMG E63 S"
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Buzzer",
+      "frage": "Welcher Motor wurde zuerst erfunden – der Ottomotor oder der Dieselmotor?",
+      "antworten": [
+        "Der Ottomotor wurde zuerst erfunden (1876), der Dieselmotor kam später (1897)."
+      ],
+      "assets": [
+        {
+          "bild": ""
+        }
+      ]
+    },
+    {
+      "kategorie": "Bild mit Eintippen",
+      "frage": "Wie viele Aufrufe hat dieses legendäre Video?",
+      "antworten": [
+        ""
+      ],
+      "assets": [
+        {
+          "bild": "https://puu.sh/Ky9an/b4f3466b7b.jpg\n"
+        }
+      ]
+    }
+  ]
+}
